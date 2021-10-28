@@ -1,0 +1,193 @@
+// VARIABLES
+:root {
+    /* The intrinsic width of the underline stroke (in pixels). This is 
+     * the same as the height of the cap images. Don't specify the
+     * units! This is because of some of the calculations we do later on. */
+    --underline-intrinsic-width: 8;
+    
+    /* The actual width of the underline stroke we want to render (in pixels).
+     * You can modify this, and the sizing and positioning should be calculated
+     * accordingly. Again, Don't specify the units! */
+    --underline-width: 12;
+    
+    /* The colour used to draw the underline. It should match the colour
+     * used in the cap images... unfortunately we can't modify the SVG
+     * fill via CSS because it's a background image. */
+    --underline-color: #3a5caa;
+    
+    /* We need to know the width of the cap images so that we
+     * can position everything on the x axis accordingly. */
+    --underline-cap-width: 4px;
+    
+    /* The border is positioned relative to the bottom of the line.
+     * We can move it upwards a little to create an overlap effect. */
+    --underline-offset-y: -2px;
+    
+    /* The padding to add to the x axis. By default, the caps would be
+     * aligned with the beginning and end of the line. */
+    --underline-padding-left: 7px;
+    --underline-padding-right: 18px;
+}
+
+// BACKGROUND
+.font {
+    position: absolute;
+    z-index: 2;
+    animation: loseZIndex linear 2.4s forwards;
+}
+#black {
+    z-index: 3;
+    animation: fadeInAnimation linear 1.2s forwards;
+}
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: fill;
+}
+.background-hide {
+    opacity: 0;
+}
+.lose-focus.dessin {
+    animation: fadeInAnimation ease-out 0.2s
+}
+.lose-focus.constelation {
+    animation: fadeInAnimation ease-out 0.4s
+}
+.focus.dessin {
+    animation: dessinAnimation linear 0.8s infinite, fadeOutAnimation linear 1.2s;
+}
+.focus.constelation {
+    animation: fadeOutAnimation linear 0.4s forwards;
+}
+.background-shape {
+    animation: lightBlinkAnimation ease 0.8s infinite;
+}
+
+// CONTENT
+main {
+    position: absolute;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    animation: fadeOutAnimation ease-in 2.4s forwards;
+}
+
+// TITLE & TEXT
+section#homeLeft {
+    padding-top: 192px;
+    padding-left: 123px;    
+}
+.underline {
+    padding: 2rem;
+    max-width: 14rem;
+    background-color: #f2f2f2;
+}
+h1 {
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    margin-top: 0;
+    .small {        font-size: 24px;    }
+    p { margin-bottom: -5px; margin-top: 0;}
+    span {
+        display: inline;
+        --underline-width-scale: calc(var(--underline-width) / var(--underline-intrinsic-width));
+        padding-left: calc(var(--underline-padding-left) + calc(var(--underline-cap-width) * var(--underline-width-scale)));
+        padding-right: calc(var(--underline-padding-right) + calc(var(--underline-cap-width) * var(--underline-width-scale)));
+        box-decoration-break: clone;
+        background-repeat: no-repeat;
+        background-image:
+        linear-gradient(180deg, var(--underline-color), var(--underline-color));
+        background-position-x:
+        calc(var(--underline-cap-width) * var(--underline-width-scale)),
+        0,
+        100%;
+        background-position-y: calc(100% - var(--underline-offset-y) * -1);
+        background-size:
+        calc(100% - calc(var(--underline-cap-width) * var(--underline-width-scale) * 2)) calc(var(--underline-width) * 1px),
+        auto calc(var(--underline-width) * 1px),
+        auto calc(var(--underline-width) * 1px);
+    }
+  }
+  #anrText, .logos {
+    width: 268px;
+    text-align: justify;
+    font-size: 12px;
+    padding-left: 5px;
+    line-height: 13px;
+  }
+  #anrText { margin-top: 6px;}
+  .logos {
+    display: flex;
+    align-items: center;
+    img {
+        padding-right: 8px;
+    }
+  }
+
+// MENU
+a {
+    color:#fff;
+    text-decoration: none;
+    &:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+.menuHome {
+    color: #fff;
+    padding-left: 68px;
+    padding-top: 20px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    ul { padding: 0; margin: 0;}
+    li {
+        list-style-type:none;
+        margin-bottom: 32px;
+        font-size: 20px;
+        font-weight: medium;
+    }
+}
+  
+@keyframes fadeInAnimation {
+    0% {        opacity: 1;    }
+    100% {        opacity: 0;        }
+}
+@keyframes lightBlinkAnimation {
+    0% {        opacity: 0.8;    }
+    50% {        opacity: 1;        }
+    100% {        opacity: 0.8;        }
+}
+@keyframes dessinAnimation {
+    0% {        opacity: 1;    }
+    8% {        opacity: 1;        }
+    10% {        opacity: 0.95;        }
+    12% {        opacity: 1;        }
+    23% {        opacity: 1;        }
+    25% {        opacity: 0.8;        }
+    27% {        opacity: 1;        }
+    29% {        opacity: 0.8;        }
+    31% {        opacity: 1;        }
+    34% {        opacity: 1;        }
+    36% {        opacity: 0.7;        }
+    38% {        opacity: 1;        }
+    40% {        opacity: 0.8;        }
+    81% {        opacity: 1;        }
+    83% {        opacity: 0.6;        }
+    85% {        opacity: 1;        }
+    100% {        opacity: 1;        }
+}
+@keyframes fadeOutAnimation {
+    0% {        opacity: 0;    }
+    100% {        opacity: 1;        }
+}
+
+@keyframes loseZIndex {
+    0% { z-index: 3;}
+    100% { z-index: 1;}
+}

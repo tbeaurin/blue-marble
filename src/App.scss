@@ -1,18 +1,30 @@
-#background {
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  object-fit: fill;
-  animation: fadeInAnimation ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
+@import "asset/scss/home.scss";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:light,regular,medium,semi-bold,bold');
+@import url('https://fonts.googleapis.com/css?family=Bodoni+Moda:light,regular,medium,semi-bold,bold');
 
-@keyframes fadeInAnimation {
-  0% {
-      opacity: 0;
-  }
-  100% {
-      opacity: 1;
-   }
+// GENRAL (cursor and body)
+html, body {
+  cursor: none;
+  font-family: 'Bodoni Moda';
+  font-weight: 500;
+}
+a:hover {
+  cursor: none;
+}
+.cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+.cursor--small {
+  width: 29px;
+  height: 29px;
+  left: -14.5px;
+  top: -14.5px;
+  border-radius: 50%;
+  z-index: 11000;
+  background: #3a5caa;
+  transition: width 0.2s, height 0.2s;
+  opacity: 0.8;
 }

@@ -11,7 +11,7 @@ module.exports = {
     clientLogLevel: 'warning',
     hot: true,
     contentBase: 'dist',
-    compress: true,
+    compress: false,
     host: 'blue-marble',
     port: 3009,
     open: true,
