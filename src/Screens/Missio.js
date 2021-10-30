@@ -2,41 +2,41 @@ import React from "react";
 
 const Missio = () => {
 
-    React.useEffect(() => {
-        document.querySelector(`#fontStatic`).classList.add("zoomed");
-        document.querySelector(`#fontMissio`).classList.add("zoomed");
-        document.querySelector(`#fontZones`).classList.add("zoomedMissio");
-        document.querySelector(`#fontInventaire`).classList.add("zoomedMissio");
-        document.querySelector(`#fontCoulisses`).classList.add("zoomedMissio");
+  React.useEffect(() => {
+    document.querySelector(`#fontStatic`).classList.add("zoomed");
+    document.querySelector(`#fontMissio`).classList.add("zoomed");
+    document.querySelector(`#fontZones`).classList.add("zoomedMissio");
+    document.querySelector(`#fontInventaire`).classList.add("zoomedMissio");
+    document.querySelector(`#fontCoulisses`).classList.add("zoomedMissio");
 
-        document.querySelector(`#fontMissio`).classList.remove("zoomedZones");
-        document.querySelector(`#fontMissio`).classList.remove("zoomedInventaire");
-        document.querySelector(`#fontMissio`).classList.remove("zoomedCoulisses");
+    document.querySelector(`#fontMissio`).classList.remove("zoomedZones");
+    document.querySelector(`#fontMissio`).classList.remove("zoomedInventaire");
+    document.querySelector(`#fontMissio`).classList.remove("zoomedCoulisses");
 
 
-        const images = [...document.querySelectorAll(`.missio`)];
-        images.map(image => image.classList.add("currentPage"));
-        images.map(image => image.classList.remove("active"));
-        images.map(image => image.classList.remove("focus"));
+    const images = [...document.querySelectorAll(`.missio`)];
+    images.map(image => image.classList.add("currentPage"));
+    images.map(image => image.classList.remove("active"));
+    images.map(image => image.classList.remove("focus"));
 
-        // Don't display Wrapper on pages
-        document.querySelector(`#missioFakeWrapper`).style.display = 'none'
-        document.querySelector(`#zonesFakeWrapper`).style.display = 'none'
-        document.querySelector(`#inventaireFakeWrapper`).style.display = 'none'
-        document.querySelector(`#coulissesFakeWrapper`).style.display = 'none'        
-    }, [])
+    // Don't display Wrapper on pages
+    document.querySelector(`#missioFakeWrapper`).style.display = 'none'
+    document.querySelector(`#zonesFakeWrapper`).style.display = 'none'
+    document.querySelector(`#inventaireFakeWrapper`).style.display = 'none'
+    document.querySelector(`#coulissesFakeWrapper`).style.display = 'none'        
+  }, [])
 
-    const handleScroll = e => {
-        document.querySelector(`#missioStars`).style.top = `-${e.nativeEvent.srcElement.scrollTop / 6}px`;
-        document.querySelector(`#missioDessin`).style.top = `-${e.nativeEvent.srcElement.scrollTop / 6}px`;
-        document.querySelector(`#missioConstelation`).style.top = `-${e.nativeEvent.srcElement.scrollTop / 6}px`;
-        document.querySelector(`#stars`).style.top = `-${e.nativeEvent.srcElement.scrollTop / 18}px`;
-    }
+  const handleScroll = e => {
+    document.querySelector(`#missioStars`).style.top = `-${e.nativeEvent.srcElement.scrollTop / 6}px`;
+    document.querySelector(`#missioDessin`).style.top = `-${e.nativeEvent.srcElement.scrollTop / 6}px`;
+    document.querySelector(`#missioConstelation`).style.top = `-${e.nativeEvent.srcElement.scrollTop / 6}px`;
+    document.querySelector(`#stars`).style.top = `-${e.nativeEvent.srcElement.scrollTop / 18}px`;
+  }
 
-    return (
-        <div id="missio">
-            <h2>MISSIO</h2>
-            <p class="content" style={{padding: 200 }} onScroll={e => handleScroll(e) }>
+  return (
+    <div id="missio">
+      <h2>MISSIO</h2>
+      <p className="content" style={{padding: 200 }} onScroll={e => handleScroll(e) }>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac lorem vel neque volutpat feugiat. Integer et odio a enim ultricies consectetur. Proin vel nisi quis elit sagittis vulputate. Cras consectetur lectus libero, sed molestie ipsum laoreet non. Donec nec arcu est. Suspendisse maximus est ante, quis sodales neque fermentum ac. In sed quam quis risus tempus facilisis.
 
@@ -61,9 +61,9 @@ Etiam accumsan risus eu ante vulputate, eu semper lacus facilisis. Aenean vitae 
 Aliquam aliquet est id ullamcorper molestie. Vivamus felis nisl, viverra a tempus non, dictum eget lorem. Ut elementum, nibh tincidunt condimentum egestas, tellus ex varius quam, ut vehicula nisi augue vel mi. Quisque eget mattis ligula. Etiam porta porta enim, posuere porta urna placerat a. Fusce vel lorem lorem. Fusce molestie commodo urna, ac dapibus elit molestie nec. Donec eget finibus diam. Proin imperdiet sem eget ligula blandit lobortis. Cras luctus mauris ut urna tincidunt, quis accumsan massa tempus. Ut convallis consectetur lacus, et viverra sem dignissim ac. Pellentesque gravida vel quam vitae hendrerit. Nullam pretium quam ante, eu cursus diam fermentum ornare. Aenean sagittis ultrices urna, eu consectetur odio semper eget. Donec sit amet volutpat urna.
 
 Vivamus interdum sollicitudin justo, sed condimentum purus tincidunt at. Mauris lobortis libero libero, et posuere eros placerat nec. Morbi aliquam nulla tellus, in ultricies ipsum interdum eget. Curabitur efficitur ullamcorper sem, at egestas urna facilisis in. Morbi vel magna vitae sem gravida sollicitudin. Vestibulum commodo est eu viverra mollis. Donec tempus nisl vel posuere gravida. Ut velit felis, egestas quis dolor ac, iaculis convallis ante. Proin scelerisque mollis dignissim. Morbi ac pretium ex. Proin vel est arcu. Nam maximus eu ligula in venenatis. Vivamus vel ante libero. 
-            </p>
-        </div>
-    )
+      </p>
+    </div>
+  )
 }
 
 export default Missio

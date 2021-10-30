@@ -18,15 +18,15 @@ const MainRouter = withRouter(( { location }) => {
   return (
     <Router>
       <TransitionGroup>
-      <CSSTransition key={location.key} classNames="zoom" timeout={1000}>
-        <Switch location={location}>
-          {console.log('location')}
-          {console.log(location)}
-          <Route exact path="/" component={Home} />
-          <Route path="/missio" component={Missio} />
-        </Switch>
-      </CSSTransition>
-    </TransitionGroup>
+        <CSSTransition key={location.key} classNames="zoom" timeout={1000}>
+          <Switch location={location}>
+            {console.log('location')}
+            {console.log(location)}
+            <Route exact path="/" component={Home} />
+            <Route path="/missio" component={Missio} />
+          </Switch>
+        </CSSTransition>
+      </TransitionGroup>
     </Router>
   )
 })

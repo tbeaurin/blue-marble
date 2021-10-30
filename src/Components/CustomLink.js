@@ -3,33 +3,33 @@ import { NavLink } from "react-router-dom";
 
 const CustomLink = ({href, content, tag, onMouseEnter, onMouseLeave}) => {
 
-    const handleMouseEnter = e => {
-        e.persist()
-        const render = () => {
-          document.querySelector(".cursor--small").classList.add('large');
-        };
-        requestAnimationFrame(render);
-        onMouseEnter && onMouseEnter();
-      };
+  const handleMouseEnter = e => {
+    e.persist()
+    const render = () => {
+      document.querySelector(".cursor--small").classList.add('large');
+    };
+    requestAnimationFrame(render);
+    onMouseEnter && onMouseEnter();
+  };
 
-    const handleMouseLeave = e => {
-        e.persist()
-        const render = () => {
-          document.querySelector(".cursor--small").classList.remove('large');
-        };
-        requestAnimationFrame(render);
-        onMouseLeave && onMouseLeave();
-      };
+  const handleMouseLeave = e => {
+    e.persist()
+    const render = () => {
+      document.querySelector(".cursor--small").classList.remove('large');
+    };
+    requestAnimationFrame(render);
+    onMouseLeave && onMouseLeave();
+  };
 
-    const handleClick = e => {
-        // e.preventDefault()
-    }
+  const handleClick = e => {
+    // e.preventDefault()
+  }
 
-    return tag === "NavLink" ? (
-        <NavLink to={href} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>{content}</NavLink>
-        ) : (
-        <a href={href} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>{content}</a>
-    )
+  return tag === "NavLink" ? (
+    <NavLink to={href} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>{content}</NavLink>
+  ) : (
+    <a href={href} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>{content}</a>
+  )
 }
 
 export default CustomLink
