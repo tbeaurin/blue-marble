@@ -30,8 +30,10 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        exclude: /node_modules/,
-        use: 'babel-loader'
+        enforce: 'pre',
+        use: 'eslint-loader',
+        include: path.resolve(__dirname),
+        exclude: /node_modules/
       },
       {
         test: /\.css$/,
