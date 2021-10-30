@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  #font>div {
+    transition: all 0.8s linear;
+    transform: scale(1) opacity(0) translate(0,0);
+  }
+  #fontStatic.zoomed {
+    transform: scale(1.2);
+  }
+
+  // MISSIO ZOOM
+  #fontMissio {
+    transition: translate linear 0.8s, scale linear 0.8s;
+  }
+  #fontMissio.zoomed {
+    transform: translate(-75vw,-13vh) scale(3.2);
+    img {
+      opacity: 0.6;
+    }
+  }
+  #fontMissio.zoomedZones { transform: translate(-166vw,-13vh) scale(3.2); }
+  
+  // ZONES ZOOM
+  #fontZones {
+    transition: all linear 0.8s;
+  }
+  #fontZones.zoomed {
+    transform: translate(-166vw,-13vh) scale(2.8);
+    img {
+      opacity: 0.6;
+    }
+  }
+  #fontZones.zoomedMissio { transform: translate(-75vw,-13vh) scale(2.8); }
+
+  // COULISSES ZOOM
+  #fontCoulisses {
+    transition: all linear 0.8s;
+  }
+  #fontCoulisses.zoomed {
+    transform: translate(-166vw,-13vh) scale(2.8);
+    img {
+      opacity: 0.6;
+    }
+  }
+  #fontCoulisses.zoomedMissio { transform: translate(-75vw,-13vh) scale(2.8); }
+  #fontCoulisses.zoomedZones { transform: translate(-166vw,-13vh) scale(2.8); }
+
+  // INVENTAIRE ZOOM
+  #fontInventaire {
+    transition: all linear 0.8s;
+  }
+  #fontInventaire.zoomed {
+    transform: translate(-166vw,-13vh) scale(2.8);
+    img {
+      opacity: 0.6;
+    }
+  }
+  #fontInventaire.zoomedMissio { transform: translate(-75vw,-13vh) scale(2.8); }
+  #fontInventaire.zoomedZones { transform: translate(-166vw,-13vh) scale(2.8); }
+
+}
+
+  

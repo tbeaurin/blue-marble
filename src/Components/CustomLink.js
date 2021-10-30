@@ -1,14 +1,12 @@
 import React from "react"
+import { NavLink } from "react-router-dom";
 
-const CustomLink = ({href, content, onMouseEnter, onMouseLeave}) => {
+const CustomLink = ({href, content, tag, onMouseEnter, onMouseLeave}) => {
 
     const handleMouseEnter = e => {
-        console.log(e)
         e.persist()
         const render = () => {
-          const innerCursor = document.querySelector(".cursor--small");
-          innerCursor.style.width = `58px`;
-          innerCursor.style.height = `58px`;
+          document.querySelector(".cursor--small").classList.add('large');
         };
         requestAnimationFrame(render);
         onMouseEnter && onMouseEnter();
@@ -17,15 +15,19 @@ const CustomLink = ({href, content, onMouseEnter, onMouseLeave}) => {
     const handleMouseLeave = e => {
         e.persist()
         const render = () => {
-          const innerCursor = document.querySelector(".cursor--small");
-          innerCursor.style.width = `29px`;
-          innerCursor.style.height = `29px`;
-          };
-          requestAnimationFrame(render);
-          onMouseLeave && onMouseLeave();
+          document.querySelector(".cursor--small").classList.remove('large');
+        };
+        requestAnimationFrame(render);
+        onMouseLeave && onMouseLeave();
       };
 
-    return (
+    const handleClick = e => {
+        // e.preventDefault()
+    }
+
+    return tag === "NavLink" ? (
+        <NavLink to={href} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>{content}</NavLink>
+        ) : (
         <a href={href} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>{content}</a>
     )
 }

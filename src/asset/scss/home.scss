@@ -1,36 +1,19 @@
 // VARIABLES
 :root {
-    /* The intrinsic width of the underline stroke (in pixels). This is 
-     * the same as the height of the cap images. Don't specify the
-     * units! This is because of some of the calculations we do later on. */
     --underline-intrinsic-width: 8;
-    
-    /* The actual width of the underline stroke we want to render (in pixels).
-     * You can modify this, and the sizing and positioning should be calculated
-     * accordingly. Again, Don't specify the units! */
     --underline-width: 12;
-    
-    /* The colour used to draw the underline. It should match the colour
-     * used in the cap images... unfortunately we can't modify the SVG
-     * fill via CSS because it's a background image. */
     --underline-color: #3a5caa;
-    
-    /* We need to know the width of the cap images so that we
-     * can position everything on the x axis accordingly. */
     --underline-cap-width: 4px;
-    
-    /* The border is positioned relative to the bottom of the line.
-     * We can move it upwards a little to create an overlap effect. */
     --underline-offset-y: -2px;
-    
-    /* The padding to add to the x axis. By default, the caps would be
-     * aligned with the beginning and end of the line. */
     --underline-padding-left: 7px;
     --underline-padding-right: 18px;
 }
+img {
+    overflow: hidden;
+}
 
 // BACKGROUND
-.font {
+#font {
     position: absolute;
     z-index: 2;
     animation: loseZIndex linear 2.4s forwards;
@@ -49,21 +32,60 @@
 }
 .background-hide {
     opacity: 0;
+    transition: opacity ease-in 1s;
 }
-.lose-focus.dessin {
+.lose-focus.dessin:not(.active) {
     animation: fadeInAnimation ease-out 0.2s
 }
-.lose-focus.constelation {
+.lose-focus.constelation:not(.active) {
     animation: fadeInAnimation ease-out 0.4s
 }
-.focus.dessin {
+.focus.dessin, .active.dessin {
     animation: dessinAnimation linear 0.8s infinite, fadeOutAnimation linear 1.2s;
 }
-.focus.constelation {
+.focus.constelation, .active.constelation {
     animation: fadeOutAnimation linear 0.4s forwards;
 }
 .background-shape {
-    animation: lightBlinkAnimation ease 0.8s infinite;
+    animation: lightBlinkAnimation ease 0.8s infinite, fadeOutAnimation linear 2s;
+}
+
+// CONSTELATIONS WRAPPERS
+#missioFakeWrapper {
+    height: 66vh;
+    width: 20vw;
+    opacity: 0.2;
+    top: 4vh;
+    position: absolute;
+    left: 62vh;
+    z-index: 10000;
+}
+#zonesFakeWrapper {
+    height: 59vh;
+    width: 30vw;
+    opacity: .2;
+    top: 4vh;
+    position: absolute;
+    left: 126vh;
+    z-index: 10000;
+}
+#inventaireFakeWrapper {
+    height: 28vh;
+    width: 41vw;
+    opacity: .2;
+    top: 70vh;
+    position: absolute;
+    left: 12.7vh;
+    z-index: 10000;
+}
+#coulissesFakeWrapper {
+    height: 50vh;
+    width: 29vw;
+    opacity: .2;
+    top: 46vh;
+    position: absolute;
+    left: 131vh;
+    z-index: 10000;
 }
 
 // CONTENT
@@ -73,6 +95,12 @@ main {
     width: 100vw;
     height: 100vh;
     animation: fadeOutAnimation ease-in 2.4s forwards;
+    .missio.currentPage {
+        opacity: 0.7;
+    }
+    .zones.currentPage {
+        opacity: 0.7;
+    }
 }
 
 // TITLE & TEXT
@@ -146,11 +174,31 @@ a {
     font-family: 'Montserrat';
     font-weight: 400;
     ul { padding: 0; margin: 0;}
-    li {
+    .menuItem {
         list-style-type:none;
         margin-bottom: 32px;
         font-size: 20px;
         font-weight: medium;
+    }
+    .menuItem a { 
+        position: relative; 
+        &:before {
+            content: "";
+            height: 8px;
+            background-color: #3a5caa;
+            position: absolute;
+            z-index: -1; 
+            transition: all linear .2s;
+            margin-top: 16px;
+            width: 0;
+            left: -4px;
+        }
+    }
+    .menuItem a.focus {
+        &:before {
+            left: -4px;
+            width: calc(100% + 12px);
+        }
     }
 }
   
@@ -190,4 +238,35 @@ a {
 @keyframes loseZIndex {
     0% { z-index: 3;}
     100% { z-index: 1;}
+}
+
+
+
+// RESPONSIVE
+@media (max-width: 1441px) {
+    section#homeLeft {
+        padding-top: 132px;
+        padding-left: 123px;    
+    }
+    h1 {
+        text-transform: uppercase;
+        font-family: 'Montserrat';
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 16px;
+        margin-top: 0;
+        .small {font-size: 20px;}
+    }
+    .menuHome {
+        padding-top: 16px;
+        .menuItem {
+            margin-bottom: 24px;
+            font-size: 16px;
+            a {
+                &:before {
+                    margin-top: 12px;
+                }
+            }
+        }
+    }
 }

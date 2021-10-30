@@ -1,19 +1,5 @@
 import React from "react";
 
-import black from '../asset/img/black.png'
-import stars from '../asset/img/stars.png'
-import starsMissio from '../asset/img/starsMissio.png'
-import starsZone from '../asset/img/starsZone.png'
-import starsInventory from '../asset/img/starsInventory.png'
-import starsBackstage from '../asset/img/starsBackstage.png'
-import constelationMissio from '../asset/img/constelationMissio.png'
-import dessinMissio from '../asset/img/dessinMissio.png'
-import constelationZones from '../asset/img/constelationZones.png'
-import dessinZones from '../asset/img/dessinZones.png'
-import constelationInventaire from '../asset/img/constelationInventaire.png'
-import dessinInventaire from '../asset/img/dessinInventaire.png'
-import constelationCoulisses from '../asset/img/constelationCoulisses.png'
-import dessinCoulisses from '../asset/img/dessinCoulisses.png'
 import logoANR from '../asset/img/logo-anr.png'
 import logoEUL from '../asset/img/logo-eul.png'
 import logoUNI from '../asset/img/logo-universite.png'
@@ -21,25 +7,61 @@ import logoUNI from '../asset/img/logo-universite.png'
 import Menu from "../Components/Menu";
 
 const Home = () => {    
+
+    React.useEffect(() => {
+        document.querySelector(`#fontStatic`).classList.remove("zoomed");
+
+        document.querySelector(`#fontMissio`).classList.remove("zoomed");
+        document.querySelector(`#fontMissio`).classList.remove("zoomedZones");
+        document.querySelector(`#fontMissio`).classList.remove("zoomedInventaire");
+        document.querySelector(`#fontMissio`).classList.remove("zoomedCoulisses");
+
+        document.querySelector(`#fontZones`).classList.remove("zoomed");
+        document.querySelector(`#fontZones`).classList.remove("zoomedMissio");
+        document.querySelector(`#fontZones`).classList.remove("zoomedInventaire");
+        document.querySelector(`#fontZones`).classList.remove("zoomedCoulisses");
+
+        document.querySelector(`#fontInventaire`).classList.remove("zoomed");
+        document.querySelector(`#fontInventaire`).classList.remove("zoomedMissio");
+        document.querySelector(`#fontInventaire`).classList.remove("zoomedZones");
+        document.querySelector(`#fontInventaire`).classList.remove("zoomedCoulisses");
+
+        document.querySelector(`#fontCoulisses`).classList.remove("zoomed");
+        document.querySelector(`#fontCoulisses`).classList.remove("zoomedMissio");
+        document.querySelector(`#fontCoulisses`).classList.remove("zoomedZones");
+        document.querySelector(`#fontCoulisses`).classList.remove("zoomedInventaire");
+
+        const imagesMissio = [...document.querySelectorAll(`.missio`)];
+        imagesMissio.map(image => image.classList.remove("currentPage"));
+        imagesMissio.map(image => image.classList.remove("focus"));
+
+        const imagesZones = [...document.querySelectorAll(`.zones`)];
+        imagesZones.map(image => image.classList.remove("currentPage"));
+        imagesZones.map(image => image.classList.remove("focus"));
+
+        const imagesInventaire = [...document.querySelectorAll(`.inventaire`)];
+        imagesInventaire.map(image => image.classList.remove("currentPage"));
+        imagesInventaire.map(image => image.classList.remove("focus"));
+
+        const imagesCoulisses = [...document.querySelectorAll(`.coulisses`)];
+        imagesCoulisses.map(image => image.classList.remove("currentPage"));
+        imagesCoulisses.map(image => image.classList.remove("focus"));
+
+        // Don't display Wrapper on pages
+        document.querySelector(`#missioFakeWrapper`).style.display = 'block'
+        document.querySelector(`#zonesFakeWrapper`).style.display = 'block'
+        document.querySelector(`#inventaireFakeWrapper`).style.display = 'block'
+        document.querySelector(`#coulissesFakeWrapper`).style.display = 'block'    
+
+        // Cancel top on missio scroll
+        document.querySelector(`#missioStars`).style.top = 0;
+        document.querySelector(`#missioDessin`).style.top = 0;
+        document.querySelector(`#missioConstelation`).style.top = 0;
+        document.querySelector(`#stars`).style.top = 0;
+    }, [])
+
     return (
-        <>
-        <div className="font">
-            <img className="background" id="black" src={black} alt="etoiles" />
-            <img className="background background-shape" src={stars} alt="etoiles" />
-            <img className="background background-shape" src={starsMissio} alt="etoilesMissio" />
-            <img className="background background-shape" src={starsZone} alt="etoilesMissio" />
-            <img className="background background-shape" src={starsInventory} alt="etoilesMissio" />
-            <img className="background background-shape" src={starsBackstage} alt="etoilesMissio" />
-            <img className="background background-hide missio constelation" src={constelationMissio} alt="constelationMissio" />
-            <img className="background background-hide missio dessin" src={dessinMissio} alt="dessinMissio" />
-            <img className="background background-hide zones constelation" src={constelationZones} alt="constelationZones" />
-            <img className="background background-hide zones dessin" src={dessinZones} alt="dessinZones" />
-            <img className="background background-hide inventaire constelation" src={constelationInventaire} alt="constelationInventaire" />
-            <img className="background background-hide inventaire dessin" src={dessinInventaire} alt="dessinInventaire" />
-            <img className="background background-hide coulisses constelation" src={constelationCoulisses} alt="constelationCoulisses" />
-            <img className="background background-hide coulisses dessin" src={dessinCoulisses} alt="dessinCoulisses" />
-        </div>
-        <main>
+        <div id="home">
             <section id="homeLeft">
                 <h1><p><span className="small">Programme</span></p><span>Blue Marble</span></h1>
                 <div class="logos"> 
@@ -52,8 +74,7 @@ const Home = () => {
                 </div>
                 <Menu />
             </section>
-        </main>
-        </>
+        </div>
     )
 }
 

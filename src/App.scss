@@ -5,6 +5,7 @@
 // GENRAL (cursor and body)
 html, body {
   cursor: none;
+  // overflow: hidden;
   font-family: 'Bodoni Moda';
   font-weight: 500;
 }
@@ -27,4 +28,24 @@ a:hover {
   background: #3a5caa;
   transition: width 0.2s, height 0.2s;
   opacity: 0.8;
+}
+.cursor--small.large {
+  width: 58px;
+  height: 58px;
+  left: -29px;
+  top: -29px;
+}
+
+// RESPONSIVE
+@media (max-width: 1441px) {
+  .cursor--small {
+    width: 20px;
+    height: 20px;
+  }
+  .cursor--small.large {
+    width: 40px;
+    height: 40px;
+    left: -20px;
+    top: -20px;
+  }
 }
