@@ -6,8 +6,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  withRouter,
-  Link
+  withRouter
 } from "react-router-dom";
 import { TransitionGroup } from 'react-transition-group'
 
@@ -30,7 +29,7 @@ import dessinInventaire from './asset/img/dessinInventaire.png'
 import constelationCoulisses from './asset/img/constelationCoulisses.png'
 import dessinCoulisses from './asset/img/dessinCoulisses.png'
 
-const App = (props) => {
+const App = () => {
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const handleMove = e => {
