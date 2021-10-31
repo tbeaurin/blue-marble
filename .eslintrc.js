@@ -1,10 +1,10 @@
-var restrictedGlobals = require('confusing-browser-globals')
+const restrictedGlobals = require('confusing-browser-globals');
 
 module.exports = {
   root: true,
   parser: 'babel-eslint',
   globals: {
-    'VERSION': true
+    VERSION: true,
   },
   env: {
     browser: true,
@@ -18,10 +18,11 @@ module.exports = {
     sourceType: 'module',
     ecmaFeatures: {
       classes: true,
-      jsx: true
-    }
+      jsx: true,
+    },
   },
   extends: [
+    'airbnb',
     'eslint:recommended',
     'plugin:react/recommended',
   ],
@@ -30,13 +31,13 @@ module.exports = {
     'jsx-a11y',
     'react',
     'react-hooks',
-    'formatjs'
+    'formatjs',
   ],
   settings: {
     react: {
       pragma: 'React',
-      version: 'detect'
-    }
+      version: 'detect',
+    },
   },
   rules: {
     'no-restricted-globals': ['error'].concat(restrictedGlobals),
@@ -47,12 +48,15 @@ module.exports = {
       {
         vars: 'all',
         args: 'after-used',
-        ignoreRestSiblings: false
-      }
+        ignoreRestSiblings: false,
+      },
     ],
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'formatjs/no-offset': 'error',
-    "indent": ["error", 2]
-  }
-}
+    'jsx-a11y/click-events-have-key-events': 'off',
+    'jsx-a11y/no-static-element-interactions': 'off',
+    'jsx-a11y/no-noninteractive-element-interactions': 'off',
+    indent: ['error', 2],
+  },
+};

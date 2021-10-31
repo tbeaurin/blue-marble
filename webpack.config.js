@@ -1,14 +1,15 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: path.join(__dirname, "src", "index.js"),
+  mode: 'development',
+  entry: path.join(__dirname, 'src', 'index.jsx'),
   optimization: {
-    minimize: false
+    minimize: false,
   },
   output: {
-    path:path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, 'dist'),
   },
   devServer: {
     clientLogLevel: 'warning',
@@ -23,37 +24,37 @@ module.exports = {
     publicPath: '/',
     watchOptions: {
       poll: false,
-      ignored: /node_modules/
-    }
+      ignored: /node_modules/,
+    },
+  },
+  resolve: {
+    extensions: ['.ts', '.js', '.jsx', '.tsx'],
   },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx$/,
         enforce: 'pre',
         use: 'babel-loader',
         include: path.resolve(__dirname),
-        exclude: /node_modules/
+        exclude: /node_modules/,
       },
       {
         test: /\.css$/,
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
-          'postcss-loader'
-        ]
+          'postcss-loader',
+        ],
       },
       {
         test: /\.svg$/,
-        loaders: [
+        use: [
           'babel-loader',
           {
             loader: 'react-svg-loader',
-            query: {
-              jsx: true
-            }
           },
-        ]
+        ],
       },
       // Scss compiler
       {
@@ -62,8 +63,8 @@ module.exports = {
           MiniCssExtractPlugin.loader,
           'css-loader',
           'postcss-loader',
-          'sass-loader'
-        ]
+          'sass-loader',
+        ],
       },
       // PNG compiler
       {
@@ -73,14 +74,13 @@ module.exports = {
             loader: 'file-loader',
           },
         ],
-      }
-    ]
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, "src", "index.html"),
+      template: path.join(__dirname, 'src', 'index.html'),
     }),
     new MiniCssExtractPlugin(),
   ],
-}
-
+};
