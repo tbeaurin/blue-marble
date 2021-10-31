@@ -1,4 +1,5 @@
 import React from 'react';
+import { Trans } from 'react-i18next';
 import CustomLink from './CustomLink';
 
 const Menu = () => {
@@ -24,9 +25,10 @@ const Menu = () => {
     <nav className="menu menuHome">
       <ul>
         <li className="menuItem" id="missioLink" onClick={() => { handleClick('missio'); }}>
+
           <CustomLink
             href="/missio"
-            content="La Mission"
+            content={<Trans i18nKey="Menu.mission" />}
             tag="NavLink"
             onClick={() => { handleClick('missio'); }}
             onMouseEnter={() => { handleMouseEnter('missio'); }}
@@ -36,7 +38,7 @@ const Menu = () => {
         <li className="menuItem" id="zonesLink" onClick={() => { handleClick('zones'); }}>
           <CustomLink
             href="/zones"
-            content="Les Zones"
+            content={<Trans i18nKey="Menu.zones" />}
             tag="NavLink"
             onClick={() => handleClick('zones')}
             onMouseEnter={() => { handleMouseEnter('zones'); }}
@@ -46,7 +48,7 @@ const Menu = () => {
         <li className="menuItem" id="inventaireLink" onClick={() => { handleClick('inventaire'); }}>
           <CustomLink
             href="/inventaire"
-            content="L'Inventaire"
+            content={<Trans i18nKey="Menu.inventaire" />}
             tag="NavLink"
             onClick={() => handleClick('inventaire')}
             onMouseEnter={() => { handleMouseEnter('inventaire'); }}
@@ -56,7 +58,7 @@ const Menu = () => {
         <li className="menuItem" id="coulissesLink" onClick={() => { handleClick('coulisses'); }}>
           <CustomLink
             href="/coulisses"
-            content="Les Coulisses"
+            content={<Trans i18nKey="Menu.coulisses" />}
             tag="NavLink"
             onClick={() => handleClick('coulisses')}
             onMouseEnter={() => { handleMouseEnter('coulisses'); }}

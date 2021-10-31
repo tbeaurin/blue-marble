@@ -1,8 +1,17 @@
 import './App.scss';
 import './asset/scss/transitions.scss';
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import MainRouter from './Router/MainRouter';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  withRouter,
+} from 'react-router-dom';
+import { TransitionGroup } from 'react-transition-group';
+
+import Home from './Screens/Home';
+import Missio from './Screens/Missio';
+import Zones from './Screens/Zones';
 
 import black from './asset/img/black.png';
 import stars from './asset/img/stars.png';
@@ -70,6 +79,16 @@ const App = () => {
     images.map((image) => image.classList.add('active'));
     document.querySelector(`#${constelation}Link a`).click();
   };
+
+  const MainRouter = withRouter(({ location }) => (
+    <TransitionGroup>
+      <Switch location={location}>
+        <Route path="/" component={Home} exact />
+        <Route path="/missio" component={Missio} />
+        <Route path="/zones" component={Zones} />
+      </Switch>
+    </TransitionGroup>
+  ));
 
   return (
     <div className="App" onMouseMove={(e) => { handleMove(e); }}>
