@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^12.1.10",
     "@typescript-eslint/eslint-plugin": "^4.15.2",
     "@typescript-eslint/parser": "^4.15.2",
+    "eslint-loader": "^4.0.2",
     "eslint-plugin-formatjs": "^2.18.0",
     "framer-motion": "^5.0.0",
     "install": "^0.13.0",
