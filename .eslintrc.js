@@ -40,10 +40,10 @@ module.exports = {
   },
   rules: {
     'no-restricted-globals': ['error'].concat(restrictedGlobals),
-    'no-console': 'off',
+    'no-console': 'error',
     'react/prop-types': 'off',
     'no-unused-vars': [
-      'warn',
+      'error',
       {
         vars: 'all',
         args: 'after-used',
