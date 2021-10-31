@@ -21,10 +21,6 @@ const CustomLink = ({href, content, tag, onMouseEnter, onMouseLeave}) => {
     onMouseLeave && onMouseLeave();
   };
 
-  const handleClick = e => {
-    // e.preventDefault()
-  }
-
   return tag === "NavLink" ? (
     <NavLink to={href} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>{content}</NavLink>
   ) : (
