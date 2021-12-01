@@ -1,3 +1,11 @@
 {
-    "Menu.mission" : "La Mission"
+    "Menu.coulisses" : "Les Coulisses",
+    "Menu.inventaire" : "L'Inventaire",
+    "Menu.mission" : "La Mission",
+    "Menu.zones" : "Les Zones",
+
+    "Missio.citation": "\"Il était impossible de voir les étoiles en ville. Or, quelle meilleure expérience, depuis le sol, pour se rappeler la petitesse et la fragilité de la Terre ?\"",
+    "Missio.citation.author.1": "Major A",
+    "Missio.citation.author.2": "A propos de la zone 1",
+    "Missio.citation.author.3": "Extrait de son interview pour A2022 Magazine"
 }

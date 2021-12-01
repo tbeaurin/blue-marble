@@ -35,11 +35,13 @@ const App = () => {
     let clientX = -100;
     let clientY = -100;
     const innerCursor = document.querySelector('.cursor--small');
+    const outerCursor = document.querySelector('.cursor--ext');
     clientX = e.clientX;
     clientY = e.clientY;
 
     const render = () => {
       innerCursor.style.transform = `translate(${clientX}px, ${clientY}px)`;
+      outerCursor.style.transform = `translate(${clientX}px, ${clientY}px)`;
     };
     requestAnimationFrame(render);
   };
@@ -52,11 +54,13 @@ const App = () => {
     // Cursor
     const render = () => {
       document.querySelector('.cursor--small').classList.add('large');
+      document.querySelector('.cursor--ext').classList.add('large');
     };
     requestAnimationFrame(render);
     // Menu
     document.querySelector(`#${constelation}Link a`).classList.add('focus');
     document.querySelector('.cursor--small').classList.add('large');
+    document.querySelector('.cursor--ext').classList.add('large');
   };
 
   const handleMouseLeave = (constelation) => {
@@ -67,11 +71,13 @@ const App = () => {
     // Cursor
     const render = () => {
       document.querySelector('.cursor--small').classList.remove('large');
+      document.querySelector('.cursor--ext').classList.remove('large');
     };
     requestAnimationFrame(render);
     // Menu
     document.querySelector(`#${constelation}Link a`).classList.remove('focus');
     document.querySelector('.cursor--small').classList.remove('large');
+    document.querySelector('.cursor--ext').classList.remove('large');
   };
 
   const handleClick = (constelation) => {
@@ -93,6 +99,7 @@ const App = () => {
   return (
     <div className="App" onMouseMove={(e) => { handleMove(e); }}>
       <div className="cursor cursor--small" />
+      <div className="cursor cursor--ext" />
       <div
         id="missioFakeWrapper"
         onClick={() => { handleClick('missio'); }}

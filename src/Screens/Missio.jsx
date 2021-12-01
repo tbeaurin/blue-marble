@@ -1,4 +1,5 @@
 import React from 'react';
+import { Trans } from 'react-i18next';
 
 const Missio = () => {
   React.useEffect(() => {
@@ -32,11 +33,72 @@ const Missio = () => {
   };
 
   return (
-    <div id="missio">
-      <h2>MISSIO</h2>
-      <p className="content" style={{ padding: 200 }} onScroll={(e) => handleScroll(e)}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac lorem vel neque volutpa
-      </p>
+    <div className="main">
+      <div id="missio">
+        <div className="header">
+          <h2>MISSIO</h2>
+          <span className="constelation-name">Missio</span>
+        </div>
+        <div className="content" onScroll={(e) => handleScroll(e)}>
+          <div className="page" id="missio1">
+            <p className="citation">
+              <Trans i18nKey="Missio.citation" />
+            </p>
+            <p className="citation-content">
+              <span className="author"><Trans i18nKey="Missio.citation.author.1" /></span>
+              <span className="explication"><Trans i18nKey="Missio.citation.author.2" /></span>
+              <span className="source"><Trans i18nKey="Missio.citation.author.3" /></span>
+            </p>
+          </div>
+          <div id="missio2" className="page">
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+            <Trans i18nKey="Missio.citation" />
+
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

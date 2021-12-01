@@ -1,4 +1,5 @@
 @import "asset/scss/home.scss";
+@import "asset/scss/missio.scss";
 @import url('https://fonts.googleapis.com/css?family=Montserrat:light,regular,medium,semi-bold,bold');
 @import url('https://fonts.googleapis.com/css?family=Bodoni+Moda:light,regular,medium,semi-bold,bold');
 
@@ -29,11 +30,29 @@ a:hover {
   transition: width 0.2s, height 0.2s;
   opacity: 0.8;
 }
-.cursor--small.large {
+.cursor--ext {
   width: 58px;
   height: 58px;
   left: -29px;
   top: -29px;
+  border-radius: 50%;
+  z-index: 11000;
+  background: transparent;
+  border: 1px solid #3a5caa;
+  transition: opacity .2s;
+  opacity: 0;
+}
+.cursor--ext.large {
+  opacity: 1;
+}
+.cursor--small.large {
+  width: 8px;
+  height: 8px;
+  left: -4px;
+  top: -4px;
+}
+h2 {
+  margin-top: 0;
 }
 
 // RESPONSIVE
@@ -43,8 +62,8 @@ a:hover {
     height: 20px;
   }
   .cursor--small.large {
-    width: 40px;
-    height: 40px;
+    width: 8px;
+    height: 8px;
     left: -20px;
     top: -20px;
   }
