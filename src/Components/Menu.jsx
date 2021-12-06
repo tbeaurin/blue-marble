@@ -16,51 +16,43 @@ const Menu = () => {
     images.map((image) => image.classList.remove('focus'));
     document.querySelector(`#${constelation}Link a`).classList.remove('focus');
   };
-  const handleClick = (constelation) => {
-    const images = [...document.querySelectorAll(`.${constelation}`)];
-    images.map((image) => image.classList.add('active'));
-  };
 
   return (
     <nav className="menu menuHome">
       <ul>
-        <li className="menuItem" id="missioLink" onClick={() => { handleClick('missio'); }}>
+        <li className="menuItem" id="missioLink">
 
           <CustomLink
             href="/missio"
             content={<Trans i18nKey="Menu.mission" />}
             tag="NavLink"
-            onClick={() => { handleClick('missio'); }}
             onMouseEnter={() => { handleMouseEnter('missio'); }}
             onMouseLeave={() => { handleMouseLeave('missio'); }}
           />
         </li>
-        <li className="menuItem" id="zonesLink" onClick={() => { handleClick('zones'); }}>
+        <li className="menuItem" id="zonesLink">
           <CustomLink
             href="/zones"
             content={<Trans i18nKey="Menu.zones" />}
             tag="NavLink"
-            onClick={() => handleClick('zones')}
             onMouseEnter={() => { handleMouseEnter('zones'); }}
             onMouseLeave={() => { handleMouseLeave('zones'); }}
           />
         </li>
-        <li className="menuItem" id="inventaireLink" onClick={() => { handleClick('inventaire'); }}>
+        <li className="menuItem" id="inventaireLink">
           <CustomLink
             href="/inventaire"
             content={<Trans i18nKey="Menu.inventaire" />}
             tag="NavLink"
-            onClick={() => handleClick('inventaire')}
             onMouseEnter={() => { handleMouseEnter('inventaire'); }}
             onMouseLeave={() => { handleMouseLeave('inventaire'); }}
           />
         </li>
-        <li className="menuItem" id="coulissesLink" onClick={() => { handleClick('coulisses'); }}>
+        <li className="menuItem" id="coulissesLink">
           <CustomLink
             href="/coulisses"
             content={<Trans i18nKey="Menu.coulisses" />}
             tag="NavLink"
-            onClick={() => handleClick('coulisses')}
             onMouseEnter={() => { handleMouseEnter('coulisses'); }}
             onMouseLeave={() => { handleMouseLeave('coulisses'); }}
           />

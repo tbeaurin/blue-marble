@@ -32,19 +32,21 @@ const Home = () => {
 
     const imagesMissio = [...document.querySelectorAll('.missio')];
     imagesMissio.map((image) => image.classList.remove('currentPage'));
-    imagesMissio.map((image) => image.classList.remove('focus'));
+    // imagesMissio.map((image) => image.classList.remove('focus'));
+    // imagesMissio.map((image) => image.classList.remove('lose-focus'));
+    imagesMissio.map((image) => image.classList.add('background-hide'));
 
     const imagesZones = [...document.querySelectorAll('.zones')];
     imagesZones.map((image) => image.classList.remove('currentPage'));
-    imagesZones.map((image) => image.classList.remove('focus'));
+    // imagesZones.map((image) => image.classList.remove('focus'));
 
     const imagesInventaire = [...document.querySelectorAll('.inventaire')];
     imagesInventaire.map((image) => image.classList.remove('currentPage'));
-    imagesInventaire.map((image) => image.classList.remove('focus'));
+    // imagesInventaire.map((image) => image.classList.remove('focus'));
 
     const imagesCoulisses = [...document.querySelectorAll('.coulisses')];
     imagesCoulisses.map((image) => image.classList.remove('currentPage'));
-    imagesCoulisses.map((image) => image.classList.remove('focus'));
+    // imagesCoulisses.map((image) => image.classList.remove('focus'));
 
     // Don't display Wrapper on pages
     document.querySelector('#missioFakeWrapper').style.display = 'block';

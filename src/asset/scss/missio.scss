@@ -1,25 +1,55 @@
 #missio {
-    // display: flex;
-    // flex-flow: column;
     height: 100%;
     .header {
-        // flex: 0 1 auto;
-        background-color: yellow;
         position: fixed;
-        width: 100%;
+        width: calc(100% - 210px);
         height: 100px;
+        z-index: 10; 
+        background-color: transparent;
+        display: flex;
+        justify-content:space-between;
+        margin-left: 130px;
+        margin-right: 80px;
+        #menuMissio {
+            .menuItem {
+                display: inline;
+                margin-left: 8px;
+                position: relative;
+                &:before {
+                    content: "";
+                    height: 8px;
+                    background-color: #3a5caa;
+                    position: absolute;
+                    transition: all linear .2s;
+                    margin-top: 16px;
+                    z-index: -1;
+                    width: 0;
+                }
+                &.active {
+                    &:before {
+                        width: 100%;
+                    }
+                }
+            }
+        }
     }  
     .content {
-        // flex: 1 1 auto;
-        background-color: red;
-        overflow-y: scroll;
-        padding-top: 100px;
-        height: 300000px;
+        overflow-y: auto;
+        position: fixed;
+        z-index: 5;
+        height: calc(100vh - 100px);
+        margin-top: 100px;
         .page {
-            height: 100vh;
-            background-color: green;
+            height: calc(100vh - 100px);
             border-bottom: 3px solid purple;
-            // overflow-y: auto;
+            display: flex;
+            p:first-of-type {
+                margin-top: 0;
+            }
+            .page-content {
+                padding: 120px;
+                margin: auto;
+            }
         }
     }
 }

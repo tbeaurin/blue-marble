@@ -47,15 +47,6 @@ module.exports = {
           'postcss-loader',
         ],
       },
-      {
-        test: /\.svg$/,
-        use: [
-          'babel-loader',
-          {
-            loader: 'react-svg-loader',
-          },
-        ],
-      },
       // Scss compiler
       {
         test: /\.scss$/,
@@ -68,10 +59,22 @@ module.exports = {
       },
       // PNG compiler
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|jpg|jpeg|gif)$/i,
         use: [
           {
             loader: 'file-loader',
+          },
+        ],
+      },
+      // SVG loader
+      {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: 'svg-url-loader',
+            options: {
+              limit: 10000,
+            },
           },
         ],
       },

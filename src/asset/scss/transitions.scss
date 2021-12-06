@@ -7,16 +7,28 @@ body {
   #fontStatic.zoomed {
     transform: scale(1.2);
   }
+  .zoomedMissio .background-shape, .zoomedZones .background-shape, .zoomedInventaire .background-shape, .zoomedCoulisses .background-shape {
+    opacity: 0.2;
+    animation: none;
+  }
+  .zoomed .background-shape, .zoomed #stars {
+    animation: none;
+    opacity: 0.2;
+  }
+  .zoomed .background-hide {
+    opacity: initial;
+  }
 
   // MISSIO ZOOM
   #fontMissio {
-    transition: translate linear 0.8s, scale linear 0.8s;
+    transition: translate linear 0.8s, scale linear 0.8s, opacity linear 0.8s;
   }
   #fontMissio.zoomed {
-    transform: translate(-75vw,-13vh) scale(3.2);
-    img {
-      opacity: 0.6;
-    }
+    transform: translate(-82vw,-12vh) scale(3.2);
+    opacity: 0.2;
+    // img {
+    //   opacity: 0.2;
+    // }
   }
   #fontMissio.zoomedZones { transform: translate(-166vw,-13vh) scale(3.2); }
   
@@ -27,10 +39,11 @@ body {
   #fontZones.zoomed {
     transform: translate(-166vw,-13vh) scale(2.8);
     img {
-      opacity: 0.6;
+      opacity: 0.2;
     }
   }
-  #fontZones.zoomedMissio { transform: translate(-75vw,-13vh) scale(2.8); }
+  // #fontZones.zoomedMissio { transform: translate(-75vw,-13vh) scale(2.8); }
+  #fontZones.zoomedMissio { transform: scale(1.2); }
 
   // COULISSES ZOOM
   #fontCoulisses {
@@ -39,10 +52,11 @@ body {
   #fontCoulisses.zoomed {
     transform: translate(-166vw,-13vh) scale(2.8);
     img {
-      opacity: 0.6;
+      opacity: 0.2;
     }
   }
-  #fontCoulisses.zoomedMissio { transform: translate(-75vw,-13vh) scale(2.8); }
+  // #fontCoulisses.zoomedMissio { transform: translate(-75vw,-13vh) scale(2.8); }
+  #fontCoulisses.zoomedMissio { transform: scale(1.2); }
   #fontCoulisses.zoomedZones { transform: translate(-166vw,-13vh) scale(2.8); }
 
   // INVENTAIRE ZOOM
@@ -52,10 +66,11 @@ body {
   #fontInventaire.zoomed {
     transform: translate(-166vw,-13vh) scale(2.8);
     img {
-      opacity: 0.6;
+      opacity: 0.2;
     }
   }
-  #fontInventaire.zoomedMissio { transform: translate(-75vw,-13vh) scale(2.8); }
+  // #fontInventaire.zoomedMissio { transform: translate(-75vw,-13vh) scale(2.8); }
+  #fontInventaire.zoomedMissio { transform: scale(1.2); }
   #fontInventaire.zoomedZones { transform: translate(-166vw,-13vh) scale(2.8); }
 
 }

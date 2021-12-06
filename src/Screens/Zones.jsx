@@ -15,7 +15,6 @@ const Missio = () => {
 
     const images = [...document.querySelectorAll('.zones')];
     images.map((image) => image.classList.add('currentPage'));
-    images.map((image) => image.classList.remove('active'));
     images.map((image) => image.classList.remove('focus'));
     // Don't display Wrapper on pages
     document.querySelector('#missioFakeWrapper').style.display = 'none';

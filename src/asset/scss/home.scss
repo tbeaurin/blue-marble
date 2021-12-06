@@ -32,32 +32,35 @@ img {
 }
 .background-hide {
     opacity: 0;
-    transition: opacity ease-in 1s;
+    transition: opacity linear 1s;
 }
-.lose-focus.dessin:not(.active) {
+.lose-focus.dessin:not(.focus) {
     animation: fadeInAnimation ease-out 0.2s
 }
-.lose-focus.constelation:not(.active) {
+.lose-focus.constelation:not(.focus) {
     animation: fadeInAnimation ease-out 0.4s
 }
-.focus.dessin, .active.dessin {
-    animation: dessinAnimation linear 0.8s infinite, fadeOutAnimation linear 1.2s;
+.focus.dessin {
+    animation: fadeOutAnimation linear 1.2s forwards;
 }
-.focus.constelation, .active.constelation {
+.focus.constelation {
     animation: fadeOutAnimation linear 0.4s forwards;
 }
+.focus.stars {
+    animation: starAnimation linear 4s infinite, fadeOutAnimation linear 0.4s;
+}
 .background-shape {
-    animation: lightBlinkAnimation ease 0.8s infinite, fadeOutAnimation linear 2s;
+    animation: lightBlinkAnimation ease 4s infinite, fadeOutLightAnimation linear 2s;
 }
 
 // CONSTELATIONS WRAPPERS
 #missioFakeWrapper {
-    height: 66vh;
-    width: 20vw;
+    height: 64vh;
+    width: 18vw;
     opacity: 0.2;
     top: 4vh;
     position: absolute;
-    left: 62vh;
+    left: 67vh;
     z-index: 10000;
 }
 #zonesFakeWrapper {
@@ -95,12 +98,6 @@ main {
     width: 100vw;
     height: 100vh;
     animation: fadeOutAnimation ease-in 2.4s forwards;
-    .missio.currentPage {
-        opacity: 0.7;
-    }
-    .zones.currentPage {
-        opacity: 0.7;
-    }
 }
 
 // TITLE & TEXT
@@ -207,11 +204,11 @@ a {
     100% {        opacity: 0;        }
 }
 @keyframes lightBlinkAnimation {
-    0% {        opacity: 0.8;    }
-    50% {        opacity: 1;        }
-    100% {        opacity: 0.8;        }
+    0% {        opacity: 0.4;    }
+    50% {        opacity: 0.5;        }
+    100% {        opacity: 0.4;        }
 }
-@keyframes dessinAnimation {
+@keyframes starAnimation {
     0% {        opacity: 1;    }
     8% {        opacity: 1;        }
     10% {        opacity: 0.95;        }
@@ -233,6 +230,10 @@ a {
 @keyframes fadeOutAnimation {
     0% {        opacity: 0;    }
     100% {        opacity: 1;        }
+}
+@keyframes fadeOutLightAnimation {
+    0% {        opacity: 0;    }
+    100% {        opacity: 0.5;        }
 }
 
 @keyframes loseZIndex {

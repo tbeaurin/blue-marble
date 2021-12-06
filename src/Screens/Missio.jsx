@@ -1,7 +1,13 @@
 import React from 'react';
 import { Trans } from 'react-i18next';
+import { useDebouncedCallback } from 'use-debounce';
+
+import CustomLink from '../Components/CustomLink';
 
 const Missio = () => {
+  const pages = document.getElementsByClassName('page');
+  const menuItems = Array.from(document.getElementsByClassName('menuItem'));
+
   React.useEffect(() => {
     document.querySelector('#fontStatic').classList.add('zoomed');
     document.querySelector('#fontMissio').classList.add('zoomed');
@@ -15,8 +21,8 @@ const Missio = () => {
 
     const images = [...document.querySelectorAll('.missio')];
     images.map((image) => image.classList.add('currentPage'));
-    images.map((image) => image.classList.remove('active'));
     images.map((image) => image.classList.remove('focus'));
+    // images.map((image) => image.classList.remove('background-hide'));
 
     // Don't display Wrapper on pages
     document.querySelector('#missioFakeWrapper').style.display = 'none';
@@ -25,77 +31,212 @@ const Missio = () => {
     document.querySelector('#coulissesFakeWrapper').style.display = 'none';
   }, []);
 
+  const drawAnchor = useDebouncedCallback((e) => {
+    Array.from(pages).forEach((page) => {
+      if (e.nativeEvent.srcElement.scrollTop <= page.offsetTop + 250
+        && e.nativeEvent.srcElement.scrollTop >= page.offsetTop - 250) {
+        menuItems.forEach((i) => i.classList.remove('active'));
+        document.querySelector(`#${page.id}Anchor`).classList.add('active');
+      }
+    });
+  }, [5]);
+
   const handleScroll = (e) => {
-    document.querySelector('#missioStars').style.top = `-${e.nativeEvent.srcElement.scrollTop / 6}px`;
-    document.querySelector('#missioDessin').style.top = `-${e.nativeEvent.srcElement.scrollTop / 6}px`;
-    document.querySelector('#missioConstelation').style.top = `-${e.nativeEvent.srcElement.scrollTop / 6}px`;
-    document.querySelector('#stars').style.top = `-${e.nativeEvent.srcElement.scrollTop / 18}px`;
+    // e.preventDefault();
+    // e.stopPropagation();
+    // centerPage(e);
+    drawAnchor(e);
+    // Change menu class here
+    document.querySelector('#missioStars').style.top = `-${e.nativeEvent.srcElement.scrollTop / 10}px`;
+    document.querySelector('#missioDessin').style.top = `-${e.nativeEvent.srcElement.scrollTop / 10}px`;
+    document.querySelector('#missioConstelation').style.top = `-${e.nativeEvent.srcElement.scrollTop / 10}px`;
+    document.querySelector('#stars').style.top = `-${e.nativeEvent.srcElement.scrollTop / 30}px`;
+    // const pages = document.getElementsByClassName('page');
   };
+
+  const handleClick = (e, anchor) => {
+    e.preventDefault();
+    document.querySelector(`#${anchor}`).scrollIntoView({ behavior: 'smooth' });
+    menuItems.forEach((i) => i.classList.remove('active'));
+    document.querySelector(`#${anchor}Anchor`).classList.add('active');
+  };
+
+  const renderMenu = () => (
+    <nav id="menuMissio">
+      <ul>
+        <li className="menuItem" id="laMissionAnchor" onClick={(e) => handleClick(e, 'laMission')}>
+          <CustomLink
+            href="#laMission"
+            tag="NavLink"
+            content={<Trans i18nKey="Menu.missio.laMission" />}
+          />
+        </li>
+        <li className="menuItem" id="objectifMondeAnchor" onClick={(e) => handleClick(e, 'objectifMonde')}>
+          <CustomLink
+            href="#objectifMonde"
+            tag="NavLink"
+            content={<Trans i18nKey="Menu.missio.objectifMonde" />}
+          />
+        </li>
+        <li className="menuItem" id="anthropoceneAnchor" onClick={(e) => handleClick(e, 'anthropocene')}>
+          <CustomLink
+            href="#anthropocene"
+            tag="NavLink"
+            content={<Trans i18nKey="Menu.missio.anthropocene" />}
+          />
+        </li>
+        <li className="menuItem" id="ecoleUrbaineAnchor" onClick={(e) => handleClick(e, 'ecoleUrbaine')}>
+          <CustomLink
+            href="#ecoleUrbaine"
+            tag="NavLink"
+            content={<Trans i18nKey="Menu.missio.ecoleUrbaine" />}
+          />
+        </li>
+      </ul>
+    </nav>
+  );
 
   return (
     <div className="main">
       <div id="missio">
         <div className="header">
-          <h2>MISSIO</h2>
-          <span className="constelation-name">Missio</span>
+          <div className="header-left">
+            <span className="constelation-name">Missio</span>
+            <h2>La mission</h2>
+          </div>
+          <div className="header-right">
+            {renderMenu()}
+          </div>
         </div>
         <div className="content" onScroll={(e) => handleScroll(e)}>
-          <div className="page" id="missio1">
-            <p className="citation">
-              <Trans i18nKey="Missio.citation" />
-            </p>
-            <p className="citation-content">
-              <span className="author"><Trans i18nKey="Missio.citation.author.1" /></span>
-              <span className="explication"><Trans i18nKey="Missio.citation.author.2" /></span>
-              <span className="source"><Trans i18nKey="Missio.citation.author.3" /></span>
-            </p>
+          <div className="page" id="laMission">
+            <div className="page-content">
+              <p className="citation">
+                <Trans i18nKey="Missio.citation" />
+              </p>
+              <p className="citation-content">
+                <span className="author"><Trans i18nKey="Missio.citation.author.1" /></span>
+                <span className="explication"><Trans i18nKey="Missio.citation.author.2" /></span>
+                <span className="source"><Trans i18nKey="Missio.citation.author.3" /></span>
+              </p>
+            </div>
           </div>
-          <div id="missio2" className="page">
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-            <Trans i18nKey="Missio.citation" />
-
+          <div id="objectifMonde" className="page">
+            <div className="page-content">
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+            </div>
+          </div>
+          <div id="anthropocene" className="page">
+            <div className="page-content">
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+            </div>
+          </div>
+          <div id="ecoleUrbaine" className="page">
+            <div className="page-content">
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+              <Trans i18nKey="Missio.citation" />
+            </div>
           </div>
         </div>
       </div>

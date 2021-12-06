@@ -15,18 +15,18 @@ import Zones from './Screens/Zones';
 
 import black from './asset/img/black.png';
 import stars from './asset/img/stars.png';
-import starsMissio from './asset/img/starsMissio.png';
-import starsZone from './asset/img/starsZone.png';
-import starsInventory from './asset/img/starsInventory.png';
-import starsBackstage from './asset/img/starsBackstage.png';
-import constelationMissio from './asset/img/constelationMissio.png';
-import dessinMissio from './asset/img/dessinMissio.png';
-import constelationZones from './asset/img/constelationZones.png';
-import dessinZones from './asset/img/dessinZones.png';
-import constelationInventaire from './asset/img/constelationInventaire.png';
-import dessinInventaire from './asset/img/dessinInventaire.png';
-import constelationCoulisses from './asset/img/constelationCoulisses.png';
-import dessinCoulisses from './asset/img/dessinCoulisses.png';
+import etoilesMissio from './asset/img/etoilesMission.svg';
+import etoilesZone from './asset/img/etoilesZones.svg';
+import etoilesInventaire from './asset/img/etoilesInventaire.svg';
+import etoilesCoulisses from './asset/img/etoilesCoulisses.svg';
+import constelationMissio from './asset/img/constelationMission.svg';
+import dessinMission from './asset/img/dessinMission.svg';
+import constelationZones from './asset/img/constelationZones.svg';
+import dessinZones from './asset/img/dessinZones.svg';
+import constelationInventaire from './asset/img/constelationInventaire.svg';
+import dessinInventaire from './asset/img/dessinInventaire.svg';
+import constelationCoulisses from './asset/img/constelationCoulisses.svg';
+import dessinCoulisses from './asset/img/dessinCoulisses.svg';
 
 const App = () => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -81,8 +81,6 @@ const App = () => {
   };
 
   const handleClick = (constelation) => {
-    const images = [...document.querySelectorAll(`.${constelation}`)];
-    images.map((image) => image.classList.add('active'));
     document.querySelector(`#${constelation}Link a`).click();
   };
 
@@ -126,28 +124,28 @@ const App = () => {
       />
       <div id="font">
         <div id="fontStatic">
-          <img className="background" id="black" src={black} alt="etoiles" />
+          <img id="black" className="background" src={black} alt="etoiles" />
           <img id="stars" className="background background-shape stars" src={stars} alt="etoiles" />
         </div>
         <div id="fontMissio">
-          <img id="missioStars" className="background background-shape missio starsMissio" src={starsMissio} alt="etoilesMissio" />
+          <img id="missioDessin" className="background background-hide missio dessin" src={dessinMission} alt="dessinMission" />
           <img id="missioConstelation" className="background background-hide missio constelation" src={constelationMissio} alt="constelationMissio" />
-          <img id="missioDessin" className="background background-hide missio dessin" src={dessinMissio} alt="dessinMissio" />
+          <img id="missioStars" className="background background-shape missio stars" src={etoilesMissio} alt="etoilesMissio" />
         </div>
         <div id="fontZones">
-          <img id="zonesStars" className="background background-shape zones starsZones" src={starsZone} alt="etoilesZone" />
-          <img className="background background-hide zones constelation" src={constelationZones} alt="constelationZones" />
           <img className="background background-hide zones dessin" src={dessinZones} alt="dessinZones" />
+          <img className="background background-hide zones constelation" src={constelationZones} alt="constelationZones" />
+          <img id="zonesStars" className="background background-shape zones stars" src={etoilesZone} alt="etoilesZone" />
         </div>
         <div id="fontInventaire">
-          <img className="background background-shape" src={starsInventory} alt="etoilesInventaire" />
-          <img className="background background-hide inventaire constelation" src={constelationInventaire} alt="constelationInventaire" />
           <img className="background background-hide inventaire dessin" src={dessinInventaire} alt="dessinInventaire" />
+          <img className="background background-hide inventaire constelation" src={constelationInventaire} alt="constelationInventaire" />
+          <img className="background background-shape inventaire stars" src={etoilesInventaire} alt="etoilesInventaire" />
         </div>
         <div id="fontCoulisses">
-          <img className="background background-shape" src={starsBackstage} alt="etoilesCoulisses" />
-          <img className="background background-hide coulisses constelation" src={constelationCoulisses} alt="constelationCoulisses" />
           <img className="background background-hide coulisses dessin" src={dessinCoulisses} alt="dessinCoulisses" />
+          <img className="background background-hide coulisses constelation" src={constelationCoulisses} alt="constelationCoulisses" />
+          <img className="background background-shape coulisses stars" src={etoilesCoulisses} alt="etoilesCoulisses" />
         </div>
       </div>
       <main style={{ position: 'absolute', zIndex: 1000 }}>
