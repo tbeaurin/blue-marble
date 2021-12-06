@@ -32,7 +32,7 @@ img {
 }
 .background-hide {
     opacity: 0;
-    transition: opacity linear 1s;
+    transition: opacity ease 0.8s;
 }
 .lose-focus.dessin:not(.focus) {
     animation: fadeInAnimation ease-out 0.2s

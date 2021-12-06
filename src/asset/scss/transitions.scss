@@ -21,7 +21,7 @@ body {
 
   // MISSIO ZOOM
   #fontMissio {
-    transition: translate linear 0.8s, scale linear 0.8s, opacity linear 0.8s;
+    transition: translate linear 0.8s, scale linear 0.8s;
   }
   #fontMissio.zoomed {
     transform: translate(-82vw,-12vh) scale(3.2);
