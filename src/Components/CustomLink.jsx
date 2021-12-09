@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const CustomLink = ({
-  href, content, tag, onMouseEnter, onMouseLeave,
+  href, content, tag, onMouseEnter, onMouseLeave, className,
 }) => {
   const handleMouseEnter = (e) => {
     e.persist();
@@ -29,11 +29,23 @@ const CustomLink = ({
   };
 
   return tag === 'NavLink' ? (
-    <NavLink to={href} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+    <NavLink
+      to={href}
+      className={className}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       {content}
     </NavLink>
   ) : (
-    <a href={href} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>{content}</a>
+    <a
+      href={href}
+      className={className}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      {content}
+    </a>
   );
 };
 

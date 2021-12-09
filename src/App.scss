@@ -55,6 +55,23 @@ h2 {
   margin-top: 0;
 }
 
+// GENERAL STYLE
+.uppercase {
+  text-transform: uppercase;
+}
+.d-flex {
+  display: flex;
+}
+.d-block {
+  display: block;
+}
+.c-black {
+  color: #000;
+}
+.c-primary {
+  color: #3a5caa;
+}
+
 // RESPONSIVE
 @media (max-width: 1441px) {
   .cursor--small {

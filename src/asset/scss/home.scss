@@ -34,14 +34,14 @@ img {
     opacity: 0;
     transition: opacity ease 0.8s;
 }
-.lose-focus.dessin:not(.focus) {
+.lose-focus.dessin {
     animation: fadeInAnimation ease-out 0.2s
 }
-.lose-focus.constelation:not(.focus) {
+.lose-focus.constelation {
     animation: fadeInAnimation ease-out 0.4s
 }
 .focus.dessin {
-    animation: fadeOutAnimation linear 1.2s forwards;
+    animation: fadeOutAnimation linear 0.8s forwards;
 }
 .focus.constelation {
     animation: fadeOutAnimation linear 0.4s forwards;
@@ -50,7 +50,7 @@ img {
     animation: starAnimation linear 4s infinite, fadeOutAnimation linear 0.4s;
 }
 .background-shape {
-    animation: lightBlinkAnimation ease 4s infinite, fadeOutLightAnimation linear 2s;
+    animation: lightBlinkAnimation ease 4s infinite, fadeOutLightAnimation linear 1s;
 }
 
 // CONSTELATIONS WRAPPERS

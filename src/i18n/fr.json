@@ -4,8 +4,21 @@
     "Menu.mission" : "La Mission",
     "Menu.zones" : "Les Zones",
 
+    "Menu.accueil": "Accueil",
+    "Menu.missio.laMission": "La Mission",
+    "Menu.missio.objectifMonde": "Objectif Monde",
+    "Menu.missio.anthropocene": "Anthropocène",
+    "Menu.missio.ecoleUrbaine": "Ecole Urbaine de Lyon",
+    
     "Missio.citation": "\"Il était impossible de voir les étoiles en ville. Or, quelle meilleure expérience, depuis le sol, pour se rappeler la petitesse et la fragilité de la Terre ?\"",
     "Missio.citation.author.1": "Major A",
     "Missio.citation.author.2": "A propos de la zone 1",
-    "Missio.citation.author.3": "Extrait de son interview pour A2022 Magazine"
+    "Missio.citation.author.3": "Extrait de son interview pour A2022 Magazine",
+    "Missio.majorQ.title": "Major Q",
+    "Missio.majorQ.content.1": "Géologue et docteur en microbiologie",
+    "Missio.majorQ.content.2": "Missionné à la collecte et de l'analyse des matières et objets anthropocèniques",
+    "Missio.majorA.title": "Major A",
+    "Missio.majorA.content.1": "Architecte et docteur en urbanisme",
+    "Missio.majorA.content.2": "Missionné à la photographie des paysages et des activités anthropocèniques"
+    
 }

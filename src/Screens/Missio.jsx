@@ -4,6 +4,9 @@ import { useDebouncedCallback } from 'use-debounce';
 
 import CustomLink from '../Components/CustomLink';
 
+import QuentinImg from '../asset/img/Quentin.png';
+import AdrienImg from '../asset/img/Adrien.png';
+
 const Missio = () => {
   const pages = document.getElementsByClassName('page');
   const menuItems = Array.from(document.getElementsByClassName('menuItem'));
@@ -92,6 +95,14 @@ const Missio = () => {
             content={<Trans i18nKey="Menu.missio.ecoleUrbaine" />}
           />
         </li>
+        <li className="menuItem" id="ecoleUrbaineAnchor">
+          <CustomLink
+            href="/"
+            tag="NavLink"
+            className="uppercase"
+            content={<Trans i18nKey="Menu.accueil" />}
+          />
+        </li>
       </ul>
     </nav>
   );
@@ -123,41 +134,45 @@ const Missio = () => {
           </div>
           <div id="objectifMonde" className="page">
             <div className="page-content">
-              <Trans i18nKey="Missio.citation" />
-              <Trans i18nKey="Missio.citation" />
-              <Trans i18nKey="Missio.citation" />
-              <Trans i18nKey="Missio.citation" />
-              <Trans i18nKey="Missio.citation" />
-              <Trans i18nKey="Missio.citation" />
-              <Trans i18nKey="Missio.citation" />
-              <Trans i18nKey="Missio.citation" />
-              <Trans i18nKey="Missio.citation" />
-              <Trans i18nKey="Missio.citation" />
-              <Trans i18nKey="Missio.citation" />
-              <Trans i18nKey="Missio.citation" />
-              <Trans i18nKey="Missio.citation" />
-              <Trans i18nKey="Missio.citation" />
-              <Trans i18nKey="Missio.citation" />
-              <Trans i18nKey="Missio.citation" />
-              <Trans i18nKey="Missio.citation" />
-              <Trans i18nKey="Missio.citation" />
-              <Trans i18nKey="Missio.citation" />
-              <Trans i18nKey="Missio.citation" />
-              <Trans i18nKey="Missio.citation" />
-              <Trans i18nKey="Missio.citation" />
-              <Trans i18nKey="Missio.citation" />
-              <Trans i18nKey="Missio.citation" />
-              <Trans i18nKey="Missio.citation" />
-              <Trans i18nKey="Missio.citation" />
-              <Trans i18nKey="Missio.citation" />
-              <Trans i18nKey="Missio.citation" />
-              <Trans i18nKey="Missio.citation" />
-              <Trans i18nKey="Missio.citation" />
-              <Trans i18nKey="Missio.citation" />
-              <Trans i18nKey="Missio.citation" />
-              <Trans i18nKey="Missio.citation" />
-              <Trans i18nKey="Missio.citation" />
-              <Trans i18nKey="Missio.citation" />
+              <div className="d-flex">
+                <div>
+                  <div className="major">
+                    <div className="zoomedImgContainer" id="imgMajorQ">
+                      <img src={QuentinImg} alt="major Q" />
+                    </div>
+                    <div className="c-black imgDescription" id="descriptionMajorQ">
+                      <span className="title imgDescriptionTitle d-block c-primary">
+                        <Trans i18nKey="Missio.majorQ.title" />
+                      </span>
+                      <span className="d-block imgDescriptionContent">
+                        <b><Trans i18nKey="Missio.majorQ.content.1" /></b>
+                      </span>
+                      <span className="d-block imgDescriptionContent">
+                        <Trans i18nKey="Missio.majorQ.content.2" />
+                      </span>
+                    </div>
+                  </div>
+                  <div className="major">
+                    <div className="zoomedImgContainer" id="imgMajorA">
+                      <img src={AdrienImg} alt="major A" />
+                    </div>
+                    <div className="c-black imgDescription" id="descriptionMajorA">
+                      <span className="title imgDescriptionTitle d-block c-primary">
+                        <Trans i18nKey="Missio.majorA.title" />
+                      </span>
+                      <span className="d-block imgDescriptionContent">
+                        <b><Trans i18nKey="Missio.majorA.content.1" /></b>
+                      </span>
+                      <span className="d-block imgDescriptionContent">
+                        <Trans i18nKey="Missio.majorA.content.2" />
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h1>Objectif Monde</h1>
+                </div>
+              </div>
             </div>
           </div>
           <div id="anthropocene" className="page">
