@@ -38,14 +38,13 @@ const CustomLink = ({
       {content}
     </NavLink>
   ) : (
-    <a
-      href={href}
+    <div
       className={className}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
       {content}
-    </a>
+    </div>
   );
 };
 

@@ -133,14 +133,14 @@ const App = () => {
           <img id="missioStars" className="background background-shape missio stars" src={etoilesMissio} alt="etoilesMissio" />
         </div>
         <div id="fontZones">
-          <img className="background background-hide zones dessin" src={dessinZones} alt="dessinZones" />
-          <img className="background background-hide zones constelation" src={constelationZones} alt="constelationZones" />
+          <img id="zonesDessin" className="background background-hide zones dessin" src={dessinZones} alt="dessinZones" />
+          <img id="zonesConstelation" className="background background-hide zones constelation" src={constelationZones} alt="constelationZones" />
           <img id="zonesStars" className="background background-shape zones stars" src={etoilesZone} alt="etoilesZone" />
         </div>
         <div id="fontInventaire">
-          <img className="background background-hide inventaire dessin" src={dessinInventaire} alt="dessinInventaire" />
-          <img className="background background-hide inventaire constelation" src={constelationInventaire} alt="constelationInventaire" />
-          <img className="background background-shape inventaire stars" src={etoilesInventaire} alt="etoilesInventaire" />
+          <img id="inventaireDessin" className="background background-hide inventaire dessin" src={dessinInventaire} alt="dessinInventaire" />
+          <img id="inventaireConstelation" className="background background-hide inventaire constelation" src={constelationInventaire} alt="constelationInventaire" />
+          <img id="inventaireStars" className="background background-shape inventaire stars" src={etoilesInventaire} alt="etoilesInventaire" />
         </div>
         <div id="fontCoulisses">
           <img className="background background-hide coulisses dessin" src={dessinCoulisses} alt="dessinCoulisses" />

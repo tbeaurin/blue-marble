@@ -1,17 +1,3 @@
-// VARIABLES
-:root {
-    --underline-intrinsic-width: 8;
-    --underline-width: 12;
-    --underline-color: #3a5caa;
-    --underline-cap-width: 4px;
-    --underline-offset-y: -2px;
-    --underline-padding-left: 7px;
-    --underline-padding-right: 18px;
-}
-img {
-    overflow: hidden;
-}
-
 // BACKGROUND
 #font {
     position: absolute;
@@ -117,43 +103,48 @@ h1 {
     font-weight: 600;
     margin-bottom: 16px;
     margin-top: 0;
-    .small {        font-size: 24px;    }
-    p { margin-bottom: -5px; margin-top: 0;}
+    p { 
+        margin-bottom: -5px; 
+        margin-top: 0;
+    }
     span {
-        display: inline;
-        --underline-width-scale: calc(var(--underline-width) / var(--underline-intrinsic-width));
-        padding-left: calc(var(--underline-padding-left) + calc(var(--underline-cap-width) * var(--underline-width-scale)));
-        padding-right: calc(var(--underline-padding-right) + calc(var(--underline-cap-width) * var(--underline-width-scale)));
-        box-decoration-break: clone;
-        background-repeat: no-repeat;
-        background-image:
-        linear-gradient(180deg, var(--underline-color), var(--underline-color));
-        background-position-x:
-        calc(var(--underline-cap-width) * var(--underline-width-scale)),
-        0,
-        100%;
-        background-position-y: calc(100% - var(--underline-offset-y) * -1);
-        background-size:
-        calc(100% - calc(var(--underline-cap-width) * var(--underline-width-scale) * 2)) calc(var(--underline-width) * 1px),
-        auto calc(var(--underline-width) * 1px),
-        auto calc(var(--underline-width) * 1px);
+        &:before {
+            content: "";
+            height: 8px;
+            background-color: #3a5caa;
+            position: absolute;
+            z-index: -1; 
+            transition: all linear .2s;
+            margin-top: 23px;
+            width: calc(100% + 8px);
+            left: -4px;
+          }
+          display: inline;
+          position: relative;
+        }
+    .small {
+        font-size: 24px;
+        &:before {
+            height: 6px;
+            margin-top: 25px;
+            }
     }
   }
-  #anrText, .logos {
-    width: 268px;
-    text-align: justify;
-    font-size: 12px;
-    padding-left: 5px;
-    line-height: 13px;
-  }
-  #anrText { margin-top: 6px;}
-  .logos {
-    display: flex;
-    align-items: center;
-    img {
-        padding-right: 8px;
-    }
-  }
+#anrText, .logos {
+width: 268px;
+text-align: justify;
+font-size: 12px;
+padding-left: 5px;
+line-height: 13px;
+}
+#anrText { margin-top: 6px;}
+.logos {
+display: flex;
+align-items: center;
+img {
+    padding-right: 8px;
+}
+}
 
 // MENU
 a {

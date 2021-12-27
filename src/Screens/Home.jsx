@@ -1,4 +1,5 @@
 import React from 'react';
+import { Trans } from 'react-i18next';
 
 import logoANR from '../asset/img/logo-anr.png';
 import logoEUL from '../asset/img/logo-eul.png';
@@ -65,8 +66,8 @@ const Home = () => {
     <div id="home">
       <section id="homeLeft">
         <h1>
-          <p><span className="small">Programme</span></p>
-          <span>Blue Marble</span>
+          <p><span className="small"><Trans i18nKey="Title.1" /></span></p>
+          <span><Trans i18nKey="Title.2" /></span>
         </h1>
         <div className="logos">
           <img className="logo" src={logoEUL} alt="Ecole Urbaine de Lyon" />
