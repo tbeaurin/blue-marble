@@ -20,6 +20,19 @@ const Zones = () => {
   const menuItems = Array.from(document.getElementsByClassName('menuItem'));
   const [y, setY] = React.useState(window.scrollY);
 
+  const [openModal, setOpenModal] = React.useState(false);
+
+  const zone1 = [
+    {
+      image: TestCarousel, description: <Trans i18nKey="Popup.zone1.description1" />, important: <Trans i18nKey="Popup.zone1.description1.important" />, link: 'www.sondekla.com/user/event/12046',
+    },
+    { image: TestCarousel2, description: <Trans i18nKey="Popup.zone1.description2" /> },
+    { image: TestCarousel3, description: <Trans i18nKey="Popup.zone1.description3" /> },
+    { image: TestCarousel4, description: <Trans i18nKey="Popup.zone1.description4" /> },
+    { image: TestCarousel5, description: <Trans i18nKey="Popup.zone1.description5" /> },
+    { image: TestCarousel6, description: <Trans i18nKey="Popup.zone1.description6" /> },
+  ];
+
   React.useEffect(() => {
     document.querySelector('#fontStatic').classList.add('zoomed');
     document.querySelector('#fontZones').classList.add('zoomed');
@@ -86,6 +99,11 @@ const Zones = () => {
     menuItems.forEach((i) => i.classList.remove('active'));
     document.querySelector(`#${anchor}Anchor`).classList.add('active');
   };
+
+  const handleOpenModal = React.useCallback(() => {
+    console.log('handleOpenModal');
+    setOpenModal(!openModal);
+  }, [openModal]);
 
   const renderMenu = () => (
     <nav id="menuZones" className="menu-page">
@@ -180,19 +198,28 @@ const Zones = () => {
                   <span><Trans i18nKey="Zones.zone1.title.1" /></span>
                   <span><Trans i18nKey="Zones.zone1.title.2" /></span>
                 </h2>
-                <CustomLink content={(
-                  <Popup
-                    trigger={(
-                      <span className="button-open">
-                        <Trans i18nKey="Zones.open" />
-                      </span>
-                    )}
-                    modal
-                  >
-                    <PopupCarousel images={[TestCarousel, TestCarousel2, TestCarousel3, TestCarousel4, TestCarousel5, TestCarousel6]} />
-                  </Popup>
-                )}
+                <CustomLink
+                  content={(
+                    <span className="button-open">
+                      <Trans i18nKey="Zones.open" />
+                    </span>
+                  )}
+                  onClick={() => { handleOpenModal(); }}
                 />
+                <Popup modal open={openModal}>
+                  <PopupCarousel
+                    content={zone1}
+                    title={(
+                      <>
+                        <span><Trans i18nKey="Zones.zone1.title.1" /></span>
+                        <span><Trans i18nKey="Zones.zone1.title.2" /></span>
+                      </>
+                    )}
+                    subtitle1={<Trans i18nKey="Zones.zone1.subtitle" />}
+                    subtitle2={<Trans i18nKey="Zones.zone1.title" />}
+                    handleOpenModal={() => { handleOpenModal(); }}
+                  />
+                </Popup>
               </div>
             </div>
           </div>

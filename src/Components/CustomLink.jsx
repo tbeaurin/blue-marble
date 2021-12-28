@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const CustomLink = ({
-  href, content, tag, onMouseEnter, onMouseLeave, className,
+  href, content, tag, onMouseEnter, onMouseLeave, className, onClick, target,
 }) => {
   const handleMouseEnter = (e) => {
     e.persist();
@@ -28,7 +28,8 @@ const CustomLink = ({
     }
   };
 
-  return tag === 'NavLink' ? (
+  switch (tag) {
+  case 'NavLink': return (
     <NavLink
       to={href}
       className={className}
@@ -37,15 +38,30 @@ const CustomLink = ({
     >
       {content}
     </NavLink>
-  ) : (
+  );
+  case 'Link': return (
+    <a
+      className={className}
+      href={href}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      onClick={onClick}
+      target={target}
+    >
+      {content}
+    </a>
+  );
+  default: return (
     <div
       className={className}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      onClick={onClick}
     >
       {content}
     </div>
   );
+  }
 };
 
 export default CustomLink;

@@ -94,6 +94,12 @@ a:hover {
 .flex-row {
   flex-direction: row;
 }
+.ta-justify {
+  text-align: justify;
+}
+.ta-right {
+  text-align: right;
+}
 .d-block {
   display: block;
 }
@@ -109,6 +115,9 @@ a:hover {
 .h-100vh {
   height: 100vh
 }
+.w-50 {
+  width: 50%;
+}
 .mt-32 {
   margin-top: 32px;
 }
@@ -120,6 +129,9 @@ a:hover {
 }
 .mw-700 {
   max-width: 700px;
+}
+.p-80 {
+  padding: 80px;
 }
 
 // MENU

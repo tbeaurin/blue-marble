@@ -95,8 +95,13 @@
     "Zones.citation.author.2": "Extrait de son interview pour A2022 Magazine",
 
     "Zones.zone1.subtitle": "Zone 1",
+    "Zones.zone1.title": "Centre-Ville",
     "Zones.zone1.title.1": "Centre-",
     "Zones.zone1.title.2": "ville",
-    "Zones.open": "Ouvrir"
+    "Zones.open": "Ouvrir",
 
+    "Popup.close": "Retour",
+    "Popup.zone1.description1": "Aux défis de l'urbanisation et de l'anthropocène correspondent à la fois de nouveaux champs de recherche et de formation, de nouvelles professions et une mutation de la pensée, des pratiques et des corps de doctrine de la plupart des métiers existants, en particulier ceux de l'ingénierie urbaine, de l'architecture, de l'aménagement, de l'urbanisme, du paysage",
+    "Popup.zone1.description1.important": "Ecouter le podcast via le lien suivant :",
+    "Popup.zone1.description1.link": "www.sondekla.com/user/event/12046"
 }

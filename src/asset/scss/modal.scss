@@ -1,3 +1,67 @@
+// RESPONSIVE
+
+// LITTLE SCREEN
+@media (max-width: 1441px) {
+    #carousel {
+        img, .next-wrapper, .previous-wrapper {
+            width: 500px;
+            height: 500px;
+        }
+        img.next, .next-wrapper {
+            top: calc(50% - 2.5vh);
+            left: calc(50% - 3vw);
+        }
+        img.previous, .previous-wrapper {
+            top: calc(50% - 68vh);
+            left: calc(50% - 37.5vw);
+        }
+        .previous-hide {
+            top: -42vh;
+            left: 0;
+        }
+        .next-hide {
+            top: 75vh;
+            left: 61vw;
+        }
+    }
+    #popupMain {
+        .popup-title {
+            padding-left: 80px;
+        }
+    }
+}
+
+// BIG SCREEN
+@media (min-width: 1441px) {
+    #carousel {
+        img, .next-wrapper, .previous-wrapper {
+            width: 650px;
+            height: 650px;
+        }
+        img.next, .next-wrapper {
+            top: calc(50% - 2.5vh);
+            left: calc(50% - 3vw);
+        }
+        img.previous, .previous-wrapper {
+            top: calc(50% - 69vh);
+            left: calc(50% - 36.8vw);
+        }
+        .previous-hide {
+            top: -46vh;
+            left: 0vw;
+        }
+        .next-hide {
+            top: 75vh;
+            left: 61vw;
+        }
+    }
+    #popupMain {
+        .popup-title {
+            padding-left: 130px;
+        }
+    }
+}
+
 .popup-overlay {
     z-index: 9999 !important;
 }
@@ -13,47 +77,101 @@
 #carousel > div {
     margin: auto;
 }
-img, .next-wrapper, .previous-wrapper {
-    transition: opacity .8s, top .8s, left .8s, right .8s, scale .8s;
-    width: 500px;
-    height: 500px;
+#carousel {
+    img, .next-wrapper, .previous-wrapper {
+        transition: all .8s;
+    }
+    img.previous, img.next, .next-wrapper, .previous-wrapper {
+        transform: scale(0.25);
+        opacity: .5;
+        position: absolute;
+        z-index: 2;
+    }
+    img.current {
+        margin: auto;
+        z-index: 3;
+        position: absolute;
+        top: 15.5vh;
+        left: 30vw;
+    }
+    img.d-none {
+        display: none;
+    }
+    .previous-wrapper, .next-wrapper {
+        z-index: 10;
+    }
+    .previous-hide, .next-hide {
+        opacity: 0.5;
+        position: absolute;
+        transform: scale(0.25);
+        background-color: yellow;
+    }
 }
-img.previous, img.next, .next-wrapper, .previous-wrapper {
-    scale: 0.25;
-    opacity: .5;
+#popupMain {
+    color: #000;
+    overflow-y: auto;
+    transition: margin 0.4s;
+    font-family: "Montserrat";
+    .popup-title {
+        margin: auto;
+    }
+    .popup-subtitle {
+        color: #3a5caa;
+        margin-left: 104px;
+        margin-bottom: -40px;
+        line-height: 28px;
+        span {
+            display: block;
+        }
+        .subtitle {
+            text-transform: uppercase;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .title {
+            font-size: 20px;
+        }
+    }
+    h2 {
+        color: #718CBF;
+        font-size: 128px;
+        line-height: 128px;
+        text-transform: uppercase;
+        text-align: left;
+        margin: -10px 0 0 0;
+        opacity: .25;
+        span {
+            display: block;
+        }
+    }
+    .popup-description {
+        font-size: 14px;
+        margin-left: 15vw;
+        padding-right: 120px;
+        p {
+            margin-bottom: 24px;
+        }
+        span, a {
+            display: block;
+            margin-bottom: 8px;
+        }
+    }
+    .close {
+        margin-left: 11.5vw;
+        position: absolute;
+        width: 25%;
+        top: 14vh;
+        text-align: right;
+        text-transform: uppercase;
+        font-size: 26px;
+        font-weight: bold;
+    }
+}
+
+#popupMain, #carousel {
     position: absolute;
-}
-img.current {
-    margin: auto;
-    z-index: 1;
-    position: absolute;
-    top: calc(50% - 250px);
-    left: calc(50% - 250px);
-}
-img.next, .next-wrapper {
-    top: calc(50%);
-    left: calc(50%);
-}
-img.previous, .previous-wrapper {
-    top: calc(50% - 500px);
-    left: calc(50% - 500px);
-}
-img.d-none {
-    display: none;
-}
-.previous-wrapper, .next-wrapper {
-    z-index: 10;
-}
-.previous-hide, .next-hide {
-    opacity: 0;
-    position: absolute;
-    scale: 0;
-}
-.previous-hide {
-    top: calc(0% - 515px);
-    left: calc(0% - 250px)
-}
-.next-hide {
-    top: calc(50% + 515px);
-    left: calc(50% + 250px)
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
 }
