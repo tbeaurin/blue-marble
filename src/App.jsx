@@ -12,6 +12,7 @@ import { TransitionGroup } from 'react-transition-group';
 import Home from './Screens/Home';
 import Missio from './Screens/Missio';
 import Zones from './Screens/Zones';
+import Inventaire from './Screens/Inventaire';
 
 import black from './asset/img/black.png';
 import stars from './asset/img/stars.png';
@@ -90,6 +91,7 @@ const App = () => {
         <Route path="/" component={Home} exact />
         <Route path="/missio" component={Missio} />
         <Route path="/zones" component={Zones} />
+        <Route path="/inventaire" component={Inventaire} />
       </Switch>
     </TransitionGroup>
   ));

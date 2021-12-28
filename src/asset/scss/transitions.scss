@@ -30,7 +30,7 @@ body {
     //   opacity: 0.2;
     // }
   }
-  #fontMissio.zoomedZones { transform: translate(-166vw,-13vh) scale(3.2); }
+  #fontMissio.zoomedZones { transform: scale(1.35); }
   
   // ZONES ZOOM
   #fontZones {
@@ -54,21 +54,19 @@ body {
       opacity: 0.2;
     }
   }
-  #fontCoulisses.zoomedMissio { transform: scale(1.2); }
-  #fontCoulisses.zoomedZones { transform: translate(-166vw,-13vh) scale(2.8); }
+  #fontCoulisses.zoomedMissio, #fontCoulisses.zoomedZones { transform: scale(1.2); }
 
   // INVENTAIRE ZOOM
   #fontInventaire {
     transition: all linear 0.8s;
   }
   #fontInventaire.zoomed {
-    transform: translate(-166vw,-13vh) scale(2.8);
+    transform: translate(-14vw, -130vh) scale(2.3);
     img {
       opacity: 0.2;
     }
   }
-  #fontInventaire.zoomedMissio { transform: scale(1.2); }
-  #fontInventaire.zoomedZones { transform: translate(-166vw,-13vh) scale(2.8); }
+  #fontInventaire.zoomedMissio, #fontInventaire.zoomedZones { transform: scale(1.2); }
 
 }
 
