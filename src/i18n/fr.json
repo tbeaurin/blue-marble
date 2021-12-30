@@ -20,10 +20,22 @@
     "Menu.zones.5": "Zone 4",
     "Menu.zones.6": "Zone 5",
 
+    "Menu.inventaire.1": "Inventaire",
+    "Menu.inventaire.2": "Studio",
+    "Menu.inventaire.3": "Terrain",
+
+    "Menu.coulisses.1": "Les coulisses",
+    "Menu.coulisses.2": "Vidéo",
+    "Menu.coulisses.3": "Remerciements",
+
     "Missio.constelation": "Missio",
     "Missio.title": "La mission",
     "Zones.constelation": "Areis",
     "Zones.title": "Les zones",
+    "Inventaire.constelation": "Inventarium",
+    "Inventaire.title": "L'inventaire",
+    "Coulisses.constelation": "Scaena",
+    "Coulisses.title": "Les coulisses",
     
     "Missio.citation": "\"Il était impossible de voir les étoiles en ville. Or, quelle meilleure expérience, depuis le sol, pour se rappeler la petitesse et la fragilité de la Terre ?\"",
     "Missio.citation.author.1": "Major A",
@@ -98,10 +110,24 @@
     "Zones.zone1.title": "Centre-Ville",
     "Zones.zone1.title.1": "Centre-",
     "Zones.zone1.title.2": "ville",
-    "Zones.open": "Ouvrir",
 
+    "Zones.zone2.subtitle": "Zone 2",
+    "Zones.zone2.title": "Périphérie",
+    
+    "Popup.open": "Ouvrir",
     "Popup.close": "Retour",
     "Popup.zone1.description1": "Aux défis de l'urbanisation et de l'anthropocène correspondent à la fois de nouveaux champs de recherche et de formation, de nouvelles professions et une mutation de la pensée, des pratiques et des corps de doctrine de la plupart des métiers existants, en particulier ceux de l'ingénierie urbaine, de l'architecture, de l'aménagement, de l'urbanisme, du paysage",
     "Popup.zone1.description1.important": "Ecouter le podcast via le lien suivant :",
-    "Popup.zone1.description1.link": "www.sondekla.com/user/event/12046"
+    "Popup.zone1.description1.link": "www.sondekla.com/user/event/12046",
+
+    "Inventaire.citation.1": "\"- Le Monde dans lequel nous évoluions était à nos pieds.",
+    "Inventaire.citation.2": "- Il suffisait de se baisser et de ramasser\"",
+    "Inventaire.citation.author.1": "Major A et Major Q",
+    "Inventaire.citation.author.2": "Extrait de leur interview pour A2022 Magazine",
+
+    "Inventaire.studio.subtitle": "Inventaire",
+    "Inventaire.studio.title": "Studio",
+
+    "Coulisses.citation.1": "160 lieux | 2 320 kms | 72 pellicules",
+    "Coulisses.citation.2": "Altitude la plus élevée : 3200m | Température la plus élevée : 34°C"
 }

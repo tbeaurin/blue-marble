@@ -3,79 +3,93 @@
     position: absolute;
     z-index: 2;
     animation: loseZIndex linear 2.4s forwards;
-}
-#black {
-    z-index: 3;
-    animation: fadeInAnimation linear 1.2s forwards;
-}
-.background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: fill;
-}
-.background-hide {
-    opacity: 0;
-    transition: opacity ease 0.8s;
-}
-.lose-focus.dessin {
-    animation: fadeInAnimation ease-out 0.2s
-}
-.lose-focus.constelation {
-    animation: fadeInAnimation ease-out 0.4s
-}
-.focus.dessin {
-    animation: fadeOutAnimation linear 0.8s forwards;
-}
-.focus.constelation {
-    animation: fadeOutAnimation linear 0.4s forwards;
-}
-.focus.stars {
-    animation: starAnimation linear 4s infinite, fadeOutAnimation linear 0.4s;
-}
-.background-shape {
-    animation: lightBlinkAnimation ease 4s infinite, fadeOutLightAnimation linear 1s;
-}
+    #missioName {
+        top: 6vh;
+        left: 24vw;
+    }
+    #zonesName {
+        top: 6vh;
+        left: 53vw;
+    }
+    #inventaireName {
+        top: 75vh;
+        left: 41vw;
+    }
+    #coulissesName {
+        top: 64vh;
+        left: 52vw;
+    }
+    .background-constelation-title {
+        font-size: 48px;
+        transition: opacity ease-out .4s;
+        opacity: 0;
+    }
+    #black {
+        z-index: 3;
+        animation: fadeInAnimation linear 1.2s forwards;
+    }
+    .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: fill;
+    }
+    .background-hide {
+        opacity: 0;
+        transition: opacity ease 0.8s;
+    }
+    .dessin { transition: opacity ease-out .2s; }
+    .constelation { transition: opacity ease-out .4s; }
+    .lose-focus.dessin, .lose-focus.constelation, .lose-focus.background-constelation-title { opacity: 0; }
+    .focus.dessin, .focus.constelation { opacity: 1; }
+    .focus.background-constelation-title { opacity: .5 ;}
+    .focus.stars {
+        animation: starAnimation linear 4s infinite, fadeOutAnimation linear 0.4s;
+    }
+    .background-shape {
+        animation: lightBlinkAnimation ease 4s infinite, fadeOutLightAnimation linear 1s;
+    }
 
-// CONSTELATIONS WRAPPERS
-#missioFakeWrapper {
-    height: 64vh;
-    width: 18vw;
-    opacity: 0.2;
-    top: 4vh;
-    position: absolute;
-    left: 67vh;
-    z-index: 10000;
+    // CONSTELATIONS WRAPPERS
 }
-#zonesFakeWrapper {
-    height: 59vh;
-    width: 30vw;
-    opacity: .2;
-    top: 4vh;
-    position: absolute;
-    left: 126vh;
-    z-index: 10000;
-}
-#inventaireFakeWrapper {
-    height: 28vh;
-    width: 41vw;
-    opacity: .2;
-    top: 70vh;
-    position: absolute;
-    left: 12.7vh;
-    z-index: 10000;
-}
-#coulissesFakeWrapper {
-    height: 50vh;
-    width: 29vw;
-    opacity: .2;
-    top: 46vh;
-    position: absolute;
-    left: 131vh;
-    z-index: 10000;
-}
+        #missioFakeWrapper {
+            height: 64vh;
+            width: 18vw;
+            opacity: 0.2;
+            top: 4vh;
+            position: absolute;
+            left: 67vh;
+            z-index: 10000;
+        }
+        #zonesFakeWrapper {
+            height: 59vh;
+            width: 30vw;
+            opacity: .2;
+            top: 4vh;
+            position: absolute;
+            left: 126vh;
+            z-index: 10000;
+        }
+        #inventaireFakeWrapper {
+            height: 28vh;
+            width: 41vw;
+            opacity: .2;
+            top: 70vh;
+            position: absolute;
+            left: 12.7vh;
+            z-index: 10000;
+        }
+        #coulissesFakeWrapper {
+            height: 50vh;
+            width: 29vw;
+            opacity: .2;
+            top: 46vh;
+            position: absolute;
+            left: 131vh;
+            z-index: 10000;
+        }
 
 // CONTENT
 main {
@@ -184,11 +198,11 @@ a {
             width: 0;
             left: -4px;
         }
-    }
-    .menuItem a.focus {
-        &:before {
-            left: -4px;
-            width: calc(100% + 12px);
+        &:hover {
+            &:before {
+                left: -4px;
+                width: calc(100% + 12px);
+            }
         }
     }
 }

@@ -4,6 +4,7 @@ import { useDebouncedCallback } from 'use-debounce';
 import { Trans } from 'react-i18next';
 
 import CustomLink from './CustomLink';
+import { initializeCursor, openCursor } from '../Functions/functions';
 
 const PopupCarousel = ({
   content = [], handleOpenModal, title, subtitle1, subtitle2,
@@ -38,23 +39,15 @@ const PopupCarousel = ({
 
   const handleMouseEnter = (e) => {
     e.persist();
-    const render = () => {
-      document.querySelector('.cursor--small').classList.add('large');
-      document.querySelector('.cursor--ext').classList.add('large');
-    };
-    requestAnimationFrame(render);
+    openCursor();
   };
 
   const handleMouseLeave = (e) => {
     e.persist();
-    const render = () => {
-      document.querySelector('.cursor--small').classList.remove('large');
-      document.querySelector('.cursor--ext').classList.remove('large');
-    };
-    requestAnimationFrame(render);
+    initializeCursor();
   };
 
-  const handlePrev = React.useCallback((e) => {
+  const handlePrev = React.useCallback(() => {
     setStep((step) => (step - 1 >= 0 ? step - 1 : content.length - 1));
     // delete next image
     const nextHide = Array.from(document.getElementsByClassName('next-hide'))[0];
@@ -95,7 +88,7 @@ const PopupCarousel = ({
     element.appendChild(newDiv);
   }, [content, prevStep2]);
 
-  const handleNext = React.useCallback((e) => {
+  const handleNext = React.useCallback(() => {
     setStep((step) => (step + 1 <= content.length - 1 ? step + 1 : 0));
 
     // delete previous image
@@ -143,6 +136,15 @@ const PopupCarousel = ({
     }
   }, [25]);
 
+  const scrollCarouselFast = useDebouncedCallback((direction) => {
+    if (direction === 'up') {
+      handleNext();
+    }
+    if (direction === 'down') {
+      handlePrev();
+    }
+  }, [25]);
+
   const handleWheel = React.useCallback((e) => {
     if (e.deltaY < 0) {
       scrollCarousel('down');
@@ -157,17 +159,13 @@ const PopupCarousel = ({
         <div className="wrappers">
           <div
             className="previous-wrapper"
-            onClick={(e) => {
-              handlePrev(e);
-            }}
+            onClick={() => { scrollCarouselFast('down'); }}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           />
           <div
             className="next-wrapper"
-            onClick={(e) => {
-              handleNext(e);
-            }}
+            onClick={() => { scrollCarouselFast('up'); }}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           />

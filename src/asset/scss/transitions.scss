@@ -8,12 +8,12 @@ body {
     transform: scale(1.2);
   }
   .zoomedMissio .background-shape, .zoomedZones .background-shape, .zoomedInventaire .background-shape, .zoomedCoulisses .background-shape {
-    opacity: 0.2;
+    opacity: .2 !important;
     animation: none;
   }
   .zoomed .background-shape, .zoomed #stars {
     animation: none;
-    opacity: 0.2;
+    opacity: .2 !important;
   }
   .zoomed .background-hide {
     opacity: initial;
@@ -25,36 +25,35 @@ body {
   }
   #fontMissio.zoomed {
     transform: translate(-82vw,-12vh) scale(3.2);
-    opacity: 0.2;
-    // img {
-    //   opacity: 0.2;
-    // }
+    img {
+      opacity: .2 !important;
+    }
   }
-  #fontMissio.zoomedZones { transform: scale(1.35); }
+  #fontMissio.zoomedZones, #fontMissio.zoomedCoulisses, #fontMissio.zoomedInventaire { transform: scale(1.35); }
   
   // ZONES ZOOM
   #fontZones {
     transition: all linear 0.8s;
   }
   #fontZones.zoomed {
-    transform: translate(-166vw,-13vh) scale(2.8);
+    transform: translate(-156vw, -6vh) scale(2.7);
     img {
-      opacity: 0.2;
+      opacity: .2 !important;
     }
   }
-  #fontZones.zoomedMissio { transform: scale(1.2); }
+  #fontZones.zoomedMissio, #fontZones.zoomedCoulisses, #fontZones.zoomedInventaore { transform: scale(1.2); }
 
   // COULISSES ZOOM
   #fontCoulisses {
     transition: all linear 0.8s;
   }
   #fontCoulisses.zoomed {
-    transform: translate(-166vw,-13vh) scale(2.8);
+    transform: translate(-85vw, -77vh) scale(1.8);
     img {
-      opacity: 0.2;
+      opacity: .2 !important;
     }
   }
-  #fontCoulisses.zoomedMissio, #fontCoulisses.zoomedZones { transform: scale(1.2); }
+  #fontCoulisses.zoomedMissio, #fontCoulisses.zoomedZones, #fontCoulisses.zoomedInventaire { transform: scale(1.2); }
 
   // INVENTAIRE ZOOM
   #fontInventaire {
@@ -63,10 +62,10 @@ body {
   #fontInventaire.zoomed {
     transform: translate(-14vw, -130vh) scale(2.3);
     img {
-      opacity: 0.2;
+      opacity: .2 !important;
     }
   }
-  #fontInventaire.zoomedMissio, #fontInventaire.zoomedZones { transform: scale(1.2); }
+  #fontInventaire.zoomedMissio, #fontInventaire.zoomedZones, #fontInventaire.zoomedCoulisses { transform: scale(1.2); }
 
 }
 

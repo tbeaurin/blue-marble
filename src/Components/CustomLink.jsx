@@ -1,16 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+import { initializeCursor, openCursor } from '../Functions/functions';
+
 const CustomLink = ({
   href, content, tag, onMouseEnter, onMouseLeave, className, onClick, target,
 }) => {
   const handleMouseEnter = (e) => {
     e.persist();
-    const render = () => {
-      document.querySelector('.cursor--small').classList.add('large');
-      document.querySelector('.cursor--ext').classList.add('large');
-    };
-    requestAnimationFrame(render);
+    openCursor();
     if (onMouseEnter) {
       onMouseEnter();
     }
@@ -18,11 +16,7 @@ const CustomLink = ({
 
   const handleMouseLeave = (e) => {
     e.persist();
-    const render = () => {
-      document.querySelector('.cursor--small').classList.remove('large');
-      document.querySelector('.cursor--ext').classList.remove('large');
-    };
-    requestAnimationFrame(render);
+    initializeCursor();
     if (onMouseLeave) {
       onMouseLeave();
     }

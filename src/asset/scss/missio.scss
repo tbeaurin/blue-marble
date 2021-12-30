@@ -84,12 +84,14 @@
 .main {
     #content {
         overflow-y: auto;
+        overflow-x: hidden;
         position: fixed;
         z-index: 5;
         height: calc(100vh);
         margin-top: 85px;
         transition: margin .4s;
         font-family: 'Montserrat';
+        width: 100%;
         .page {
             display: flex;
             p:first-of-type {

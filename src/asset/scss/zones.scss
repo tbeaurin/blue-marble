@@ -6,6 +6,7 @@
         font-size: 32px;
         text-transform: uppercase;
         margin-left: 104px;
+        transition: all 0.8s linear;
     }
     h2 {
         color: #718CBF;
@@ -14,16 +15,65 @@
         text-transform: uppercase;
         text-align: left;
         margin: -10px 0 0 0;
+        transition: margin-left 0.8s linear;
         span {
             display: block;
+        }
+        &.popup-active-right {
+            margin-left: -80vw;
+        }
+        &.popup-active-left {
+            margin-left: 80vw;
         }
     }
     .button-open {
         text-align: right;
-        display: block;
         position: relative;
         top: -115px;
-        left: -110px;
+        left: 390px;
         font-size: 28px;
+        &:before {
+            content: "";
+            height: 4px;
+            background-color: #fff;
+            position: absolute;
+            z-index: -1;
+            top: 38px;
+            transition: width linear 0.2s;
+            width: 0;
+        }
+        &:hover {
+            &:before {
+                width: calc(100% + 4px);
+                transition: width linear 0.2s;
+            }
+        }
+    }
+    #zone1-subtitle {
+        &.popup-active-right {
+            margin-left: calc(104px - 80vw) !important;
+            color: #3a5caa;
+        }
+    }
+    #zone2-subtitle {
+        margin-left: 606px;
+        &.popup-active-left {
+            margin-left: calc(606px + 80vw) !important;
+            color: #3a5caa;
+        }
+    }
+    #zone2-open {
+        top: 0;
+        left: 98px;
+    }
+    #studio-subtitle {
+        margin-left: 79px;
+        &.popup-active-right {
+            margin-left: calc(79px - 80vw) !important;
+            color: #3a5caa;
+        }
+    }
+    #studio-open {
+        top: -10px;
     }
 }

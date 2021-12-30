@@ -6,6 +6,7 @@ import logoEUL from '../asset/img/logo-eul.png';
 import logoUNI from '../asset/img/logo-universite.png';
 
 import Menu from '../Components/Menu';
+import { initializeCursor } from '../Functions/functions';
 
 const Home = () => {
   React.useEffect(() => {
@@ -33,21 +34,19 @@ const Home = () => {
 
     const imagesMissio = [...document.querySelectorAll('.missio')];
     imagesMissio.map((image) => image.classList.remove('currentPage'));
-    // imagesMissio.map((image) => image.classList.remove('focus'));
-    // imagesMissio.map((image) => image.classList.remove('lose-focus'));
     imagesMissio.map((image) => image.classList.add('background-hide'));
 
     const imagesZones = [...document.querySelectorAll('.zones')];
     imagesZones.map((image) => image.classList.remove('currentPage'));
-    // imagesZones.map((image) => image.classList.remove('focus'));
+    imagesZones.map((image) => image.classList.add('background-hide'));
 
     const imagesInventaire = [...document.querySelectorAll('.inventaire')];
     imagesInventaire.map((image) => image.classList.remove('currentPage'));
-    // imagesInventaire.map((image) => image.classList.remove('focus'));
+    imagesInventaire.map((image) => image.classList.add('background-hide'));
 
     const imagesCoulisses = [...document.querySelectorAll('.coulisses')];
     imagesCoulisses.map((image) => image.classList.remove('currentPage'));
-    // imagesCoulisses.map((image) => image.classList.remove('focus'));
+    imagesCoulisses.map((image) => image.classList.add('background-hide'));
 
     // Don't display Wrapper on pages
     document.querySelector('#missioFakeWrapper').style.display = 'block';
@@ -55,11 +54,22 @@ const Home = () => {
     document.querySelector('#inventaireFakeWrapper').style.display = 'block';
     document.querySelector('#coulissesFakeWrapper').style.display = 'block';
 
-    // Cancel top on missio scroll
+    // Cancel top on pages scroll
     document.querySelector('#missioStars').style.top = 0;
     document.querySelector('#missioDessin').style.top = 0;
     document.querySelector('#missioConstelation').style.top = 0;
+    document.querySelector('#zonesStars').style.top = 0;
+    document.querySelector('#zonesDessin').style.top = 0;
+    document.querySelector('#zonesConstelation').style.top = 0;
+    document.querySelector('#inventaireStars').style.top = 0;
+    document.querySelector('#inventaireDessin').style.top = 0;
+    document.querySelector('#inventaireConstelation').style.top = 0;
+    document.querySelector('#coulissesStars').style.top = 0;
+    document.querySelector('#coulissesDessin').style.top = 0;
+    document.querySelector('#coulissesConstelation').style.top = 0;
     document.querySelector('#stars').style.top = 0;
+
+    initializeCursor();
   }, []);
 
   return (
@@ -70,12 +80,14 @@ const Home = () => {
           <span><Trans i18nKey="Title.2" /></span>
         </h1>
         <div className="logos">
-          <img className="logo" src={logoEUL} alt="Ecole Urbaine de Lyon" />
           <img className="logo" src={logoUNI} alt="Université de Lyon" />
+          <img className="logo" src={logoEUL} alt="Ecole Urbaine de Lyon" />
           <img className="logo" src={logoANR} alt="ANR" />
         </div>
         <div>
-          <p id="anrText">Ce travail a bénéficié de l’aide de l’Etat gérée par l’Agence Nationale de la Recherche au titre du programme d’Investissements d’avenir portant la référence ANR-17-CONV-0004</p>
+          <p id="anrText">
+            <Trans i18nKey="Missio.footer.text" />
+          </p>
         </div>
         <Menu />
       </section>
