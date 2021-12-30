@@ -252,7 +252,7 @@ a {
 
 
 // RESPONSIVE
-@media (max-width: 1441px) {
+@media (max-width: 1441px) and (min-width: 761px) {
     section#homeLeft {
         padding-top: 132px;
         padding-left: 123px;    

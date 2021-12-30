@@ -1,0 +1,27 @@
+@media only screen and (max-width: 760px) {
+    main {
+
+    }
+    #font {
+        background-color: #fff;
+        margin: auto;
+        padding: 0;
+    }
+    h1 {
+        text-align: center;
+    }
+    section#homeLeft {
+        padding-top: 0;
+        padding-left: 0;
+    }
+    #home {
+        padding: 32px;
+        height: calc(100vh - 64px);
+        width: calc(100vw - 64px);
+    }
+    .main #content {
+        width: auto;
+        position: inherit;
+
+    }
+}
