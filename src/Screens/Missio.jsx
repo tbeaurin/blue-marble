@@ -91,6 +91,23 @@ const Missio = () => {
     document.querySelector(`#${anchor}Anchor`).classList.add('active');
   };
 
+  const handleTransitionPortrait = (target, direction) => {
+    if (target === 'majorA') {
+      if (direction === 'open') {
+        document.getElementById('descriptionMajorA').classList.add('focus');
+      } else {
+        document.getElementById('descriptionMajorA').classList.remove('focus');
+      }
+    }
+    if (target === 'majorQ') {
+      if (direction === 'open') {
+        document.getElementById('descriptionMajorQ').classList.add('focus');
+      } else {
+        document.getElementById('descriptionMajorQ').classList.remove('focus');
+      }
+    }
+  };
+
   const renderMenu = () => (
     <nav id="menuMissio" className="menu-page">
       <ul>
@@ -166,37 +183,51 @@ const Missio = () => {
           <div id="objectifMonde" className="page h-100">
             <div className="page-content">
               <div className="d-flex">
-                <div>
+                <div id="objectif-column1">
                   <div className="major">
-                    <div className="zoomedImgContainer" id="imgMajorQ">
+                    <div
+                      className="zoomedImgContainer"
+                      id="imgMajorQ"
+                      onMouseEnter={() => { handleTransitionPortrait('majorQ', 'open'); }}
+                      onMouseLeave={() => { handleTransitionPortrait('majorQ', 'close'); }}
+                    >
                       <img src={QuentinImg} alt="major Q" />
                     </div>
                     <div className="c-black imgDescription" id="descriptionMajorQ">
-                      <span className="title imgDescriptionTitle d-block c-primary">
-                        <Trans i18nKey="Missio.majorQ.title" />
-                      </span>
-                      <span className="d-block imgDescriptionContent">
-                        <b><Trans i18nKey="Missio.majorQ.content.1" /></b>
-                      </span>
-                      <span className="d-block imgDescriptionContent">
-                        <Trans i18nKey="Missio.majorQ.content.2" />
-                      </span>
+                      <div>
+                        <span className="title imgDescriptionTitle d-block c-primary">
+                          <Trans i18nKey="Missio.majorQ.title" />
+                        </span>
+                        <span className="d-block imgDescriptionContent">
+                          <b><Trans i18nKey="Missio.majorQ.content.1" /></b>
+                        </span>
+                        <span className="d-block imgDescriptionContent">
+                          <Trans i18nKey="Missio.majorQ.content.2" />
+                        </span>
+                      </div>
                     </div>
                   </div>
                   <div className="major">
-                    <div className="zoomedImgContainer" id="imgMajorA">
+                    <div
+                      className="zoomedImgContainer"
+                      id="imgMajorA"
+                      onMouseEnter={() => { handleTransitionPortrait('majorA', 'open'); }}
+                      onMouseLeave={() => { handleTransitionPortrait('majorA', 'close'); }}
+                    >
                       <img src={AdrienImg} alt="major A" />
                     </div>
                     <div className="c-black imgDescription" id="descriptionMajorA">
-                      <span className="title imgDescriptionTitle d-block c-primary">
-                        <Trans i18nKey="Missio.majorA.title" />
-                      </span>
-                      <span className="d-block imgDescriptionContent">
-                        <b><Trans i18nKey="Missio.majorA.content.1" /></b>
-                      </span>
-                      <span className="d-block imgDescriptionContent">
-                        <Trans i18nKey="Missio.majorA.content.2" />
-                      </span>
+                      <div>
+                        <span className="title imgDescriptionTitle d-block c-primary">
+                          <Trans i18nKey="Missio.majorA.title" />
+                        </span>
+                        <span className="d-block imgDescriptionContent">
+                          <b><Trans i18nKey="Missio.majorA.content.1" /></b>
+                        </span>
+                        <span className="d-block imgDescriptionContent">
+                          <Trans i18nKey="Missio.majorA.content.2" />
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
