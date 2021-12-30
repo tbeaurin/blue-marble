@@ -1,0 +1,223 @@
+// RESPONSIVE
+
+// LITTLE SCREEN
+@media (max-width: 1441px) {
+    #carousel {
+        img, .next-wrapper, .previous-wrapper {
+            width: 500px;
+            height: 500px;
+        }
+        img.next, .next-wrapper {
+            top: calc(50% - 2.5vh);
+            left: calc(50% - 3vw);
+        }
+        img.previous, .previous-wrapper {
+            top: calc(50% - 68vh);
+            left: calc(50% - 37.5vw);
+        }
+        .previous-hide {
+            top: -42vh;
+            left: 0;
+        }
+        .next-hide {
+            top: 75vh;
+            left: 61vw;
+        }
+    }
+    #popupMain {
+        .popup-title {
+            padding-left: 80px;
+        }
+    }
+}
+
+// BIG SCREEN
+@media (min-width: 1441px) {
+    #carousel {
+        img, .next-wrapper, .previous-wrapper {
+            width: 650px;
+            height: 650px;
+        }
+        img.next, .next-wrapper {
+            top: calc(50% - 2.5vh);
+            left: calc(50% - 3vw);
+        }
+        img.previous, .previous-wrapper {
+            top: calc(50% - 69vh);
+            left: calc(50% - 36.8vw);
+        }
+        .previous-hide {
+            top: -46vh;
+            left: 0vw;
+        }
+        .next-hide {
+            top: 75vh;
+            left: 61vw;
+        }
+    }
+    #popupMain {
+        .popup-title {
+            padding-left: 130px;
+        }
+    }
+}
+
+.popup-overlay {
+    background-color: transparent !important;
+    z-index: 9999 !important;
+}
+.popup-content {  
+    background-color: transparent;
+    margin: auto;  
+    background: url('/src/asset/img/croix2.png'), #fff !important;
+    background-size: cover;     
+    width: 100vw !important;  
+    height: 100vh;  
+    padding: 5px;
+    overflow: hidden;
+    &.inactive.right{
+        animation: popupFromRightClose .8s linear forwards;
+    }
+    &.inactive.left{
+        animation: popupFromLeftClose .8s linear forwards;
+    }
+}
+#carousel > div {
+    margin: auto;
+}
+#carousel {
+    img {
+        transition: all linear .8s;
+    }
+    img.previous, img.next {
+        transform: translate(0,0) scale(0.25);
+        opacity: .5;
+        position: absolute;
+        z-index: 2;
+    }
+    img.current {
+        margin: auto;
+        z-index: 3;
+        position: absolute;
+        top: 15.5vh;
+        left: 30vw;
+    }
+    img.d-none {
+        display: none;
+    }
+    .previous-wrapper, .next-wrapper {
+        transform: translate(0,0) scale(0.25);
+        position: absolute;
+        z-index: 10;
+    }
+    .previous-hide, .next-hide {
+        opacity: 0.5;
+        position: absolute;
+        transform: scale(0.25);
+        background-color: yellow;
+    }
+}
+#popupMain {
+    color: #000;
+    overflow-y: auto;
+    font-family: "Montserrat";
+    .popup-title {
+        margin: auto;
+    }
+    .popup-subtitle {
+        color: #3a5caa;
+        margin-left: 104px;
+        margin-bottom: -40px;
+        line-height: 28px;
+        span {
+            display: block;
+        }
+        .subtitle {
+            text-transform: uppercase;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .title {
+            font-size: 20px;
+        }
+    }
+    h2 {
+        color: #718CBF;
+        font-size: 128px;
+        line-height: 128px;
+        text-transform: uppercase;
+        text-align: left;
+        margin: -10px 0 0 0;
+        opacity: .25;
+        span {
+            display: block;
+        }
+    }
+    .popup-description {
+        font-size: 14px;
+        margin-left: 15vw;
+        padding-right: 120px;
+        p {
+            margin-bottom: 24px;
+        }
+        span, a {
+            display: block;
+            margin-bottom: 8px;
+        }
+    }
+    .close {
+        position: absolute;
+        top: 14vh;
+        text-align: right;
+        text-transform: uppercase;
+        font-size: 26px;
+        font-weight: bold;
+        right: 120px;
+        &:before {
+            content: "";
+            height: 4px;
+            background-color: #000;
+            position: absolute;
+            margin-top: 32px;
+            transition: width linear 0.2s;
+            width: 0;
+        }
+        &:hover {
+            &:before {
+                width: calc(100% + 4px);
+                transition: width linear 0.2s;
+            }
+        }
+    }
+}
+#popupMain, #carousel {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+// POPUP animation
+@keyframes popupFromRight {
+    0% {left: 100vw;}
+    100% {left: 0;}
+}
+@keyframes popupFromRightClose {
+    0% {left: 0;}
+    100% {left: 100vw;}
+}
+@keyframes popupFromLeftClose {
+    0% {left: 0;}
+    100% {left: -100vw;}
+}
+@keyframes popupFromLeft {
+    0% {left: -100vw;}
+    100% {left: 0;}
+}
+.popup-right-content {  
+    animation: popupFromRight .8s linear forwards;
+}
+.popup-left-content {  
+    animation: popupFromLeft .8s linear forwards;
+}

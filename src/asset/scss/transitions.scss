@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  #font>div {
+    transition: all 0.8s linear;
+    transform: scale(1) opacity(0) translate(0,0);
+  }
+  #fontStatic.zoomed {
+    transform: scale(1.2);
+  }
+  .zoomedMissio .background-shape, .zoomedZones .background-shape, .zoomedInventaire .background-shape, .zoomedCoulisses .background-shape {
+    opacity: .2 !important;
+    animation: none;
+  }
+  .zoomed .background-shape, .zoomed #stars {
+    animation: none;
+    opacity: .2 !important;
+  }
+  .zoomed .background-hide {
+    opacity: initial;
+  }
+
+  // MISSIO ZOOM
+  #fontMissio {
+    transition: translate linear 0.8s, scale linear 0.8s;
+  }
+  #fontMissio.zoomed {
+    transform: translate(-82vw,-12vh) scale(3.2);
+    img {
+      opacity: .2 !important;
+    }
+  }
+  #fontMissio.zoomedZones, #fontMissio.zoomedCoulisses, #fontMissio.zoomedInventaire { transform: scale(1.35); }
+  
+  // ZONES ZOOM
+  #fontZones {
+    transition: all linear 0.8s;
+  }
+  #fontZones.zoomed {
+    transform: translate(-156vw, -6vh) scale(2.7);
+    img {
+      opacity: .2 !important;
+    }
+  }
+  #fontZones.zoomedMissio, #fontZones.zoomedCoulisses, #fontZones.zoomedInventaore { transform: scale(1.2); }
+
+  // COULISSES ZOOM
+  #fontCoulisses {
+    transition: all linear 0.8s;
+  }
+  #fontCoulisses.zoomed {
+    transform: translate(-85vw, -77vh) scale(1.8);
+    img {
+      opacity: .2 !important;
+    }
+  }
+  #fontCoulisses.zoomedMissio, #fontCoulisses.zoomedZones, #fontCoulisses.zoomedInventaire { transform: scale(1.2); }
+
+  // INVENTAIRE ZOOM
+  #fontInventaire {
+    transition: all linear 0.8s;
+  }
+  #fontInventaire.zoomed {
+    transform: translate(-14vw, -130vh) scale(2.3);
+    img {
+      opacity: .2 !important;
+    }
+  }
+  #fontInventaire.zoomedMissio, #fontInventaire.zoomedZones, #fontInventaire.zoomedCoulisses { transform: scale(1.2); }
+
+}
+
+  

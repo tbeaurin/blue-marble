@@ -1,18 +1,21 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const ESLintPlugin = require('eslint-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: path.join(__dirname, "src", "index.js"),
+  mode: 'development',
+  entry: path.join(__dirname, 'src', 'index.jsx'),
+  optimization: {
+    minimize: false,
+  },
   output: {
-    path:path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, 'dist'),
   },
   devServer: {
     clientLogLevel: 'warning',
     hot: true,
     contentBase: 'dist',
-    compress: true,
+    compress: false,
     host: 'blue-marble',
     port: 3009,
     open: true,
@@ -21,35 +24,28 @@ module.exports = {
     publicPath: '/',
     watchOptions: {
       poll: false,
-      ignored: /node_modules/
-    }
+      ignored: /node_modules/,
+    },
+  },
+  resolve: {
+    extensions: ['.ts', '.js', '.jsx', '.tsx'],
   },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx$/,
+        enforce: 'pre',
+        use: 'babel-loader',
+        include: path.resolve(__dirname),
         exclude: /node_modules/,
-        use: 'babel-loader'
       },
       {
         test: /\.css$/,
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
-          'postcss-loader'
-        ]
-      },
-      {
-        test: /\.svg$/,
-        loaders: [
-          'babel-loader',
-          {
-            loader: 'react-svg-loader',
-            query: {
-              jsx: true
-            }
-          },
-        ]
+          'postcss-loader',
+        ],
       },
       // Scss compiler
       {
@@ -58,16 +54,36 @@ module.exports = {
           MiniCssExtractPlugin.loader,
           'css-loader',
           'postcss-loader',
-          // 'sass-loader'
-        ]
-      }
-    ]
+          'sass-loader',
+        ],
+      },
+      // PNG compiler
+      {
+        test: /\.(png|jpg|jpeg|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
+      // SVG loader
+      {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: 'svg-url-loader',
+            options: {
+              limit: 10000,
+            },
+          },
+        ],
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, "src", "index.html"),
+      template: path.join(__dirname, 'src', 'index.html'),
     }),
     new MiniCssExtractPlugin(),
   ],
-}
-
+};
