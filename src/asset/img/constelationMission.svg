@@ -1,14 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 461 260" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
-    <g transform="matrix(0.24,0,0,0.24,0,0)">
-        <g id="_1--Constellations-mission" serif:id="1- Constellations mission" transform="matrix(1.28084,0.0982607,-0.0982607,1.28084,426.991,-86.9924)">
-            <g opacity="0.75">
-                <path d="M249.717,549.252L208.615,422.296L345.588,348.393L446.083,593.565" style="fill:none;stroke:white;stroke-width:3.24px;"/>
-                <path d="M345.588,348.393L271.239,228.889L243.874,94.666" style="fill:none;stroke:white;stroke-width:3.24px;"/>
-                <path d="M271.239,228.889L223.255,214.473L211.448,344.164" style="fill:none;stroke:white;stroke-width:3.24px;"/>
-                <path d="M271.239,228.889L402.602,158.753L342.302,127.168" style="fill:none;stroke:white;stroke-width:3.24px;"/>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 461 260" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5" xmlnsV="https://vecta.io/nano"><g opacity=".75" transform="matrix(.307402 .023583 -.023583 .307402 102.47784 -20.878176)" fill="none" stroke="#fff" stroke-width="3.24"><path d="M249.717 549.252l-41.102-126.956 136.973-73.903 100.495 245.172M345.588 348.393l-74.349-119.504-27.365-134.223"/><path d="M271.239 228.889l-47.984-14.416-11.807 129.691m59.791-115.275l131.363-70.136-60.3-31.585"/></g></svg>
