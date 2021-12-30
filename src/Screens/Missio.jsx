@@ -5,18 +5,18 @@ import { useDebouncedCallback } from 'use-debounce';
 
 import CustomLink from '../Components/CustomLink';
 
-import QuentinImg from '../asset/img/Quentin.png';
-import AdrienImg from '../asset/img/Adrien.png';
-import LogoUni from '../asset/img/logo-uni-content.png';
-import PhotoEul from '../asset/img/photo-groupe-eul.png';
+import QuentinImg from '../assets/img/quentin.png';
+import AdrienImg from '../assets/img/adrien.png';
+import LogoUni from '../assets/img/logo-uni-content.png';
+import PhotoEul from '../assets/img/photo-groupe-eul.png';
 
-import Facebook from '../asset/img/facebook_white.png';
-import Internet from '../asset/img/internet_white.png';
-import Instagram from '../asset/img/insta_white.png';
-import Medium from '../asset/img/medium_white.png';
-import Eul from '../asset/img/eul_white.png';
-import Udl from '../asset/img/udl_white.png';
-import Anr from '../asset/img/anr_white.png';
+import Facebook from '../assets/img/facebook_white.png';
+import Internet from '../assets/img/internet_white.png';
+import Instagram from '../assets/img/insta_white.png';
+import Medium from '../assets/img/medium_white.png';
+import Eul from '../assets/img/eul_white.png';
+import Udl from '../assets/img/udl_white.png';
+import Anr from '../assets/img/anr_white.png';
 
 const Missio = () => {
   const pages = document.getElementsByClassName('page');

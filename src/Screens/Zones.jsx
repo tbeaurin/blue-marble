@@ -1,20 +1,20 @@
+/* eslint-disable import/no-duplicates */
+/* eslint-disable no-shadow */
 /* eslint-disable import/no-unresolved */
 import React from 'react';
 import { Trans } from 'react-i18next';
 import { useDebouncedCallback } from 'use-debounce';
-import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 
 import CustomLink from '../Components/CustomLink';
-import PopupCarousel from '../Components/PopupCarousel';
 import Zone from '../Components/Zone';
 
-import TestCarousel from '../asset/img/adrien.png';
-import TestCarousel2 from '../asset/img/carousel1.png';
-import TestCarousel3 from '../asset/img/adrien.png';
-import TestCarousel4 from '../asset/img/carousel1.png';
-import TestCarousel5 from '../asset/img/adrien.png';
-import TestCarousel6 from '../asset/img/carousel1.png';
+import TestCarousel from '../assets/img/adrien.png';
+import TestCarousel2 from '../assets/img/carousel1.png';
+import TestCarousel3 from '../assets/img/adrien.png';
+import TestCarousel4 from '../assets/img/carousel1.png';
+import TestCarousel5 from '../assets/img/adrien.png';
+import TestCarousel6 from '../assets/img/carousel1.png';
 import { initializeCursor } from '../Functions/functions';
 
 const Zones = () => {
