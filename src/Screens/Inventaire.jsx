@@ -8,12 +8,12 @@ import CustomLink from '../Components/CustomLink';
 import Zone from '../Components/Zone';
 import { initializeCursor } from '../Functions/functions';
 
-import TestCarousel from '../asset/img/adrien.png';
-import TestCarousel2 from '../asset/img/carousel1.png';
-import TestCarousel3 from '../asset/img/adrien.png';
-import TestCarousel4 from '../asset/img/carousel1.png';
-import TestCarousel5 from '../asset/img/adrien.png';
-import TestCarousel6 from '../asset/img/carousel1.png';
+import TestCarousel from '/src/asset/img/adrien.png';
+import TestCarousel2 from '/src/asset/img/carousel1.png';
+import TestCarousel3 from '/src/asset/img/adrien.png';
+import TestCarousel4 from '/src/asset/img/carousel1.png';
+import TestCarousel5 from '/src/asset/img/adrien.png';
+import TestCarousel6 from '/src/asset/img/carousel1.png';
 
 const Inventaire = () => {
   const pages = document.getElementsByClassName('page');

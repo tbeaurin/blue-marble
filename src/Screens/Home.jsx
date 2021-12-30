@@ -1,9 +1,9 @@
 import React from 'react';
 import { Trans } from 'react-i18next';
 
-import logoANR from '../asset/img/logo-anr.png';
-import logoEUL from '../asset/img/logo-eul.png';
-import logoUNI from '../asset/img/logo-universite.png';
+import logoANR from '/src/asset/img/logo-anr.png';
+import logoEUL from '/src/asset/img/logo-eul.png';
+import logoUNI from '/src/asset/img/logo-universite.png';
 
 import Menu from '../Components/Menu';
 import { initializeCursor } from '../Functions/functions';
