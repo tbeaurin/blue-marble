@@ -1,5 +1,5 @@
 import './App.scss';
-import './asset/scss/transitions.scss';
+import './assets/scss/transitions.scss';
 import React from 'react';
 import {
   BrowserRouter as Router,
@@ -18,20 +18,20 @@ import Zones from './Screens/Zones';
 import Inventaire from './Screens/Inventaire';
 import Coulisses from './Screens/Coulisses';
 
-import black from './asset/img/black.png';
-import stars from './asset/img/stars.png';
-import etoilesMissio from './asset/img/etoilesMission.svg';
-import etoilesZone from './asset/img/etoilesZones.svg';
-import etoilesInventaire from './asset/img/etoilesInventaire.svg';
-import etoilesCoulisses from './asset/img/etoilesCoulisses.svg';
-import constelationMissio from './asset/img/constelationMission.svg';
-import dessinMission from './asset/img/dessinMission.svg';
-import constelationZones from './asset/img/constelationZones.svg';
-import dessinZones from './asset/img/dessinZones.svg';
-import constelationInventaire from './asset/img/constelationInventaire.svg';
-import dessinInventaire from './asset/img/dessinInventaire.svg';
-import constelationCoulisses from './asset/img/constelationCoulisses.svg';
-import dessinCoulisses from './asset/img/dessinCoulisses.svg';
+import black from './assets/img/black.png';
+import stars from './assets/img/stars.png';
+import etoilesMissio from './assets/img/etoilesMission.svg';
+import etoilesZone from './assets/img/etoilesZones.svg';
+import etoilesInventaire from './assets/img/etoilesInventaire.svg';
+import etoilesCoulisses from './assets/img/etoilesCoulisses.svg';
+import constelationMissio from './assets/img/constelationMission.svg';
+import dessinMission from './assets/img/dessinMission.svg';
+import constelationZones from './assets/img/constelationZones.svg';
+import dessinZones from './assets/img/dessinZones.svg';
+import constelationInventaire from './assets/img/constelationInventaire.svg';
+import dessinInventaire from './assets/img/dessinInventaire.svg';
+import constelationCoulisses from './assets/img/constelationCoulisses.svg';
+import dessinCoulisses from './assets/img/dessinCoulisses.svg';
 
 const App = () => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -73,7 +73,9 @@ const App = () => {
     initializeCursor();
     // Menu
     const constelationDiv = document.querySelector(`#${constelation}Link a`);
-    constelationDiv && constelationDiv.classList.remove('focus');
+    if (constelationDiv) {
+      constelationDiv.classList.remove('focus');
+    }
   };
 
   const handleClick = (constelation) => {
