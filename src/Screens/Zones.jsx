@@ -9,13 +9,10 @@ import 'reactjs-popup/dist/index.css';
 import CustomLink from '../Components/CustomLink';
 import Zone from '../Components/Zone';
 
-import TestCarousel from '../assets/img/adrien.png';
-import TestCarousel2 from '../assets/img/carousel1.png';
-import TestCarousel3 from '../assets/img/adrien.png';
-import TestCarousel4 from '../assets/img/carousel1.png';
-import TestCarousel5 from '../assets/img/adrien.png';
-import TestCarousel6 from '../assets/img/carousel1.png';
 import { initializeCursor } from '../Functions/functions';
+
+import imagesZone1 from '../Components/Imports/Zone1';
+import imagesZone2 from '../Components/Imports/Zone2';
 
 const Zones = () => {
   const pages = document.getElementsByClassName('page');
@@ -24,16 +21,20 @@ const Zones = () => {
 
   const [openModal, setOpenModal] = React.useState([false, false, false, false, false]);
 
-  const zone1 = [
-    {
-      image: TestCarousel, description: <Trans i18nKey="Popup.zone1.description1" />, important: <Trans i18nKey="Popup.zone1.description1.important" />, link: 'www.sondekla.com/user/event/12046',
-    },
-    { image: TestCarousel2, description: <Trans i18nKey="Popup.zone1.description2" /> },
-    { image: TestCarousel3, description: <Trans i18nKey="Popup.zone1.description3" /> },
-    { image: TestCarousel4, description: <Trans i18nKey="Popup.zone1.description4" /> },
-    { image: TestCarousel5, description: <Trans i18nKey="Popup.zone1.description5" /> },
-    { image: TestCarousel6, description: <Trans i18nKey="Popup.zone1.description6" /> },
-  ];
+  const zone1 = [];
+  const zone2 = [];
+  for (let i = 1; i <= 50; i += 1) {
+    zone1.push(
+      {
+        image: imagesZone1[i - 1], description: <Trans i18nKey={`Popup.zone1.description${i}`} />, important: <Trans i18nKey={`Popup.zone1.description${i}.important`} />, link: `Popup.zone1.description${i}.link`,
+      },
+    );
+    zone2.push(
+      {
+        image: imagesZone2[i - 1], description: <Trans i18nKey={`Popup.zone2.description${i}`} />, important: <Trans i18nKey={`Popup.zone2.description${i}.important`} />, link: `Popup.zone1.description${i}.link`,
+      },
+    );
+  }
 
   React.useEffect(() => {
     document.querySelector('#fontStatic').classList.add('zoomed');
@@ -75,7 +76,6 @@ const Zones = () => {
     document.querySelector('#zonesStars').style.top = `-${e.nativeEvent.srcElement.scrollTop / 20}px`;
     document.querySelector('#zonesDessin').style.top = `-${e.nativeEvent.srcElement.scrollTop / 20}px`;
     document.querySelector('#zonesConstelation').style.top = `-${e.nativeEvent.srcElement.scrollTop / 20}px`;
-    document.querySelector('#stars').style.top = `-${e.nativeEvent.srcElement.scrollTop / 60}px`;
 
     // SCROLLABLE MENU
     // BASE MARGIN TOP : 75PX
@@ -136,13 +136,6 @@ const Zones = () => {
   const renderMenu = () => (
     <nav id="menuZones" className="menu-page">
       <ul>
-        <li className="menuItem" id="zonesAnchor" onClick={(e) => handleClick(e, 'zones')}>
-          <CustomLink
-            href="#zones"
-            tag="NavLink"
-            content={<Trans i18nKey="Menu.zones.1" />}
-          />
-        </li>
         <li className="menuItem" id="zone1Anchor" onClick={(e) => handleClick(e, 'zone1')}>
           <CustomLink
             href="#zone1"
@@ -234,7 +227,7 @@ const Zones = () => {
             id="zone2"
             parent="Zones"
             handleOpenModal={handleOpenModal}
-            carouselContent={zone1}
+            carouselContent={zone2}
             direction="left"
             openModal={openModal}
             position={1}

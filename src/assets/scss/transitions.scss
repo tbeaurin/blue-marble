@@ -7,7 +7,10 @@ body {
   #fontStatic.zoomed {
     transform: scale(1.2);
   }
-  .zoomedMissio .background-shape, .zoomedZones .background-shape, .zoomedInventaire .background-shape, .zoomedCoulisses .background-shape {
+  .zoomedMissio .background-shape, .zoomedMissio .stars,
+  .zoomedZones .background-shape, .zoomedZones .stars,
+  .zoomedInventaire .background-shape, .zommedInventaire .stars,
+  .zoomedCoulisses .background-shape, .zoomedCoulisses .stars {
     opacity: .2 !important;
     animation: none;
   }
@@ -18,6 +21,19 @@ body {
   .zoomed .background-hide {
     opacity: initial;
   }
+  .zoomed .stars {
+    opacity: 1 !important;
+    // filter: invert(100%) sepia(4%) saturate(77%) hue-rotate(250deg) brightness(115%) contrast(84%);
+    filter: invert(82%) sepia(98%) saturate(0%) hue-rotate(331deg) brightness(108%) contrast(84%);
+  }
+  .zoomed .constelation {
+    opacity: .8 !important;
+    // filter: invert(100%) sepia(4%) saturate(77%) hue-rotate(250deg) brightness(115%) contrast(84%);
+    filter: invert(82%) sepia(98%) saturate(0%) hue-rotate(331deg) brightness(108%) contrast(84%);
+  }
+  .zoomed .dessin {
+    opacity: .2 !important;
+  }
 
   // MISSIO ZOOM
   #fontMissio {
@@ -25,9 +41,6 @@ body {
   }
   #fontMissio.zoomed {
     transform: translate(-82vw,-12vh) scale(3.2);
-    img {
-      opacity: .2 !important;
-    }
   }
   #fontMissio.zoomedZones, #fontMissio.zoomedCoulisses, #fontMissio.zoomedInventaire { transform: scale(1.35); }
   
@@ -37,9 +50,6 @@ body {
   }
   #fontZones.zoomed {
     transform: translate(-156vw, -6vh) scale(2.7);
-    img {
-      opacity: .2 !important;
-    }
   }
   #fontZones.zoomedMissio, #fontZones.zoomedCoulisses, #fontZones.zoomedInventaore { transform: scale(1.2); }
 
@@ -49,9 +59,6 @@ body {
   }
   #fontCoulisses.zoomed {
     transform: translate(-85vw, -77vh) scale(1.8);
-    img {
-      opacity: .2 !important;
-    }
   }
   #fontCoulisses.zoomedMissio, #fontCoulisses.zoomedZones, #fontCoulisses.zoomedInventaire { transform: scale(1.2); }
 
@@ -61,9 +68,6 @@ body {
   }
   #fontInventaire.zoomed {
     transform: translate(-14vw, -130vh) scale(2.3);
-    img {
-      opacity: .2 !important;
-    }
   }
   #fontInventaire.zoomedMissio, #fontInventaire.zoomedZones, #fontInventaire.zoomedCoulisses { transform: scale(1.2); }
 

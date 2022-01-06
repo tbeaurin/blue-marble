@@ -2,7 +2,7 @@
 import React from 'react';
 
 import { useDebouncedCallback } from 'use-debounce';
-import { Trans } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 
 import CustomLink from './CustomLink';
 import { initializeCursor, openCursor } from '../Functions/functions';
@@ -10,6 +10,7 @@ import { initializeCursor, openCursor } from '../Functions/functions';
 const PopupCarousel = ({
   content = [], handleOpenModal, title, subtitle1, subtitle2,
 }) => {
+  const { t } = useTranslation();
   const [step, setStep] = React.useState(0);
   const [prevStep2, setPrevStep2] = React.useState(content.length - 2);
   const [nextStep2, setNextStep2] = React.useState(2);
@@ -224,14 +225,18 @@ const PopupCarousel = ({
             />
             <div className="popup-description">
               <p className="ta-justify">{content[step].description}</p>
-              <span className="important ta-right">{content[step].important}</span>
-              <CustomLink
-                href={`http://${content[step].link}`}
-                tag="Link"
-                target="_blank"
-                className="primary ta-right"
-                content={content[step].link}
-              />
+              {content[step].important && (
+                <span className="important ta-right">{content[step].important}</span>
+              )}
+              {content[step].link && t(content[step].link, '').length > 0 && (
+                <CustomLink
+                  href={t(content[step].link)}
+                  tag="Link"
+                  target="_blank"
+                  className="primary ta-right"
+                  content={t(content[step].link)}
+                />
+              )}
             </div>
           </div>
         </div>

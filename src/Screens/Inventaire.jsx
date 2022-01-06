@@ -10,11 +10,11 @@ import CustomLink from '../Components/CustomLink';
 import Zone from '../Components/Zone';
 import { initializeCursor } from '../Functions/functions';
 
-import TestCarousel from '../assets/img/adrien.png';
+import TestCarousel from '../assets/img/adrien.jpg';
 import TestCarousel2 from '../assets/img/carousel1.png';
-import TestCarousel3 from '../assets/img/adrien.png';
+import TestCarousel3 from '../assets/img/adrien.jpg';
 import TestCarousel4 from '../assets/img/carousel1.png';
-import TestCarousel5 from '../assets/img/adrien.png';
+import TestCarousel5 from '../assets/img/adrien.jpg';
 import TestCarousel6 from '../assets/img/carousel1.png';
 
 const Inventaire = () => {
@@ -75,7 +75,6 @@ const Inventaire = () => {
     document.querySelector('#inventaireStars').style.top = `-${e.nativeEvent.srcElement.scrollTop / 50}px`;
     document.querySelector('#inventaireDessin').style.top = `-${e.nativeEvent.srcElement.scrollTop / 50}px`;
     document.querySelector('#inventaireConstelation').style.top = `-${e.nativeEvent.srcElement.scrollTop / 50}px`;
-    document.querySelector('#stars').style.top = `-${e.nativeEvent.srcElement.scrollTop / 150}px`;
 
     // SCROLLABLE MENU
     // BASE MARGIN TOP : 75PX
@@ -136,25 +135,11 @@ const Inventaire = () => {
   const renderMenu = () => (
     <nav id="menuZones" className="menu-page">
       <ul>
-        <li className="menuItem" id="inventaireAnchor" onClick={(e) => handleClick(e, 'inventaire')}>
-          <CustomLink
-            href="#inventaire"
-            tag="NavLink"
-            content={<Trans i18nKey="Menu.inventaire.1" />}
-          />
-        </li>
         <li className="menuItem" id="studioAnchor" onClick={(e) => handleClick(e, 'studio')}>
           <CustomLink
             href="#studio"
             tag="NavLink"
             content={<Trans i18nKey="Menu.inventaire.2" />}
-          />
-        </li>
-        <li className="menuItem" id="terrainAnchor" onClick={(e) => handleClick(e, 'terrain')}>
-          <CustomLink
-            href="#terrain"
-            tag="NavLink"
-            content={<Trans i18nKey="Menu.inventaire.3" />}
           />
         </li>
         <li className="menuItem">
@@ -206,17 +191,6 @@ const Inventaire = () => {
             direction="right"
             openModal={openModal}
             position={0}
-          />
-        </div>
-        <div className="page h-100" id="terrain">
-          <Zone
-            id="terrain"
-            parent="Inventaire"
-            handleOpenModal={handleOpenModal}
-            carouselContent={inventaire1}
-            direction="left"
-            openModal={openModal}
-            position={1}
           />
         </div>
       </div>

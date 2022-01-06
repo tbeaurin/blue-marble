@@ -5,8 +5,10 @@ import { useDebouncedCallback } from 'use-debounce';
 
 import CustomLink from '../Components/CustomLink';
 
-import QuentinImg from '../assets/img/quentin.png';
-import AdrienImg from '../assets/img/adrien.png';
+import QuentinImg from '../assets/img/quentin.jpg';
+import Quentin2Img from '../assets/img/quentin2.jpg';
+import AdrienImg from '../assets/img/adrien.jpg';
+import Adrien2Img from '../assets/img/adrien2.jpg';
 import LogoUni from '../assets/img/logo-uni-content.png';
 import PhotoEul from '../assets/img/photo-groupe-eul.png';
 
@@ -62,7 +64,6 @@ const Missio = () => {
     document.querySelector('#missioStars').style.top = `-${e.nativeEvent.srcElement.scrollTop / 10}px`;
     document.querySelector('#missioDessin').style.top = `-${e.nativeEvent.srcElement.scrollTop / 10}px`;
     document.querySelector('#missioConstelation').style.top = `-${e.nativeEvent.srcElement.scrollTop / 10}px`;
-    document.querySelector('#stars').style.top = `-${e.nativeEvent.srcElement.scrollTop / 30}px`;
 
     // SCROLLABLE MENU
     // BASE MARGIN TOP : 75PX
@@ -91,16 +92,34 @@ const Missio = () => {
     document.querySelector(`#${anchor}Anchor`).classList.add('active');
   };
 
+  const handleTransitionPortrait = (target, direction) => {
+    if (target === 'majorA') {
+      if (direction === 'open') {
+        document.getElementById('descriptionMajorA').classList.add('focus');
+        document.getElementById('adrienImage2').classList.add('active');
+        document.getElementById('adrienImage').classList.add('active');
+      } else {
+        document.getElementById('descriptionMajorA').classList.remove('focus');
+        document.getElementById('adrienImage').classList.remove('active');
+        document.getElementById('adrienImage2').classList.remove('active');
+      }
+    }
+    if (target === 'majorQ') {
+      if (direction === 'open') {
+        document.getElementById('descriptionMajorQ').classList.add('focus');
+        document.getElementById('quentinImage2').classList.add('active');
+        document.getElementById('quentinImage').classList.add('active');
+      } else {
+        document.getElementById('descriptionMajorQ').classList.remove('focus');
+        document.getElementById('quentinImage').classList.remove('active');
+        document.getElementById('quentinImage2').classList.remove('active');
+      }
+    }
+  };
+
   const renderMenu = () => (
     <nav id="menuMissio" className="menu-page">
       <ul>
-        <li className="menuItem" id="laMissionAnchor" onClick={(e) => handleClick(e, 'laMission')}>
-          <CustomLink
-            href="#laMission"
-            tag="NavLink"
-            content={<Trans i18nKey="Menu.missio.laMission" />}
-          />
-        </li>
         <li className="menuItem" id="objectifMondeAnchor" onClick={(e) => handleClick(e, 'objectifMonde')}>
           <CustomLink
             href="#objectifMonde"
@@ -163,40 +182,60 @@ const Missio = () => {
               </p>
             </div>
           </div>
-          <div id="objectifMonde" className="page h-100">
+          <div id="objectifMonde" className="page h-120">
             <div className="page-content">
               <div className="d-flex">
-                <div>
+                <div id="objectif-column1">
                   <div className="major">
-                    <div className="zoomedImgContainer" id="imgMajorQ">
-                      <img src={QuentinImg} alt="major Q" />
+                    <div
+                      className="zoomedImgContainer"
+                      id="imgMajorQ"
+                      onMouseEnter={() => { handleTransitionPortrait('majorQ', 'open'); }}
+                      onMouseLeave={() => { handleTransitionPortrait('majorQ', 'close'); }}
+                    >
+                      <div className="image-slide-container" id="containerQ">
+                        <img id="quentinImage2" src={Quentin2Img} alt="major Q" />
+                        <img id="quentinImage" src={QuentinImg} alt="major Q" />
+                      </div>
                     </div>
                     <div className="c-black imgDescription" id="descriptionMajorQ">
-                      <span className="title imgDescriptionTitle d-block c-primary">
-                        <Trans i18nKey="Missio.majorQ.title" />
-                      </span>
-                      <span className="d-block imgDescriptionContent">
-                        <b><Trans i18nKey="Missio.majorQ.content.1" /></b>
-                      </span>
-                      <span className="d-block imgDescriptionContent">
-                        <Trans i18nKey="Missio.majorQ.content.2" />
-                      </span>
+                      <div>
+                        <span className="title imgDescriptionTitle d-block c-primary">
+                          <Trans i18nKey="Missio.majorQ.title" />
+                        </span>
+                        <span className="d-block imgDescriptionContent">
+                          <b><Trans i18nKey="Missio.majorQ.content.1" /></b>
+                        </span>
+                        <span className="d-block imgDescriptionContent">
+                          <Trans i18nKey="Missio.majorQ.content.2" />
+                        </span>
+                      </div>
                     </div>
                   </div>
                   <div className="major">
-                    <div className="zoomedImgContainer" id="imgMajorA">
-                      <img src={AdrienImg} alt="major A" />
+                    <div
+                      className="zoomedImgContainer"
+                      id="imgMajorA"
+                      onMouseEnter={() => { handleTransitionPortrait('majorA', 'open'); }}
+                      onMouseLeave={() => { handleTransitionPortrait('majorA', 'close'); }}
+                    >
+                      <div className="image-slide-container" id="containerA">
+                        <img id="adrienImage" src={AdrienImg} alt="major A" />
+                        <img id="adrienImage2" src={Adrien2Img} alt="major A" />
+                      </div>
                     </div>
                     <div className="c-black imgDescription" id="descriptionMajorA">
-                      <span className="title imgDescriptionTitle d-block c-primary">
-                        <Trans i18nKey="Missio.majorA.title" />
-                      </span>
-                      <span className="d-block imgDescriptionContent">
-                        <b><Trans i18nKey="Missio.majorA.content.1" /></b>
-                      </span>
-                      <span className="d-block imgDescriptionContent">
-                        <Trans i18nKey="Missio.majorA.content.2" />
-                      </span>
+                      <div>
+                        <span className="title imgDescriptionTitle d-block c-primary">
+                          <Trans i18nKey="Missio.majorA.title" />
+                        </span>
+                        <span className="d-block imgDescriptionContent">
+                          <b><Trans i18nKey="Missio.majorA.content.1" /></b>
+                        </span>
+                        <span className="d-block imgDescriptionContent">
+                          <Trans i18nKey="Missio.majorA.content.2" />
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -211,7 +250,7 @@ const Missio = () => {
               </div>
             </div>
           </div>
-          <div id="anthropocene" className="page b-white">
+          <div id="anthropocene" className="page b-white h-100">
             <div className="page-content">
               <span id="title-anthropocene">
                 <Trans i18nKey="Missio.anthropocene.title" />
@@ -226,7 +265,7 @@ const Missio = () => {
               </div>
             </div>
           </div>
-          <div id="ecoleUrbaine" className="page">
+          <div id="ecoleUrbaine" className="page pt-5p">
             <div className="page-content">
               <div id="logoUni">
                 <img src={LogoUni} alt="universite-lyon" />
@@ -239,24 +278,26 @@ const Missio = () => {
                 </div>
               </div>
               <div className="content with-photo d-flex mt-32">
-                <p className="important">
-                  <Trans i18nKey="Missio.ecole.texte.1" />
-                </p>
-                <img src={PhotoEul} alt="groupe de l'EUL" />
-              </div>
-              <div className="content mt--100">
-                <p>
-                  <Trans i18nKey="Missio.ecole.texte.2" />
-                </p>
-                <p>
-                  <Trans i18nKey="Missio.ecole.texte.3" />
-                </p>
-                <p>
-                  <Trans i18nKey="Missio.ecole.texte.4" />
-                </p>
-                <p>
-                  <Trans i18nKey="Missio.ecole.texte.5" />
-                </p>
+                <div>
+                  <p className="important">
+                    <Trans i18nKey="Missio.ecole.texte.1" />
+                  </p>
+                  <p>
+                    <Trans i18nKey="Missio.ecole.texte.2" />
+                  </p>
+                  <p>
+                    <Trans i18nKey="Missio.ecole.texte.3" />
+                  </p>
+                  <p>
+                    <Trans i18nKey="Missio.ecole.texte.4" />
+                  </p>
+                  <p>
+                    <Trans i18nKey="Missio.ecole.texte.5" />
+                  </p>
+                </div>
+                <div>
+                  <img src={PhotoEul} alt="groupe de l'EUL" />
+                </div>
               </div>
               <div className="content d-flex mt-64">
                 <div>
@@ -324,15 +365,15 @@ const Missio = () => {
               </div>
               <div className="d-flex flex-row mt-64" id="footer-links">
                 <div>
+                  <img src={Eul} alt="école-urbaine-de-lyon" />
+                  <span className="uppercase"><Trans i18nKey="Missio.footer.2.2" /></span>
+                </div>
+                <div>
                   <img src={Udl} alt="université-de-lyon" />
                   <div>
                     <span className="uppercase"><Trans i18nKey="Missio.footer.2.1.1" /></span>
                     <span><Trans i18nKey="Missio.footer.2.1.2" /></span>
                   </div>
-                </div>
-                <div>
-                  <img src={Eul} alt="école-urbaine-de-lyon" />
-                  <span className="uppercase"><Trans i18nKey="Missio.footer.2.2" /></span>
                 </div>
                 <div>
                   <img src={Anr} alt="ANR" />
