@@ -9,11 +9,11 @@ import 'reactjs-popup/dist/index.css';
 import CustomLink from '../Components/CustomLink';
 import Zone from '../Components/Zone';
 
-import TestCarousel from '../assets/img/adrien.png';
+import TestCarousel from '../assets/img/adrien.jpg';
 import TestCarousel2 from '../assets/img/carousel1.png';
-import TestCarousel3 from '../assets/img/adrien.png';
+import TestCarousel3 from '../assets/img/adrien.jpg';
 import TestCarousel4 from '../assets/img/carousel1.png';
-import TestCarousel5 from '../assets/img/adrien.png';
+import TestCarousel5 from '../assets/img/adrien.jpg';
 import TestCarousel6 from '../assets/img/carousel1.png';
 import { initializeCursor } from '../Functions/functions';
 

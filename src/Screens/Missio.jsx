@@ -5,8 +5,10 @@ import { useDebouncedCallback } from 'use-debounce';
 
 import CustomLink from '../Components/CustomLink';
 
-import QuentinImg from '../assets/img/quentin.png';
-import AdrienImg from '../assets/img/adrien.png';
+import QuentinImg from '../assets/img/quentin.jpg';
+import Quentin2Img from '../assets/img/quentin2.jpg';
+import AdrienImg from '../assets/img/adrien.jpg';
+import Adrien2Img from '../assets/img/adrien2.jpg';
 import LogoUni from '../assets/img/logo-uni-content.png';
 import PhotoEul from '../assets/img/photo-groupe-eul.png';
 
@@ -94,15 +96,23 @@ const Missio = () => {
     if (target === 'majorA') {
       if (direction === 'open') {
         document.getElementById('descriptionMajorA').classList.add('focus');
+        document.getElementById('adrienImage2').classList.add('active');
+        document.getElementById('adrienImage').classList.add('active');
       } else {
         document.getElementById('descriptionMajorA').classList.remove('focus');
+        document.getElementById('adrienImage').classList.remove('active');
+        document.getElementById('adrienImage2').classList.remove('active');
       }
     }
     if (target === 'majorQ') {
       if (direction === 'open') {
         document.getElementById('descriptionMajorQ').classList.add('focus');
+        document.getElementById('quentinImage2').classList.add('active');
+        document.getElementById('quentinImage').classList.add('active');
       } else {
         document.getElementById('descriptionMajorQ').classList.remove('focus');
+        document.getElementById('quentinImage').classList.remove('active');
+        document.getElementById('quentinImage2').classList.remove('active');
       }
     }
   };
@@ -183,7 +193,10 @@ const Missio = () => {
                       onMouseEnter={() => { handleTransitionPortrait('majorQ', 'open'); }}
                       onMouseLeave={() => { handleTransitionPortrait('majorQ', 'close'); }}
                     >
-                      <img src={QuentinImg} alt="major Q" />
+                      <div className="image-slide-container" id="containerQ">
+                        <img id="quentinImage2" src={Quentin2Img} alt="major Q" />
+                        <img id="quentinImage" src={QuentinImg} alt="major Q" />
+                      </div>
                     </div>
                     <div className="c-black imgDescription" id="descriptionMajorQ">
                       <div>
@@ -206,7 +219,10 @@ const Missio = () => {
                       onMouseEnter={() => { handleTransitionPortrait('majorA', 'open'); }}
                       onMouseLeave={() => { handleTransitionPortrait('majorA', 'close'); }}
                     >
-                      <img src={AdrienImg} alt="major A" />
+                      <div className="image-slide-container" id="containerA">
+                        <img id="adrienImage" src={AdrienImg} alt="major A" />
+                        <img id="adrienImage2" src={Adrien2Img} alt="major A" />
+                      </div>
                     </div>
                     <div className="c-black imgDescription" id="descriptionMajorA">
                       <div>
