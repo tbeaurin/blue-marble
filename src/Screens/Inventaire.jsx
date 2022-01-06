@@ -142,13 +142,6 @@ const Inventaire = () => {
             content={<Trans i18nKey="Menu.inventaire.2" />}
           />
         </li>
-        <li className="menuItem" id="terrainAnchor" onClick={(e) => handleClick(e, 'terrain')}>
-          <CustomLink
-            href="#terrain"
-            tag="NavLink"
-            content={<Trans i18nKey="Menu.inventaire.3" />}
-          />
-        </li>
         <li className="menuItem">
           <CustomLink
             href="/"
@@ -198,17 +191,6 @@ const Inventaire = () => {
             direction="right"
             openModal={openModal}
             position={0}
-          />
-        </div>
-        <div className="page h-100" id="terrain">
-          <Zone
-            id="terrain"
-            parent="Inventaire"
-            handleOpenModal={handleOpenModal}
-            carouselContent={inventaire1}
-            direction="left"
-            openModal={openModal}
-            position={1}
           />
         </div>
       </div>
