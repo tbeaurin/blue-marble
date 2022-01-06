@@ -62,7 +62,6 @@ const Missio = () => {
     document.querySelector('#missioStars').style.top = `-${e.nativeEvent.srcElement.scrollTop / 10}px`;
     document.querySelector('#missioDessin').style.top = `-${e.nativeEvent.srcElement.scrollTop / 10}px`;
     document.querySelector('#missioConstelation').style.top = `-${e.nativeEvent.srcElement.scrollTop / 10}px`;
-    document.querySelector('#stars').style.top = `-${e.nativeEvent.srcElement.scrollTop / 30}px`;
 
     // SCROLLABLE MENU
     // BASE MARGIN TOP : 75PX
@@ -111,13 +110,6 @@ const Missio = () => {
   const renderMenu = () => (
     <nav id="menuMissio" className="menu-page">
       <ul>
-        <li className="menuItem" id="laMissionAnchor" onClick={(e) => handleClick(e, 'laMission')}>
-          <CustomLink
-            href="#laMission"
-            tag="NavLink"
-            content={<Trans i18nKey="Menu.missio.laMission" />}
-          />
-        </li>
         <li className="menuItem" id="objectifMondeAnchor" onClick={(e) => handleClick(e, 'objectifMonde')}>
           <CustomLink
             href="#objectifMonde"
@@ -180,7 +172,7 @@ const Missio = () => {
               </p>
             </div>
           </div>
-          <div id="objectifMonde" className="page h-100">
+          <div id="objectifMonde" className="page h-120">
             <div className="page-content">
               <div className="d-flex">
                 <div id="objectif-column1">
@@ -242,7 +234,7 @@ const Missio = () => {
               </div>
             </div>
           </div>
-          <div id="anthropocene" className="page b-white">
+          <div id="anthropocene" className="page b-white h-100">
             <div className="page-content">
               <span id="title-anthropocene">
                 <Trans i18nKey="Missio.anthropocene.title" />
@@ -257,7 +249,7 @@ const Missio = () => {
               </div>
             </div>
           </div>
-          <div id="ecoleUrbaine" className="page">
+          <div id="ecoleUrbaine" className="page pt-5p">
             <div className="page-content">
               <div id="logoUni">
                 <img src={LogoUni} alt="universite-lyon" />
@@ -270,24 +262,26 @@ const Missio = () => {
                 </div>
               </div>
               <div className="content with-photo d-flex mt-32">
-                <p className="important">
-                  <Trans i18nKey="Missio.ecole.texte.1" />
-                </p>
-                <img src={PhotoEul} alt="groupe de l'EUL" />
-              </div>
-              <div className="content mt--100">
-                <p>
-                  <Trans i18nKey="Missio.ecole.texte.2" />
-                </p>
-                <p>
-                  <Trans i18nKey="Missio.ecole.texte.3" />
-                </p>
-                <p>
-                  <Trans i18nKey="Missio.ecole.texte.4" />
-                </p>
-                <p>
-                  <Trans i18nKey="Missio.ecole.texte.5" />
-                </p>
+                <div>
+                  <p className="important">
+                    <Trans i18nKey="Missio.ecole.texte.1" />
+                  </p>
+                  <p>
+                    <Trans i18nKey="Missio.ecole.texte.2" />
+                  </p>
+                  <p>
+                    <Trans i18nKey="Missio.ecole.texte.3" />
+                  </p>
+                  <p>
+                    <Trans i18nKey="Missio.ecole.texte.4" />
+                  </p>
+                  <p>
+                    <Trans i18nKey="Missio.ecole.texte.5" />
+                  </p>
+                </div>
+                <div>
+                  <img src={PhotoEul} alt="groupe de l'EUL" />
+                </div>
               </div>
               <div className="content d-flex mt-64">
                 <div>
@@ -355,15 +349,15 @@ const Missio = () => {
               </div>
               <div className="d-flex flex-row mt-64" id="footer-links">
                 <div>
+                  <img src={Eul} alt="école-urbaine-de-lyon" />
+                  <span className="uppercase"><Trans i18nKey="Missio.footer.2.2" /></span>
+                </div>
+                <div>
                   <img src={Udl} alt="université-de-lyon" />
                   <div>
                     <span className="uppercase"><Trans i18nKey="Missio.footer.2.1.1" /></span>
                     <span><Trans i18nKey="Missio.footer.2.1.2" /></span>
                   </div>
-                </div>
-                <div>
-                  <img src={Eul} alt="école-urbaine-de-lyon" />
-                  <span className="uppercase"><Trans i18nKey="Missio.footer.2.2" /></span>
                 </div>
                 <div>
                   <img src={Anr} alt="ANR" />

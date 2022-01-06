@@ -75,7 +75,6 @@ const Inventaire = () => {
     document.querySelector('#inventaireStars').style.top = `-${e.nativeEvent.srcElement.scrollTop / 50}px`;
     document.querySelector('#inventaireDessin').style.top = `-${e.nativeEvent.srcElement.scrollTop / 50}px`;
     document.querySelector('#inventaireConstelation').style.top = `-${e.nativeEvent.srcElement.scrollTop / 50}px`;
-    document.querySelector('#stars').style.top = `-${e.nativeEvent.srcElement.scrollTop / 150}px`;
 
     // SCROLLABLE MENU
     // BASE MARGIN TOP : 75PX
@@ -136,13 +135,6 @@ const Inventaire = () => {
   const renderMenu = () => (
     <nav id="menuZones" className="menu-page">
       <ul>
-        <li className="menuItem" id="inventaireAnchor" onClick={(e) => handleClick(e, 'inventaire')}>
-          <CustomLink
-            href="#inventaire"
-            tag="NavLink"
-            content={<Trans i18nKey="Menu.inventaire.1" />}
-          />
-        </li>
         <li className="menuItem" id="studioAnchor" onClick={(e) => handleClick(e, 'studio')}>
           <CustomLink
             href="#studio"

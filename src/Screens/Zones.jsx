@@ -75,7 +75,6 @@ const Zones = () => {
     document.querySelector('#zonesStars').style.top = `-${e.nativeEvent.srcElement.scrollTop / 20}px`;
     document.querySelector('#zonesDessin').style.top = `-${e.nativeEvent.srcElement.scrollTop / 20}px`;
     document.querySelector('#zonesConstelation').style.top = `-${e.nativeEvent.srcElement.scrollTop / 20}px`;
-    document.querySelector('#stars').style.top = `-${e.nativeEvent.srcElement.scrollTop / 60}px`;
 
     // SCROLLABLE MENU
     // BASE MARGIN TOP : 75PX
@@ -136,13 +135,6 @@ const Zones = () => {
   const renderMenu = () => (
     <nav id="menuZones" className="menu-page">
       <ul>
-        <li className="menuItem" id="zonesAnchor" onClick={(e) => handleClick(e, 'zones')}>
-          <CustomLink
-            href="#zones"
-            tag="NavLink"
-            content={<Trans i18nKey="Menu.zones.1" />}
-          />
-        </li>
         <li className="menuItem" id="zone1Anchor" onClick={(e) => handleClick(e, 'zone1')}>
           <CustomLink
             href="#zone1"

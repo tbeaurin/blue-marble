@@ -134,7 +134,7 @@ const App = () => {
         <div id="fontMissio">
           <img id="missioDessin" className="background background-hide missio dessin" src={dessinMission} alt="dessinMission" />
           <img id="missioConstelation" className="background background-hide missio constelation" src={constelationMissio} alt="constelationMissio" />
-          <img id="missioStars" className="background background-shape missio stars" src={etoilesMissio} alt="etoilesMissio" />
+          <img id="missioStars" className="background missio stars" src={etoilesMissio} alt="etoilesMissio" />
           <span id="missioName" className="constelation-name missio background-constelation-title">
             <Trans i18nKey="Missio.constelation" />
           </span>
@@ -142,7 +142,7 @@ const App = () => {
         <div id="fontZones">
           <img id="zonesDessin" className="background background-hide zones dessin" src={dessinZones} alt="dessinZones" />
           <img id="zonesConstelation" className="background background-hide zones constelation" src={constelationZones} alt="constelationZones" />
-          <img id="zonesStars" className="background background-shape zones stars" src={etoilesZone} alt="etoilesZone" />
+          <img id="zonesStars" className="background zones stars" src={etoilesZone} alt="etoilesZone" />
           <span id="zonesName" className="constelation-name zones background-constelation-title">
             <Trans i18nKey="Zones.constelation" />
           </span>
@@ -150,7 +150,7 @@ const App = () => {
         <div id="fontInventaire">
           <img id="inventaireDessin" className="background background-hide inventaire dessin" src={dessinInventaire} alt="dessinInventaire" />
           <img id="inventaireConstelation" className="background background-hide inventaire constelation" src={constelationInventaire} alt="constelationInventaire" />
-          <img id="inventaireStars" className="background background-shape inventaire stars" src={etoilesInventaire} alt="etoilesInventaire" />
+          <img id="inventaireStars" className="background inventaire stars" src={etoilesInventaire} alt="etoilesInventaire" />
           <span id="inventaireName" className="constelation-name inventaire background-constelation-title">
             <Trans i18nKey="Inventaire.constelation" />
           </span>
@@ -158,7 +158,7 @@ const App = () => {
         <div id="fontCoulisses">
           <img id="coulissesDessin" className="background background-hide coulisses dessin" src={dessinCoulisses} alt="dessinCoulisses" />
           <img id="coulissesConstelation" className="background background-hide coulisses constelation" src={constelationCoulisses} alt="constelationCoulisses" />
-          <img id="coulissesStars" className="background background-shape coulisses stars" src={etoilesCoulisses} alt="etoilesCoulisses" />
+          <img id="coulissesStars" className="background coulisses stars" src={etoilesCoulisses} alt="etoilesCoulisses" />
           <span id="coulissesName" className="constelation-name coulisses background-constelation-title">
             <Trans i18nKey="Coulisses.constelation" />
           </span>
