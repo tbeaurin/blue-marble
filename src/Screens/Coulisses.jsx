@@ -39,7 +39,7 @@ const Inventaire = () => {
   const drawAnchor = useDebouncedCallback((e) => {
     Array.from(pages).forEach((page) => {
       if (e.nativeEvent.srcElement.scrollTop <= page.offsetTop + 250
-        && e.nativeEvent.srcElement.scrollTop >= page.offsetTop - 250) {
+        && e.nativeEvent.srcElement.scrollTop >= page.offsetTop - 250 && page.id) {
         menuItems.forEach((i) => i.classList.remove('active'));
         document.querySelector(`#${page.id}Anchor`).classList.add('active');
       }
@@ -125,7 +125,7 @@ const Inventaire = () => {
         </div>
       </div>
       <div id="content" onScroll={(e) => handleScroll(e)}>
-        <div className="page h-100" id="coulisses">
+        <div className="page h-100">
           <div className="page-content">
             <p className="citation">
               <span className="d-block citation-large"><Trans i18nKey="Coulisses.citation.1" /></span>

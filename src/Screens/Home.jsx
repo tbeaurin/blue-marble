@@ -4,6 +4,7 @@ import { Trans } from 'react-i18next';
 import logoANR from '../assets/img/logo-anr.png';
 import logoEUL from '../assets/img/logo-eul.png';
 import logoUNI from '../assets/img/logo-universite.png';
+import CustomLink from '../Components/CustomLink';
 
 import Menu from '../Components/Menu';
 import { initializeCursor } from '../Functions/functions';
@@ -32,19 +33,19 @@ const Home = () => {
     document.querySelector('#fontCoulisses').classList.remove('zoomedZones');
     document.querySelector('#fontCoulisses').classList.remove('zoomedInventaire');
 
-    const imagesMissio = [...document.querySelectorAll('.missio')];
+    const imagesMissio = [...document.querySelectorAll('.missio:not(.stars)')];
     imagesMissio.map((image) => image.classList.remove('currentPage'));
     imagesMissio.map((image) => image.classList.add('background-hide'));
 
-    const imagesZones = [...document.querySelectorAll('.zones')];
+    const imagesZones = [...document.querySelectorAll('.zones:not(.stars)')];
     imagesZones.map((image) => image.classList.remove('currentPage'));
     imagesZones.map((image) => image.classList.add('background-hide'));
 
-    const imagesInventaire = [...document.querySelectorAll('.inventaire')];
+    const imagesInventaire = [...document.querySelectorAll('.inventaire:not(.stars)')];
     imagesInventaire.map((image) => image.classList.remove('currentPage'));
     imagesInventaire.map((image) => image.classList.add('background-hide'));
 
-    const imagesCoulisses = [...document.querySelectorAll('.coulisses')];
+    const imagesCoulisses = [...document.querySelectorAll('.coulisses:not(.stars)')];
     imagesCoulisses.map((image) => image.classList.remove('currentPage'));
     imagesCoulisses.map((image) => image.classList.add('background-hide'));
 
@@ -91,6 +92,14 @@ const Home = () => {
         </div>
         <Menu />
       </section>
+      <p>
+        <CustomLink
+          href="/mentions"
+          tag="Link"
+          className="mentions-link"
+          content={<Trans i18nKey="Mentions.link" />}
+        />
+      </p>
     </div>
   );
 };

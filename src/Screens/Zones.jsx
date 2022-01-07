@@ -13,6 +13,9 @@ import { initializeCursor } from '../Functions/functions';
 
 import imagesZone1 from '../Components/Imports/Zone1';
 import imagesZone2 from '../Components/Imports/Zone2';
+import imagesZone3 from '../Components/Imports/Zone3';
+import imagesZone4 from '../Components/Imports/Zone4';
+import imagesZone5 from '../Components/Imports/Zone5';
 
 const Zones = () => {
   const pages = document.getElementsByClassName('page');
@@ -23,6 +26,9 @@ const Zones = () => {
 
   const zone1 = [];
   const zone2 = [];
+  const zone3 = [];
+  const zone4 = [];
+  const zone5 = [];
   for (let i = 1; i <= 50; i += 1) {
     zone1.push(
       {
@@ -32,6 +38,25 @@ const Zones = () => {
     zone2.push(
       {
         image: imagesZone2[i - 1], description: <Trans i18nKey={`Popup.zone2.description${i}`} />, important: <Trans i18nKey={`Popup.zone2.description${i}.important`} />, link: `Popup.zone1.description${i}.link`,
+      },
+    );
+  }
+  for (let i = 1; i <= 40; i += 1) {
+    zone3.push(
+      {
+        image: imagesZone3[i - 1], description: <Trans i18nKey={`Popup.zone3.description${i}`} />, important: <Trans i18nKey={`Popup.zone3.description${i}.important`} />, link: `Popup.zone3.description${i}.link`,
+      },
+    );
+  }
+  for (let i = 1; i <= 35; i += 1) {
+    zone4.push(
+      {
+        image: imagesZone4[i - 1], description: <Trans i18nKey={`Popup.zone4.description${i}`} />, important: <Trans i18nKey={`Popup.zone4.description${i}.important`} />, link: `Popup.zone4.description${i}.link`,
+      },
+    );
+    zone5.push(
+      {
+        image: imagesZone5[i - 1], description: <Trans i18nKey={`Popup.zone5.description${i}`} />, important: <Trans i18nKey={`Popup.zone5.description${i}.important`} />, link: `Popup.zone5.description${i}.link`,
       },
     );
   }
@@ -63,7 +88,7 @@ const Zones = () => {
   const drawAnchor = useDebouncedCallback((e) => {
     Array.from(pages).forEach((page) => {
       if (e.nativeEvent.srcElement.scrollTop <= page.offsetTop + 250
-        && e.nativeEvent.srcElement.scrollTop >= page.offsetTop - 250) {
+        && e.nativeEvent.srcElement.scrollTop >= page.offsetTop - 250 && page.id) {
         menuItems.forEach((i) => i.classList.remove('active'));
         document.querySelector(`#${page.id}Anchor`).classList.add('active');
       }
@@ -199,7 +224,7 @@ const Zones = () => {
         </div>
       </div>
       <div id="content" onScroll={(e) => handleScroll(e)}>
-        <div className="page h-100" id="zones">
+        <div className="page h-100">
           <div className="page-content">
             <p className="citation">
               <Trans i18nKey="Zones.citation" />
@@ -238,7 +263,7 @@ const Zones = () => {
             id="zone3"
             parent="Zones"
             handleOpenModal={handleOpenModal}
-            carouselContent={zone1}
+            carouselContent={zone3}
             direction="right"
             openModal={openModal}
             position={2}
@@ -249,7 +274,7 @@ const Zones = () => {
             id="zone4"
             parent="Zones"
             handleOpenModal={handleOpenModal}
-            carouselContent={zone1}
+            carouselContent={zone4}
             direction="left"
             openModal={openModal}
             position={3}
@@ -257,12 +282,13 @@ const Zones = () => {
         </div>
         <div className="page h-100" id="zone5">
           <Zone
-            id="zone3"
+            id="zone5"
             parent="Zones"
             handleOpenModal={handleOpenModal}
-            carouselContent={zone1}
+            carouselContent={zone5}
             direction="right"
-            openModal={4}
+            openModal={openModal}
+            position={4}
           />
         </div>
       </div>

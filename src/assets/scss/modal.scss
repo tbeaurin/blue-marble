@@ -31,6 +31,14 @@
     #popupMain {
         .popup-title {
             padding-left: 80px;
+            &.odd {
+                .popup-description {
+                    margin-top: 35% !important;
+                }
+                .popup-subtitle {
+                    margin-left: 13% !important;
+                }
+            }
         }
     }
 }
@@ -94,6 +102,9 @@
     img {
         transition: all linear .8s;
     }
+    img.Inventaire {
+        // border: 1px solid #bcbcbc;
+    }
     img.previous, img.next {
         transform: translate(0,0) scale(0.25);
         opacity: .5;
@@ -126,12 +137,42 @@
     font-family: "Montserrat";
     .popup-title {
         margin: auto;
+        &.odd {
+            .popup-subtitle {
+                margin-left: 12.5%;
+            }
+            h2 {
+                text-align: center;
+                margin-left: 2%;
+            }
+            .popup-description {
+                margin-left: 0;
+                width: 38%;
+                margin-top: 15%;
+            }
+        }
+    }
+    h2 {
+        color: #718CBF;
+        font-size: 154px;
+        line-height: 154px;
+        text-transform: uppercase;
+        text-align: left;
+        width: 100%;
+        left: 0;
+        position: absolute;
+        margin: -7% 0 0 15%;
+        opacity: .25;
+        span {
+            display: block;
+        }
     }
     .popup-subtitle {
+        position: absolute;
         color: #3a5caa;
-        margin-left: 104px;
-        margin-bottom: -40px;
+        margin-left: 15%;
         line-height: 28px;
+        margin-top: -7.6%;
         span {
             display: block;
         }
@@ -142,18 +183,6 @@
         }
         .title {
             font-size: 20px;
-        }
-    }
-    h2 {
-        color: #718CBF;
-        font-size: 128px;
-        line-height: 128px;
-        text-transform: uppercase;
-        text-align: left;
-        margin: -10px 0 0 0;
-        opacity: .25;
-        span {
-            display: block;
         }
     }
     .popup-description {

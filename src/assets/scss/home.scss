@@ -43,6 +43,7 @@
     .dessin { transition: opacity ease-out .2s; }
     .constelation { transition: opacity ease-out .4s; }
     .lose-focus.dessin, .lose-focus.constelation, .lose-focus.background-constelation-title { opacity: 0; }
+    .stars { opacity: .5;}
     .focus.dessin, .focus.constelation, .focus.stars {
         opacity: 1; 
     }
@@ -156,6 +157,16 @@ align-items: center;
 img {
     padding-right: 8px;
 }
+}
+.mentions-link {
+    position: absolute;
+    right: 30px;
+    bottom: 45px;
+    width: 150px;
+    border-top: 1px solid #fff;
+    text-align: right;
+    padding-top: 7px;
+    font-size: 14px;
 }
 
 // MENU
