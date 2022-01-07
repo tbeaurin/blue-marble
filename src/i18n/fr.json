@@ -129,6 +129,15 @@
 
     "Zones.zone2.subtitle": "Zone 2",
     "Zones.zone2.title": "Périphérie",
+
+    "Zones.zone3.subtitle": "Zone 3",
+    "Zones.zone3.title": "Campagne",
+
+    "Zones.zone4.subtitle": "Zone 4",
+    "Zones.zone4.title": "Montagne",
+
+    "Zones.zone5.subtitle": "Zone 5",
+    "Zones.zone5.title": "Littoral",
     
     "Popup.open": "Ouvrir",
     "Popup.close": "Retour",

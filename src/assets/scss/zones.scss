@@ -49,23 +49,26 @@
             }
         }
     }
-    #zone1-subtitle {
+    #zone1-subtitle, #zone3-subtitle, #zone5-subtitle {
         &.popup-active-right {
             margin-left: calc(104px - 80vw) !important;
             color: #3a5caa;
         }
     }
-    #zone2-subtitle {
+    #zone2-subtitle, #zone4-subtitle {
         margin-left: 606px;
         &.popup-active-left {
             margin-left: calc(606px + 80vw) !important;
             color: #3a5caa;
         }
     }
-    #zone2-open {
+    #zone2-open, #zone4-open, #zone3-open, #zone5-open {
         top: 0;
-        left: 98px;
     }
+    #zone2-open { left: 98px }
+    #zone3-open { left: 600px }
+    #zone4-open { left: 130px }
+    #zone5-open { left: 480px }
     #studio-subtitle {
         margin-left: 79px;
         &.popup-active-right {

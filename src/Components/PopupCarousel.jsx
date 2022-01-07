@@ -8,7 +8,7 @@ import CustomLink from './CustomLink';
 import { initializeCursor, openCursor } from '../Functions/functions';
 
 const PopupCarousel = ({
-  content = [], handleOpenModal, title, subtitle1, subtitle2, position,
+  content = [], handleOpenModal, title, subtitle1, subtitle2, position, parent,
 }) => {
   const { t } = useTranslation();
   const [step, setStep] = React.useState(0);
@@ -191,7 +191,7 @@ const PopupCarousel = ({
         <div>
           <img
             src={content[initialStep].image}
-            className="current"
+            className={`current ${parent && parent}`}
             alt=""
           />
         </div>

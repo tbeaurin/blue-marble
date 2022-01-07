@@ -102,6 +102,9 @@
     img {
         transition: all linear .8s;
     }
+    img.Inventaire {
+        // border: 1px solid #bcbcbc;
+    }
     img.previous, img.next {
         transform: translate(0,0) scale(0.25);
         opacity: .5;

@@ -40,6 +40,7 @@ const Zone = ({
       />
       <Popup modal open={openModal[position]} className={`popup-${direction}`}>
         <PopupCarousel
+          parent={parent}
           content={carouselContent}
           title={(
             <>
