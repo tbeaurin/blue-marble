@@ -2,7 +2,6 @@
 import React from 'react';
 import { Trans } from 'react-i18next';
 import { useDebouncedCallback } from 'use-debounce';
-import ReactGA from 'react-ga';
 
 import CustomLink from '../Components/CustomLink';
 
@@ -50,7 +49,6 @@ const Missio = () => {
     document.querySelector('#coulissesFakeWrapper').style.display = 'none';
 
     initializeCursor();
-    ReactGA.pageview('Home');
   }, []);
 
   const drawAnchor = useDebouncedCallback((e) => {

@@ -1,6 +1,5 @@
 /* eslint-disable no-shadow */
 import React from 'react';
-import ReactGA from 'react-ga';
 
 import { useDebouncedCallback } from 'use-debounce';
 import { Trans, useTranslation } from 'react-i18next';
@@ -48,7 +47,6 @@ const PopupCarousel = ({
   const handleMouseLeave = (e) => {
     e.persist();
     initializeCursor();
-    ReactGA.pageview(parent);
   };
 
   const handlePrev = React.useCallback(() => {
@@ -179,14 +177,14 @@ const PopupCarousel = ({
         <div>
           <img
             src={content[initialPrevStep2].image}
-            className="previous-hide"
+            className={`previous-hide ${parent && parent}`}
             alt=""
           />
         </div>
         <div>
           <img
             src={content[initialPrevStep].image}
-            className="previous"
+            className={`previous ${parent && parent}`}
             alt=""
           />
         </div>
@@ -200,14 +198,14 @@ const PopupCarousel = ({
         <div>
           <img
             src={content[initialNextStep].image}
-            className="next"
+            className={`next ${parent && parent}`}
             alt=""
           />
         </div>
         <div>
           <img
             src={content[initialNextStep2].image}
-            className="next-hide"
+            className={`next-hide ${parent && parent}`}
             alt=""
           />
         </div>

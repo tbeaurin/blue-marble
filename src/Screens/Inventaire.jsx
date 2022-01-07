@@ -5,7 +5,6 @@ import React from 'react';
 import { Trans } from 'react-i18next';
 import { useDebouncedCallback } from 'use-debounce';
 import 'reactjs-popup/dist/index.css';
-import ReactGA from 'react-ga';
 
 import CustomLink from '../Components/CustomLink';
 import Zone from '../Components/Zone';
@@ -22,7 +21,7 @@ const Inventaire = () => {
 
   const studio = [];
 
-  for (let i = 1; i <= 40; i += 1) {
+  for (let i = 1; i <= 30; i += 1) {
     studio.push(
       {
         image: imagesStudio[i - 1], description: <Trans i18nKey={`Popup.studio.description${i}`} />, important: <Trans i18nKey={`Popup.studio.description${i}.important`} />, link: `Popup.studio.description${i}.link`,
@@ -52,7 +51,6 @@ const Inventaire = () => {
     document.querySelector('#coulissesFakeWrapper').style.display = 'none';
 
     initializeCursor();
-    ReactGA.pageview('Inventaire');
   }, []);
 
   const drawAnchor = useDebouncedCallback((e) => {
