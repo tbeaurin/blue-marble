@@ -55,6 +55,7 @@ const Zone = ({
           )}
           subtitle1={<Trans i18nKey={`${parent}.${id}.subtitle`} />}
           subtitle2={<Trans i18nKey={`${parent}.${id}.title`} />}
+          position={position}
           handleOpenModal={() => { handleOpenModal(position, direction); }}
         />
       </Popup>
