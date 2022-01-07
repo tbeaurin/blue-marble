@@ -21,7 +21,7 @@ const Inventaire = () => {
 
   const studio = [];
 
-  for (let i = 1; i <= 40; i += 1) {
+  for (let i = 1; i <= 30; i += 1) {
     studio.push(
       {
         image: imagesStudio[i - 1], description: <Trans i18nKey={`Popup.studio.description${i}`} />, important: <Trans i18nKey={`Popup.studio.description${i}.important`} />, link: `Popup.studio.description${i}.link`,

@@ -177,14 +177,14 @@ const PopupCarousel = ({
         <div>
           <img
             src={content[initialPrevStep2].image}
-            className="previous-hide"
+            className={`previous-hide ${parent && parent}`}
             alt=""
           />
         </div>
         <div>
           <img
             src={content[initialPrevStep].image}
-            className="previous"
+            className={`previous ${parent && parent}`}
             alt=""
           />
         </div>
@@ -198,14 +198,14 @@ const PopupCarousel = ({
         <div>
           <img
             src={content[initialNextStep].image}
-            className="next"
+            className={`next ${parent && parent}`}
             alt=""
           />
         </div>
         <div>
           <img
             src={content[initialNextStep2].image}
-            className="next-hide"
+            className={`next-hide ${parent && parent}`}
             alt=""
           />
         </div>

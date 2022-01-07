@@ -103,7 +103,10 @@
         transition: all linear .8s;
     }
     img.Inventaire {
-        // border: 1px solid #bcbcbc;
+        border: 3px solid #bcbcbc;
+    }
+    .current.Inventaire {
+        border: 1px solid #bcbcbc;
     }
     img.previous, img.next {
         transform: translate(0,0) scale(0.25);
