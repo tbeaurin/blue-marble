@@ -7,6 +7,7 @@ import {
   Route,
   withRouter,
 } from 'react-router-dom';
+import ReactGA from 'react-ga';
 import { TransitionGroup } from 'react-transition-group';
 import { Trans } from 'react-i18next';
 
@@ -86,6 +87,7 @@ const App = () => {
 
   React.useEffect(() => {
     initializeCursor();
+    ReactGA.initialize('G-1PKMKCKJJ5');
   }, []);
 
   const MainRouter = withRouter(({ location }) => (
