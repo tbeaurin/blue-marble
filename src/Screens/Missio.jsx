@@ -2,6 +2,7 @@
 import React from 'react';
 import { Trans } from 'react-i18next';
 import { useDebouncedCallback } from 'use-debounce';
+import ReactGA from 'react-ga';
 
 import CustomLink from '../Components/CustomLink';
 
@@ -19,6 +20,7 @@ import Medium from '../assets/img/medium_white.png';
 import Eul from '../assets/img/eul_white.png';
 import Udl from '../assets/img/udl_white.png';
 import Anr from '../assets/img/anr_white.png';
+import { initializeCursor } from '../Functions/functions';
 
 const Missio = () => {
   const pages = document.getElementsByClassName('page');
@@ -46,6 +48,9 @@ const Missio = () => {
     document.querySelector('#zonesFakeWrapper').style.display = 'none';
     document.querySelector('#inventaireFakeWrapper').style.display = 'none';
     document.querySelector('#coulissesFakeWrapper').style.display = 'none';
+
+    initializeCursor();
+    ReactGA.pageview('Home');
   }, []);
 
   const drawAnchor = useDebouncedCallback((e) => {

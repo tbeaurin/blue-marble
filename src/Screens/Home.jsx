@@ -1,5 +1,6 @@
 import React from 'react';
 import { Trans } from 'react-i18next';
+import ReactGA from 'react-ga';
 
 import logoANR from '../assets/img/logo-anr.png';
 import logoEUL from '../assets/img/logo-eul.png';
@@ -71,6 +72,7 @@ const Home = () => {
     document.querySelector('#stars').style.top = 0;
 
     initializeCursor();
+    ReactGA.pageview('Home');
   }, []);
 
   return (
