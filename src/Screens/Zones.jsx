@@ -5,7 +5,6 @@ import React from 'react';
 import { Trans } from 'react-i18next';
 import { useDebouncedCallback } from 'use-debounce';
 import 'reactjs-popup/dist/index.css';
-import ReactGA from 'react-ga';
 
 import CustomLink from '../Components/CustomLink';
 import Zone from '../Components/Zone';
@@ -84,7 +83,6 @@ const Zones = () => {
     document.querySelector('#coulissesFakeWrapper').style.display = 'none';
 
     initializeCursor();
-    ReactGA.pageview('Home');
   }, []);
 
   const drawAnchor = useDebouncedCallback((e) => {

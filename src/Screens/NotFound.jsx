@@ -2,7 +2,6 @@
 import React from 'react';
 import 'reactjs-popup/dist/index.css';
 import { Trans } from 'react-i18next';
-import ReactGA from 'react-ga';
 
 import CustomLink from '../Components/CustomLink';
 
@@ -17,7 +16,6 @@ const NotFound = () => {
     document.querySelector('#coulissesFakeWrapper').style.display = 'none';
 
     initializeCursor();
-    ReactGA.pageview('Home');
   }, []);
 
   return (
