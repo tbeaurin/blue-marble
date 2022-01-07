@@ -3,6 +3,7 @@ import React from 'react';
 import { Trans } from 'react-i18next';
 import { useDebouncedCallback } from 'use-debounce';
 import 'reactjs-popup/dist/index.css';
+import ReactGA from 'react-ga';
 
 import CustomLink from '../Components/CustomLink';
 import { initializeCursor } from '../Functions/functions';
@@ -34,6 +35,7 @@ const Inventaire = () => {
     document.querySelector('#coulissesFakeWrapper').style.display = 'none';
 
     initializeCursor();
+    ReactGA.pageview('Coulisses');
   }, []);
 
   const drawAnchor = useDebouncedCallback((e) => {

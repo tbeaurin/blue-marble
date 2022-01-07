@@ -1,5 +1,6 @@
 /* eslint-disable no-shadow */
 import React from 'react';
+import ReactGA from 'react-ga';
 
 import { useDebouncedCallback } from 'use-debounce';
 import { Trans, useTranslation } from 'react-i18next';
@@ -47,6 +48,7 @@ const PopupCarousel = ({
   const handleMouseLeave = (e) => {
     e.persist();
     initializeCursor();
+    ReactGA.pageview(parent);
   };
 
   const handlePrev = React.useCallback(() => {
