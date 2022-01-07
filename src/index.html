@@ -6,7 +6,7 @@
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no" />
 
-  <title>Blue Marble</title>
+  <title>Blue Marble SRC</title>
 
   <style>
     .loading {
@@ -41,6 +41,7 @@
         // the correct url will be waiting in the browser's history for
         // the single page app to route accordingly.
         (function(l) {
+          console.log(l)
           if (l.search[1] === '/' ) {
             var decoded = l.search.slice(1).split('&').map(function(s) { 
               return s.replace(/~and~/g, '&')

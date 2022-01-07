@@ -17,6 +17,7 @@ import Missio from './Screens/Missio';
 import Zones from './Screens/Zones';
 import Inventaire from './Screens/Inventaire';
 import Coulisses from './Screens/Coulisses';
+import NotFound from './Screens/NotFound';
 
 import black from './assets/img/black.png';
 import stars from './assets/img/stars.png';
@@ -90,10 +91,11 @@ const App = () => {
     <TransitionGroup>
       <Switch location={location}>
         <Route path="/" component={Home} exact />
-        <Route path="/missio" component={Missio} />
-        <Route path="/zones" component={Zones} />
-        <Route path="/inventaire" component={Inventaire} />
-        <Route path="/coulisses" component={Coulisses} />
+        <Route exact path="/missio" component={Missio} />
+        <Route exact path="/zones" component={Zones} />
+        <Route exact path="/inventaire" component={Inventaire} />
+        <Route exact path="/coulisses" component={Coulisses} />
+        <Route component={NotFound} />
       </Switch>
     </TransitionGroup>
   ));
