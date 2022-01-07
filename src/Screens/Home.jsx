@@ -4,6 +4,7 @@ import { Trans } from 'react-i18next';
 import logoANR from '../assets/img/logo-anr.png';
 import logoEUL from '../assets/img/logo-eul.png';
 import logoUNI from '../assets/img/logo-universite.png';
+import CustomLink from '../Components/CustomLink';
 
 import Menu from '../Components/Menu';
 import { initializeCursor } from '../Functions/functions';
@@ -91,6 +92,14 @@ const Home = () => {
         </div>
         <Menu />
       </section>
+      <p>
+        <CustomLink
+          href="/mentions"
+          tag="Link"
+          className="mentions-link"
+          content={<Trans i18nKey="Mentions.link" />}
+        />
+      </p>
     </div>
   );
 };

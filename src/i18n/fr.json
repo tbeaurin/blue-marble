@@ -32,6 +32,17 @@
     "404.text": "Oops, la page que vous avez demandé n'existe pas",
     "404.link.text": "Revenir à l'accueil",
 
+    "Mentions.link": "Mentions légales",
+    "Mentions.title": "Mentions légales",
+    "Mentions.title.1": "Responsable de la publication",
+    "Mentions.text.1": "Adrien PINON<br />64 rue Pasteur<br />69007 Lyon<br />Siret: 820 792 505 00027<br />Code APE<br />7420Z",
+    "Mentions.title.2": "Coordonnées hébergeur",
+    "Mentions.text.2": "NETLIFY<br />Siège social: 325 3rd Street, Suite 296, San Francisco, California 94107",
+    "Mentions.title.3": "Crédits",
+    "Mentions.text.3": "Toutes les photographies et textes de ce site sont l’œuvre de ©Adrien PINON. Tous usages, copies et reproductions sans autorisation écrite sont interdits.<br />All photographs and texts on this site are the work of ©Adrien PINON. All uses, copies and reproductions without written authorization are prohibited. ",
+    "Mentions.title.4": "Développeur web",
+    "Mentions.text.4": "Tristan Beaurin",
+
     "Missio.constelation": "Missio",
     "Missio.title": "La mission",
     "Zones.constelation": "Areis",

@@ -17,6 +17,7 @@ import Missio from './Screens/Missio';
 import Zones from './Screens/Zones';
 import Inventaire from './Screens/Inventaire';
 import Coulisses from './Screens/Coulisses';
+import Mentions from './Screens/Mentions';
 import NotFound from './Screens/NotFound';
 
 import black from './assets/img/black.png';
@@ -95,6 +96,7 @@ const App = () => {
         <Route exact path="/zones" component={Zones} />
         <Route exact path="/inventaire" component={Inventaire} />
         <Route exact path="/coulisses" component={Coulisses} />
+        <Route exact path="/mentions" component={Mentions} />
         <Route component={NotFound} />
       </Switch>
     </TransitionGroup>
