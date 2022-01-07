@@ -257,7 +257,10 @@ const Missio = () => {
               </span>
               <div className="d-flex">
                 <div id="anthropocene-definition">
-                  <Trans i18nKey="Missio.anthropocene.definition" />
+                  <p><Trans i18nKey="Missio.anthropocene.definition" /></p>
+                  <p className="small-italic">
+                    <Trans i18nKey="Missio.anthropocene.definition.small" />
+                  </p>
                 </div>
                 <div id="anthropocene-aditionnal">
                   <Trans i18nKey="Missio.anthropocene.aditionnal" />

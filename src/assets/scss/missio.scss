@@ -206,6 +206,11 @@
             font-size: 18px;
             font-weight: bold;
             width: 350px;
+            .small-italic {
+                font-size: 14px;
+                font-style: italic;
+                font-weight: initial;
+            }
         }
         #anthropocene-aditionnal {
             padding-inline: 64px;

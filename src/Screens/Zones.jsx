@@ -199,7 +199,7 @@ const Zones = () => {
         </div>
       </div>
       <div id="content" onScroll={(e) => handleScroll(e)}>
-        <div className="page h-100" id="zones">
+        <div className="page h-100">
           <div className="page-content">
             <p className="citation">
               <Trans i18nKey="Zones.citation" />
