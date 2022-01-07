@@ -51,7 +51,7 @@ const Missio = () => {
   const drawAnchor = useDebouncedCallback((e) => {
     Array.from(pages).forEach((page) => {
       if (e.nativeEvent.srcElement.scrollTop <= page.offsetTop + 250
-        && e.nativeEvent.srcElement.scrollTop >= page.offsetTop - 250 && page.id !== 'footer') {
+        && e.nativeEvent.srcElement.scrollTop >= page.offsetTop - 250 && page.id && page.id !== 'footer') {
         menuItems.forEach((i) => i.classList.remove('active'));
         document.querySelector(`#${page.id}Anchor`).classList.add('active');
       }
@@ -155,7 +155,7 @@ const Missio = () => {
 
   return (
     <div className="main">
-      <div id="missio">
+      <div>
         <div className="header" id="mainHeader">
           <div className="header-left">
             <span className="constelation-name">

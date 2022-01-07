@@ -136,7 +136,7 @@ const PopupCarousel = ({
     if (direction === 'down') {
       handlePrev();
     }
-  }, [25]);
+  }, [150]);
 
   const scrollCarouselFast = useDebouncedCallback((direction) => {
     if (direction === 'up') {
