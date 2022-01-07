@@ -28,6 +28,10 @@
     "Menu.coulisses.2": "Vidéo",
     "Menu.coulisses.3": "Remerciements",
 
+    "404.404": "404",
+    "404.text": "Oops, la page que vous avez demandé n'existe pas",
+    "404.link.text": "Revenir à l'accueil",
+
     "Missio.constelation": "Missio",
     "Missio.title": "La mission",
     "Zones.constelation": "Areis",
