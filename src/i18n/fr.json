@@ -28,6 +28,21 @@
     "Menu.coulisses.2": "Vidéo",
     "Menu.coulisses.3": "Remerciements",
 
+    "404.404": "404",
+    "404.text": "Oops, la page que vous avez demandé n'existe pas",
+    "404.link.text": "Revenir à l'accueil",
+
+    "Mentions.link": "Mentions légales",
+    "Mentions.title": "Mentions légales",
+    "Mentions.title.1": "Responsable de la publication",
+    "Mentions.text.1": "Adrien PINON<br />64 rue Pasteur<br />69007 Lyon<br />Siret: 820 792 505 00027<br />Code APE<br />7420Z",
+    "Mentions.title.2": "Coordonnées hébergeur",
+    "Mentions.text.2": "NETLIFY<br />Siège social: 325 3rd Street, Suite 296, San Francisco, California 94107",
+    "Mentions.title.3": "Crédits",
+    "Mentions.text.3": "Toutes les photographies et textes de ce site sont l’œuvre de ©Adrien PINON. Tous usages, copies et reproductions sans autorisation écrite sont interdits.<br />All photographs and texts on this site are the work of ©Adrien PINON. All uses, copies and reproductions without written authorization are prohibited. ",
+    "Mentions.title.4": "Développeur web",
+    "Mentions.text.4": "Tristan Beaurin",
+
     "Missio.constelation": "Missio",
     "Missio.title": "La mission",
     "Zones.constelation": "Areis",
@@ -45,7 +60,7 @@
     "Missio.majorQ.content.1": "Géologue et docteur en microbiologie",
     "Missio.majorQ.content.2": "Missionné à la collecte et de l'analyse des matières et objets anthropocèniques",
     "Missio.majorA.title": "Major A",
-    "Missio.majorA.content.1": "Architecte et docteur en urbanisme",
+    "Missio.majorA.content.1": "Géographe et docteur en urbanisme",
     "Missio.majorA.content.2": "Missionné à la photographie des paysages et des activités anthropocèniques",
 
     "Missio.objectifMonde.title": "Objectif Monde",
@@ -54,7 +69,8 @@
     "Missio.objectifMonde.p3": "Nous avons également maintenant à notre disposition XX matières et objets inventoriés permettant une compréhension plus fine de l'anthropocène et des enjeux que cette période soulève concernant l'avenir de l'humanité sur Terre.",
 
     "Missio.anthropocene.title": "an-thro-po-cene",
-    "Missio.anthropocene.definition": "Ce que l'on propose de nommer Anthropocène, c'est donc cette nouvelle époque dans l'histoire de l'anthropisation de la Terre, où il devient clair que l'être humain devient une force agissant irréversiblement sur l'entièreté de la planète. On observe donc, partout, les bouleversements, tout à la fois globaux et locaux, de ce que les géographes nomment l'écoumène, c'est-à-dire l'espace habité par les humaines.",
+    "Missio.anthropocene.definition": "Ce que l’on propose de nommer « Anthropocène », c’est ce moment historique qui s’ouvre après 1945 avec l’enclenchement de la phase de l’urbanisation généralisée de la planète lors duquel il devient incontestable que les activités humaines ont des impacts de plus en plus forts sur les systèmes biophysiques. On observe, partout, ces bouleversements tout à la fois globaux et locaux. A tel point que l’habitabilité de la terre pour les humains et les non humains est mise en question ",
+    "Missio.anthropocene.definition.small": "Michel Lussault, géographe, professeur à l’ENS de Lyon, directeur de l’Ecole urbaine de Lyon.",
     "Missio.anthropocene.aditionnal": "Alors que nous interrogeons de plus en plus sur l'habitabilité future de la terre, sur les conditions justes et éthiques de mise en œuvre des stratégies de réorientations écologiques de nos cohabitations, il est crucial de faire connaître les réalités anthropocènes, d'analyser les dynamiques à l’œuvre, notamment celles liées à l'urbanisation et de mettre en discussion ce qui peut guider notre action collective",
     
     "Missio.ecole.logoUni.1": "école urbaine ",
@@ -94,9 +110,9 @@
 
     "Missio.footer.1.1": "Pour en apprendre plus sur l'Ecole Urbaine de Lyon et ses activités :",
     "Missio.footer.1.2": "Ecole Urbaine de Lyon",
-    "Missio.footer.1.3": "Ecole Urbaine de Lyon",
+    "Missio.footer.1.3": "Medium Antrhopocène 2050",
     "Missio.footer.1.4": "Ecole Urbaine",
-    "Missio.footer.1.5": "Medium Antrhopocène 2050",
+    "Missio.footer.1.5": "Ecole Urbaine de Lyon",
     "Missio.footer.2.1.1": "école urbaine de lyon",
     "Missio.footer.2.1.2": "Université de lyon",
     "Missio.footer.2.2": "Université de lyon",
@@ -113,6 +129,15 @@
 
     "Zones.zone2.subtitle": "Zone 2",
     "Zones.zone2.title": "Périphérie",
+
+    "Zones.zone3.subtitle": "Zone 3",
+    "Zones.zone3.title": "Campagne",
+
+    "Zones.zone4.subtitle": "Zone 4",
+    "Zones.zone4.title": "Montagne",
+
+    "Zones.zone5.subtitle": "Zone 5",
+    "Zones.zone5.title": "Littoral",
     
     "Popup.open": "Ouvrir",
     "Popup.close": "Retour",

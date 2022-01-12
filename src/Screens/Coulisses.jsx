@@ -39,7 +39,7 @@ const Inventaire = () => {
   const drawAnchor = useDebouncedCallback((e) => {
     Array.from(pages).forEach((page) => {
       if (e.nativeEvent.srcElement.scrollTop <= page.offsetTop + 250
-        && e.nativeEvent.srcElement.scrollTop >= page.offsetTop - 250) {
+        && e.nativeEvent.srcElement.scrollTop >= page.offsetTop - 250 && page.id) {
         menuItems.forEach((i) => i.classList.remove('active'));
         document.querySelector(`#${page.id}Anchor`).classList.add('active');
       }
@@ -52,7 +52,6 @@ const Inventaire = () => {
     document.querySelector('#coulissesStars').style.top = `-${e.nativeEvent.srcElement.scrollTop / 50}px`;
     document.querySelector('#coulissesDessin').style.top = `-${e.nativeEvent.srcElement.scrollTop / 50}px`;
     document.querySelector('#coulissesConstelation').style.top = `-${e.nativeEvent.srcElement.scrollTop / 50}px`;
-    document.querySelector('#stars').style.top = `-${e.nativeEvent.srcElement.scrollTop / 150}px`;
 
     // SCROLLABLE MENU
     // BASE MARGIN TOP : 75PX
@@ -84,13 +83,6 @@ const Inventaire = () => {
   const renderMenu = () => (
     <nav id="menuZones" className="menu-page">
       <ul>
-        <li className="menuItem" id="coulissesAnchor" onClick={(e) => handleClick(e, 'coulisses')}>
-          <CustomLink
-            href="#coulisses"
-            tag="NavLink"
-            content={<Trans i18nKey="Menu.coulisses.1" />}
-          />
-        </li>
         <li className="menuItem" id="coulisses1Anchor" onClick={(e) => handleClick(e, 'video')}>
           <CustomLink
             href="#video"
@@ -133,7 +125,7 @@ const Inventaire = () => {
         </div>
       </div>
       <div id="content" onScroll={(e) => handleScroll(e)}>
-        <div className="page h-100" id="coulisses">
+        <div className="page h-100">
           <div className="page-content">
             <p className="citation">
               <span className="d-block citation-large"><Trans i18nKey="Coulisses.citation.1" /></span>

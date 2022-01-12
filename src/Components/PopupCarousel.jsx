@@ -2,14 +2,15 @@
 import React from 'react';
 
 import { useDebouncedCallback } from 'use-debounce';
-import { Trans } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 
 import CustomLink from './CustomLink';
 import { initializeCursor, openCursor } from '../Functions/functions';
 
 const PopupCarousel = ({
-  content = [], handleOpenModal, title, subtitle1, subtitle2,
+  content = [], handleOpenModal, title, subtitle1, subtitle2, position, parent,
 }) => {
+  const { t } = useTranslation();
   const [step, setStep] = React.useState(0);
   const [prevStep2, setPrevStep2] = React.useState(content.length - 2);
   const [nextStep2, setNextStep2] = React.useState(2);
@@ -135,7 +136,7 @@ const PopupCarousel = ({
     if (direction === 'down') {
       handlePrev();
     }
-  }, [25]);
+  }, [150]);
 
   const scrollCarouselFast = useDebouncedCallback((direction) => {
     if (direction === 'up') {
@@ -153,6 +154,8 @@ const PopupCarousel = ({
       scrollCarousel('up');
     }
   }, [scrollCarousel]);
+
+  const isEven = (n) => n % 2 === 0;
 
   return (
     <>
@@ -174,65 +177,99 @@ const PopupCarousel = ({
         <div>
           <img
             src={content[initialPrevStep2].image}
-            className="previous-hide"
+            className={`previous-hide ${parent && parent}`}
             alt=""
           />
         </div>
         <div>
           <img
             src={content[initialPrevStep].image}
-            className="previous"
+            className={`previous ${parent && parent}`}
             alt=""
           />
         </div>
         <div>
           <img
             src={content[initialStep].image}
-            className="current"
+            className={`current ${parent && parent}`}
             alt=""
           />
         </div>
         <div>
           <img
             src={content[initialNextStep].image}
-            className="next"
+            className={`next ${parent && parent}`}
             alt=""
           />
         </div>
         <div>
           <img
             src={content[initialNextStep2].image}
-            className="next-hide"
+            className={`next-hide ${parent && parent}`}
             alt=""
           />
         </div>
       </div>
       <div id="popupMain">
         <div className="d-flex flex-row h-100">
-          <div className="popup-title w-50">
-            <div className="popup-subtitle">
-              <span className="subtitle">{subtitle1}</span>
-              <span className="title">{subtitle2}</span>
-            </div>
-            <h2>{title}</h2>
+          <div className={`popup-title w-50 ${!isEven(position) && 'odd'}`}>
+            {isEven(position) ? (
+              <>
+                <div className="popup-subtitle">
+                  <span className="subtitle">{subtitle1}</span>
+                  <span className="title">{subtitle2}</span>
+                </div>
+                <h2>{title}</h2>
+              </>
+            ) : (
+              <div className="popup-description">
+                <p className="ta-justify">{content[step].description}</p>
+                {content[step].important && (
+                  <span className="important ta-right">{content[step].important}</span>
+                )}
+                {content[step].link && t(content[step].link, '').length > 0 && (
+                  <CustomLink
+                    href={t(content[step].link)}
+                    tag="Link"
+                    target="_blank"
+                    className="primary ta-right"
+                    content={t(content[step].link)}
+                  />
+                )}
+              </div>
+            )}
           </div>
-          <div className="popup-title w-50">
+          <div className={`popup-title w-50 ${!isEven(position) && 'odd'}`}>
             <CustomLink
               content={<Trans i18nKey="Popup.close" />}
               className="close"
               onClick={() => { handleOpenModal(); }}
             />
-            <div className="popup-description">
-              <p className="ta-justify">{content[step].description}</p>
-              <span className="important ta-right">{content[step].important}</span>
-              <CustomLink
-                href={`http://${content[step].link}`}
-                tag="Link"
-                target="_blank"
-                className="primary ta-right"
-                content={content[step].link}
-              />
-            </div>
+            {isEven(position) ? (
+              <div className="popup-description">
+                <p className="ta-justify">{content[step].description}</p>
+                {content[step].important && (
+                  <span className="important ta-right">{content[step].important}</span>
+                )}
+                {content[step].link && t(content[step].link, '').length > 0 && (
+                  <CustomLink
+                    href={t(content[step].link)}
+                    tag="Link"
+                    target="_blank"
+                    className="primary ta-right"
+                    content={t(content[step].link)}
+                  />
+                )}
+              </div>
+            ) : (
+              <>
+                <div className="popup-subtitle">
+                  <span className="subtitle">{subtitle1}</span>
+                  <span className="title">{subtitle2}</span>
+                </div>
+                <h2>{title}</h2>
+              </>
+            )}
           </div>
         </div>
       </div>

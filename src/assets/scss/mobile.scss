@@ -1,14 +1,196 @@
 @media only screen and (max-width: 760px) {
+    html, body {
+        cursor: inherit;
+        overflow: auto;
+        overflow-x: hidden;
+    }
+    h1 {
+        position: fixed;
+        padding-left: 54px;
+        span {
+            font-size: 24px;
+            &:before {
+                height: 6px;
+            }
+        }
+        .small {
+            font-size: 18px;
+            &:before {
+                height: 5px;
+                margin-top: 28px;
+            }
+        }
+        p {
+            margin-bottom: -15px;
+        }
+    }
+    #fontStatic, .mentions-link {
+        position: fixed;
+    }
     main {
-
+        .menuHome {
+            padding-left: 0;
+            #burger {
+                width: 36px;
+                height: 36px;
+                position: fixed;
+                z-index: 8;
+                margin-top: 4px;
+                .burger-line {
+                    background-color: #fff;
+                    width: 100%;
+                    height: 4px;
+                    margin-bottom: 8px;
+                    border-radius: 2px;
+                    transition: all .8s ease;
+                }
+                &.open {
+                    #line1 {
+                        transform: translate(0px, 8px) rotate(45deg);
+                    }
+                    #line2 {
+                        opacity: 0;
+                    }
+                    #line3 {
+                        transform:translate(0px, -16px) rotate(-45deg);
+                    }
+                }
+            }
+            .menu-mobile {
+                position: fixed;
+                left: 100vw;
+                transition: all .8s ease;
+                opacity: 0;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                top: 25vh;
+                &.open {
+                    left: 0;
+                    opacity: 1;
+                }
+            }
+        }
+        .logo-wrapper {
+            height: 71vh;
+            position: absolute;
+            top: 408vh;
+            width: calc(100vw - 160px);
+            left: 0;
+            padding-left: 80px;
+            padding-right: 80px;
+            .logos, #anrText {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                img {
+                    margin-bottom: 32px;
+                }
+            }
+        }
     }
     #font {
         background-color: #fff;
         margin: auto;
         padding: 0;
+        margin-bottom: 80px;
+        top: 0;
+        left: 0;
+        #fontMissio, #fontZones, #fontInventaire, #fontCoulisses {
+            position: absolute;
+            left: 0;
+            transition: all .8s ease;
+            &.hidden {
+                opacity: 0;
+                left: -100vw;
+            }
+        }
+        .background-constelation-title {
+            transition: none;
+            opacity: 1;
+            font-size: 32px;
+            span {
+                opacity: .5;
+            }
+            .constelation-title {
+                font-size: 16px;
+                font-weight: normal;
+                font-family: "Montserrat";
+                font-style: normal;
+                left: 9px;
+                top: 14px;
+                width: 200px;
+            }
+        }
+        #missioName {
+            top: 46vh;
+            left: 64vw;
+        }
+        #zonesName {
+            top: 162vh;
+            left: 44vw;
+        }
+        #inventaireName {
+            top: 260vh;
+            left: 40vw;
+        }
+        #coulissesName {
+            top: 372vh;
+            left: 40vw;
+        }
+        
+        #black, #stars {
+            animation: inherit;
+        }
+        #stars {
+            z-index: 4;
+        }
+        .dessin-mobile {
+            position: absolute;
+            width: 100vw;
+            height: auto;
+            z-index: 5;
+            &.missio-mobile {
+                top: 8vh;
+            }
+            &.zones-mobile {
+                top: 108vh;
+            }
+            &.inventaire-mobile {
+                top: 208vh;
+            }
+            &.coulisses-mobile {
+                top: 308vh;
+            }
+        }
     }
-    h1 {
-        text-align: center;
+    #missioFakeWrapper, #zonesFakeWrapper, #inventaireFakeWrapper, #coulissesFakeWrapper {
+        position: absolute;
+    }
+    #missioFakeWrapper {
+        height: 62vh;
+        width: 79vw;
+        top: 23vh;
+        left: 14vw;
+    }
+    #zonesFakeWrapper {
+        height: 62vh;
+        width: 80vw;
+        top: 125vh;
+        left: 9vw;
+    }
+    #inventaireFakeWrapper {
+        height: 38vh;
+        width: 87vw;
+        opacity: 0.4;
+        top: 235vh;
+        left: 9vw;
+    }
+    #coulissesFakeWrapper {
+        height: 54vh;
+        width: 79vw;
+        top: 327vh;
+        left: 14vw;
     }
     section#homeLeft {
         padding-top: 0;

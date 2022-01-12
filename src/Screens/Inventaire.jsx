@@ -10,12 +10,7 @@ import CustomLink from '../Components/CustomLink';
 import Zone from '../Components/Zone';
 import { initializeCursor } from '../Functions/functions';
 
-import TestCarousel from '../assets/img/adrien.png';
-import TestCarousel2 from '../assets/img/carousel1.png';
-import TestCarousel3 from '../assets/img/adrien.png';
-import TestCarousel4 from '../assets/img/carousel1.png';
-import TestCarousel5 from '../assets/img/adrien.png';
-import TestCarousel6 from '../assets/img/carousel1.png';
+import imagesStudio from '../Components/Imports/Studio';
 
 const Inventaire = () => {
   const pages = document.getElementsByClassName('page');
@@ -24,16 +19,15 @@ const Inventaire = () => {
 
   const [openModal, setOpenModal] = React.useState([false, false]);
 
-  const inventaire1 = [
-    {
-      image: TestCarousel, description: <Trans i18nKey="Popup.zone1.description1" />, important: <Trans i18nKey="Popup.zone1.description1.important" />, link: 'www.sondekla.com/user/event/12046',
-    },
-    { image: TestCarousel2, description: <Trans i18nKey="Popup.zone1.description2" /> },
-    { image: TestCarousel3, description: <Trans i18nKey="Popup.zone1.description3" /> },
-    { image: TestCarousel4, description: <Trans i18nKey="Popup.zone1.description4" /> },
-    { image: TestCarousel5, description: <Trans i18nKey="Popup.zone1.description5" /> },
-    { image: TestCarousel6, description: <Trans i18nKey="Popup.zone1.description6" /> },
-  ];
+  const studio = [];
+
+  for (let i = 1; i <= 30; i += 1) {
+    studio.push(
+      {
+        image: imagesStudio[i - 1], description: <Trans i18nKey={`Popup.studio.description${i}`} />, important: <Trans i18nKey={`Popup.studio.description${i}.important`} />, link: `Popup.studio.description${i}.link`,
+      },
+    );
+  }
 
   React.useEffect(() => {
     document.querySelector('#fontStatic').classList.add('zoomed');
@@ -62,7 +56,7 @@ const Inventaire = () => {
   const drawAnchor = useDebouncedCallback((e) => {
     Array.from(pages).forEach((page) => {
       if (e.nativeEvent.srcElement.scrollTop <= page.offsetTop + 250
-        && e.nativeEvent.srcElement.scrollTop >= page.offsetTop - 250) {
+        && e.nativeEvent.srcElement.scrollTop >= page.offsetTop - 250 && page.id) {
         menuItems.forEach((i) => i.classList.remove('active'));
         document.querySelector(`#${page.id}Anchor`).classList.add('active');
       }
@@ -75,7 +69,6 @@ const Inventaire = () => {
     document.querySelector('#inventaireStars').style.top = `-${e.nativeEvent.srcElement.scrollTop / 50}px`;
     document.querySelector('#inventaireDessin').style.top = `-${e.nativeEvent.srcElement.scrollTop / 50}px`;
     document.querySelector('#inventaireConstelation').style.top = `-${e.nativeEvent.srcElement.scrollTop / 50}px`;
-    document.querySelector('#stars').style.top = `-${e.nativeEvent.srcElement.scrollTop / 150}px`;
 
     // SCROLLABLE MENU
     // BASE MARGIN TOP : 75PX
@@ -136,25 +129,11 @@ const Inventaire = () => {
   const renderMenu = () => (
     <nav id="menuZones" className="menu-page">
       <ul>
-        <li className="menuItem" id="inventaireAnchor" onClick={(e) => handleClick(e, 'inventaire')}>
-          <CustomLink
-            href="#inventaire"
-            tag="NavLink"
-            content={<Trans i18nKey="Menu.inventaire.1" />}
-          />
-        </li>
         <li className="menuItem" id="studioAnchor" onClick={(e) => handleClick(e, 'studio')}>
           <CustomLink
             href="#studio"
             tag="NavLink"
             content={<Trans i18nKey="Menu.inventaire.2" />}
-          />
-        </li>
-        <li className="menuItem" id="terrainAnchor" onClick={(e) => handleClick(e, 'terrain')}>
-          <CustomLink
-            href="#terrain"
-            tag="NavLink"
-            content={<Trans i18nKey="Menu.inventaire.3" />}
           />
         </li>
         <li className="menuItem">
@@ -185,7 +164,7 @@ const Inventaire = () => {
         </div>
       </div>
       <div id="content" onScroll={(e) => handleScroll(e)}>
-        <div className="page h-100" id="inventaire">
+        <div className="page h-100">
           <div className="page-content">
             <p className="citation">
               <span className="d-block"><Trans i18nKey="Inventaire.citation.1" /></span>
@@ -202,21 +181,10 @@ const Inventaire = () => {
             id="studio"
             parent="Inventaire"
             handleOpenModal={handleOpenModal}
-            carouselContent={inventaire1}
+            carouselContent={studio}
             direction="right"
             openModal={openModal}
             position={0}
-          />
-        </div>
-        <div className="page h-100" id="terrain">
-          <Zone
-            id="terrain"
-            parent="Inventaire"
-            handleOpenModal={handleOpenModal}
-            carouselContent={inventaire1}
-            direction="left"
-            openModal={openModal}
-            position={1}
           />
         </div>
       </div>

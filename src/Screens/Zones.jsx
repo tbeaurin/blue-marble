@@ -9,13 +9,13 @@ import 'reactjs-popup/dist/index.css';
 import CustomLink from '../Components/CustomLink';
 import Zone from '../Components/Zone';
 
-import TestCarousel from '../assets/img/adrien.png';
-import TestCarousel2 from '../assets/img/carousel1.png';
-import TestCarousel3 from '../assets/img/adrien.png';
-import TestCarousel4 from '../assets/img/carousel1.png';
-import TestCarousel5 from '../assets/img/adrien.png';
-import TestCarousel6 from '../assets/img/carousel1.png';
 import { initializeCursor } from '../Functions/functions';
+
+import imagesZone1 from '../Components/Imports/Zone1';
+import imagesZone2 from '../Components/Imports/Zone2';
+import imagesZone3 from '../Components/Imports/Zone3';
+import imagesZone4 from '../Components/Imports/Zone4';
+import imagesZone5 from '../Components/Imports/Zone5';
 
 const Zones = () => {
   const pages = document.getElementsByClassName('page');
@@ -24,16 +24,42 @@ const Zones = () => {
 
   const [openModal, setOpenModal] = React.useState([false, false, false, false, false]);
 
-  const zone1 = [
-    {
-      image: TestCarousel, description: <Trans i18nKey="Popup.zone1.description1" />, important: <Trans i18nKey="Popup.zone1.description1.important" />, link: 'www.sondekla.com/user/event/12046',
-    },
-    { image: TestCarousel2, description: <Trans i18nKey="Popup.zone1.description2" /> },
-    { image: TestCarousel3, description: <Trans i18nKey="Popup.zone1.description3" /> },
-    { image: TestCarousel4, description: <Trans i18nKey="Popup.zone1.description4" /> },
-    { image: TestCarousel5, description: <Trans i18nKey="Popup.zone1.description5" /> },
-    { image: TestCarousel6, description: <Trans i18nKey="Popup.zone1.description6" /> },
-  ];
+  const zone1 = [];
+  const zone2 = [];
+  const zone3 = [];
+  const zone4 = [];
+  const zone5 = [];
+  for (let i = 1; i <= 50; i += 1) {
+    zone1.push(
+      {
+        image: imagesZone1[i - 1], description: <Trans i18nKey={`Popup.zone1.description${i}`} />, important: <Trans i18nKey={`Popup.zone1.description${i}.important`} />, link: `Popup.zone1.description${i}.link`,
+      },
+    );
+    zone2.push(
+      {
+        image: imagesZone2[i - 1], description: <Trans i18nKey={`Popup.zone2.description${i}`} />, important: <Trans i18nKey={`Popup.zone2.description${i}.important`} />, link: `Popup.zone1.description${i}.link`,
+      },
+    );
+  }
+  for (let i = 1; i <= 40; i += 1) {
+    zone3.push(
+      {
+        image: imagesZone3[i - 1], description: <Trans i18nKey={`Popup.zone3.description${i}`} />, important: <Trans i18nKey={`Popup.zone3.description${i}.important`} />, link: `Popup.zone3.description${i}.link`,
+      },
+    );
+  }
+  for (let i = 1; i <= 35; i += 1) {
+    zone4.push(
+      {
+        image: imagesZone4[i - 1], description: <Trans i18nKey={`Popup.zone4.description${i}`} />, important: <Trans i18nKey={`Popup.zone4.description${i}.important`} />, link: `Popup.zone4.description${i}.link`,
+      },
+    );
+    zone5.push(
+      {
+        image: imagesZone5[i - 1], description: <Trans i18nKey={`Popup.zone5.description${i}`} />, important: <Trans i18nKey={`Popup.zone5.description${i}.important`} />, link: `Popup.zone5.description${i}.link`,
+      },
+    );
+  }
 
   React.useEffect(() => {
     document.querySelector('#fontStatic').classList.add('zoomed');
@@ -62,7 +88,7 @@ const Zones = () => {
   const drawAnchor = useDebouncedCallback((e) => {
     Array.from(pages).forEach((page) => {
       if (e.nativeEvent.srcElement.scrollTop <= page.offsetTop + 250
-        && e.nativeEvent.srcElement.scrollTop >= page.offsetTop - 250) {
+        && e.nativeEvent.srcElement.scrollTop >= page.offsetTop - 250 && page.id) {
         menuItems.forEach((i) => i.classList.remove('active'));
         document.querySelector(`#${page.id}Anchor`).classList.add('active');
       }
@@ -75,7 +101,6 @@ const Zones = () => {
     document.querySelector('#zonesStars').style.top = `-${e.nativeEvent.srcElement.scrollTop / 20}px`;
     document.querySelector('#zonesDessin').style.top = `-${e.nativeEvent.srcElement.scrollTop / 20}px`;
     document.querySelector('#zonesConstelation').style.top = `-${e.nativeEvent.srcElement.scrollTop / 20}px`;
-    document.querySelector('#stars').style.top = `-${e.nativeEvent.srcElement.scrollTop / 60}px`;
 
     // SCROLLABLE MENU
     // BASE MARGIN TOP : 75PX
@@ -136,13 +161,6 @@ const Zones = () => {
   const renderMenu = () => (
     <nav id="menuZones" className="menu-page">
       <ul>
-        <li className="menuItem" id="zonesAnchor" onClick={(e) => handleClick(e, 'zones')}>
-          <CustomLink
-            href="#zones"
-            tag="NavLink"
-            content={<Trans i18nKey="Menu.zones.1" />}
-          />
-        </li>
         <li className="menuItem" id="zone1Anchor" onClick={(e) => handleClick(e, 'zone1')}>
           <CustomLink
             href="#zone1"
@@ -206,7 +224,7 @@ const Zones = () => {
         </div>
       </div>
       <div id="content" onScroll={(e) => handleScroll(e)}>
-        <div className="page h-100" id="zones">
+        <div className="page h-100">
           <div className="page-content">
             <p className="citation">
               <Trans i18nKey="Zones.citation" />
@@ -234,7 +252,7 @@ const Zones = () => {
             id="zone2"
             parent="Zones"
             handleOpenModal={handleOpenModal}
-            carouselContent={zone1}
+            carouselContent={zone2}
             direction="left"
             openModal={openModal}
             position={1}
@@ -245,7 +263,7 @@ const Zones = () => {
             id="zone3"
             parent="Zones"
             handleOpenModal={handleOpenModal}
-            carouselContent={zone1}
+            carouselContent={zone3}
             direction="right"
             openModal={openModal}
             position={2}
@@ -256,7 +274,7 @@ const Zones = () => {
             id="zone4"
             parent="Zones"
             handleOpenModal={handleOpenModal}
-            carouselContent={zone1}
+            carouselContent={zone4}
             direction="left"
             openModal={openModal}
             position={3}
@@ -264,12 +282,13 @@ const Zones = () => {
         </div>
         <div className="page h-100" id="zone5">
           <Zone
-            id="zone3"
+            id="zone5"
             parent="Zones"
             handleOpenModal={handleOpenModal}
-            carouselContent={zone1}
+            carouselContent={zone5}
             direction="right"
-            openModal={4}
+            openModal={openModal}
+            position={4}
           />
         </div>
       </div>

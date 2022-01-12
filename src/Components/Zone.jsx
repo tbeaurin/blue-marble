@@ -40,6 +40,7 @@ const Zone = ({
       />
       <Popup modal open={openModal[position]} className={`popup-${direction}`}>
         <PopupCarousel
+          parent={parent}
           content={carouselContent}
           title={(
             <>
@@ -55,6 +56,7 @@ const Zone = ({
           )}
           subtitle1={<Trans i18nKey={`${parent}.${id}.subtitle`} />}
           subtitle2={<Trans i18nKey={`${parent}.${id}.title`} />}
+          position={position}
           handleOpenModal={() => { handleOpenModal(position, direction); }}
         />
       </Popup>
