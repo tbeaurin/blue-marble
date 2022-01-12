@@ -63,7 +63,7 @@ const Missio = () => {
     return () => {
       window.removeEventListener('resize', handleWindowSizeChange);
     };
-  }, []);
+  }, [isMobile]);
 
   const drawAnchor = useDebouncedCallback((e) => {
     Array.from(pages).forEach((page) => {
