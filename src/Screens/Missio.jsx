@@ -5,6 +5,8 @@ import { useDebouncedCallback } from 'use-debounce';
 
 import CustomLink from '../Components/CustomLink';
 
+import missioImg from '../assets/img/mobile/mission_interne.png';
+
 import QuentinImg from '../assets/img/quentin.jpg';
 import Quentin2Img from '../assets/img/quentin2.jpg';
 import AdrienImg from '../assets/img/adrien.jpg';
@@ -22,33 +24,45 @@ import Anr from '../assets/img/anr_white.png';
 import { initializeCursor } from '../Functions/functions';
 
 const Missio = () => {
+  const [width, setWidth] = React.useState(window.innerWidth);
   const pages = document.getElementsByClassName('page');
   const menuItems = Array.from(document.getElementsByClassName('menuItem'));
   const [y, setY] = React.useState(window.scrollY);
+  const isMobile = width <= 768;
+
+  const handleWindowSizeChange = () => {
+    setWidth(window.innerWidth);
+  };
 
   React.useEffect(() => {
-    document.querySelector('#fontStatic').classList.add('zoomed');
-    document.querySelector('#fontMissio').classList.add('zoomed');
-    document.querySelector('#fontZones').classList.add('zoomedMissio');
-    document.querySelector('#fontInventaire').classList.add('zoomedMissio');
-    document.querySelector('#fontCoulisses').classList.add('zoomedMissio');
+    if (!isMobile) {
+      document.querySelector('#fontStatic').classList.add('zoomed');
+      document.querySelector('#fontMissio').classList.add('zoomed');
+      document.querySelector('#fontZones').classList.add('zoomedMissio');
+      document.querySelector('#fontInventaire').classList.add('zoomedMissio');
+      document.querySelector('#fontCoulisses').classList.add('zoomedMissio');
 
-    document.querySelector('#fontMissio').classList.remove('zoomedZones');
-    document.querySelector('#fontMissio').classList.remove('zoomedInventaire');
-    document.querySelector('#fontMissio').classList.remove('zoomedCoulisses');
+      document.querySelector('#fontMissio').classList.remove('zoomedZones');
+      document.querySelector('#fontMissio').classList.remove('zoomedInventaire');
+      document.querySelector('#fontMissio').classList.remove('zoomedCoulisses');
 
-    const images = [...document.querySelectorAll('.missio')];
-    images.map((image) => image.classList.add('currentPage'));
-    images.map((image) => image.classList.remove('focus'));
-    // images.map((image) => image.classList.remove('background-hide'));
+      const images = [...document.querySelectorAll('.missio')];
+      images.map((image) => image.classList.add('currentPage'));
+      images.map((image) => image.classList.remove('focus'));
+      // images.map((image) => image.classList.remove('background-hide'));
 
-    // Don't display Wrapper on pages
-    document.querySelector('#missioFakeWrapper').style.display = 'none';
-    document.querySelector('#zonesFakeWrapper').style.display = 'none';
-    document.querySelector('#inventaireFakeWrapper').style.display = 'none';
-    document.querySelector('#coulissesFakeWrapper').style.display = 'none';
+      // Don't display Wrapper on pages
+      document.querySelector('#missioFakeWrapper').style.display = 'none';
+      document.querySelector('#zonesFakeWrapper').style.display = 'none';
+      document.querySelector('#inventaireFakeWrapper').style.display = 'none';
+      document.querySelector('#coulissesFakeWrapper').style.display = 'none';
 
-    initializeCursor();
+      initializeCursor();
+    }
+    window.addEventListener('resize', handleWindowSizeChange);
+    return () => {
+      window.removeEventListener('resize', handleWindowSizeChange);
+    };
   }, []);
 
   const drawAnchor = useDebouncedCallback((e) => {
@@ -123,27 +137,31 @@ const Missio = () => {
   const renderMenu = () => (
     <nav id="menuMissio" className="menu-page">
       <ul>
-        <li className="menuItem" id="objectifMondeAnchor" onClick={(e) => handleClick(e, 'objectifMonde')}>
-          <CustomLink
-            href="#objectifMonde"
-            tag="NavLink"
-            content={<Trans i18nKey="Menu.missio.objectifMonde" />}
-          />
-        </li>
-        <li className="menuItem" id="anthropoceneAnchor" onClick={(e) => handleClick(e, 'anthropocene')}>
-          <CustomLink
-            href="#anthropocene"
-            tag="NavLink"
-            content={<Trans i18nKey="Menu.missio.anthropocene" />}
-          />
-        </li>
-        <li className="menuItem" id="ecoleUrbaineAnchor" onClick={(e) => handleClick(e, 'ecoleUrbaine')}>
-          <CustomLink
-            href="#ecoleUrbaine"
-            tag="NavLink"
-            content={<Trans i18nKey="Menu.missio.ecoleUrbaine" />}
-          />
-        </li>
+        {!isMobile && (
+          <>
+            <li className="menuItem" id="objectifMondeAnchor" onClick={(e) => handleClick(e, 'objectifMonde')}>
+              <CustomLink
+                href="#objectifMonde"
+                tag="NavLink"
+                content={<Trans i18nKey="Menu.missio.objectifMonde" />}
+              />
+            </li>
+            <li className="menuItem" id="anthropoceneAnchor" onClick={(e) => handleClick(e, 'anthropocene')}>
+              <CustomLink
+                href="#anthropocene"
+                tag="NavLink"
+                content={<Trans i18nKey="Menu.missio.anthropocene" />}
+              />
+            </li>
+            <li className="menuItem" id="ecoleUrbaineAnchor" onClick={(e) => handleClick(e, 'ecoleUrbaine')}>
+              <CustomLink
+                href="#ecoleUrbaine"
+                tag="NavLink"
+                content={<Trans i18nKey="Menu.missio.ecoleUrbaine" />}
+              />
+            </li>
+          </>
+        )}
         <li className="menuItem">
           <CustomLink
             href="/"
@@ -160,20 +178,32 @@ const Missio = () => {
     <div className="main">
       <div>
         <div className="header" id="mainHeader">
-          <div className="header-left">
-            <span className="constelation-name">
-              <Trans i18nKey="Missio.constelation" />
-            </span>
-            <h2 className="constelation-title">
-              <Trans i18nKey="Missio.title" />
-            </h2>
-          </div>
-          <div className="header-right">
-            {renderMenu()}
-          </div>
+          {isMobile ? (
+            <>
+              {renderMenu()}
+              <img src={missioImg} alt="dessin_mission" />
+              <h2 className="constelation-title">
+                <Trans i18nKey="Missio.title" />
+              </h2>
+            </>
+          ) : (
+            <>
+              <div className="header-left">
+                <span className="constelation-name">
+                  <Trans i18nKey="Missio.constelation" />
+                </span>
+                <h2 className="constelation-title">
+                  <Trans i18nKey="Missio.title" />
+                </h2>
+              </div>
+              <div className="header-right">
+                {renderMenu()}
+              </div>
+            </>
+          )}
         </div>
         <div id="content" onScroll={(e) => handleScroll(e)}>
-          <div className="page h-100" id="laMission">
+          <div className={`page ${!isMobile && 'h-100'}`} id="laMission">
             <div className="page-content">
               <p className="citation">
                 <Trans i18nKey="Missio.citation" />

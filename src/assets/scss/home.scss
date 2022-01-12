@@ -242,25 +242,7 @@ a {
 
 
 // RESPONSIVE
-@media (max-width: 1441px) {
-    #font {
-        #missioName {
-            top: 10vh;
-            left: 25vw;
-        }
-        #zonesName {
-            top: 12vh;
-            left: 54vw;
-        }
-        #inventaireName {
-            top: 75vh;
-            left: 41vw;
-        }
-        #coulissesName {
-            top: 66vh;
-            left: 52vw;
-        }
-    }
+@media (max-width: 1441px) and (min-width: 761px) {
     section#homeLeft {
         padding-top: 132px;
         padding-left: 123px;    

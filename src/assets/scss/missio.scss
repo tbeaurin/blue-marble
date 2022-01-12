@@ -2,9 +2,8 @@
 // RESPONSIVE
 
 // LITTLE SCREEN
-@media (max-width: 1441px) {
-    .zoomedImgContainer, .image-slide-container {
-        height: 246px;
+@media (max-width: 1441px) and (min-width: 761px) {
+    .zoomedImgContainer {
         width: 246px;
     }
     #imgMajorQ {
