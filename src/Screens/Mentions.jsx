@@ -43,7 +43,6 @@ const Mentions = () => {
       <div id="content" style={{ marginTop: 0, overflow: 'hidden' }}>
         <div
           className="page h-100 m-auto align-items-center flex-column justiy-content-center text-align-center p-80"
-          style={{ paddingTop: 0, width: '75%' }}
         >
           <h3>
             <Trans i18nKey="Mentions.title" />

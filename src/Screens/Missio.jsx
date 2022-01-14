@@ -215,11 +215,11 @@ const Missio = () => {
               </p>
             </div>
           </div>
-          <div id="objectifMonde" className="page h-120">
+          <div id="objectifMonde" className={`page ${!isMobile ? 'h-120' : ''}`}>
             <div className="page-content">
               <div className="d-flex">
-                <div id="objectif-column1">
-                  <div className="major">
+                <div id="objectif-column1" className={`${isMobile ? 'h-100vh' : ''}`}>
+                  <div className="major majorQ">
                     <div
                       className="zoomedImgContainer"
                       id="imgMajorQ"
@@ -227,7 +227,7 @@ const Missio = () => {
                       onMouseLeave={() => { handleTransitionPortrait('majorQ', 'close'); }}
                     >
                       <div className="image-slide-container" id="containerQ">
-                        <img id="quentinImage2" src={Quentin2Img} alt="major Q" />
+                        {!isMobile && <img id="quentinImage2" src={Quentin2Img} alt="major Q" />}
                         <img id="quentinImage" src={QuentinImg} alt="major Q" />
                       </div>
                     </div>
@@ -245,7 +245,7 @@ const Missio = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="major">
+                  <div className="major majorA">
                     <div
                       className="zoomedImgContainer"
                       id="imgMajorA"
@@ -254,7 +254,7 @@ const Missio = () => {
                     >
                       <div className="image-slide-container" id="containerA">
                         <img id="adrienImage" src={AdrienImg} alt="major A" />
-                        <img id="adrienImage2" src={Adrien2Img} alt="major A" />
+                        {!isMobile && <img id="adrienImage2" src={Adrien2Img} alt="major A" />}
                       </div>
                     </div>
                     <div className="c-black imgDescription" id="descriptionMajorA">
@@ -272,7 +272,7 @@ const Missio = () => {
                     </div>
                   </div>
                 </div>
-                <div id="objectifMonde-content">
+                <div id="objectifMonde-content" className={`${isMobile ? 'h-100vh' : ''}`}>
                   <h3>
                     <Trans i18nKey="Missio.objectifMonde.title" />
                   </h3>
@@ -378,24 +378,28 @@ const Missio = () => {
               <div className="mw-450">
                 <div>
                   <h3><Trans i18nKey="Missio.footer.1.1" /></h3>
-                  <ul>
-                    <li>
-                      <img src={Internet} alt="site_web" />
-                      <Trans i18nKey="Missio.footer.1.2" />
-                    </li>
-                    <li>
-                      <img src={Medium} alt="medium" />
-                      <Trans i18nKey="Missio.footer.1.3" />
-                    </li>
-                    <li>
-                      <img src={Facebook} alt="facebook" />
-                      <Trans i18nKey="Missio.footer.1.4" />
-                    </li>
-                    <li>
-                      <img src={Instagram} alt="instagram" />
-                      <Trans i18nKey="Missio.footer.1.5" />
-                    </li>
-                  </ul>
+                  <div className="footer-logos">
+                    <div>
+                      <div>
+                        <img src={Internet} alt="site_web" />
+                        <Trans i18nKey="Missio.footer.1.2" />
+                      </div>
+                      <div>
+                        <img src={Medium} alt="medium" id="imgMedium" />
+                        <Trans i18nKey="Missio.footer.1.3" />
+                      </div>
+                    </div>
+                    <div>
+                      <div>
+                        <img src={Facebook} alt="facebook" />
+                        <Trans i18nKey="Missio.footer.1.4" />
+                      </div>
+                      <div>
+                        <img src={Instagram} alt="instagram" />
+                        <Trans i18nKey="Missio.footer.1.5" />
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div />
               </div>
