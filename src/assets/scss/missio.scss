@@ -15,6 +15,9 @@
         padding-left: 138px;
         margin-top: -134px;
         max-width: 310px;
+        span {
+            opacity: 0;
+        }
     }
     #imgMajorA {
         margin-top: 48px;
@@ -27,13 +30,18 @@
         margin-top: -134px;
         margin-right: 136px;
         margin-left: 0;
+        span {
+            opacity: 0;
+        }
     }
     #containerA img {
+        width: 246px;
         &.active {
             transform: translate3d(-246px, 0px, 0px)
         }
     }
     #containerQ img {
+        width: 246px;
         transform: translate3d(-246px, 0px, 0px);
         &.active {
             transform: translate3d(0px, 0px, 0px);
@@ -48,13 +56,13 @@
         width: 296px;
     }
     #containerA img {
-        width: '296px';
+        width: 296px;
         &.active {
             transform: translate3d(-296px, 0px, 0px)
         }
     }
     #containerQ img {
-        width: '296px';
+        width: 296px;
         transform: translate3d(-296px, 0px, 0px);
         &.active {
             transform: translate3d(0px, 0px, 0px);
@@ -70,6 +78,9 @@
         margin-top: -134px;
         max-width: 310px;
         left: 25px !important;
+        span {
+            opacity: 0;
+        }
     }
     #imgMajorA {
         margin-top: 48px;
@@ -82,6 +93,9 @@
         margin-top: -134px;
         margin-right: 136px;
         margin-left: 0;
+        span {
+            opacity: 0;
+        }
     }
     .main #ecoleUrbaine .mt--100 {
         margin-top: -175px !important;
@@ -135,7 +149,7 @@
                         left: -25px;   
                         top: 25px;
                         div, span {
-                            opacity: 0;
+                            // opacity: 0;
                             font-size: 0;
                             transition: opacity ease .4s, font-size ease .4s;
                         }
@@ -159,7 +173,7 @@
                         right: -327px;
                         top: 25px;
                         div, span {
-                            opacity: 0;
+                            // opacity: 0;
                             font-size: 0;
                             transition: opacity ease .4s, font-size ease .4s;
                         }
@@ -331,14 +345,16 @@
                 display: none;
             }
         }
-        ul {
+        .footer-logos {
             margin-top: 32px;
-            li {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                margin-bottom: 32px;
-                list-style-type: none;
+            > div {
+                > div {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin-bottom: 32px;
+                    list-style-type: none;
+                }
                 img {
                     margin-right: 8px;
                 }

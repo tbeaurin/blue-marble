@@ -26,10 +26,14 @@
     }
     #fontStatic, .mentions-link {
         position: fixed;
+        width: 50%;
+        text-align: center;
+        margin-left: 25%;
+        left: 0;
     }
     main {
-        padding: 40px;
-        width: calc(100vw - 80px);
+        padding: 40px 0;
+        width: 100vw;
         .menuHome {
             padding-left: 0;
             #burger {
@@ -92,7 +96,7 @@
         }
         .header {
             position: inherit !important;
-            padding: 0 !important;
+            padding: 0 40px !important;
             width: calc(100vw - 80px) !important;
             margin: 0 !important;
             flex-direction: column;
@@ -121,7 +125,11 @@
                 height: 100%;
                 margin-top: 0;
                 #laMission {
-                    height: calc(100vh - 255px)
+                    height: calc(100vh - 255px);
+                    padding: 0 40px;
+                }
+                #laMission, #objectifMonde, #ecoleUrbaine, #footer {
+                    padding: 0 40px;
                 }
                 .citation {
                     font-size: 18px;
@@ -132,6 +140,194 @@
                         font-size: 12px;
                     }
                 }
+            }
+            #objectifMonde {
+                .page-content {
+                    .d-flex {
+                        flex-direction: column-reverse;
+                    }
+                    #objectifMonde-content p {
+                        margin-left: 0 !important;
+                        margin-right: 0 !important;
+                    }
+                }
+                h3 {
+                    font-size: 24px;
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    &:before {
+                        width: 220px;
+                        left: inherit;
+                        text-align: center;
+                        height: 8px;
+                        margin-top: 21px;
+                        margin-left: -10px;
+                    }
+                }
+                #objectif-column1, #objectifMonde-content {
+                    width: 100% !important;
+                    padding-left: 0 !important;
+                }
+                #objectif-column1 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                }
+                .major {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    &.majorA {
+                        flex-direction: row-reverse;
+                    }
+                    .zoomedImgContainer {
+                        max-width: 50%;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    .imgDescription {
+                        width: 50% !important;
+                        position: inherit !important;
+                        opacity: 1 !important;
+                        height: 75% !important;
+                        margin-top: 5% !important;
+                        padding: 8px;
+                        text-align: left !important;
+                        top: 0 !important;
+                        span {
+                            opacity: 1 !important;
+                            font-size: 12px !important;
+                        }
+                        .imgDescriptionTitle {
+                            font-size: 14px !important;
+                            font-weight: bold;
+                        } 
+                    }
+                }
+            }
+            #anthropocene {
+                .page-content {
+                    margin-top: 32px !important;
+                }
+                #title-anthropocene {
+                    font-size: 42px;
+                }
+                #anthropocene-definition {
+                    padding: 64px 60px !important;
+                    padding-inline: 60px !important;
+                    font-size: 16px !important;
+                    font-weight: inherit;
+                }
+                #anthropocene-aditionnal {
+                    display: none;
+                }
+            }
+            #ecoleUrbaine {
+                .page-content {
+                    margin-top: 32px !important;
+                }
+                #logoUni {
+                    img {
+                        width: 65px;
+                        height: 65px;
+                    }
+                    h3 {
+                        top: -14px;
+                        font-size: 20px;
+                        p {
+                            margin-bottom: -22px;
+                            span {
+                                &:before {
+                                    margin-top: 26px;
+                                }
+                            }
+                        }
+                        span {
+                            &:before {
+                                margin-top: 12px;
+                                height: 8px;
+                            }
+                        }
+                    }
+                    h4 {
+                        margin-top: -22px;
+                        font-size: 16px;
+                    }
+                }
+                .content > div {
+                    width: 100% !important;
+                }
+                .content {
+                    padding-left: 0;
+                    flex-direction: column-reverse;
+                    img {
+                        margin-left: 0;
+                        width: 100%;
+                        margin-bottom: 32px;
+                    }
+                    font-size: 14px !important;
+                    h5 {
+                        &:before {
+                            display: none;
+                        }
+                    }
+                    ul {
+                        padding: 0 0 0 32px !important;
+                        font-size: 12px;
+                        margin-bottom: 32px;
+                    }
+                }
+                .content.with-photo {
+                    text-align: justify;
+                }
+                .content.mt-64 {
+                    margin-top: 32px !important;
+                    flex-direction: column;
+                }
+            }
+            #footer {
+                h3 {
+                    background-image: none !important;
+                    font-size: 18px !important;
+                }
+                .footer-logos {
+                    margin-top: 32px;
+                    > div {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        margin-bottom: 0;
+                        list-style-type: none;
+                        > div {
+                          display: flex;
+                          flex-direction: column;
+                          font-size: 12px;
+                          align-items: center;
+                          text-align: center;
+                          width: 50%;
+                          padding: 0 8px;
+                          img {
+                              display: block;
+                              margin-bottom: 8px;
+                          }  
+                        }
+                    }
+                }
+                #footer-links {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    > div {
+                        width: 100%;
+                        justify-content: center;
+                        margin: 32px 32px 16px;
+                        font-size: 14px;
+                    }
+                }
+                font-size: 14px;
+                margin-bottom: 96px;
             }
         }
     }
