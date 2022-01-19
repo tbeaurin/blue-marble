@@ -7,7 +7,7 @@ import logoUNI from '../assets/img/logo-universite.png';
 import CustomLink from '../Components/CustomLink';
 
 import Menu from '../Components/Menu';
-import { initializeCursor } from '../Functions/functions';
+import { initializeCursor, openCursor } from '../Functions/functions';
 
 import starsMobile from '../assets/img/mobile/stars_mobile.png';
 import starsMissioMobile from '../assets/img/mobile/stars_missio_mobile.png';
@@ -41,6 +41,39 @@ const Home = () => {
       window.removeEventListener('resize', handleWindowSizeChange);
     };
   });
+
+  const handleMouseEnter = (constelation) => {
+    // Focus to images
+    const images = [...document.querySelectorAll(`.${constelation}`)];
+    images.map((image) => image.classList.remove('lose-focus'));
+    images.map((image) => image.classList.add('focus'));
+    // Cursor
+    openCursor();
+    // Menu
+    document.querySelector(`#${constelation}Link a`).classList.add('focus');
+  };
+
+  const handleMouseLeave = React.useCallback((constelation) => {
+    // Focus to images
+    const images = [...document.querySelectorAll(`.${constelation}`)];
+    if (images) {
+      images.map((image) => image.classList.add('lose-focus'));
+      images.map((image) => image.classList.remove('focus'));
+    }
+    // Cursor
+    if (!isMobile) {
+      initializeCursor();
+    }
+    // Menu
+    const constelationDiv = document.querySelector(`#${constelation}Link a`);
+    if (constelationDiv) {
+      constelationDiv.classList.remove('focus');
+    }
+  }, [isMobile]);
+
+  const handleClick = (constelation) => {
+    document.querySelector(`#${constelation}Link a`).click();
+  };
 
   React.useEffect(() => {
     if (!isMobile) {
@@ -181,6 +214,34 @@ const Home = () => {
                 </h2>
               </div>
             </div>
+          </div>
+        )}
+        {isMobile && (
+          <div className="wrappers">
+            <div
+              id="missioFakeWrapper"
+              onClick={() => { handleClick('missio'); }}
+              onMouseEnter={() => { handleMouseEnter('missio'); }}
+              onMouseLeave={() => { handleMouseLeave('missio'); }}
+            />
+            <div
+              id="zonesFakeWrapper"
+              onClick={() => { handleClick('zones'); }}
+              onMouseEnter={() => { handleMouseEnter('zones'); }}
+              onMouseLeave={() => { handleMouseLeave('zones'); }}
+            />
+            <div
+              id="inventaireFakeWrapper"
+              onClick={() => { handleClick('inventaire'); }}
+              onMouseEnter={() => { handleMouseEnter('inventaire'); }}
+              onMouseLeave={() => { handleMouseLeave('inventaire'); }}
+            />
+            <div
+              id="coulissesFakeWrapper"
+              onClick={() => { handleClick('coulisses'); }}
+              onMouseEnter={() => { handleMouseEnter('coulisses'); }}
+              onMouseLeave={() => { handleMouseLeave('coulisses'); }}
+            />
           </div>
         )}
         <div className="logo-wrapper">

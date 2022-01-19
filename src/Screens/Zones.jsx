@@ -9,6 +9,8 @@ import 'reactjs-popup/dist/index.css';
 import CustomLink from '../Components/CustomLink';
 import Zone from '../Components/Zone';
 
+import zonesImg from '../assets/img/mobile/zones_interne.png';
+
 import { initializeCursor } from '../Functions/functions';
 
 import imagesZone1 from '../Components/Imports/Zone1';
@@ -18,11 +20,16 @@ import imagesZone4 from '../Components/Imports/Zone4';
 import imagesZone5 from '../Components/Imports/Zone5';
 
 const Zones = () => {
+  const [width, setWidth] = React.useState(window.innerWidth);
   const pages = document.getElementsByClassName('page');
   const menuItems = Array.from(document.getElementsByClassName('menuItem'));
   const [y, setY] = React.useState(window.scrollY);
-
+  const isMobile = width <= 768;
   const [openModal, setOpenModal] = React.useState([false, false, false, false, false]);
+
+  const handleWindowSizeChange = () => {
+    setWidth(window.innerWidth);
+  };
 
   const zone1 = [];
   const zone2 = [];
@@ -62,28 +69,34 @@ const Zones = () => {
   }
 
   React.useEffect(() => {
-    document.querySelector('#fontStatic').classList.add('zoomed');
-    document.querySelector('#fontZones').classList.add('zoomed');
-    document.querySelector('#fontMissio').classList.add('zoomedZones');
-    document.querySelector('#fontInventaire').classList.add('zoomedZones');
-    document.querySelector('#fontCoulisses').classList.add('zoomedZones');
+    if (!isMobile) {
+      document.querySelector('#fontStatic').classList.add('zoomed');
+      document.querySelector('#fontZones').classList.add('zoomed');
+      document.querySelector('#fontMissio').classList.add('zoomedZones');
+      document.querySelector('#fontInventaire').classList.add('zoomedZones');
+      document.querySelector('#fontCoulisses').classList.add('zoomedZones');
 
-    document.querySelector('#fontZones').classList.remove('zoomedMissio');
-    document.querySelector('#fontZones').classList.remove('zoomedInventaire');
-    document.querySelector('#fontZones').classList.remove('zoomedCoulisses');
+      document.querySelector('#fontZones').classList.remove('zoomedMissio');
+      document.querySelector('#fontZones').classList.remove('zoomedInventaire');
+      document.querySelector('#fontZones').classList.remove('zoomedCoulisses');
 
-    const images = [...document.querySelectorAll('.zones')];
-    images.map((image) => image.classList.add('currentPage'));
-    images.map((image) => image.classList.remove('focus'));
+      const images = [...document.querySelectorAll('.zones')];
+      images.map((image) => image.classList.add('currentPage'));
+      images.map((image) => image.classList.remove('focus'));
 
-    // Don't display Wrapper on pages
-    document.querySelector('#missioFakeWrapper').style.display = 'none';
-    document.querySelector('#zonesFakeWrapper').style.display = 'none';
-    document.querySelector('#inventaireFakeWrapper').style.display = 'none';
-    document.querySelector('#coulissesFakeWrapper').style.display = 'none';
+      // Don't display Wrapper on pages
+      document.querySelector('#missioFakeWrapper').style.display = 'none';
+      document.querySelector('#zonesFakeWrapper').style.display = 'none';
+      document.querySelector('#inventaireFakeWrapper').style.display = 'none';
+      document.querySelector('#coulissesFakeWrapper').style.display = 'none';
 
-    initializeCursor();
-  }, []);
+      initializeCursor();
+    }
+    window.addEventListener('resize', handleWindowSizeChange);
+    return () => {
+      window.removeEventListener('resize', handleWindowSizeChange);
+    };
+  }, [isMobile]);
 
   const drawAnchor = useDebouncedCallback((e) => {
     Array.from(pages).forEach((page) => {
@@ -161,41 +174,45 @@ const Zones = () => {
   const renderMenu = () => (
     <nav id="menuZones" className="menu-page">
       <ul>
-        <li className="menuItem" id="zone1Anchor" onClick={(e) => handleClick(e, 'zone1')}>
-          <CustomLink
-            href="#zone1"
-            tag="NavLink"
-            content={<Trans i18nKey="Menu.zones.2" />}
-          />
-        </li>
-        <li className="menuItem" id="zone2Anchor" onClick={(e) => handleClick(e, 'zone2')}>
-          <CustomLink
-            href="#zone2"
-            tag="NavLink"
-            content={<Trans i18nKey="Menu.zones.3" />}
-          />
-        </li>
-        <li className="menuItem" id="zone3Anchor" onClick={(e) => handleClick(e, 'zone3')}>
-          <CustomLink
-            href="#zone3"
-            tag="NavLink"
-            content={<Trans i18nKey="Menu.zones.4" />}
-          />
-        </li>
-        <li className="menuItem" id="zone4Anchor" onClick={(e) => handleClick(e, 'zone4')}>
-          <CustomLink
-            href="#zone4"
-            tag="NavLink"
-            content={<Trans i18nKey="Menu.zones.5" />}
-          />
-        </li>
-        <li className="menuItem" id="zone5Anchor" onClick={(e) => handleClick(e, 'zone5')}>
-          <CustomLink
-            href="#zone5"
-            tag="NavLink"
-            content={<Trans i18nKey="Menu.zones.6" />}
-          />
-        </li>
+        {!isMobile && (
+          <>
+            <li className="menuItem" id="zone1Anchor" onClick={(e) => handleClick(e, 'zone1')}>
+              <CustomLink
+                href="#zone1"
+                tag="NavLink"
+                content={<Trans i18nKey="Menu.zones.2" />}
+              />
+            </li>
+            <li className="menuItem" id="zone2Anchor" onClick={(e) => handleClick(e, 'zone2')}>
+              <CustomLink
+                href="#zone2"
+                tag="NavLink"
+                content={<Trans i18nKey="Menu.zones.3" />}
+              />
+            </li>
+            <li className="menuItem" id="zone3Anchor" onClick={(e) => handleClick(e, 'zone3')}>
+              <CustomLink
+                href="#zone3"
+                tag="NavLink"
+                content={<Trans i18nKey="Menu.zones.4" />}
+              />
+            </li>
+            <li className="menuItem" id="zone4Anchor" onClick={(e) => handleClick(e, 'zone4')}>
+              <CustomLink
+                href="#zone4"
+                tag="NavLink"
+                content={<Trans i18nKey="Menu.zones.5" />}
+              />
+            </li>
+            <li className="menuItem" id="zone5Anchor" onClick={(e) => handleClick(e, 'zone5')}>
+              <CustomLink
+                href="#zone5"
+                tag="NavLink"
+                content={<Trans i18nKey="Menu.zones.6" />}
+              />
+            </li>
+          </>
+        )}
         <li className="menuItem">
           <CustomLink
             href="/"
@@ -211,20 +228,33 @@ const Zones = () => {
   return (
     <div className="main">
       <div className="header" id="mainHeader">
-        <div className="header-left">
-          <span className="constelation-name">
-            <Trans i18nKey="Zones.constelation" />
-          </span>
-          <h2 className="constelation-title">
-            <Trans i18nKey="Zones.title" />
-          </h2>
-        </div>
-        <div className="header-right">
-          {renderMenu()}
-        </div>
+
+        {isMobile ? (
+          <>
+            {renderMenu()}
+            <img src={zonesImg} alt="dessin_zones" />
+            <h2 className="constelation-title">
+              <Trans i18nKey="Zones.title" />
+            </h2>
+          </>
+        ) : (
+          <>
+            <div className="header-left">
+              <span className="constelation-name">
+                <Trans i18nKey="Zones.constelation" />
+              </span>
+              <h2 className="constelation-title">
+                <Trans i18nKey="Zones.title" />
+              </h2>
+            </div>
+            <div className="header-right">
+              {renderMenu()}
+            </div>
+          </>
+        )}
       </div>
       <div id="content" onScroll={(e) => handleScroll(e)}>
-        <div className="page h-100">
+        <div id="zonesCitation" className="page h-100">
           <div className="page-content">
             <p className="citation">
               <Trans i18nKey="Zones.citation" />

@@ -272,7 +272,7 @@ const Missio = () => {
                     </div>
                   </div>
                 </div>
-                <div id="objectifMonde-content" className={`${isMobile ? 'h-100vh' : ''}`}>
+                <div id="objectifMonde-content">
                   <h3>
                     <Trans i18nKey="Missio.objectifMonde.title" />
                   </h3>
