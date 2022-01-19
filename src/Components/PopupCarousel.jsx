@@ -7,9 +7,29 @@ import { Trans, useTranslation } from 'react-i18next';
 import CustomLink from './CustomLink';
 import { initializeCursor, openCursor } from '../Functions/functions';
 
+import previousArrow from '../assets/img/mobile/previous-arrow.png';
+import nextArrow from '../assets/img/mobile/next-arrow.png';
+
 const PopupCarousel = ({
   content = [], handleOpenModal, title, subtitle1, subtitle2, position, parent,
 }) => {
+  const [width, setWidth] = React.useState(window.innerWidth);
+  const [xDown, setXDown] = React.useState(null);
+  const [yDown, setYDown] = React.useState(null);
+
+  const isMobile = width <= 768;
+
+  const handleWindowSizeChange = () => {
+    setWidth(window.innerWidth);
+  };
+
+  React.useEffect(() => {
+    window.addEventListener('resize', handleWindowSizeChange);
+    return () => {
+      window.removeEventListener('resize', handleWindowSizeChange);
+    };
+  });
+
   const { t } = useTranslation();
   const [step, setStep] = React.useState(0);
   const [prevStep2, setPrevStep2] = React.useState(content.length - 2);
@@ -48,6 +68,12 @@ const PopupCarousel = ({
     e.persist();
     initializeCursor();
   };
+
+  const handleTouchStart = React.useCallback((e) => {
+    const firstTouch = e.touches[0];
+    setXDown(firstTouch.clientX);
+    setYDown(firstTouch.clientY);
+  }, []);
 
   const handlePrev = React.useCallback(() => {
     setStep((step) => (step - 1 >= 0 ? step - 1 : content.length - 1));
@@ -123,11 +149,32 @@ const PopupCarousel = ({
     newNext.classList.remove('next');
     newNext.classList.add('next-hide');
 
-    // newNext.classList.add('next');
     newDiv.appendChild(newNext);
     const element = document.getElementById('carousel');
     element.appendChild(newDiv);
   }, [content, nextStep2]);
+
+  const handleTouchMove = React.useCallback((e) => {
+    if (!xDown || !yDown) {
+      return;
+    }
+
+    const xUp = e.touches[0].clientX;
+    const yUp = e.touches[0].clientY;
+
+    const xDiff = xDown - xUp;
+    const yDiff = yDown - yUp;
+
+    if (Math.abs(xDiff) > Math.abs(yDiff)) {
+      if (xDiff > 0) {
+        handleNext();
+      } else {
+        handlePrev();
+      }
+    }
+    setXDown(null);
+    setYDown(null);
+  }, [handleNext, handlePrev, xDown, yDown]);
 
   const scrollCarousel = useDebouncedCallback((direction) => {
     if (direction === 'up') {
@@ -159,20 +206,37 @@ const PopupCarousel = ({
 
   return (
     <>
+      {isMobile && (
+        <CustomLink
+          content={<Trans i18nKey="Popup.close" />}
+          className="close"
+          onClick={() => { handleOpenModal(); }}
+        />
+      )}
       <div id="carousel" className="page-content b-transparent h-100vh d-flex" onWheel={handleWheel}>
         <div className="wrappers">
-          <div
-            className="previous-wrapper"
-            onClick={() => { scrollCarouselFast('down'); }}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          />
-          <div
-            className="next-wrapper"
-            onClick={() => { scrollCarouselFast('up'); }}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          />
+          {!isMobile ? (
+            <>
+              <div
+                className="previous-wrapper"
+                onClick={() => { scrollCarouselFast('down'); }}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              />
+              <div
+                className="next-wrapper"
+                onClick={() => { scrollCarouselFast('up'); }}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              />
+            </>
+          ) : (
+            <div
+              className="current-wrapper"
+              onTouchMove={(e) => { handleTouchMove(e); }}
+              onTouchStart={(e) => { handleTouchStart(e); }}
+            />
+          )}
         </div>
         <div>
           <img
@@ -210,41 +274,61 @@ const PopupCarousel = ({
           />
         </div>
       </div>
+      {isMobile && (
+        <div className="wrappers-mobile">
+          <div
+            className="previous-wrapper-mobile"
+            onClick={() => { scrollCarouselFast('down'); }}
+          >
+            <img id="previous-arrow" src={previousArrow} alt="previous" />
+          </div>
+          <div
+            className="next-wrapper-mobile"
+            onClick={() => { scrollCarouselFast('up'); }}
+          >
+            <img id="next-arrow" src={nextArrow} alt="next" />
+          </div>
+        </div>
+      )}
       <div id="popupMain">
         <div className="d-flex flex-row h-100">
-          <div className={`popup-title w-50 ${!isEven(position) && 'odd'}`}>
-            {isEven(position) ? (
-              <>
-                <div className="popup-subtitle">
-                  <span className="subtitle">{subtitle1}</span>
-                  <span className="title">{subtitle2}</span>
+          {!isMobile && (
+            <div className={`popup-title ${!isEven(position) && 'odd'}`}>
+              {isEven(position) ? (
+                <>
+                  <div className="popup-subtitle">
+                    <span className="subtitle">{subtitle1}</span>
+                    <span className="title">{subtitle2}</span>
+                  </div>
+                  <h2>{title}</h2>
+                </>
+              ) : (
+                <div className="popup-description">
+                  <p className="ta-justify">{content[step].description}</p>
+                  {content[step].important && (
+                    <span className="important ta-right">{content[step].important}</span>
+                  )}
+                  {content[step].link && t(content[step].link, '').length > 0 && (
+                    <CustomLink
+                      href={t(content[step].link)}
+                      tag="Link"
+                      target="_blank"
+                      className="primary ta-right"
+                      content={t(content[step].link)}
+                    />
+                  )}
                 </div>
-                <h2>{title}</h2>
-              </>
-            ) : (
-              <div className="popup-description">
-                <p className="ta-justify">{content[step].description}</p>
-                {content[step].important && (
-                  <span className="important ta-right">{content[step].important}</span>
-                )}
-                {content[step].link && t(content[step].link, '').length > 0 && (
-                  <CustomLink
-                    href={t(content[step].link)}
-                    tag="Link"
-                    target="_blank"
-                    className="primary ta-right"
-                    content={t(content[step].link)}
-                  />
-                )}
-              </div>
+              )}
+            </div>
+          )}
+          <div className={`popup-title w-50 ${!isEven(position) && 'odd'} ${!isMobile && 'w-50'}`}>
+            {!isMobile && (
+              <CustomLink
+                content={<Trans i18nKey="Popup.close" />}
+                className="close"
+                onClick={() => { handleOpenModal(); }}
+              />
             )}
-          </div>
-          <div className={`popup-title w-50 ${!isEven(position) && 'odd'}`}>
-            <CustomLink
-              content={<Trans i18nKey="Popup.close" />}
-              className="close"
-              onClick={() => { handleOpenModal(); }}
-            />
             {isEven(position) ? (
               <div className="popup-description">
                 <p className="ta-justify">{content[step].description}</p>

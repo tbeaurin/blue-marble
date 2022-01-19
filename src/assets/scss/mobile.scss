@@ -35,6 +35,9 @@
         padding: 40px 0;
         width: 100vw;
         .menuHome {
+            position: absolute;
+            z-index: 3;
+            text-transform: uppercase;
             padding-left: 0;
             #burger {
                 width: 36px;
@@ -61,6 +64,9 @@
                         transform:translate(0px, -16px) rotate(-45deg);
                     }
                 }
+            }
+            .menuItem {
+                margin: 32px 0 !important;
             }
             .menu-mobile {
                 position: fixed;
@@ -328,6 +334,111 @@
                 font-size: 14px;
                 margin-bottom: 96px;
             }
+            #zonesCitation {
+                height: calc(100vh - 255px);
+                padding: 0 40px;
+            }
+            .zone {
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                h2 {
+                    font-size: 42px;
+                    line-height: 42px;
+                    margin-top: 0;
+                }
+                .zone-subtitle {
+                    margin-left: 0 !important;
+                    font-size: 24px;
+                    margin-bottom: 16px;
+                }
+                .button-open {
+                    top: 0 !important;
+                    left: 0 !important;
+                }
+                #zone1-open, #zone3-open, #zone5-open {
+                    left: 100px !important;
+                }
+            }
+        }
+    }
+    .popup-content {
+        display: flex;
+        flex-direction: column;
+        .close {
+            top: 24px;
+            width: 100%;
+            text-align: center;
+            left: 0;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: "Montserrat";
+            margin: 8px 0;
+        }
+    }
+    #carousel {
+        width: 100vw;
+        height: calc(85vw + 16px);
+        position: inherit;
+        > div {
+            margin: inherit;
+        }
+        .previous-hide, .next-hide {
+            display: none;
+        }
+        .current, .current-wrapper {
+            width: 85vw;
+            left: 5vw;
+        }
+        .current-wrapper {
+            z-index: 4;
+            position: absolute;
+            height: 85vw;
+        }
+        img.next, .next-wrapper {
+            // top: 28px;
+            left: 100%;
+            width: 85vw;
+        }
+        img.previous, .previous-wrapper {
+            // top: 28px;
+            left: -100vw;
+            width: 85vw;
+        }
+        img.previous, img.next {
+            transform: scale(0.25);
+        }
+    }
+    .wrappers-mobile {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        position: relative;
+        z-index: 50;
+        #next-arrow, #previous-arrow {
+            width: 12px
+        }
+    }
+    #popupMain {
+        position: inherit;
+        height: auto;
+        .popup-title {
+            width: 100%;
+        }
+        .popup-subtitle, h2 {
+            display: none;
+        }
+        .popup-description {
+            font-size: 10px;
+            padding: 0 64px;
+            text-align: center !important;
+            margin: auto;
+            .ta-right {
+                text-align: center !important;
+            }
         }
     }
     #font {
@@ -407,6 +518,7 @@
     }
     #missioFakeWrapper, #zonesFakeWrapper, #inventaireFakeWrapper, #coulissesFakeWrapper {
         position: absolute;
+        z-index: 2 !important;
     }
     #missioFakeWrapper {
         height: 62vh;
@@ -436,9 +548,10 @@
     section#homeLeft {
         padding-top: 0;
         padding-left: 0;
+        margin-top: -32px;
     }
     #home {
-        padding: 32px;
+        padding: 0 32px;
         height: calc(100vh - 64px);
         width: calc(100vw - 64px);
     }
