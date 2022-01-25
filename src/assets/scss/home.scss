@@ -128,9 +128,10 @@ h1 {
             position: absolute;
             z-index: -1; 
             transition: all linear .2s;
-            margin-top: 28px;
+            // margin-top: 28px !important;
             width: calc(100% + 8px);
             left: -4px;
+            top: 28px !important;
           }
           display: inline;
           position: relative;
@@ -139,8 +140,9 @@ h1 {
         font-size: 24px;
         &:before {
             height: 6px;
-            margin-top: 27px;
-            }
+            // margin-top: 27px !important;
+            top: 21px !important;
+        }
     }
   }
 #anrText, .logos {

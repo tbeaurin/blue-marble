@@ -40,6 +40,8 @@ const App = () => {
 
   const isMobile = width <= 768;
 
+  const isProd = window.location.hostname.search('programmebluemarble') !== -1;
+
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const handleMove = React.useCallback((e) => {
     if (!isMobile) {
@@ -121,81 +123,106 @@ const App = () => {
   ));
 
   return (
-    <div className="App" onMouseMove={(e) => { handleMove(e); }}>
-      {!isMobile && (
-        <>
+    <>
+      {!isProd ? (
+        <div className="App" onMouseMove={(e) => { handleMove(e); }}>
+          {!isMobile && (
+            <>
+              <div className="cursor cursor--small" />
+              <div className="cursor cursor--ext" />
+              <div
+                id="missioFakeWrapper"
+                onClick={() => { handleClick('missio'); }}
+                onMouseEnter={() => { handleMouseEnter('missio'); }}
+                onMouseLeave={() => { handleMouseLeave('missio'); }}
+              />
+              <div
+                id="zonesFakeWrapper"
+                onClick={() => { handleClick('zones'); }}
+                onMouseEnter={() => { handleMouseEnter('zones'); }}
+                onMouseLeave={() => { handleMouseLeave('zones'); }}
+              />
+              <div
+                id="inventaireFakeWrapper"
+                onClick={() => { handleClick('inventaire'); }}
+                onMouseEnter={() => { handleMouseEnter('inventaire'); }}
+                onMouseLeave={() => { handleMouseLeave('inventaire'); }}
+              />
+              <div
+                id="coulissesFakeWrapper"
+                onClick={() => { handleClick('coulisses'); }}
+                onMouseEnter={() => { handleMouseEnter('coulisses'); }}
+                onMouseLeave={() => { handleMouseLeave('coulisses'); }}
+              />
+              <div id="font">
+                <div id="fontStatic">
+                  <img id="black" className="background" src={black} alt="etoiles" />
+                  <img id="stars" className="background background-shape stars" src={stars} alt="etoiles" />
+                </div>
+                <div id="fontMissio">
+                  <img id="missioDessin" className="background background-hide missio dessin" src={dessinMission} alt="dessinMission" />
+                  <img id="missioConstelation" className="background background-hide missio constelation" src={constelationMissio} alt="constelationMissio" />
+                  <img id="missioStars" className="background missio stars" src={etoilesMissio} alt="etoilesMissio" />
+                  <span id="missioName" className="constelation-name missio background-constelation-title">
+                    <Trans i18nKey="Missio.constelation" />
+                  </span>
+                </div>
+                <div id="fontZones">
+                  <img id="zonesDessin" className="background background-hide zones dessin" src={dessinZones} alt="dessinZones" />
+                  <img id="zonesConstelation" className="background background-hide zones constelation" src={constelationZones} alt="constelationZones" />
+                  <img id="zonesStars" className="background zones stars" src={etoilesZone} alt="etoilesZone" />
+                  <span id="zonesName" className="constelation-name zones background-constelation-title">
+                    <Trans i18nKey="Zones.constelation" />
+                  </span>
+                </div>
+                <div id="fontInventaire">
+                  <img id="inventaireDessin" className="background background-hide inventaire dessin" src={dessinInventaire} alt="dessinInventaire" />
+                  <img id="inventaireConstelation" className="background background-hide inventaire constelation" src={constelationInventaire} alt="constelationInventaire" />
+                  <img id="inventaireStars" className="background inventaire stars" src={etoilesInventaire} alt="etoilesInventaire" />
+                  <span id="inventaireName" className="constelation-name inventaire background-constelation-title">
+                    <Trans i18nKey="Inventaire.constelation" />
+                  </span>
+                </div>
+                <div id="fontCoulisses">
+                  <img id="coulissesDessin" className="background background-hide coulisses dessin" src={dessinCoulisses} alt="dessinCoulisses" />
+                  <img id="coulissesConstelation" className="background background-hide coulisses constelation" src={constelationCoulisses} alt="constelationCoulisses" />
+                  <img id="coulissesStars" className="background coulisses stars" src={etoilesCoulisses} alt="etoilesCoulisses" />
+                  <span id="coulissesName" className="constelation-name coulisses background-constelation-title">
+                    <Trans i18nKey="Coulisses.constelation" />
+                  </span>
+                </div>
+              </div>
+            </>
+          )}
+          <main style={{ position: 'absolute', zIndex: 1000 }}>
+            <Router>
+              <MainRouter />
+            </Router>
+          </main>
+        </div>
+      ) : (
+        <div className="App" onMouseMove={(e) => { handleMove(e); }}>
           <div className="cursor cursor--small" />
           <div className="cursor cursor--ext" />
-          <div
-            id="missioFakeWrapper"
-            onClick={() => { handleClick('missio'); }}
-            onMouseEnter={() => { handleMouseEnter('missio'); }}
-            onMouseLeave={() => { handleMouseLeave('missio'); }}
-          />
-          <div
-            id="zonesFakeWrapper"
-            onClick={() => { handleClick('zones'); }}
-            onMouseEnter={() => { handleMouseEnter('zones'); }}
-            onMouseLeave={() => { handleMouseLeave('zones'); }}
-          />
-          <div
-            id="inventaireFakeWrapper"
-            onClick={() => { handleClick('inventaire'); }}
-            onMouseEnter={() => { handleMouseEnter('inventaire'); }}
-            onMouseLeave={() => { handleMouseLeave('inventaire'); }}
-          />
-          <div
-            id="coulissesFakeWrapper"
-            onClick={() => { handleClick('coulisses'); }}
-            onMouseEnter={() => { handleMouseEnter('coulisses'); }}
-            onMouseLeave={() => { handleMouseLeave('coulisses'); }}
-          />
           <div id="font">
             <div id="fontStatic">
               <img id="black" className="background" src={black} alt="etoiles" />
               <img id="stars" className="background background-shape stars" src={stars} alt="etoiles" />
             </div>
-            <div id="fontMissio">
-              <img id="missioDessin" className="background background-hide missio dessin" src={dessinMission} alt="dessinMission" />
-              <img id="missioConstelation" className="background background-hide missio constelation" src={constelationMissio} alt="constelationMissio" />
-              <img id="missioStars" className="background missio stars" src={etoilesMissio} alt="etoilesMissio" />
-              <span id="missioName" className="constelation-name missio background-constelation-title">
-                <Trans i18nKey="Missio.constelation" />
-              </span>
-            </div>
-            <div id="fontZones">
-              <img id="zonesDessin" className="background background-hide zones dessin" src={dessinZones} alt="dessinZones" />
-              <img id="zonesConstelation" className="background background-hide zones constelation" src={constelationZones} alt="constelationZones" />
-              <img id="zonesStars" className="background zones stars" src={etoilesZone} alt="etoilesZone" />
-              <span id="zonesName" className="constelation-name zones background-constelation-title">
-                <Trans i18nKey="Zones.constelation" />
-              </span>
-            </div>
-            <div id="fontInventaire">
-              <img id="inventaireDessin" className="background background-hide inventaire dessin" src={dessinInventaire} alt="dessinInventaire" />
-              <img id="inventaireConstelation" className="background background-hide inventaire constelation" src={constelationInventaire} alt="constelationInventaire" />
-              <img id="inventaireStars" className="background inventaire stars" src={etoilesInventaire} alt="etoilesInventaire" />
-              <span id="inventaireName" className="constelation-name inventaire background-constelation-title">
-                <Trans i18nKey="Inventaire.constelation" />
-              </span>
-            </div>
-            <div id="fontCoulisses">
-              <img id="coulissesDessin" className="background background-hide coulisses dessin" src={dessinCoulisses} alt="dessinCoulisses" />
-              <img id="coulissesConstelation" className="background background-hide coulisses constelation" src={constelationCoulisses} alt="constelationCoulisses" />
-              <img id="coulissesStars" className="background coulisses stars" src={etoilesCoulisses} alt="etoilesCoulisses" />
-              <span id="coulissesName" className="constelation-name coulisses background-constelation-title">
-                <Trans i18nKey="Coulisses.constelation" />
-              </span>
-            </div>
           </div>
-        </>
+          <main style={{
+            position: 'absolute', zIndex: 1000, display: 'flex', textAlign: 'center', justifyContent: 'center', alignItems: 'center', flexDirection: 'column',
+          }}
+          >
+            <h1>
+              <p><span className="small"><Trans i18nKey="Title.1" /></span></p>
+              <span><Trans i18nKey="Title.2" /></span>
+            </h1>
+            <h2>A découvrir le 18 février ..</h2>
+          </main>
+        </div>
       )}
-      <main style={{ position: 'absolute', zIndex: 1000 }}>
-        <Router>
-          <MainRouter />
-        </Router>
-      </main>
-    </div>
+    </>
   );
 };
 
