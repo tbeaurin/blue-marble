@@ -366,6 +366,7 @@
     .popup-content {
         display: flex;
         flex-direction: column;
+        padding: 0 !important;
         .close {
             top: 24px;
             width: 100%;
@@ -375,7 +376,7 @@
             text-transform: uppercase;
             font-weight: bold;
             font-family: "Montserrat";
-            margin: 8px 0;
+            margin: 12px 0;
         }
     }
     #carousel {
@@ -389,21 +390,19 @@
             display: none;
         }
         .current, .current-wrapper {
-            width: 85vw;
+            width: 86.2vw;
             left: 5vw;
         }
         .current-wrapper {
             z-index: 4;
             position: absolute;
-            height: 85vw;
+            height: 86.2vw;
         }
         img.next, .next-wrapper {
-            // top: 28px;
             left: 100%;
             width: 85vw;
         }
         img.previous, .previous-wrapper {
-            // top: 28px;
             left: -100vw;
             width: 85vw;
         }
@@ -419,7 +418,7 @@
         position: relative;
         z-index: 50;
         #next-arrow, #previous-arrow {
-            width: 12px
+            width: 16px
         }
     }
     #popupMain {
@@ -432,12 +431,18 @@
             display: none;
         }
         .popup-description {
-            font-size: 10px;
+            font-size: 12px;
             padding: 0 64px;
             text-align: center !important;
             margin: auto;
             .ta-right {
                 text-align: center !important;
+            }
+            p {
+                margin: 24px 0;
+            }
+            span, a {
+                margin-bottom: 12px;
             }
         }
     }
