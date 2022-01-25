@@ -24,6 +24,30 @@
             margin-bottom: -15px;
         }
     }
+    .maintenance-h1 {
+        position: inherit;
+        padding-left: 0;
+        span {
+            font-size: 24px;
+            &:before {
+                margin-top: 0;
+                top: 22px;
+            }
+        }
+        .small {
+            font-size: 18px;
+            &:before {
+                margin-top: 0;
+                top: 16px;
+            }
+        }
+        p {
+            margin-bottom: -15px;
+        }
+    }
+    .maintenance-h2 {
+        font-size: 18px;
+    }
     #fontStatic, .mentions-link {
         position: fixed;
         width: 50%;

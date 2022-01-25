@@ -201,26 +201,50 @@ const App = () => {
           </main>
         </div>
       ) : (
-        <div className="App" onMouseMove={(e) => { handleMove(e); }}>
-          <div className="cursor cursor--small" />
-          <div className="cursor cursor--ext" />
-          <div id="font">
-            <div id="fontStatic">
-              <img id="black" className="background" src={black} alt="etoiles" />
-              <img id="stars" className="background background-shape stars" src={stars} alt="etoiles" />
+        <>
+          {!isMobile ? (
+            <div className="App" onMouseMove={(e) => { handleMove(e); }}>
+              <div className="cursor cursor--small" />
+              <div className="cursor cursor--ext" />
+              <div id="font">
+                <div id="fontStatic">
+                  <img id="black" className="background" src={black} alt="etoiles" />
+                  <img id="stars" className="background background-shape stars" src={stars} alt="etoiles" />
+                </div>
+              </div>
+              <main style={{
+                position: 'absolute', zIndex: 1000, display: 'flex', textAlign: 'center', justifyContent: 'center', alignItems: 'center', flexDirection: 'column',
+              }}
+              >
+                <h1>
+                  <p><span className="small"><Trans i18nKey="Title.1" /></span></p>
+                  <span><Trans i18nKey="Title.2" /></span>
+                </h1>
+                <h2>A découvrir le 18 février ..</h2>
+              </main>
             </div>
-          </div>
-          <main style={{
-            position: 'absolute', zIndex: 1000, display: 'flex', textAlign: 'center', justifyContent: 'center', alignItems: 'center', flexDirection: 'column',
-          }}
-          >
-            <h1>
-              <p><span className="small"><Trans i18nKey="Title.1" /></span></p>
-              <span><Trans i18nKey="Title.2" /></span>
-            </h1>
-            <h2>A découvrir le 18 février ..</h2>
-          </main>
-        </div>
+          ) : (
+            <>
+              <div id="font">
+                <div id="fontStatic">
+                  <img id="black" className="background" src={black} alt="etoiles" />
+                </div>
+              </div>
+              <main style={{
+                position: 'absolute', zIndex: 1000, display: 'flex', textAlign: 'center', justifyContent: 'center', alignItems: 'center', flexDirection: 'column',
+              }}
+              >
+                <div>
+                  <h1 className="maintenance-h1" style={{ position: 'inherit', paddingLeft: 0 }}>
+                    <p><span className="small"><Trans i18nKey="Title.1" /></span></p>
+                    <span><Trans i18nKey="Title.2" /></span>
+                  </h1>
+                  <h2 className="maintenance-h2">A découvrir le 18 février ..</h2>
+                </div>
+              </main>
+            </>
+          )}
+        </>
       )}
     </>
   );
