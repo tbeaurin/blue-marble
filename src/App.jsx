@@ -40,7 +40,7 @@ const App = () => {
 
   const isMobile = width <= 768;
 
-  const isProd = window.location.hostname.search('programmebluemarble') !== -1;
+  const isProd = window.location.hostname.search('programmebluemarble') !== -1 && window.location.hostname.search('netifly') === -1;
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const handleMove = React.useCallback((e) => {
