@@ -40,8 +40,7 @@ const App = () => {
 
   const isMobile = width <= 768;
 
-  const isProd = window.location.hostname.split('.').includes('programmebluemarble');
-  // const isProd = true;
+  const isProd = window.location.hostname.search('programmebluemarble') !== -1;
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const handleMove = React.useCallback((e) => {
