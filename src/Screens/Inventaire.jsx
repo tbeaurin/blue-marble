@@ -6,6 +6,8 @@ import { Trans } from 'react-i18next';
 import { useDebouncedCallback } from 'use-debounce';
 import 'reactjs-popup/dist/index.css';
 
+import inventaireImg from '../assets/img/mobile/inventaire_interne.png';
+
 import CustomLink from '../Components/CustomLink';
 import Zone from '../Components/Zone';
 import { initializeCursor } from '../Functions/functions';
@@ -16,6 +18,12 @@ const Inventaire = () => {
   const pages = document.getElementsByClassName('page');
   const menuItems = Array.from(document.getElementsByClassName('menuItem'));
   const [y, setY] = React.useState(window.scrollY);
+  const [width, setWidth] = React.useState(window.innerWidth);
+  const isMobile = width <= 768;
+
+  const handleWindowSizeChange = () => {
+    setWidth(window.innerWidth);
+  };
 
   const [openModal, setOpenModal] = React.useState([false, false]);
 
@@ -30,28 +38,34 @@ const Inventaire = () => {
   }
 
   React.useEffect(() => {
-    document.querySelector('#fontStatic').classList.add('zoomed');
-    document.querySelector('#fontInventaire').classList.add('zoomed');
-    document.querySelector('#fontMissio').classList.add('zoomedInventaire');
-    document.querySelector('#fontZones').classList.add('zoomedInventaire');
-    document.querySelector('#fontCoulisses').classList.add('zoomedInventaire');
+    if (!isMobile) {
+      document.querySelector('#fontStatic').classList.add('zoomed');
+      document.querySelector('#fontInventaire').classList.add('zoomed');
+      document.querySelector('#fontMissio').classList.add('zoomedInventaire');
+      document.querySelector('#fontZones').classList.add('zoomedInventaire');
+      document.querySelector('#fontCoulisses').classList.add('zoomedInventaire');
 
-    document.querySelector('#fontInventaire').classList.remove('zoomedMissio');
-    document.querySelector('#fontInventaire').classList.remove('zoomedZones');
-    document.querySelector('#fontInventaire').classList.remove('zoomedCoulisses');
+      document.querySelector('#fontInventaire').classList.remove('zoomedMissio');
+      document.querySelector('#fontInventaire').classList.remove('zoomedZones');
+      document.querySelector('#fontInventaire').classList.remove('zoomedCoulisses');
 
-    const images = [...document.querySelectorAll('.inventaire')];
-    images.map((image) => image.classList.add('currentPage'));
-    images.map((image) => image.classList.remove('focus'));
+      const images = [...document.querySelectorAll('.inventaire')];
+      images.map((image) => image.classList.add('currentPage'));
+      images.map((image) => image.classList.remove('focus'));
 
-    // Don't display Wrapper on pages
-    document.querySelector('#missioFakeWrapper').style.display = 'none';
-    document.querySelector('#zonesFakeWrapper').style.display = 'none';
-    document.querySelector('#inventaireFakeWrapper').style.display = 'none';
-    document.querySelector('#coulissesFakeWrapper').style.display = 'none';
+      // Don't display Wrapper on pages
+      document.querySelector('#missioFakeWrapper').style.display = 'none';
+      document.querySelector('#zonesFakeWrapper').style.display = 'none';
+      document.querySelector('#inventaireFakeWrapper').style.display = 'none';
+      document.querySelector('#coulissesFakeWrapper').style.display = 'none';
 
-    initializeCursor();
-  }, []);
+      initializeCursor();
+    }
+    window.addEventListener('resize', handleWindowSizeChange);
+    return () => {
+      window.removeEventListener('resize', handleWindowSizeChange);
+    };
+  }, [isMobile]);
 
   const drawAnchor = useDebouncedCallback((e) => {
     Array.from(pages).forEach((page) => {
@@ -129,13 +143,15 @@ const Inventaire = () => {
   const renderMenu = () => (
     <nav id="menuZones" className="menu-page">
       <ul>
-        <li className="menuItem" id="studioAnchor" onClick={(e) => handleClick(e, 'studio')}>
-          <CustomLink
-            href="#studio"
-            tag="NavLink"
-            content={<Trans i18nKey="Menu.inventaire.2" />}
-          />
-        </li>
+        {!isMobile && (
+          <li className="menuItem" id="studioAnchor" onClick={(e) => handleClick(e, 'studio')}>
+            <CustomLink
+              href="#studio"
+              tag="NavLink"
+              content={<Trans i18nKey="Menu.inventaire.2" />}
+            />
+          </li>
+        )}
         <li className="menuItem">
           <CustomLink
             href="/"
@@ -151,20 +167,32 @@ const Inventaire = () => {
   return (
     <div className="main">
       <div className="header" id="mainHeader">
-        <div className="header-left">
-          <span className="constelation-name">
-            <Trans i18nKey="Inventaire.constelation" />
-          </span>
-          <h2 className="constelation-title">
-            <Trans i18nKey="Inventaire.title" />
-          </h2>
-        </div>
-        <div className="header-right">
-          {renderMenu()}
-        </div>
+        {isMobile ? (
+          <>
+            {renderMenu()}
+            <img src={inventaireImg} alt="dessin_zones" />
+            <h2 className="constelation-title">
+              <Trans i18nKey="Inventaire.title" />
+            </h2>
+          </>
+        ) : (
+          <>
+            <div className="header-left">
+              <span className="constelation-name">
+                <Trans i18nKey="Inventaire.constelation" />
+              </span>
+              <h2 className="constelation-title">
+                <Trans i18nKey="Inventaire.title" />
+              </h2>
+            </div>
+            <div className="header-right">
+              {renderMenu()}
+            </div>
+          </>
+        )}
       </div>
       <div id="content" onScroll={(e) => handleScroll(e)}>
-        <div className="page h-100">
+        <div id="inventaireCitation" className="page h-100">
           <div className="page-content">
             <p className="citation">
               <span className="d-block"><Trans i18nKey="Inventaire.citation.1" /></span>

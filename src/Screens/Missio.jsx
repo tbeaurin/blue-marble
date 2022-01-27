@@ -1,6 +1,6 @@
 /* eslint-disable import/no-unresolved */
 import React from 'react';
-import { Trans } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 import { useDebouncedCallback } from 'use-debounce';
 
 import CustomLink from '../Components/CustomLink';
@@ -13,6 +13,9 @@ import AdrienImg from '../assets/img/adrien.jpg';
 import Adrien2Img from '../assets/img/adrien2.jpg';
 import LogoUni from '../assets/img/logo-uni-content.png';
 import PhotoEul from '../assets/img/photo-groupe-eul.png';
+import A2020 from '../assets/img/A2020.png';
+import A2021 from '../assets/img/A2021.png';
+import A2022 from '../assets/img/A2022.png';
 
 import Facebook from '../assets/img/facebook_white.png';
 import Internet from '../assets/img/internet_white.png';
@@ -29,6 +32,7 @@ const Missio = () => {
   const menuItems = Array.from(document.getElementsByClassName('menuItem'));
   const [y, setY] = React.useState(window.scrollY);
   const isMobile = width <= 768;
+  const { t } = useTranslation();
 
   const handleWindowSizeChange = () => {
     setWidth(window.innerWidth);
@@ -296,24 +300,76 @@ const Missio = () => {
                   </p>
                 </div>
                 <div id="anthropocene-aditionnal">
-                  <Trans i18nKey="Missio.anthropocene.aditionnal" />
+                  <div className="w-100 d-flex flex-row photos-anthropocene">
+                    <CustomLink
+                      tag="Link"
+                      href={t('Missio.anthropocene.aditionnal.A2020.link')}
+                      className="d-flex flex-column anthropocene-link"
+                      target="_blank"
+                      content={(
+                        <>
+                          <img src={A2020} alt="A2020" />
+                          <span className="small-italic d-block w-100">
+                            <Trans i18nKey="Missio.anthropocene.aditionnal.A2020.text" />
+                          </span>
+                        </>
+                      )}
+                    />
+                    <CustomLink
+                      tag="Link"
+                      href={t('Missio.anthropocene.aditionnal.A2021.link')}
+                      className="d-flex flex-column anthropocene-link"
+                      target="_blank"
+                      content={(
+                        <>
+                          <img src={A2021} alt="A2021" />
+                          <span className="small-italic d-block w-100">
+                            <Trans i18nKey="Missio.anthropocene.aditionnal.A2021.text" />
+                          </span>
+                        </>
+                      )}
+                    />
+                    <CustomLink
+                      tag="Link"
+                      href={t('Missio.anthropocene.aditionnal.A2022.link')}
+                      target="_blank"
+                      className="d-flex flex-column anthropocene-link"
+                      content={(
+                        <>
+                          <img src={A2022} alt="A2022" />
+                          <span className="small-italic d-block w-100">
+                            <Trans i18nKey="Missio.anthropocene.aditionnal.A2022.text" />
+                          </span>
+                        </>
+                      )}
+                    />
+                  </div>
+                  <p className="anthropocene-aditionnal-title">
+                    <Trans i18nKey="Missio.anthropocene.aditionnal.title" />
+                  </p>
+                  <p className="anthropocene-aditionnal-text">
+                    <Trans i18nKey="Missio.anthropocene.aditionnal.text" />
+                  </p>
+                  <p className="anthropocene-aditionnal-author small-italic d-block w-100">
+                    <Trans i18nKey="Missio.anthropocene.aditionnal.author" />
+                  </p>
                 </div>
               </div>
             </div>
           </div>
           <div id="ecoleUrbaine" className="page pt-5p">
             <div className="page-content">
-              <div id="logoUni">
-                <img src={LogoUni} alt="universite-lyon" />
-                <div>
-                  <h3>
-                    <p><span><Trans i18nKey="Missio.ecole.logoUni.1" /></span></p>
-                    <span><Trans i18nKey="Missio.ecole.logoUni.2" /></span>
-                  </h3>
-                  <h4><Trans i18nKey="Missio.ecole.logoUni.3" /></h4>
+              <div className="content with-photo d-flex mt-32 flex-column">
+                <div id="logoUni">
+                  <img src={LogoUni} alt="universite-lyon" />
+                  <div>
+                    <h3>
+                      <p><span><Trans i18nKey="Missio.ecole.logoUni.1" /></span></p>
+                      <span><Trans i18nKey="Missio.ecole.logoUni.2" /></span>
+                    </h3>
+                    <h4><Trans i18nKey="Missio.ecole.logoUni.3" /></h4>
+                  </div>
                 </div>
-              </div>
-              <div className="content with-photo d-flex mt-32">
                 <div>
                   <p className="important">
                     <Trans i18nKey="Missio.ecole.texte.1" />
@@ -335,7 +391,7 @@ const Missio = () => {
                   <img src={PhotoEul} alt="groupe de l'EUL" />
                 </div>
               </div>
-              <div className="content d-flex mt-64">
+              <div className="content d-flex mt-64 flex-column">
                 <div>
                   <h5><Trans i18nKey="Missio.ecole.subtitle.1" /></h5>
                   <ul>
@@ -380,24 +436,56 @@ const Missio = () => {
                   <h3><Trans i18nKey="Missio.footer.1.1" /></h3>
                   <div className="footer-logos">
                     <div>
-                      <div>
-                        <img src={Internet} alt="site_web" />
-                        <Trans i18nKey="Missio.footer.1.2" />
-                      </div>
-                      <div>
-                        <img src={Medium} alt="medium" id="imgMedium" />
-                        <Trans i18nKey="Missio.footer.1.3" />
-                      </div>
+                      <CustomLink
+                        tag="Link"
+                        href={t('Missio.footer.1.2.link')}
+                        className=""
+                        target="_blank"
+                        content={(
+                          <div>
+                            <img src={Internet} alt="site_web" />
+                            <Trans i18nKey="Missio.footer.1.2" />
+                          </div>
+                        )}
+                      />
+                      <CustomLink
+                        tag="Link"
+                        href={t('Missio.footer.1.3.link')}
+                        className=""
+                        target="_blank"
+                        content={(
+                          <div>
+                            <img src={Medium} alt="medium" id="imgMedium" />
+                            <Trans i18nKey="Missio.footer.1.3" />
+                          </div>
+                        )}
+                      />
                     </div>
                     <div>
-                      <div>
-                        <img src={Facebook} alt="facebook" />
-                        <Trans i18nKey="Missio.footer.1.4" />
-                      </div>
-                      <div>
-                        <img src={Instagram} alt="instagram" />
-                        <Trans i18nKey="Missio.footer.1.5" />
-                      </div>
+                      <CustomLink
+                        tag="Link"
+                        href={t('Missio.footer.1.4.link')}
+                        className=""
+                        target="_blank"
+                        content={(
+                          <div>
+                            <img src={Facebook} alt="facebook" />
+                            <Trans i18nKey="Missio.footer.1.4" />
+                          </div>
+                        )}
+                      />
+                      <CustomLink
+                        tag="Link"
+                        href={t('Missio.footer.1.5.link')}
+                        className=""
+                        target="_blank"
+                        content={(
+                          <div>
+                            <img src={Instagram} alt="instagram" />
+                            <Trans i18nKey="Missio.footer.1.5" />
+                          </div>
+                        )}
+                      />
                     </div>
                   </div>
                 </div>

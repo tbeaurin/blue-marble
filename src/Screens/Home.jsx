@@ -4,7 +4,6 @@ import { Trans } from 'react-i18next';
 import logoANR from '../assets/img/logo-anr.png';
 import logoEUL from '../assets/img/logo-eul.png';
 import logoUNI from '../assets/img/logo-universite.png';
-import CustomLink from '../Components/CustomLink';
 
 import Menu from '../Components/Menu';
 import { initializeCursor, openCursor } from '../Functions/functions';
@@ -155,6 +154,20 @@ const Home = () => {
           <p><span className="small"><Trans i18nKey="Title.1" /></span></p>
           <span><Trans i18nKey="Title.2" /></span>
         </h1>
+        {!isMobile && (
+          <div className="logo-wrapper">
+            <div className="logos">
+              <img className="logo" src={logoUNI} alt="Université de Lyon" />
+              <img className="logo" src={logoEUL} alt="Ecole Urbaine de Lyon" />
+              <img className="logo" src={logoANR} alt="ANR" />
+            </div>
+            <div>
+              <p id="anrText">
+                <Trans i18nKey="Missio.footer.text" />
+              </p>
+            </div>
+          </div>
+        )}
         <Menu />
         {isMobile && (
           <div id="font">
@@ -244,27 +257,21 @@ const Home = () => {
             />
           </div>
         )}
-        <div className="logo-wrapper">
-          <div className="logos">
-            <img className="logo" src={logoUNI} alt="Université de Lyon" />
-            <img className="logo" src={logoEUL} alt="Ecole Urbaine de Lyon" />
-            <img className="logo" src={logoANR} alt="ANR" />
+        {isMobile && (
+          <div className="logo-wrapper">
+            <div className="logos">
+              <img className="logo" src={logoUNI} alt="Université de Lyon" />
+              <img className="logo" src={logoEUL} alt="Ecole Urbaine de Lyon" />
+              <img className="logo" src={logoANR} alt="ANR" />
+            </div>
+            <div>
+              <p id="anrText">
+                <Trans i18nKey="Missio.footer.text" />
+              </p>
+            </div>
           </div>
-          <div>
-            <p id="anrText">
-              <Trans i18nKey="Missio.footer.text" />
-            </p>
-          </div>
-        </div>
+        )}
       </section>
-      <p>
-        <CustomLink
-          href="/mentions"
-          tag="Link"
-          className="mentions-link"
-          content={<Trans i18nKey="Mentions.link" />}
-        />
-      </p>
     </div>
   );
 };

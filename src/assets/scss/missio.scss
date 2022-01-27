@@ -100,6 +100,9 @@
     .main #ecoleUrbaine .mt--100 {
         margin-top: -175px !important;
     }
+    #anthropocene-definition {
+        width: 350px;
+    }
 }
 
 .main {
@@ -217,6 +220,10 @@
     }
     #anthropocene {   
         text-align: justify;
+        .photos-anthropocene {
+            justify-content: space-between;
+            margin-bottom: 32px;
+        }
         #title-anthropocene {
             color: #3a5caa;
             text-transform: uppercase;
@@ -229,16 +236,30 @@
             padding-top: 64px;
             font-size: 18px;
             font-weight: bold;
-            width: 350px;
-            .small-italic {
-                font-size: 14px;
-                font-style: italic;
-                font-weight: initial;
-            }
         }
         #anthropocene-aditionnal {
             padding-inline: 64px;
-            padding-top: 198px;
+            padding-top: 98px;
+            .small-italic {
+                text-align: right;
+                color: #000;
+            }
+            .anthropocene-aditionnal-title {
+                font-weight: bold;
+            }
+            .anthropocene-aditionnal-text {
+                font-size: 15px;
+                font-weight: normal;
+                margin-bottom: 32px;
+            }
+            .anthropocene-link {
+                max-width: 30%;
+            }
+        }
+        .small-italic {
+            font-size: 14px;
+            font-style: italic;
+            font-weight: initial;
         }
     }
     #ecoleUrbaine {
@@ -300,8 +321,17 @@
                 left: -2px;
             }
         }
-        .content {
-            padding-left: 169px;
+        .page-content {
+            width: 50% !important;
+            .content {
+                > div {
+                    width: 100% !important;
+                    margin: 16px 0;
+                    p {
+                        margin: 32px 0;
+                    }
+                }
+            }
         }
         .with-photo {
             .important {
@@ -309,7 +339,6 @@
                 margin-bottom: 32px;
             }
             img {
-                margin-left: 48px;
                 height: auto;
             }
         }
@@ -326,8 +355,9 @@
             font-size: 14px;
             padding: 0 48px 0 64px;
             list-style-type: none;
+            margin-top: 24px;
             li {
-                margin: 8px 0;
+                margin: 12px 0;
                 &:before {
                     content: ' - '
                 }
@@ -348,12 +378,15 @@
         .footer-logos {
             margin-top: 32px;
             > div {
-                > div {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
+                > a {
                     margin-bottom: 32px;
-                    list-style-type: none;
+                    display: block;
+                    > div {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        list-style-type: none;
+                    }
                 }
                 img {
                     margin-right: 8px;

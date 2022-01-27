@@ -4,6 +4,8 @@ import { Trans } from 'react-i18next';
 import { useDebouncedCallback } from 'use-debounce';
 import 'reactjs-popup/dist/index.css';
 
+import coulissesImg from '../assets/img/mobile/coulisses_interne.png';
+
 import CustomLink from '../Components/CustomLink';
 import { initializeCursor } from '../Functions/functions';
 
@@ -11,30 +13,42 @@ const Inventaire = () => {
   const pages = document.getElementsByClassName('page');
   const menuItems = Array.from(document.getElementsByClassName('menuItem'));
   const [y, setY] = React.useState(window.scrollY);
+  const [width, setWidth] = React.useState(window.innerWidth);
+  const isMobile = width <= 768;
+
+  const handleWindowSizeChange = () => {
+    setWidth(window.innerWidth);
+  };
 
   React.useEffect(() => {
-    document.querySelector('#fontStatic').classList.add('zoomed');
-    document.querySelector('#fontCoulisses').classList.add('zoomed');
-    document.querySelector('#fontMissio').classList.add('zoomedCoulisses');
-    document.querySelector('#fontZones').classList.add('zoomedCoulisses');
-    document.querySelector('#fontInventaire').classList.add('zoomedCoulisses');
+    if (!isMobile) {
+      document.querySelector('#fontStatic').classList.add('zoomed');
+      document.querySelector('#fontCoulisses').classList.add('zoomed');
+      document.querySelector('#fontMissio').classList.add('zoomedCoulisses');
+      document.querySelector('#fontZones').classList.add('zoomedCoulisses');
+      document.querySelector('#fontInventaire').classList.add('zoomedCoulisses');
 
-    document.querySelector('#fontCoulisses').classList.remove('zoomedMissio');
-    document.querySelector('#fontCoulisses').classList.remove('zoomedZones');
-    document.querySelector('#fontCoulisses').classList.remove('zoomedInventaire');
+      document.querySelector('#fontCoulisses').classList.remove('zoomedMissio');
+      document.querySelector('#fontCoulisses').classList.remove('zoomedZones');
+      document.querySelector('#fontCoulisses').classList.remove('zoomedInventaire');
 
-    const images = [...document.querySelectorAll('.coulisses')];
-    images.map((image) => image.classList.add('currentPage'));
-    images.map((image) => image.classList.remove('focus'));
+      const images = [...document.querySelectorAll('.coulisses')];
+      images.map((image) => image.classList.add('currentPage'));
+      images.map((image) => image.classList.remove('focus'));
 
-    // Don't display Wrapper on pages
-    document.querySelector('#missioFakeWrapper').style.display = 'none';
-    document.querySelector('#zonesFakeWrapper').style.display = 'none';
-    document.querySelector('#inventaireFakeWrapper').style.display = 'none';
-    document.querySelector('#coulissesFakeWrapper').style.display = 'none';
+      // Don't display Wrapper on pages
+      document.querySelector('#missioFakeWrapper').style.display = 'none';
+      document.querySelector('#zonesFakeWrapper').style.display = 'none';
+      document.querySelector('#inventaireFakeWrapper').style.display = 'none';
+      document.querySelector('#coulissesFakeWrapper').style.display = 'none';
 
-    initializeCursor();
-  }, []);
+      initializeCursor();
+    }
+    window.addEventListener('resize', handleWindowSizeChange);
+    return () => {
+      window.removeEventListener('resize', handleWindowSizeChange);
+    };
+  }, [isMobile]);
 
   const drawAnchor = useDebouncedCallback((e) => {
     Array.from(pages).forEach((page) => {
@@ -83,20 +97,24 @@ const Inventaire = () => {
   const renderMenu = () => (
     <nav id="menuZones" className="menu-page">
       <ul>
-        <li className="menuItem" id="coulisses1Anchor" onClick={(e) => handleClick(e, 'video')}>
-          <CustomLink
-            href="#video"
-            tag="NavLink"
-            content={<Trans i18nKey="Menu.coulisses.2" />}
-          />
-        </li>
-        <li className="menuItem" id="coulisses2Anchor" onClick={(e) => handleClick(e, 'remerciement')}>
-          <CustomLink
-            href="#remerciement"
-            tag="NavLink"
-            content={<Trans i18nKey="Menu.coulisses.3" />}
-          />
-        </li>
+        {!isMobile && (
+          <>
+            <li className="menuItem" id="coulisses1Anchor" onClick={(e) => handleClick(e, 'video')}>
+              <CustomLink
+                href="#video"
+                tag="NavLink"
+                content={<Trans i18nKey="Menu.coulisses.2" />}
+              />
+            </li>
+            <li className="menuItem" id="coulisses2Anchor" onClick={(e) => handleClick(e, 'remerciement')}>
+              <CustomLink
+                href="#remerciement"
+                tag="NavLink"
+                content={<Trans i18nKey="Menu.coulisses.3" />}
+              />
+            </li>
+          </>
+        )}
         <li className="menuItem">
           <CustomLink
             href="/"
@@ -112,24 +130,46 @@ const Inventaire = () => {
   return (
     <div className="main">
       <div className="header" id="mainHeader">
-        <div className="header-left">
-          <span className="constelation-name">
-            <Trans i18nKey="Coulisses.constelation" />
-          </span>
-          <h2 className="constelation-title">
-            <Trans i18nKey="Coulisses.title" />
-          </h2>
-        </div>
-        <div className="header-right">
-          {renderMenu()}
-        </div>
+        {isMobile ? (
+          <>
+            {renderMenu()}
+            <img src={coulissesImg} alt="dessin_zones" />
+            <h2 className="constelation-title">
+              <Trans i18nKey="Coulisses.title" />
+            </h2>
+          </>
+        ) : (
+          <>
+            <div className="header-left">
+              <span className="constelation-name">
+                <Trans i18nKey="Coulisses.constelation" />
+              </span>
+              <h2 className="constelation-title">
+                <Trans i18nKey="Coulisses.title" />
+              </h2>
+            </div>
+            <div className="header-right">
+              {renderMenu()}
+            </div>
+          </>
+        )}
       </div>
       <div id="content" onScroll={(e) => handleScroll(e)}>
-        <div className="page h-100">
+        <div id="coulissesCitation" className="page h-100">
           <div className="page-content">
             <p className="citation">
               <span className="d-block citation-large"><Trans i18nKey="Coulisses.citation.1" /></span>
               <span className="d-block citation-small"><Trans i18nKey="Coulisses.citation.2" /></span>
+            </p>
+          </div>
+        </div>
+        <div id="coulissesRemerciement" className="page h-100">
+          <div className="page-content">
+            <p className="remerciement" id="remerciement">
+              <span className="d-block remerciement-large"><Trans i18nKey="Coulisses.remerciement.title" /></span>
+              <span className="d-block remerciement-small"><Trans i18nKey="Coulisses.remerciement.text.1" /></span>
+              <span className="d-block remerciement-small"><Trans i18nKey="Coulisses.remerciement.text.2" /></span>
+              <span className="d-block remerciement-small"><Trans i18nKey="Coulisses.remerciement.text.3" /></span>
             </p>
           </div>
         </div>

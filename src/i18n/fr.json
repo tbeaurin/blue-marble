@@ -71,8 +71,16 @@
     "Missio.anthropocene.title": "an-thro-po-cene",
     "Missio.anthropocene.definition": "Ce que l’on propose de nommer « Anthropocène », c’est ce moment historique qui s’ouvre après 1945 avec l’enclenchement de la phase de l’urbanisation généralisée de la planète lors duquel il devient incontestable que les activités humaines ont des impacts de plus en plus forts sur les systèmes biophysiques. On observe, partout, ces bouleversements tout à la fois globaux et locaux. A tel point que l’habitabilité de la terre pour les humains et les non humains est mise en question ",
     "Missio.anthropocene.definition.small": "Michel Lussault, géographe, professeur à l’ENS de Lyon, directeur de l’Ecole urbaine de Lyon.",
-    "Missio.anthropocene.aditionnal": "Alors que nous interrogeons de plus en plus sur l'habitabilité future de la terre, sur les conditions justes et éthiques de mise en œuvre des stratégies de réorientations écologiques de nos cohabitations, il est crucial de faire connaître les réalités anthropocènes, d'analyser les dynamiques à l’œuvre, notamment celles liées à l'urbanisation et de mettre en discussion ce qui peut guider notre action collective",
-    
+    "Missio.anthropocene.aditionnal.title": "Magazine de l'anthropocène",
+    "Missio.anthropocene.aditionnal.text": "Alors que nous interrogeons de plus en plus sur l'habitabilité future de la terre, sur les conditions justes et éthiques de mise en œuvre des stratégies de réorientations écologiques de nos cohabitations, il est crucial de faire connaître les réalités anthropocènes, d'analyser les dynamiques à l’œuvre, notamment celles liées à l'urbanisation et de mettre en discussion ce qui peut guider notre action collective. <br />C e magazine rassemble les textes de nombreux auteurs issus de domaines variés, scientifiques, litéraires et artistiques. Leurs contributions permettent d'appréhender la notion d'Anthropocène selon des points de vue complémentaires et d'accéder à une compréhension fine des enjeux.",
+    "Missio.anthropocene.aditionnal.author": "Collection \"A partir de l'anthropocène\"<br />Coédition École urbaine de Lyon et Éditions deux-cent-cinq",
+    "Missio.anthropocene.aditionnal.A2020.text": "A°2020",
+    "Missio.anthropocene.aditionnal.A2020.link": "https://www.editions205.fr/collections/anthropocene/products/a-2020",
+    "Missio.anthropocene.aditionnal.A2021.text": "A°2021",
+    "Missio.anthropocene.aditionnal.A2021.link": "https://www.editions205.fr/collections/anthropocene/products/a-2022",
+    "Missio.anthropocene.aditionnal.A2022.text": "A°2022",
+    "Missio.anthropocene.aditionnal.A2022.link": "https://www.editions205.fr/collections/anthropocene/products/a-2022",
+
     "Missio.ecole.logoUni.1": "école urbaine ",
     "Missio.ecole.logoUni.2": "de Lyon",
     "Missio.ecole.logoUni.3": "Université de Lyon",
@@ -110,9 +118,13 @@
 
     "Missio.footer.1.1": "Pour en apprendre plus sur l'Ecole Urbaine de Lyon et ses activités :",
     "Missio.footer.1.2": "Ecole Urbaine de Lyon",
+    "Missio.footer.1.2.link": "https://ecoleurbainedelyon.universite-lyon.fr/",
     "Missio.footer.1.3": "Medium Antrhopocène 2050",
+    "Missio.footer.1.3.link": " https://medium.com/anthropocene2050",
     "Missio.footer.1.4": "Ecole Urbaine",
+    "Missio.footer.1.4.link": "https://www.facebook.com/ecoleurbainedelyon",
     "Missio.footer.1.5": "Ecole Urbaine de Lyon",
+    "Missio.footer.1.5.link": " https://www.instagram.com/ecoleurbaine/",
     "Missio.footer.2.1.1": "école urbaine de lyon",
     "Missio.footer.2.1.2": "Université de lyon",
     "Missio.footer.2.2": "Université de lyon",
@@ -154,5 +166,10 @@
     "Inventaire.studio.title": "Studio",
 
     "Coulisses.citation.1": "160 lieux | 2 320 kms | 72 pellicules",
-    "Coulisses.citation.2": "Altitude la plus élevée : 3200m | Température la plus élevée : 34°C"
+    "Coulisses.citation.2": "Altitude la plus élevée : 3200m | Température la plus élevée : 34°C",
+
+    "Coulisses.remerciement.title": "Je souhaite profondément remercier :",
+    "Coulisses.remerciement.text.1": "L'École Urbaine de Lyon et toute sa merveilleuse équipe pour m'avoir fait confiance et laissé carte blanche pour ce projet qui me tenait à cœur",
+    "Coulisses.remerciement.text.2": "L'équipe qui m'a permis de concrétiser cette aventure du début à la fin, j'ai nommé le duo de choc The D's (Frankie et Quentin) et le génial développeur Web Tristan Beaurin",
+    "Coulisses.remerciement.text.3": "Ma chérie, ma famille et mes amis pour leurs soutien inconditionnel, depuis toujours."
 }

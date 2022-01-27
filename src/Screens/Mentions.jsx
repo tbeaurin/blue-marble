@@ -8,15 +8,28 @@ import CustomLink from '../Components/CustomLink';
 import { initializeCursor } from '../Functions/functions';
 
 const Mentions = () => {
+  const [width, setWidth] = React.useState(window.innerWidth);
+  const isMobile = width <= 768;
+
+  const handleWindowSizeChange = () => {
+    setWidth(window.innerWidth);
+  };
+
   React.useEffect(() => {
     // Don't display Wrapper on pages
-    document.querySelector('#missioFakeWrapper').style.display = 'none';
-    document.querySelector('#zonesFakeWrapper').style.display = 'none';
-    document.querySelector('#inventaireFakeWrapper').style.display = 'none';
-    document.querySelector('#coulissesFakeWrapper').style.display = 'none';
+    if (!isMobile) {
+      document.querySelector('#missioFakeWrapper').style.display = 'none';
+      document.querySelector('#zonesFakeWrapper').style.display = 'none';
+      document.querySelector('#inventaireFakeWrapper').style.display = 'none';
+      document.querySelector('#coulissesFakeWrapper').style.display = 'none';
 
-    initializeCursor();
-  }, []);
+      initializeCursor();
+    }
+    window.addEventListener('resize', handleWindowSizeChange);
+    return () => {
+      window.removeEventListener('resize', handleWindowSizeChange);
+    };
+  }, [isMobile]);
 
   const renderMenu = () => (
     <nav id="menuMissio" className="menu-page">
@@ -35,14 +48,21 @@ const Mentions = () => {
 
   return (
     <div className="main">
-      <div className="header" id="mainHeader">
-        <div className="header-right">
-          {renderMenu()}
-        </div>
+      <div className="header mentions" id="mainHeader">
+        {isMobile ? (
+          <>
+            {renderMenu()}
+          </>
+        ) : (
+          <div className="header-right">
+            {renderMenu()}
+          </div>
+        )}
       </div>
       <div id="content" style={{ marginTop: 0, overflow: 'hidden' }}>
         <div
           className="page h-100 m-auto align-items-center flex-column justiy-content-center text-align-center p-80"
+          id="pageMentions"
         >
           <h3>
             <Trans i18nKey="Mentions.title" />
