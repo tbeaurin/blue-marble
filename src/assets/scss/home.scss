@@ -128,10 +128,10 @@ h1 {
             position: absolute;
             z-index: -1; 
             transition: all linear .2s;
-            // margin-top: 28px !important;
+            margin-top: 28px !important;
             width: calc(100% + 8px);
             left: -4px;
-            top: 28px;
+            // top: 28px;
           }
           display: inline;
           position: relative;
@@ -140,8 +140,8 @@ h1 {
         font-size: 24px;
         &:before {
             height: 6px;
-            // margin-top: 27px !important;
-            top: 21px;
+            margin-top: 27px !important;
+            // top: 21px;
         }
     }
   }
@@ -161,12 +161,7 @@ img {
 }
 }
 .mentions-link {
-    position: absolute;
-    right: 30px;
-    bottom: 45px;
-    width: 150px;
     border-top: 1px solid #fff;
-    text-align: right;
     padding-top: 7px;
     font-size: 14px;
 }
@@ -258,16 +253,16 @@ a {
         margin-top: 0;
         .small {
             font-size: 20px;
-            &:before { margin-top: 25px; }
+            &:before { margin-top: 25px !important; }
         }
         span {
-            &:before { margin-top: 24px; }
+            &:before { margin-top: 24px !important; }
         }
     }
     .menuHome {
-        padding-top: 16px;
+        padding-top: 12px;
         .menuItem {
-            margin-bottom: 24px;
+            margin-bottom: 22px;
             font-size: 16px;
             a {
                 &:before {
@@ -275,5 +270,11 @@ a {
                 }
             }
         }
+    }
+}
+
+@media (min-width: 1441px) {
+    section#homeLeft {
+        padding-top: 172px;
     }
 }

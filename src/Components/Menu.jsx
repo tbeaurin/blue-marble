@@ -99,6 +99,14 @@ const Menu = () => {
               onMouseLeave={() => { handleMouseLeave('coulisses'); }}
             />
           </li>
+          <li className="menuItem" id="mentions">
+            <CustomLink
+              href="/mentions"
+              tag="NavLink"
+              className="mentions-link"
+              content={<Trans i18nKey="Menu.mentions" />}
+            />
+          </li>
         </ul>
       )}
       {isMobile && (
@@ -137,6 +145,14 @@ const Menu = () => {
               tag="NavLink"
               onMouseEnter={() => { handleMouseEnter('coulisses'); }}
               onMouseLeave={() => { handleMouseLeave('coulisses'); }}
+            />
+          </li>
+          <li className="menuItem" id="mentions">
+            <CustomLink
+              href="/mentions"
+              tag="NavLink"
+              className="mentions-link"
+              content={<Trans i18nKey="Menu.mentions" />}
             />
           </li>
         </ul>
