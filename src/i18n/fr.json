@@ -28,6 +28,8 @@
     "Menu.coulisses.2": "Vidéo",
     "Menu.coulisses.3": "Remerciements",
 
+    "Menu.mentions": "Mentions légales", 
+
     "404.404": "404",
     "404.text": "Oops, la page que vous avez demandé n'existe pas",
     "404.link.text": "Revenir à l'accueil",
@@ -89,6 +91,8 @@
     "Missio.ecole.texte.3": "Aux défis mondiaux de l’urbanisation et de l’entrée dans l’anthropocène correspondent, en effet, à la fois de nouveaux champs de recherche et de formation, de nouvelles professions et compétences, mais aussi une mutation profonde de la pensée, des représentations, des pratiques e des métiers de la ville.",
     "Missio.ecole.texte.4": "L’École Urbaine de Lyon entend ainsi accompagner la transition sociale, écologique et économique dans laquelle sont engagées les sociétés et les territoires à l’échelle planétaire. Il s’agit de contribuer à l’élaboration d’un nouveau mode collectif d’appréhension des problématiques urbaines et environnementales, et de repenser les rapports que peuvent entretenir universités, laboratoires de recherche, entreprises, collectivités territoriales, administrations publiques, associations et citoyens dans un contexte urbain en perpétuelle mutation.",
     "Missio.ecole.texte.5": "Le projet s’inscrit au croisement des stratégies des établissements d’enseignement supérieur et des organismes nationaux de recherche, et des dynamiques de structuration à l’oeuvre sur le site LYON / SAINT-ÉTIENNE, en phase avec le projet stratégique de l’Université de Lyon et de la logique IDEX.",
+    "Missio.ecole.additional.1": "L'équipe de l'Ecole urbaine de Lyon à Hotel71, novembre 2021",
+    "Missio.ecole.additional.2": "Photo : Mélania Avanzato",
     "Missio.ecole.subtitle.1": "Nos grandes thématiques de travail :",
     "Missio.ecole.subtitle.2": "Une ambition en six axes principaux :",
     "Missio.ecole.list.1.1": "Changement global du système planétaire et ses expressions locales",
