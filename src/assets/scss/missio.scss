@@ -102,6 +102,9 @@
     }
     #anthropocene-definition {
         width: 350px;
+        padding-inline: 128px !important;
+        padding-top: 96px !important;
+        font-size: 20px !important;
     }
 }
 
@@ -205,8 +208,9 @@
                     width: calc(50% + 50px);
                 }
                 #objectifMonde-content {
-                width: calc(50% - 50px);
+                    width: calc(50% - 50px);
                     padding-left: 32px;
+                    text-align: justify;
                     p {
                         margin: 24px 32px;
                         max-width: 450px;
@@ -323,12 +327,13 @@
         }
         .page-content {
             width: 50% !important;
+            text-align: justify;
             .content {
                 > div {
                     width: 100% !important;
                     margin: 16px 0;
                     p {
-                        margin: 32px 0;
+                        margin: 0 0 32px 0;
                     }
                 }
             }
@@ -340,6 +345,14 @@
             }
             img {
                 height: auto;
+                width: 100%;
+                margin-bottom: 8px;
+            }
+            .small-italic {
+                text-align: right;
+                font-size: 14px;
+                font-style: italic;
+                font-weight: initial;
             }
         }
         .mt--100 {

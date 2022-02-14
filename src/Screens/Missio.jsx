@@ -389,6 +389,8 @@ const Missio = () => {
                 </div>
                 <div>
                   <img src={PhotoEul} alt="groupe de l'EUL" />
+                  <span className="small-italic d-block w-100"><Trans i18nKey="Missio.ecole.additional.1" /></span>
+                  <span className="small-italic d-block w-100"><Trans i18nKey="Missio.ecole.additional.2" /></span>
                 </div>
               </div>
               <div className="content d-flex mt-64 flex-column">
