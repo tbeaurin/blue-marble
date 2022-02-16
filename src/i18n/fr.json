@@ -153,15 +153,27 @@
     
     "Popup.open": "Ouvrir",
     "Popup.close": "Retour",
-    "Popup.zone1.description1": "01/50<br />Le terme Anthropocène s’impose et se diffuse de plus en plus tant auprès des scientifiques que du grand public. Dans un cas comme dans l’autre, il suscite de nombreux débats et discussions, ce qui est un indice de sa puissance. Celle-ci est due à ce qu’il recouvre : l’idée d’une bifurcation dans l’histoire de l’humanisation de la planète et une bifurcation qui menace possiblement l’habitabilité de la terre.",
+    "Popup.zone1.description1": "01/50<br /><br />Le terme Anthropocène s’impose et se diffuse de plus en plus tant auprès des scientifiques que du grand public. Dans un cas comme dans l’autre, il suscite de nombreux débats et discussions, ce qui est un indice de sa puissance. Celle-ci est due à ce qu’il recouvre : l’idée d’une bifurcation dans l’histoire de l’humanisation de la planète et une bifurcation qui menace possiblement l’habitabilité de la terre.",
     "Popup.zone1.description1.important": "Ecouter le podcast \"QU’EST-CE QUE L’ANTHROPOCÈNE ? Episode 1 : LEÇON INAUGURALE\" via le lien suivant :",
     "Popup.zone1.description1.link": "https://www.sondekla.com/user/event/9491",
 
     "Popup.open": "Ouvrir",
     "Popup.close": "Retour",
-    "Popup.zone1.description2": "02/50<br />Le fonctionnement de la ville passe par des flux, des processus de transformation de matières et d'énergie, qui conduisent de plus en plus de chercheurs et praticiens à mobiliser le concept de métabolisme. Moyen de comprendre et représenter les liens entre les sociétés et leur environnement, la métaphore renvoie de fait à l'idée du corps de la ville. Les villes ont-elles un corps ? Que peut nous apprendre l'étude du corps de la ville ? ",
+    "Popup.zone1.description2": "02/50<br /><br />Le fonctionnement de la ville passe par des flux, des processus de transformation de matières et d'énergie, qui conduisent de plus en plus de chercheurs et praticiens à mobiliser le concept de métabolisme. Moyen de comprendre et représenter les liens entre les sociétés et leur environnement, la métaphore renvoie de fait à l'idée du corps de la ville. Les villes ont-elles un corps ? Que peut nous apprendre l'étude du corps de la ville ? ",
     "Popup.zone1.description2.important": "Ecouter le podcast \"Les villes ont-elles un corps ?\" via le lien suivant :",
     "Popup.zone1.description2.link": "https://www.sondekla.com/user/event/11650",
+
+    "Popup.open": "Ouvrir",
+    "Popup.close": "Retour",
+    "Popup.zone1.description3": "03/50",
+    "Popup.zone1.description3.important": "",
+    "Popup.zone1.description3.link": "",
+
+    "Popup.open": "Ouvrir",
+    "Popup.close": "Retour",
+    "Popup.zone1.description10": "10/50<br /><br />Après un premier épisode à la recherche des traces géologiques des villes puis une analyse des flux de déchets des grands projets de tunnels, l’exploration des sous-sols urbains continue sur Anthropocene2050 ! Björn Wallsten, chercheur à l’université d’Uppsala (Suède), revient sur son travail au sujet des infrastructures souterraines en milieu urbain. Peut-on les transformer en mines de ressources stratégiques dans le cadre d’une économie plus circulaire ? ",
+    "Popup.zone1.description10.important": "Lire l'interview de Björn Wallsten via le lien suivant :",
+    "Popup.zone1.description10.link": "https://medium.com/anthropocene2050/bj%C3%B6rn-wallsten-les-infrastructures-souterraines-ont-le-plus-souvent-%C3%A9t%C3%A9-install%C3%A9es-en-partant-5deec84b535b",
 
     "Inventaire.citation.1": "\"- Le Monde dans lequel nous évoluions était à nos pieds.",
     "Inventaire.citation.2": "- Il suffisait de se baisser et de ramasser\"",
