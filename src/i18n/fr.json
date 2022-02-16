@@ -157,6 +157,12 @@
     
     "Popup.open": "Ouvrir",
     "Popup.close": "Retour",
+    "Popup.zone1.description1": "<b>01/50<b/> <br/> Le terme Anthropocène s’impose et se diffuse de plus en plus tant auprès des scientifiques que du grand public. Dans un cas comme dans l’autre, il suscite de nombreux débats et discussions, ce qui est un indice de sa puissance. Celle-ci est due à ce qu’il recouvre : l’idée d’une bifurcation dans l’histoire de l’humanisation de la planète et une bifurcation qui menace possiblement l’habitabilité de la terre.",
+    "Popup.zone1.description1.important": "Ecouter le podcast \"QU’EST-CE QUE L’ANTHROPOCÈNE ? Episode 1 : LEÇON INAUGURALE\" via le lien suivant :",
+    "Popup.zone1.description1.link": "https://www.sondekla.com/user/event/9491",
+
+    "Popup.open": "Ouvrir",
+    "Popup.close": "Retour",
     "Popup.zone1.description1": "Aux défis de l'urbanisation et de l'anthropocène correspondent à la fois de nouveaux champs de recherche et de formation, de nouvelles professions et une mutation de la pensée, des pratiques et des corps de doctrine de la plupart des métiers existants, en particulier ceux de l'ingénierie urbaine, de l'architecture, de l'aménagement, de l'urbanisme, du paysage",
     "Popup.zone1.description1.important": "Ecouter le podcast via le lien suivant :",
     "Popup.zone1.description1.link": "www.sondekla.com/user/event/12046",
