@@ -153,13 +153,13 @@
     
     "Popup.open": "Ouvrir",
     "Popup.close": "Retour",
-    "Popup.zone1.description1": "01/50<br /><br />Le terme Anthropocène s’impose et se diffuse de plus en plus tant auprès des scientifiques que du grand public. Dans un cas comme dans l’autre, il suscite de nombreux débats et discussions, ce qui est un indice de sa puissance. Celle-ci est due à ce qu’il recouvre : l’idée d’une bifurcation dans l’histoire de l’humanisation de la planète et une bifurcation qui menace possiblement l’habitabilité de la terre.",
-    "Popup.zone1.description1.important": "Ecouter le podcast \"Qu’est-ce que l’anthropocène ? Episode 1 : Leçon inaugurale\" via le lien suivant :",
+    "Popup.zone1.description1": "Bienvenue dans l'Anthropocène<br /><br />Le terme Anthropocène s’impose et se diffuse de plus en plus tant auprès des scientifiques que du grand public. Dans un cas comme dans l’autre, il suscite de nombreux débats et discussions, ce qui est un indice de sa puissance. Celle-ci est due à ce qu’il recouvre : l’idée d’une bifurcation dans l’histoire de l’humanisation de la planète et une bifurcation qui menace possiblement l’habitabilité de la terre.",
+    "Popup.zone1.description1.important": "Ecouter le podcast \"Qu’est-ce que l’anthropocène ? Episode 1 : Leçon inaugurale\" de Michel Lussault via le lien suivant :",
     "Popup.zone1.description1.link": "https://www.sondekla.com/user/event/9491",
 
     "Popup.open": "Ouvrir",
     "Popup.close": "Retour",
-    "Popup.zone1.description2": "02/50<br /><br />Le fonctionnement de la ville passe par des flux, des processus de transformation de matières et d'énergie, qui conduisent de plus en plus de chercheurs et praticiens à mobiliser le concept de métabolisme. Moyen de comprendre et représenter les liens entre les sociétés et leur environnement, la métaphore renvoie de fait à l'idée du corps de la ville. Les villes ont-elles un corps ? Que peut nous apprendre l'étude du corps de la ville ? ",
+    "Popup.zone1.description2": "Métabolisme<br /><br />Le fonctionnement de la ville passe par des flux, des processus de transformation de matières et d'énergie, qui conduisent de plus en plus de chercheurs et praticiens à mobiliser le concept de métabolisme. Moyen de comprendre et représenter les liens entre les sociétés et leur environnement, la métaphore renvoie de fait à l'idée du corps de la ville. Les villes ont-elles un corps ? Que peut nous apprendre l'étude du corps de la ville ? ",
     "Popup.zone1.description2.important": "Ecouter le podcast \"Les villes ont-elles un corps ?\" via le lien suivant :",
     "Popup.zone1.description2.link": "https://www.sondekla.com/user/event/11650",
 
@@ -169,9 +169,24 @@
 
     "Popup.open": "Ouvrir",
     "Popup.close": "Retour",
-    "Popup.zone1.description10": "10/50<br /><br />Après un premier épisode à la recherche des traces géologiques des villes puis une analyse des flux de déchets des grands projets de tunnels, l’exploration des sous-sols urbains continue sur Anthropocene2050 ! Björn Wallsten, chercheur à l’université d’Uppsala (Suède), revient sur son travail au sujet des infrastructures souterraines en milieu urbain. Peut-on les transformer en mines de ressources stratégiques dans le cadre d’une économie plus circulaire ? ",
+    "Popup.zone1.description10": "Monde urbain souterrain<br /><br />Björn Wallsten, chercheur à l’université d’Uppsala (Suède), parle de son travail sur les infrastructures souterraines en milieu urbain. Peut-on les transformer en mines de ressources stratégiques dans le cadre d’une économie plus circulaire ? ",
     "Popup.zone1.description10.important": "Lire l'interview de Björn Wallsten via le lien suivant :",
     "Popup.zone1.description10.link": "https://medium.com/anthropocene2050/bj%C3%B6rn-wallsten-les-infrastructures-souterraines-ont-le-plus-souvent-%C3%A9t%C3%A9-install%C3%A9es-en-partant-5deec84b535b",
+
+    "Popup.open": "Ouvrir",
+    "Popup.close": "Retour",
+    "Popup.zone1.description12": "Dessiner le droit dans l’Anthropocène<br /><br /> Projet de recherche exploratoire porté par l’École urbaine de Lyon \"Dessiner le droit dans l’Anthropocène\" interroge, par le dessin, la façon dont le droit répond de manière originale et inédite aux multiples défis de l’Anthropocène. ",
+    "Popup.zone1.description12.important": "Lire l'article de Lou Herrmann via le lien suivant :",
+    "Popup.zone1.description12.link": "https://medium.com/anthropocene2050/dessiner-le-droit-dans-lanthropoc%C3%A8ne-47feb552d559"
+
+    "Popup.open": "Ouvrir",
+    "Popup.close": "Retour",
+    "Popup.zone1.description14": "Trottinettes électriques<br /><br /> « Les trottinettes électriques, bonnes ou mauvaises pour le climat ? »: « pour faire des trottinettes électriques un mode de déplacement plus durable : améliorer leur conception et leur longévité, réduire les émissions liées à la gestion de flotte, favoriser les reports modaux depuis les modes plus émissifs »",
+    "Popup.zone1.description14.important": "Lire l'article de The Conversation via le lien suivant :",
+    "Popup.zone1.description14.link": "https://theconversation.com/les-trottinettes-electriques-bonnes-ou-mauvaises-pour-le-climat-146035?utm_medium=email&utm_campaign=La%20lettre%20de%20The%20Conversation%20France%20du%2022%20septembre%202020%20-%201739416837&utm_content=La%20lettre%20de%20The%20Conversation%20France%20du%2022%20septembre%202020%20-%201739416837+CID_5c692924b5c20245dfd39ccf22757fbd&utm_source=campaign_monitor_fr&utm_term=Les%20trottinettes%20lectriques%20bonnes%20ou%20mauvaises%20pour%20le%20climat"
+
+
+
 
     "Inventaire.citation.1": "\"- Le Monde dans lequel nous évoluions était à nos pieds.",
     "Inventaire.citation.2": "- Il suffisait de se baisser et de ramasser\"",
