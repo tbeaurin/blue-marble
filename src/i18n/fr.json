@@ -171,6 +171,10 @@
     "Popup.zone1.description2.important": "Ecouter l'émission avec Pierre Desvaux et Romain Garcier, animée par Laëtitia Mongeard - Ecole Urbaine de Lyon  ",
     "Popup.zone1.description2.link": "https://www.sondekla.com/user/event/11650",
 
+    "Popup.zone1.description4": "Quantification<br /><br />Les travaux se sont multipliés au cours des dernières années pour décrire l’influence nouvelle des investisseurs institutionnels dans la fabrique de la ville. Même si les acteurs historiques de la ville, comme les autorités publiques ou les promoteurs, offrent de solides résistances. Dans ce contexte, les évaluateurs immobiliers avancent leurs expertises. ",
+    "Popup.zone1.description4.important": "Ecouter l'émission avec Patrice Bardet, Grégory Grey-Johnson, Lucia Shimbo et Pierre Thérond",
+    "Popup.zone1.description4.link": "https://www.sondekla.com/user/event/9876",
+
     "Popup.zone1.description7": "Réinventer les ports <br /><br />\"Les politiques maritimes sont l’un des terrains privilégiés pour initier la transition écologique. Conscients de leur vulnérabilité environnementale et économique, de nombreux ports se sont en effet engagés dans des stratégies de développement durable\"",
     "Popup.zone1.description7.important": "Lire l'article de The Conversation",
     "Popup.zone1.description7.link": "https://theconversation.com/face-au-defi-energetique-lurgence-de-reinventer-les-ports-159281",
@@ -179,9 +183,13 @@
     "Popup.zone1.description10.important": "Lire l'interview de Björn Wallsten",
     "Popup.zone1.description10.link": "https://medium.com/anthropocene2050/bj%C3%B6rn-wallsten-les-infrastructures-souterraines-ont-le-plus-souvent-%C3%A9t%C3%A9-install%C3%A9es-en-partant-5deec84b535b",
 
-    "Popup.zone1.description12": "Dessiner le droit dans l’Anthropocène<br /><br /> Projet de recherche exploratoire porté par l’École urbaine de Lyon \"Dessiner le droit dans l’Anthropocène\" interroge, par le dessin, la façon dont le droit répond de manière originale et inédite aux multiples défis de l’Anthropocène. ",
-    "Popup.zone1.description12.important": "Lire l'article de Lou Herrmann - Ecole Urbaine de Lyon",
-    "Popup.zone1.description12.link": "https://medium.com/anthropocene2050/dessiner-le-droit-dans-lanthropoc%C3%A8ne-47feb552d559",
+    "Popup.zone1.description11": "Smart citizens ?<br /><br />Progressivement l'expression \"Ville Intelligente\" glisse vers celle de \"Ville apprenante\" apparemment plus soucieuse de placer les habitants au cœur des préoccupations urbaines. Derrière ce changement de vocabulaire se dessine l’idéal du « citoyen intelligent et connecté », un \"smart-citizen\" qu'il convient aussi d'interroger.",
+    "Popup.zone1.description11.important": "Lire les comptes rendus de la journée d'étude organisée par Lou Herrmann et Hervé Rivano - Ecole Urbaine de Lyon",
+    "Popup.zone1.description11.link": "http://www.atvisible.com/QuiSontLesSmartCitizens/",
+
+    "Popup.zone1.description12": "les voies du droit<br /><br /> Si au siècle dernier, les règles juridiques, fondamentalement anthropocentrées, ont souvent traduit une logique généralisée de prédation et de destruction, l’enjeu désormais pour le droit est d’intégrer la fin de ce modèle. L’instrument juridique n’est pas seulement construit par des instances dominées par le politique, il est aussi l’expression de choix sociétaux et citoyens, et doit être utilisé pour répondre aux défis de l’anthropocène. Afin de mettre en évidence les potentialités, il faut oser questionner certains postulats et s’engager dans une réflexion prospective, nourrie des apports d’autres disciplines et cultures juridiques. ",
+    "Popup.zone1.description12.important": "Regardez les cours publics de Isabelle Michallet",
+    "Popup.zone1.description12.link": "https://ecoleurbainedelyon.universite-lyon.fr/cours-public-2021-faire-face-a-l-anthropocene-les-voies-du-droit-par-isabelle-michallet-212620.kjsp",
 
     "Popup.zone1.description14": "Trottinettes électriques<br /><br /> « Les trottinettes électriques, bonnes ou mauvaises pour le climat ? : pour faire des trottinettes électriques un mode de déplacement plus durable : améliorer leur conception et leur longévité, réduire les émissions liées à la gestion de flotte, favoriser les reports modaux depuis les modes plus émissifs » ",
     "Popup.zone1.description14.important": "Lire l'article de The Conversation",
@@ -203,17 +211,37 @@
     "Popup.zone1.description19.important": "Lire ou écouter la chronique de Bérénice Gagne - Ecole Urbaine de Lyon",
     "Popup.zone1.description19.link": "https://medium.com/anthropocene2050/g%C3%A9n%C3%A9rations-206e795af4a1",
 
+    "Popup.zone1.description20": "Embouteillages<br /><br /> De plus en plus de municipalités utilisent les bouchons comme un moyen de promouvoir des circulations plus douces, explique le chercheur Nicolas Chiabaut dans ce nouvel épisode de « L’Abécédaire de la ville », à la lettre E, comme « embouteillages ».",
+    "Popup.zone1.description20.important": "Lire l'article de Nicolas Chiabaut pour «Le Monde» Cities et l'Ecole Urbaine de Lyon",
+    "Popup.zone1.description20.link": "https://www.lemonde.fr/smart-cities/article/2021/02/06/les-embouteillages-sont-devenus-une-arme-efficace-pour-lutter-contre-la-voiture-en-ville_6069029_4811534.html",
+
+    "Popup.zone1.description22": "Fleuves<br /><br /> Dans ce nouvel épisode de « L’Abécédaire de la ville », à la lettre F, comme « fleuve », l’archéologue Corinne Castel et l’architecte-urbaniste Bernd Gundermann rappellent, à l’occasion de la Journée mondiale de l’eau, que les villes doivent depuis toujours faire face aux défis posés par cette ressource.",
+    "Popup.zone1.description22.important": "Lire l'article de Corinne Castel et Bernd Gundermann pour «Le Monde» Cities et l'Ecole Urbaine de Lyon",
+    "Popup.zone1.description22.link": "https://www.lemonde.fr/smart-cities/article/2021/03/22/gestion-de-l-eau-les-experiences-des-premieres-civilisations-urbaines-sont-une-source-d-inspiration-pour-penser-la-ville-de-demain_6074010_4811534.html",
+
     "Popup.zone1.description31": "Ordures<br /><br /> Plongeons dans la benne de nos déchets, ces spectres qui reflètent nos désirs, nos obsessions, nos peurs. Parlons de ce qui nous dégoûte, mais aussi de celles et ceux qui nous dégoûtent. Parlons de nous et de nos fantômes, des ordures.",
     "Popup.zone1.description31.important": "Lire ou écouter la chronique de Bérénice Gagne - Ecole Urbaine de Lyon",
     "Popup.zone1.description31.link": "https://medium.com/anthropocene2050/ordures-44d829130241",
 
+    "Popup.zone1.description33": "Migration climatique<br /><br /> \"Si on ne se tracasse que des gens qui vivent à l’intérieur de nos frontières nationales, on ne pourra jamais agir efficacement contre le changement climatique. Parce que l’action contre le changement climatique requiert une forme d’altruisme, requiert que nous considérions l’autre, celui qui se trouve au-delà de nos frontières, comme une partie de nous-mêmes\"",
+    "Popup.zone1.description33.important": "Lire l'entrevue avec François Gemenne de Radio Canada",
+    "Popup.zone1.description33.link": "https://ici.radio-canada.ca/recit-numerique/3137/cop26-climat-migration?s=09",
+
     "Popup.zone1.description34": "Végétalisation<br /><br /> Verdissement des espaces urbains, extension des parcs, forêts urbaines, potagers et toitures végétalisées : qu’est-ce que la nature en ville et pour qui ? Comment aller au-delà d’une nature de façade ?",
-    "Popup.zone1.description34.important": "Lire ou écouter la chronique de Bérénice Gagne - Ecole Urbaine de Lyon",
-    "Popup.zone1.description34.link": "https://medium.com/anthropocene2050/v%C3%A9g%C3%A9talisation-f9d3184243e6",
+    "Popup.zone1.description34.important": "Ecouter l'émission avec Armelle Barrière, Arnaud Bellec, Amélie Deschamps, animée par Thomas Boutreux - Ecole Urbaine de Lyon",
+    "Popup.zone1.description34.link": "https://www.sondekla.com/user/event/10497",
    
     "Popup.zone1.description36": "Batteries électriques<br /><br /> Ce qui se cache dans nos voitures et vélos électriques: dans l’Arizona (États-Unis), l’extraction de lithium (composant des batteries électriques) accapare les terres et menace les pratiques rituelles (donc la vie) des communautés autochtones",
     "Popup.zone1.description36.important": "Lire l'article en anglais de Energy News",
     "Popup.zone1.description36.link": "https://energynews.us/2021/06/10/mining-for-lithium-at-a-cost-to-indigenous-religions/",
+
+    "Popup.zone1.description40": "Sports<br /><br /> La culture sportive est une combinaison de pratiques, de comportements, de systèmes de valeurs et de rapport au corps. Et il existe autant de cultures sportives que de sports. Les villes se sont emparées du sport : organisation d’évènements sportifs, dispositifs d’insertion et d’intégration par le sport, soutien aux clubs, grands stades, prise en compte des logiques sportives dans les projets de rénovation urbaine… Comment intègrent-elles la diversité des cultures sportives ?",
+    "Popup.zone1.description40.important": "Ecouter l'émission avec Antoine Haincourt, Jean-Michel Roux, animée par Jérémy Cheval - Ecole Urbaine de Lyon",
+    "Popup.zone1.description40.link": "https://www.sondekla.com/user/event/11944",
+
+    "Popup.zone1.description41": "Pandémie<br /><br /> Dans cette série de chroniques vidéos mises en ligne entre le 21 mars et le 11 mai 2020, Michel Lussault, directeur de l’École urbaine de Lyon, propose une analyse de la situation liée à la pandémie de COVID-19 en suggérant d’en faire un événement anthropocène total.",
+    "Popup.zone1.description41.important": "Regarder les vidéos de Michel Lussault - Directeur de l'Ecole Urbaine de Lyon",
+    "Popup.zone1.description41.link": "https://medium.com/anthropocene2050/chroniques-g%C3%A9o-virales-e144c57db628",
 
     "Popup.zone1.description43": "Datacenters<br /><br /> \"La visioconférence, le streaming, le télétravail, l’e-commerce, le jeu en ligne, et bien d’autres déclinaisons du numérique aussi bien professionnelles que ludiques sont en cette période de confinement largement consommées par les Français – encore plus qu’à l’accoutumée.\"",
     "Popup.zone1.description43.important": "Lire l'article de Rue 89 Lyon et écoutez l'émission avec Jean-Vincent Bayarri, Cécile Diguet, animée par Lou Herrmann - Ecole Urbaine de Lyon",
@@ -226,6 +254,47 @@
     "Popup.zone1.description49": "Animaux domestiques<br /><br /> Comment la place - et le rôle - des animaux dans la ville ont-ils évolué au cours des deux derniers siècles, et quel impact ces changements ont-ils eu sur le tissu urbain, et surtout sur la relation que les citadins entretiennent aujourd'hui avec les animaux ? Lisa Jean Moore examine Animal City, d'Andrew A. Robichaud, qui aborde ces questions d'un point de vue américain.",
     "Popup.zone1.description49.important": "Lire l'article en anglais du Metropolitics",
     "Popup.zone1.description49.link": "https://metropolitics.org/The-Ancestors-of-Pandemic-Pets-and-Vector-Animals.html",
+
+    "Popup.zone2.description18": "Lotissements<br /><br /> Fabriquer la ville avec les lotissements : une qualification possible de la production ordinaire des espaces urbains contemporains ? ",
+    "Popup.zone2.description18.important": "Lire la thèse de Lou Herrmann - Ecole Urbaine de Lyon",
+    "Popup.zone2.description18.link": "https://tel.archives-ouvertes.fr/tel-01665105",
+
+    "Popup.zone2.description42": "Pollution des eaux<br /><br /> Comment améliorer la connaissance des risques environnementaux liés à la pollution des eaux usées en milieu urbain ? Éléments d’analyse à partir du projet Éco-Risks. ",
+    "Popup.zone2.description42.important": "Lire l'article de Philippe Polomé, Yves Perrodin et Antoine Gosset - Ecole Urbaine de Lyon",
+    "Popup.zone2.description42.link": "https://medium.com/anthropocene2050/comment-am%C3%A9liorer-la-connaissance-des-risques-environnementaux-li%C3%A9s-%C3%A0-la-pollution-des-eaux-us%C3%A9es-e8078e156888",
+
+    "Popup.zone2.description44": "Qualité de l'air<br /><br /> Le professeur Francis Pope mène des projets de recherche actifs dans les domaines de la pollution atmosphérique, du changement climatique, de la chimie fondamentale des aérosols et de la résilience des villes. La pollution atmosphérique est la plus grande menace pour la santé au Royaume-Uni.",
+    "Popup.zone2.description44.important": "Ecouter l'émission en anglais avec Francis Pope, animée par Rulan Verma - Ecole Urbaine de Lyon",
+    "Popup.zone2.description44.link": "https://www.sondekla.com/user/event/12110",
+
+    "Popup.zone2.description50": "Les enfants<br /><br /> La relation entre l’enfant et la ville suscite un intérêt grandissant des praticiens et des chercheurs de diverses disciplines. Et si l’enfant était considérée comme un acteur dynamique et conduisait à explorer la ville au travers de son regard ? Quelle serait l’autonomie des enfants du point de vue de la géographie urbaine ?",
+    "Popup.zone2.description50.important": "Ecouter l'émission avec Stéphanie Cagni et Clément Rivière, animée par Lou Herrmann - Ecole Urbaine de Lyon",
+    "Popup.zone2.description50.link": "https://www.sondekla.com/user/event/11423",
+
+    "Popup.zone3.description2": "Résilience alimentaire<br /><br /> Changement climatique, effondrement de la biodiversité, dégradation et artificialisation des sols, épuisement des ressources énergétiques et minières, instabilités économiques et politiques : la situation actuelle est alarmante à bien des égards. Il y a ainsi urgence de repenser l’organisation des systèmes alimentaires et de construire de nouveaux modèles moins vulnérables et donc plus résilients pour faire face à ces crises. ",
+    "Popup.zone3.description2.important": "Découvrir l'outil CRATer de Benjamin Cuillier et Arthur Grimonpont - Ecole Urbaine de Lyon",
+    "Popup.zone3.description2.link": "https://crater.resiliencealimentaire.org/",
+
+    "Popup.zone3.description3": "Néolithique<br /><br /> \"12 000 ans, l’odyssée de l’espèce. Embarquez pour un voyage dans le temps à la découverte de LA Grande Bifurcation de l’espèce humaine, j’ai nommé : le Néolithique !\"",
+    "Popup.zone3.description3.important": "Lire ou écouter la chronique de Bérénice Gagne - Ecole Urbaine de Lyon",
+    "Popup.zone3.description3.link": "https://medium.com/anthropocene2050/n%C3%A9olithique-f73335fa98de",
+
+    "Popup.zone3.description11": "Blé<br /><br /> Sofia travaille sur les blés vêtus (engrain, amidonnier et grand épeautre) et en quoi ils peuvent contribuer à la robustesse des agrosystèmes et à la qualité de l’alimentation sur le territoire de Lyon. C’est un sujet qui s’ancre dans un contexte de diminution inquiétante de la biodiversité cultivée, de diminution de la robustesse des variétés qui dominent nos systèmes agricoles et d’augmentation des problèmes de santé en lien avec l’alimentation. ",
+    "Popup.zone3.description11.important": "Suivre le travail de thèse de Sofia Correa - Ecole Urbaine de Lyon",
+    "Popup.zone3.description11.link": "https://ecoleurbainedelyon.universite-lyon.fr/trombinoscope-doctorants/sofia-correa--226788.kjsp?RH=ecoleurbainedelyon",
+
+    "Popup.zone3.description40": "La mort<br /><br /> Le processus de deuil dépend de la réaction collective de la société, qui organise le rite funéraire pour cadrer les émotions liées à la perte. Qu’en est-il lorsque le contexte restreint le dernier moment partagé, la cérémonie avec la famille ? Quelle demeure à imaginer pour nos corps à l’heure d’un monde plus soutenable ? ",
+    "Popup.zone3.description40.important": "Ecouter l'émission avec Martin Julier-Costes et Laurence Loutre-Barbier, animée par Jérémy Cheval - Ecole Urbaine de Lyon",
+    "Popup.zone3.description40.link": "https://www.sondekla.com/user/event/11199",
+
+    "Popup.zone4.description1": "Les montagnes<br /><br /> Les zones montagneuses, et parmi elles les Alpes, se réchauffent presque deux fois plus rapidement que la moyenne planétaire. Une hausse qui approche 2°C depuis 1900, dont les conséquences sur les paysages et les activités humaines sont de plus en plus visibles. ",
+    "Popup.zone4.description1.important": "Ecouter l'émission avec Etienne Maury et Jean Krug, animée par Valérie Disdier - Ecole Urbaine de Lyon",
+    "Popup.zone4.description1.link": "https://www.sondekla.com/user/event/12523",
+
+    "Popup.zone4.description17": "L'espace<br /><br /> Nous allons parler des enjeux spatiaux à travers le tourisme spatial, tir de missiles sur des satellites, la lune, mars comme horizon ! On oublie la terre pour s'envoyer en l'air ! ",
+    "Popup.zone4.description17.important": "Ecouter l'émission avec Arnaud Saint Martin, animée Hugo Chaila, Florian Fompérie et Emma Novel - Ecole Urbaine de Lyon",
+    "Popup.zone4.description17.link": "https://www.sondekla.com/user/event/12523",
+
 
     "Inventaire.citation.1" :"\"- Dans chacune des zones visitées, pour comprendre l'Anthropocène, il nous suffisait de regarder par terre.",
     "Inventaire.citation.2": "- Nous n'avions véritablement qu'à nous baisser et ramasser ce que nous trouvions !\"",
