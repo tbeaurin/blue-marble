@@ -207,7 +207,7 @@
     "Popup.zone1.description31.important": "Lire ou écouter la chronique de Bérénice Gagne - Ecole Urbaine de Lyon",
     "Popup.zone1.description31.link": "https://medium.com/anthropocene2050/ordures-44d829130241",
 
-    "Popup.zone1.description33": "Migrants climatiques<br /><br /> \“Si on ne se tracasse que des gens qui vivent à l’intérieur de nos frontières nationales, on ne pourra jamais agir efficacement contre le changement climatique. Parce que l’action contre le changement climatique requiert une forme d’altruisme, requiert que nous considérions l’autre, celui qui se trouve au-delà de nos frontières, comme une partie de nous-mêmes\”",
+    "Popup.zone1.description33": "Migration climatique<br /><br /> \“Si on ne se tracasse que des gens qui vivent à l’intérieur de nos frontières nationales, on ne pourra jamais agir efficacement contre le changement climatique. Parce que l’action contre le changement climatique requiert une forme d’altruisme, requiert que nous considérions l’autre, celui qui se trouve au-delà de nos frontières, comme une partie de nous-mêmes\”",
     "Popup.zone1.description33.important": "Lire l'entrevue avec François Gemenne de Radio Canada",
     "Popup.zone1.description33.link": "https://ici.radio-canada.ca/recit-numerique/3137/cop26-climat-migration?s=09",
 
@@ -218,6 +218,10 @@
     "Popup.zone1.description36": "Batteries électriques<br /><br /> Ce qui se cache dans nos voitures et vélos électriques: dans l’Arizona (États-Unis), l’extraction de lithium (composant des batteries électriques) accapare les terres et menace les pratiques rituelles (donc la vie) des communautés autochtones",
     "Popup.zone1.description36.important": "Lire l'article en anglais de Energy News",
     "Popup.zone1.description36.link": "https://energynews.us/2021/06/10/mining-for-lithium-at-a-cost-to-indigenous-religions/",
+
+    "Popup.zone1.description43": "Datacenters<br /><br /> \"La visioconférence, le streaming, le télétravail, l’e-commerce, le jeu en ligne, et bien d’autres déclinaisons du numérique aussi bien professionnelles que ludiques sont en cette période de confinement largement consommées par les Français – encore plus qu’à l’accoutumée.\"",
+    "Popup.zone1.description43.important": "Lire l'article de Rue 89 Lyon et écoutez l'émission avec Jean-Vincent Bayarri, Cécile Diguet, animée par Lou Herrmann - Ecole Urbaine de Lyon",
+    "Popup.zone1.description43.link": "https://energynews.us/2021/06/10/mining-for-lithium-at-a-cost-to-indigenous-religions/",
 
     "Popup.zone1.description44": "Villes et géologie<br /><br /> Mark Williams est Professeur de Paléobiologie à l’Université de Leceister et membre Groupe de travail sur l’Anthropocène de la Commission internationale de stratigraphie (ICS). Au cours de cette courte interview, il propose quelques pistes de réflexion sur la manière dont les villes peuvent être envisagées dans la perspective d’une approche géologique de l’Anthropocène.",
     "Popup.zone1.description44.important": "Lire l'interview de Mark Williams par Lucas Tiphine - Ecole Urbaine de Lyon",
