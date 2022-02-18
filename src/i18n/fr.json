@@ -158,9 +158,9 @@
     "Popup.studio.description5.important": "Lire l'article de France 24",
     "Popup.studio.description5.link": "https://www.france24.com/fr/20190819-islande-okjoekull-plaque-memorial-glacier-disparu-rechauffement-climatique",
 
-    "Popup.studio.description5": "Sable <br /><br />La ruée vers le sable : Une histoire environnementale du littoral de Los Angeles au XXe siècle",
-    "Popup.studio.description5.important": "Ecouter l'émission avec Elsa Devienne, animée par Valérie Disdier - Ecole Urbaine de Lyon",
-    "Popup.studio.description5.link": "https://www.sondekla.com/user/event/11931",
+    "Popup.studio.description10": "Sable <br /><br />La ruée vers le sable : Une histoire environnementale du littoral de Los Angeles au XXe siècle",
+    "Popup.studio.description10.important": "Ecouter l'émission avec Elsa Devienne, animée par Valérie Disdier - Ecole Urbaine de Lyon",
+    "Popup.studio.description10.link": "https://www.sondekla.com/user/event/11931",
 
 
     "Popup.zone1.description1": "Anthropocène ? <br /><br />Le terme Anthropocène s’impose et se diffuse de plus en plus tant auprès des scientifiques que du grand public. Dans un cas comme dans l’autre, il suscite de nombreux débats et discussions, ce qui est un indice de sa puissance. Celle-ci est due à ce qu’il recouvre : l’idée d’une bifurcation dans l’histoire de l’humanisation de la planète et une bifurcation qui menace possiblement l’habitabilité de la terre.",
@@ -206,10 +206,6 @@
     "Popup.zone1.description31": "Ordures<br /><br /> Plongeons dans la benne de nos déchets, ces spectres qui reflètent nos désirs, nos obsessions, nos peurs. Parlons de ce qui nous dégoûte, mais aussi de celles et ceux qui nous dégoûtent. Parlons de nous et de nos fantômes, des ordures.",
     "Popup.zone1.description31.important": "Lire ou écouter la chronique de Bérénice Gagne - Ecole Urbaine de Lyon",
     "Popup.zone1.description31.link": "https://medium.com/anthropocene2050/ordures-44d829130241",
-
-    "Popup.zone1.description33": "Migration climatique<br /><br /> \“Si on ne se tracasse que des gens qui vivent à l’intérieur de nos frontières nationales, on ne pourra jamais agir efficacement contre le changement climatique. Parce que l’action contre le changement climatique requiert une forme d’altruisme, requiert que nous considérions l’autre, celui qui se trouve au-delà de nos frontières, comme une partie de nous-mêmes\”",
-    "Popup.zone1.description33.important": "Lire l'entrevue avec François Gemenne de Radio Canada",
-    "Popup.zone1.description33.link": "https://ici.radio-canada.ca/recit-numerique/3137/cop26-climat-migration?s=09",
 
     "Popup.zone1.description34": "Végétalisation<br /><br /> Verdissement des espaces urbains, extension des parcs, forêts urbaines, potagers et toitures végétalisées : qu’est-ce que la nature en ville et pour qui ? Comment aller au-delà d’une nature de façade ?",
     "Popup.zone1.description34.important": "Lire ou écouter la chronique de Bérénice Gagne - Ecole Urbaine de Lyon",
