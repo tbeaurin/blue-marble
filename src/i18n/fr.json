@@ -54,7 +54,7 @@
     "Coulisses.constelation": "Scaena",
     "Coulisses.title": "Les coulisses",
     
-    "Missio.citation": "\"Il était impossible de voir les étoiles depuis la Zone 1, en ville. Or quelle meilleure expérience, depuis le sol, pour se rappeler la petitesse et la fragilité de cette planète ?\"",
+    "Missio.citation": "\"Il était impossible de voir les étoiles en ville. Or quelle meilleure expérience, depuis le sol, pour se rappeler la petitesse et la fragilité de cette planète ?\"",
     "Missio.citation.author.1": "Major A",
     "Missio.citation.author.2": "A propos de la zone 1",
     "Missio.citation.author.3": "Extrait de son interview pour A2022 Magazine",
@@ -134,7 +134,7 @@
     "Missio.footer.2.2": "Université de lyon",
     "Missio.footer.text": "Ce travail a bénéificié de l'aide de l'Etat gérée par l'Agence Nationale de la Recherche au titre du programme d'Investissement d'avenir portant la référence ANR-17-CONV-0004",
 
-    "Zones.citation": "\"Dans la Zone 4, en contemplant le glacier de la Meije, il m'est apparu évident qu'un de nos devoirs durant cette mission était aussi de photographier ce qui est beau, ce qui disparaîtra\"",
+    "Zones.citation": "\"En contemplant le glacier il m'est apparu évident qu'un de nos devoirs, durant cette mission, était aussi de photographier ce qui est beau, ce qui disparaîtra\"",
     "Zones.citation.author.1": "Major Q",
     "Zones.citation.author.2": "Extrait de son interview pour A2022 Magazine",
 
@@ -157,29 +157,79 @@
     
     "Popup.open": "Ouvrir",
     "Popup.close": "Retour",
-    "Popup.zone1.description1": "Bienvenue dans l'Anthropocène<br /><br />Le terme Anthropocène s’impose et se diffuse de plus en plus tant auprès des scientifiques que du grand public. Dans un cas comme dans l’autre, il suscite de nombreux débats et discussions, ce qui est un indice de sa puissance. Celle-ci est due à ce qu’il recouvre : l’idée d’une bifurcation dans l’histoire de l’humanisation de la planète et une bifurcation qui menace possiblement l’habitabilité de la terre.",
-    "Popup.zone1.description1.important": "Ecouter le podcast \"Qu’est-ce que l’anthropocène ? Episode 1 : Leçon inaugurale\" de Michel Lussault",
+
+    "Popup.studio.description5": "Pierre issu d'un glacier <br /><br />Le glacier islandais Okjökull, déclaré mort en 2014 après 700 ans d'existence, a depuis 2019 un mémorial à son nom dans l'ouest de l'île. Il s'agit du premier glacier à disparaître en raison du réchauffement climatique. ",
+    "Popup.studio.description5.important": "Lire l'article de France 24",
+    "Popup.studio.description5.link": "https://www.france24.com/fr/20190819-islande-okjoekull-plaque-memorial-glacier-disparu-rechauffement-climatique",
+
+    "Popup.studio.description5": "Sable <br /><br />La ruée vers le sable : Une histoire environnementale du littoral de Los Angeles au XXe siècle",
+    "Popup.studio.description5.important": "Ecouter l'émission avec Elsa Devienne, animée par Valérie Disdier - Ecole Urbaine de Lyon",
+    "Popup.studio.description5.link": "https://www.sondekla.com/user/event/11931",
+
+
+    "Popup.zone1.description1": "Anthropocène ? <br /><br />Le terme Anthropocène s’impose et se diffuse de plus en plus tant auprès des scientifiques que du grand public. Dans un cas comme dans l’autre, il suscite de nombreux débats et discussions, ce qui est un indice de sa puissance. Celle-ci est due à ce qu’il recouvre : l’idée d’une bifurcation dans l’histoire de l’humanisation de la planète et une bifurcation qui menace possiblement l’habitabilité de la terre.",
+    "Popup.zone1.description1.important": "Ecouter l'épisode 1 du cours public de Michel Lussault - Directeur de l'Ecole urbaine de Lyon",
     "Popup.zone1.description1.link": "https://www.sondekla.com/user/event/9491",
 
     "Popup.zone1.description2": "Métabolisme<br /><br />Le fonctionnement de la ville passe par des flux, des processus de transformation de matières et d'énergie, qui conduisent de plus en plus de chercheurs et praticiens à mobiliser le concept de métabolisme. Moyen de comprendre et représenter les liens entre les sociétés et leur environnement, la métaphore renvoie de fait à l'idée du corps de la ville. Les villes ont-elles un corps ? Que peut nous apprendre l'étude du corps de la ville ? ",
-    "Popup.zone1.description2.important": "Ecouter le podcast \"Les villes ont-elles un corps ?\"  :",
+    "Popup.zone1.description2.important": "Ecouter l'émission avec Pierre Desvaux et Romain Garcier, animée par Laëtitia Mongeard - Ecole Urbaine de Lyon  ",
     "Popup.zone1.description2.link": "https://www.sondekla.com/user/event/11650",
-   
-    "Popup.zone1.description10": "Monde urbain souterrain<br /><br />Björn Wallsten, chercheur à l’université d’Uppsala (Suède), parle de son travail sur les infrastructures souterraines en milieu urbain. Peut-on les transformer en mines de ressources stratégiques dans le cadre d’une économie plus circulaire ? ",
+
+    "Popup.zone1.description7": "Réinventer les ports <br /><br />\"Les politiques maritimes sont l’un des terrains privilégiés pour initier la transition écologique. Conscients de leur vulnérabilité environnementale et économique, de nombreux ports se sont en effet engagés dans des stratégies de développement durable\"",
+    "Popup.zone1.description7.important": "Lire l'article de The Conversation",
+    "Popup.zone1.description7.link": "https://theconversation.com/face-au-defi-energetique-lurgence-de-reinventer-les-ports-159281",
+
+    "Popup.zone1.description10": "Mondes urbains souterrains<br /><br />Björn Wallsten, chercheur à l’université d’Uppsala (Suède), parle de son travail sur les infrastructures souterraines en milieu urbain. Peut-on les transformer en mines de ressources stratégiques dans le cadre d’une économie plus circulaire ? ",
     "Popup.zone1.description10.important": "Lire l'interview de Björn Wallsten",
     "Popup.zone1.description10.link": "https://medium.com/anthropocene2050/bj%C3%B6rn-wallsten-les-infrastructures-souterraines-ont-le-plus-souvent-%C3%A9t%C3%A9-install%C3%A9es-en-partant-5deec84b535b",
 
     "Popup.zone1.description12": "Dessiner le droit dans l’Anthropocène<br /><br /> Projet de recherche exploratoire porté par l’École urbaine de Lyon \"Dessiner le droit dans l’Anthropocène\" interroge, par le dessin, la façon dont le droit répond de manière originale et inédite aux multiples défis de l’Anthropocène. ",
-    "Popup.zone1.description12.important": "Lire l'article de Lou Herrmann via le lien suivant :",
+    "Popup.zone1.description12.important": "Lire l'article de Lou Herrmann - Ecole Urbaine de Lyon",
     "Popup.zone1.description12.link": "https://medium.com/anthropocene2050/dessiner-le-droit-dans-lanthropoc%C3%A8ne-47feb552d559",
 
     "Popup.zone1.description14": "Trottinettes électriques<br /><br /> « Les trottinettes électriques, bonnes ou mauvaises pour le climat ? : pour faire des trottinettes électriques un mode de déplacement plus durable : améliorer leur conception et leur longévité, réduire les émissions liées à la gestion de flotte, favoriser les reports modaux depuis les modes plus émissifs » ",
     "Popup.zone1.description14.important": "Lire l'article de The Conversation",
     "Popup.zone1.description14.link": "https://theconversation.com/les-trottinettes-electriques-bonnes-ou-mauvaises-pour-le-climat-146035?utm_medium=email&utm_campaign=La%20lettre%20de%20The%20Conversation%20France%20du%2022%20septembre%202020%20-%201739416837&utm_content=La%20lettre%20de%20The%20Conversation%20France%20du%2022%20septembre%202020%20-%201739416837+CID_5c692924b5c20245dfd39ccf22757fbd&utm_source=campaign_monitor_fr&utm_term=Les%20trottinettes%20lectriques%20bonnes%20ou%20mauvaises%20pour%20le%20climat",
   
-    "Popup.zone1.description15": "Urine et engrais<br /><br /> La production mondiale d’engrais utilise des énergies fossiles (2% de l’énergie mondiale) et recourt à l’exploitation de ressources limitées, comme la roche de phosphate. Des chercheurs et chercheuses ont trouvé un procédé permettant de déshydrater l’urine humaine pour ne récupérer que l’azote et le phosphore à la base de la fabrication d’engrais ",
-    "Popup.zone1.description15.important": "Lire l'article en anglais de The Conversation via le lien suivant",
+    "Popup.zone1.description15": "Urines et engrais<br /><br /> La production mondiale d’engrais utilise des énergies fossiles (2% de l’énergie mondiale) et recourt à l’exploitation de ressources limitées, comme la roche de phosphate. Des chercheurs et chercheuses ont trouvé un procédé permettant de déshydrater l’urine humaine pour ne récupérer que l’azote et le phosphore à la base de la fabrication d’engrais ",
+    "Popup.zone1.description15.important": "Lire l'article en anglais de The Conversation",
     "Popup.zone1.description15.link": "https://theconversation.com/we-found-a-way-to-turn-urine-into-solid-fertiliser-it-could-make-farming-more-sustainable-148877?utm_medium=email&utm_campaign=Latest%20from%20The%20Conversation%20for%20November%209%202020%20-%201781017280&utm_content=Latest%20from%20The%20Conversation%20for%20November%209%202020%20-%201781017280+CID_9851284e1e9d7b403e1427ab1cb57a98&utm_source=campaign_monitor_africa&utm_term=We%20found%20a%20way%20to%20turn%20urine%20into%20solid%20fertiliser%20%20it%20could%20make%20farming%20more%20sustainable",
+
+    "Popup.zone1.description17": "Sols urbains<br /><br /> Artificialisation, imperméabilisation, pollution : les sols urbains, invisibilisés sous des couches de bitume et de béton, sont maltraités alors qu’ils « accueillent une forte biodiversité, produisent de la biomasse végétale (alimentaire ou non) et participent à la régulation du climat, des déchets, de l’eau ou encore des pollutions ». Le mépris dans lequel sont tenus les sols urbains s’étend également à la science : « 1 % seulement des études scientifiques sur les sols concernent les secteurs urbains ». Partons donc explorer les sols et sous-sols de nos villes, et apprenons à mieux les connaître pour faire face aux changements globaux.",
+    "Popup.zone1.description17.important": "Lire la veille thématique de Bérénice Gagne - Ecole Urbaine de Lyon",
+    "Popup.zone1.description17.link": "https://medium.com/anthropocene2050/veille-thematique-sur-les-sols-urbains-58be490843db",
+
+    "Popup.zone1.description18": "Les chants des oiseaux<br /><br /> Anthropause : à San Francisco pendant le confinement, la baisse du volume sonore des chants d’oiseaux et l’augmentation de leur qualité montrent l’ampleur des effets de la pollution sonore due aux activités humaines",
+    "Popup.zone1.description18.important": "Lire l'article en anglais du National Geographic",
+    "Popup.zone1.description18.link": "https://www.nationalgeographic.com/animals/article/pandemic-san-francisco-birds-song-improved?utm_source=Nature+Briefing&utm_campaign=08df647e03-briefing-dy-20200925&utm_medium=email&utm_term=0_c9dfd39373-08df647e03-44373629",
+
+    "Popup.zone1.description19": "Générations<br /><br /> Ok Boomer, une expression comme un coup de poing pour mettre KO le monde bâti pendant les Trente Glorieuses. Que disent les conflits entre générations de notre monde et quelle nouvelle solidarité intergénérationnelle et au-delà voulons-nous construire ?",
+    "Popup.zone1.description19.important": "Lire ou écouter la chronique de Bérénice Gagne - Ecole Urbaine de Lyon",
+    "Popup.zone1.description19.link": "https://medium.com/anthropocene2050/g%C3%A9n%C3%A9rations-206e795af4a1",
+
+    "Popup.zone1.description31": "Ordures<br /><br /> Plongeons dans la benne de nos déchets, ces spectres qui reflètent nos désirs, nos obsessions, nos peurs. Parlons de ce qui nous dégoûte, mais aussi de celles et ceux qui nous dégoûtent. Parlons de nous et de nos fantômes, des ordures.",
+    "Popup.zone1.description31.important": "Lire ou écouter la chronique de Bérénice Gagne - Ecole Urbaine de Lyon",
+    "Popup.zone1.description31.link": "https://medium.com/anthropocene2050/ordures-44d829130241",
+
+    "Popup.zone1.description33": "Migrants climatiques<br /><br /> \“Si on ne se tracasse que des gens qui vivent à l’intérieur de nos frontières nationales, on ne pourra jamais agir efficacement contre le changement climatique. Parce que l’action contre le changement climatique requiert une forme d’altruisme, requiert que nous considérions l’autre, celui qui se trouve au-delà de nos frontières, comme une partie de nous-mêmes\”",
+    "Popup.zone1.description33.important": "Lire l'entrevue avec François Gemenne de Radio Canada",
+    "Popup.zone1.description33.link": "https://ici.radio-canada.ca/recit-numerique/3137/cop26-climat-migration?s=09",
+
+    "Popup.zone1.description34": "Végétalisation<br /><br /> Verdissement des espaces urbains, extension des parcs, forêts urbaines, potagers et toitures végétalisées : qu’est-ce que la nature en ville et pour qui ? Comment aller au-delà d’une nature de façade ?",
+    "Popup.zone1.description34.important": "Lire ou écouter la chronique de Bérénice Gagne - Ecole Urbaine de Lyon",
+    "Popup.zone1.description34.link": "https://medium.com/anthropocene2050/v%C3%A9g%C3%A9talisation-f9d3184243e6",
+   
+    "Popup.zone1.description36": "Batteries électriques<br /><br /> Ce qui se cache dans nos voitures et vélos électriques: dans l’Arizona (États-Unis), l’extraction de lithium (composant des batteries électriques) accapare les terres et menace les pratiques rituelles (donc la vie) des communautés autochtones",
+    "Popup.zone1.description36.important": "Lire l'article en anglais de Energy News",
+    "Popup.zone1.description36.link": "https://energynews.us/2021/06/10/mining-for-lithium-at-a-cost-to-indigenous-religions/",
+
+    "Popup.zone1.description44": "Villes et géologie<br /><br /> Mark Williams est Professeur de Paléobiologie à l’Université de Leceister et membre Groupe de travail sur l’Anthropocène de la Commission internationale de stratigraphie (ICS). Au cours de cette courte interview, il propose quelques pistes de réflexion sur la manière dont les villes peuvent être envisagées dans la perspective d’une approche géologique de l’Anthropocène.",
+    "Popup.zone1.description44.important": "Lire l'interview de Mark Williams par Lucas Tiphine - Ecole Urbaine de Lyon",
+    "Popup.zone1.description44.link": "https://medium.com/anthropocene2050/mark-williams-les-villes-laisseront-un-t%C3%A9moignage-g%C3%A9ologique-de-leur-impact-pendant-des-734d7e4c95ef",
+
+    "Popup.zone1.description49": "Animaux domestiques<br /><br /> Comment la place - et le rôle - des animaux dans la ville ont-ils évolué au cours des deux derniers siècles, et quel impact ces changements ont-ils eu sur le tissu urbain, et surtout sur la relation que les citadins entretiennent aujourd'hui avec les animaux ? Lisa Jean Moore examine Animal City, d'Andrew A. Robichaud, qui aborde ces questions d'un point de vue américain.",
+    "Popup.zone1.description49.important": "Lire l'article en anglais du Metropolitics",
+    "Popup.zone1.description49.link": "https://metropolitics.org/The-Ancestors-of-Pandemic-Pets-and-Vector-Animals.html",
 
     "Inventaire.citation.1" :"\"- Dans chacune des zones visitées, pour comprendre l'Anthropocène, il nous suffisait de regarder par terre.",
     "Inventaire.citation.2": "- Nous n'avions véritablement qu'à nous baisser et ramasser ce que nous trouvions !\"",
