@@ -54,7 +54,7 @@
     "Coulisses.constelation": "Scaena",
     "Coulisses.title": "Les coulisses",
     
-    "Missio.citation": "\"Il était impossible de voir les étoiles en ville. Or, quelle meilleure expérience, depuis le sol, pour se rappeler la petitesse et la fragilité de la Terre ?\"",
+    "Missio.citation": "\"Il était impossible de voir les étoiles depuis la Zone 1, en ville. Or quelle meilleure expérience, depuis le sol, pour se rappeler la petitesse et la fragilité de cette planète ?\"",
     "Missio.citation.author.1": "Major A",
     "Missio.citation.author.2": "A propos de la zone 1",
     "Missio.citation.author.3": "Extrait de son interview pour A2022 Magazine",
@@ -134,7 +134,7 @@
     "Missio.footer.2.2": "Université de lyon",
     "Missio.footer.text": "Ce travail a bénéificié de l'aide de l'Etat gérée par l'Agence Nationale de la Recherche au titre du programme d'Investissement d'avenir portant la référence ANR-17-CONV-0004",
 
-    "Zones.citation": "\"En contemplant le glacier de la Meije, il m'est apparu évident qu'un de nos devoirs - durant cette mission - était d'immortaliser ce qui est beau, ce qui disparaîtra\"",
+    "Zones.citation": "\"Dans la Zone 4, en contemplant le glacier de la Meije, il m'est apparu évident qu'un de nos devoirs durant cette mission était aussi de photographier ce qui est beau, ce qui disparaîtra\"",
     "Zones.citation.author.1": "Major Q",
     "Zones.citation.author.2": "Extrait de son interview pour A2022 Magazine",
 
@@ -158,31 +158,31 @@
     "Popup.open": "Ouvrir",
     "Popup.close": "Retour",
     "Popup.zone1.description1": "Bienvenue dans l'Anthropocène<br /><br />Le terme Anthropocène s’impose et se diffuse de plus en plus tant auprès des scientifiques que du grand public. Dans un cas comme dans l’autre, il suscite de nombreux débats et discussions, ce qui est un indice de sa puissance. Celle-ci est due à ce qu’il recouvre : l’idée d’une bifurcation dans l’histoire de l’humanisation de la planète et une bifurcation qui menace possiblement l’habitabilité de la terre.",
-    "Popup.zone1.description1.important": "Ecouter le podcast \"Qu’est-ce que l’anthropocène ? Episode 1 : Leçon inaugurale\" de Michel Lussault via le lien suivant :",
+    "Popup.zone1.description1.important": "Ecouter le podcast \"Qu’est-ce que l’anthropocène ? Episode 1 : Leçon inaugurale\" de Michel Lussault",
     "Popup.zone1.description1.link": "https://www.sondekla.com/user/event/9491",
 
     "Popup.zone1.description2": "Métabolisme<br /><br />Le fonctionnement de la ville passe par des flux, des processus de transformation de matières et d'énergie, qui conduisent de plus en plus de chercheurs et praticiens à mobiliser le concept de métabolisme. Moyen de comprendre et représenter les liens entre les sociétés et leur environnement, la métaphore renvoie de fait à l'idée du corps de la ville. Les villes ont-elles un corps ? Que peut nous apprendre l'étude du corps de la ville ? ",
-    "Popup.zone1.description2.important": "Ecouter le podcast \"Les villes ont-elles un corps ?\" via le lien suivant :",
+    "Popup.zone1.description2.important": "Ecouter le podcast \"Les villes ont-elles un corps ?\"  :",
     "Popup.zone1.description2.link": "https://www.sondekla.com/user/event/11650",
    
     "Popup.zone1.description10": "Monde urbain souterrain<br /><br />Björn Wallsten, chercheur à l’université d’Uppsala (Suède), parle de son travail sur les infrastructures souterraines en milieu urbain. Peut-on les transformer en mines de ressources stratégiques dans le cadre d’une économie plus circulaire ? ",
-    "Popup.zone1.description10.important": "Lire l'interview de Björn Wallsten via le lien suivant :",
+    "Popup.zone1.description10.important": "Lire l'interview de Björn Wallsten",
     "Popup.zone1.description10.link": "https://medium.com/anthropocene2050/bj%C3%B6rn-wallsten-les-infrastructures-souterraines-ont-le-plus-souvent-%C3%A9t%C3%A9-install%C3%A9es-en-partant-5deec84b535b",
 
     "Popup.zone1.description12": "Dessiner le droit dans l’Anthropocène<br /><br /> Projet de recherche exploratoire porté par l’École urbaine de Lyon \"Dessiner le droit dans l’Anthropocène\" interroge, par le dessin, la façon dont le droit répond de manière originale et inédite aux multiples défis de l’Anthropocène. ",
     "Popup.zone1.description12.important": "Lire l'article de Lou Herrmann via le lien suivant :",
     "Popup.zone1.description12.link": "https://medium.com/anthropocene2050/dessiner-le-droit-dans-lanthropoc%C3%A8ne-47feb552d559",
 
-    "Popup.zone1.description14": "Trottinettes électriques<br /><br /> « Les trottinettes électriques, bonnes ou mauvaises pour le climat ? »: « pour faire des trottinettes électriques un mode de déplacement plus durable : améliorer leur conception et leur longévité, réduire les émissions liées à la gestion de flotte, favoriser les reports modaux depuis les modes plus émissifs » ",
-    "Popup.zone1.description14.important": "Lire l'article de The Conversation via le lien suivant :",
+    "Popup.zone1.description14": "Trottinettes électriques<br /><br /> « Les trottinettes électriques, bonnes ou mauvaises pour le climat ? : pour faire des trottinettes électriques un mode de déplacement plus durable : améliorer leur conception et leur longévité, réduire les émissions liées à la gestion de flotte, favoriser les reports modaux depuis les modes plus émissifs » ",
+    "Popup.zone1.description14.important": "Lire l'article de The Conversation",
     "Popup.zone1.description14.link": "https://theconversation.com/les-trottinettes-electriques-bonnes-ou-mauvaises-pour-le-climat-146035?utm_medium=email&utm_campaign=La%20lettre%20de%20The%20Conversation%20France%20du%2022%20septembre%202020%20-%201739416837&utm_content=La%20lettre%20de%20The%20Conversation%20France%20du%2022%20septembre%202020%20-%201739416837+CID_5c692924b5c20245dfd39ccf22757fbd&utm_source=campaign_monitor_fr&utm_term=Les%20trottinettes%20lectriques%20bonnes%20ou%20mauvaises%20pour%20le%20climat",
   
     "Popup.zone1.description15": "Urine et engrais<br /><br /> La production mondiale d’engrais utilise des énergies fossiles (2% de l’énergie mondiale) et recourt à l’exploitation de ressources limitées, comme la roche de phosphate. Des chercheurs et chercheuses ont trouvé un procédé permettant de déshydrater l’urine humaine pour ne récupérer que l’azote et le phosphore à la base de la fabrication d’engrais ",
-    "Popup.zone1.description15.important": "Lire l'article en anglais de The Conversation via le lien suivant :",
+    "Popup.zone1.description15.important": "Lire l'article en anglais de The Conversation via le lien suivant",
     "Popup.zone1.description15.link": "https://theconversation.com/we-found-a-way-to-turn-urine-into-solid-fertiliser-it-could-make-farming-more-sustainable-148877?utm_medium=email&utm_campaign=Latest%20from%20The%20Conversation%20for%20November%209%202020%20-%201781017280&utm_content=Latest%20from%20The%20Conversation%20for%20November%209%202020%20-%201781017280+CID_9851284e1e9d7b403e1427ab1cb57a98&utm_source=campaign_monitor_africa&utm_term=We%20found%20a%20way%20to%20turn%20urine%20into%20solid%20fertiliser%20%20it%20could%20make%20farming%20more%20sustainable",
 
-    "Inventaire.citation.1" :"\"- Le Monde dans lequel nous évoluions était à nos pieds.",
-    "Inventaire.citation.2": "- Il suffisait de se baisser et de ramasser\"",
+    "Inventaire.citation.1" :"\"- Dans chacune des zones visitées, pour comprendre l'Anthropocène, il nous suffisait de regarder par terre.",
+    "Inventaire.citation.2": "- Nous n'avions véritablement qu'à nous baisser et ramasser ce que nous trouvions !\"",
     "Inventaire.citation.author.1": "Major A et Major Q",
     "Inventaire.citation.author.2": "Extrait de leur interview pour A2022 Magazine",
 
