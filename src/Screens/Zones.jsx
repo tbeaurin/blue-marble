@@ -39,31 +39,31 @@ const Zones = () => {
   for (let i = 1; i <= 50; i += 1) {
     zone1.push(
       {
-        image: imagesZone1[i - 1], description: <Trans i18nKey={`Popup.zone1.description${i}`} />, important: <Trans i18nKey={`Popup.zone1.description${i}.important`} />, link: `Popup.zone1.description${i}.link`,
+        image: imagesZone1[i - 1], description: `Popup.zone1.description${i}`, important: `Popup.zone1.description${i}.important`, link: `Popup.zone1.description${i}.link`,
       },
     );
     zone2.push(
       {
-        image: imagesZone2[i - 1], description: <Trans i18nKey={`Popup.zone2.description${i}`} />, important: <Trans i18nKey={`Popup.zone2.description${i}.important`} />, link: `Popup.zone1.description${i}.link`,
+        image: imagesZone2[i - 1], description: `Popup.zone2.description${i}`, important: `Popup.zone2.description${i}.important`, link: `Popup.zone1.description${i}.link`,
       },
     );
   }
   for (let i = 1; i <= 40; i += 1) {
     zone3.push(
       {
-        image: imagesZone3[i - 1], description: <Trans i18nKey={`Popup.zone3.description${i}`} />, important: <Trans i18nKey={`Popup.zone3.description${i}.important`} />, link: `Popup.zone3.description${i}.link`,
+        image: imagesZone3[i - 1], description: `Popup.zone3.description${i}`, important: `Popup.zone3.description${i}.important`, link: `Popup.zone3.description${i}.link`,
       },
     );
   }
   for (let i = 1; i <= 35; i += 1) {
     zone4.push(
       {
-        image: imagesZone4[i - 1], description: <Trans i18nKey={`Popup.zone4.description${i}`} />, important: <Trans i18nKey={`Popup.zone4.description${i}.important`} />, link: `Popup.zone4.description${i}.link`,
+        image: imagesZone4[i - 1], description: `Popup.zone4.description${i}`, important: `Popup.zone4.description${i}.important`, link: `Popup.zone4.description${i}.link`,
       },
     );
     zone5.push(
       {
-        image: imagesZone5[i - 1], description: <Trans i18nKey={`Popup.zone5.description${i}`} />, important: <Trans i18nKey={`Popup.zone5.description${i}.important`} />, link: `Popup.zone5.description${i}.link`,
+        image: imagesZone5[i - 1], description: `Popup.zone5.description${i}`, important: `Popup.zone5.description${i}.important`, link: `Popup.zone5.description${i}.link`,
       },
     );
   }

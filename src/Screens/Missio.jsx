@@ -7,10 +7,7 @@ import CustomLink from '../Components/CustomLink';
 
 import missioImg from '../assets/img/mobile/mission_interne.png';
 
-import QuentinImg from '../assets/img/quentin.jpg';
-import Quentin2Img from '../assets/img/quentin2.jpg';
-import AdrienImg from '../assets/img/adrien.jpg';
-import Adrien2Img from '../assets/img/adrien2.jpg';
+import ObjectifImg from '../assets/img/objectif.png';
 import LogoUni from '../assets/img/logo-uni-content.png';
 import PhotoEul from '../assets/img/photo-groupe-eul.png';
 import A2020 from '../assets/img/A2020.png';
@@ -113,31 +110,6 @@ const Missio = () => {
     document.querySelector(`#${anchor}Anchor`).classList.add('active');
   };
 
-  const handleTransitionPortrait = (target, direction) => {
-    if (target === 'majorA') {
-      if (direction === 'open') {
-        document.getElementById('descriptionMajorA').classList.add('focus');
-        document.getElementById('adrienImage2').classList.add('active');
-        document.getElementById('adrienImage').classList.add('active');
-      } else {
-        document.getElementById('descriptionMajorA').classList.remove('focus');
-        document.getElementById('adrienImage').classList.remove('active');
-        document.getElementById('adrienImage2').classList.remove('active');
-      }
-    }
-    if (target === 'majorQ') {
-      if (direction === 'open') {
-        document.getElementById('descriptionMajorQ').classList.add('focus');
-        document.getElementById('quentinImage2').classList.add('active');
-        document.getElementById('quentinImage').classList.add('active');
-      } else {
-        document.getElementById('descriptionMajorQ').classList.remove('focus');
-        document.getElementById('quentinImage').classList.remove('active');
-        document.getElementById('quentinImage2').classList.remove('active');
-      }
-    }
-  };
-
   const renderMenu = () => (
     <nav id="menuMissio" className="menu-page">
       <ul>
@@ -221,9 +193,17 @@ const Missio = () => {
           </div>
           <div id="objectifMonde" className={`page ${!isMobile ? 'h-120' : ''}`}>
             <div className="page-content">
-              <div className="d-flex">
+              <div className="d-flex reverse-mobile">
                 <div id="objectif-column1" className={`${isMobile ? 'h-100vh' : ''}`}>
-                  <div className="major majorQ">
+                  <h3>
+                    <Trans i18nKey="Missio.objectifMonde.title" />
+                  </h3>
+                  <p><Trans i18nKey="Missio.objectifMonde.p1" /></p>
+                  <p><Trans i18nKey="Missio.objectifMonde.p2" /></p>
+                  <p><Trans i18nKey="Missio.objectifMonde.p3" /></p>
+                </div>
+                <div id="objectif-column2">
+                  {/* <div className="major majorQ">
                     <div
                       className="zoomedImgContainer"
                       id="imgMajorQ"
@@ -274,15 +254,12 @@ const Missio = () => {
                         </span>
                       </div>
                     </div>
+                  </div> */}
+                  <div id="objectifImg-wrapper">
+                    <img src={ObjectifImg} alt="drapeau" />
+                    <span className="small-italic d-block w-100"><Trans i18nKey="Missio.objectifMonde.additional.1" /></span>
+                    <span className="small-italic d-block w-100"><Trans i18nKey="Missio.objectifMonde.additional.2" /></span>
                   </div>
-                </div>
-                <div id="objectifMonde-content">
-                  <h3>
-                    <Trans i18nKey="Missio.objectifMonde.title" />
-                  </h3>
-                  <p><Trans i18nKey="Missio.objectifMonde.p1" /></p>
-                  <p><Trans i18nKey="Missio.objectifMonde.p2" /></p>
-                  <p><Trans i18nKey="Missio.objectifMonde.p3" /></p>
                 </div>
               </div>
             </div>

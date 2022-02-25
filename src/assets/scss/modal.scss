@@ -140,6 +140,7 @@
 #popupMain {
     color: #000;
     overflow-y: auto;
+    overflow-x: hidden;
     font-family: "Montserrat";
     .popup-title {
         margin: auto;
@@ -164,7 +165,6 @@
         line-height: 154px;
         text-transform: uppercase;
         text-align: left;
-        width: 100%;
         left: 0;
         position: absolute;
         margin: -7% 0 0 15%;
