@@ -174,11 +174,26 @@
                 }
             }
             #objectifMonde {
+                .reverse-mobile {
+                    flex-direction: column !important;
+                }
+                #objectifImg-wrapper {
+                    margin-bottom: 50px;
+                    margin-top: 50px;
+                    width: auto;
+                    img { width: 100%; }
+                    .small-italic {
+                        font-size: 14px;
+                        font-style: italic;
+                        font-weight: initial;
+                        text-align: right;
+                    }
+                }
                 .page-content {
                     .d-flex {
                         flex-direction: column-reverse;
                     }
-                    #objectifMonde-content p {
+                    #objectif-column1 p {
                         margin-left: 0 !important;
                         margin-right: 0 !important;
                     }
@@ -197,11 +212,20 @@
                         margin-left: -10px;
                     }
                 }
-                #objectif-column1, #objectifMonde-content {
+                #objectif-column1, #objectif-column2 {
                     width: 100% !important;
                     padding-left: 0 !important;
+                    p {
+                        padding-right: 0 !important;
+                    }
+                }
+                .reverse-mobile {
+                    .h-100vh {
+                        height: auto !important;
+                    }
                 }
                 #objectif-column1 {
+                    padding-left: 150px;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-evenly;
@@ -254,6 +278,9 @@
                 }
                 #anthropocene-aditionnal {
                     display: none;
+                }
+                .d-flex > div {
+                    width: 100% !important;
                 }
             }
             #ecoleUrbaine {
@@ -598,5 +625,36 @@
         width: auto;
         position: inherit;
 
+    }
+    #analyse {
+        padding: 0 40px;
+        .h-100vh {
+            height: auto;
+        }
+        #analyse1 {
+            width: 100%;
+        }
+        .right, .left {
+            width: 100%;
+            display: block;
+            .column1, .column2 {
+                width: 100%;
+                padding-left: 0;
+            }
+        }
+        .left {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        p {
+            margin-left: 0 !important;
+        }
+        #analyseImg-wrapper {
+            width: 100% !important;
+            margin-top: 16px !important;
+            img {
+                width: 100% !important;
+            }
+        }
     }
 }

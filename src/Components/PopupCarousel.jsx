@@ -304,18 +304,21 @@ const PopupCarousel = ({
                 </>
               ) : (
                 <div className="popup-description">
-                  <p className="ta-justify">{content[step].description}</p>
-                  {content[step].important && (
-                    <span className="important ta-right">{content[step].important}</span>
-                  )}
-                  {content[step].link && t(content[step].link, '').length > 0 && (
+                  <p className="ta-justify"><Trans i18nKey={content[step].description} /></p>
+                  {content[step].link && t(content[step].link, '').length > 0 ? (
                     <CustomLink
                       href={t(content[step].link)}
                       tag="Link"
                       target="_blank"
                       className="primary ta-right"
-                      content={t(content[step].link)}
+                      content={t(content[step].important)}
                     />
+                  ) : (
+                    <>
+                      {content[step].important && t(content[step].important, '').length > 0 && (
+                        <span className="important ta-right"><Trans i18nKey={content[step].important} /></span>
+                      )}
+                    </>
                   )}
                 </div>
               )}
@@ -331,18 +334,21 @@ const PopupCarousel = ({
             )}
             {isEven(position) ? (
               <div className="popup-description">
-                <p className="ta-justify">{content[step].description}</p>
-                {content[step].important && (
-                  <span className="important ta-right">{content[step].important}</span>
-                )}
-                {content[step].link && t(content[step].link, '').length > 0 && (
+                <p className="ta-justify"><Trans i18nKey={content[step].description} /></p>
+                {content[step].link && t(content[step].link, '').length > 0 ? (
                   <CustomLink
                     href={t(content[step].link)}
                     tag="Link"
                     target="_blank"
                     className="primary ta-right"
-                    content={t(content[step].link)}
+                    content={t(content[step].important)}
                   />
+                ) : (
+                  <>
+                    {content[step].important && t(content[step].important, '').length > 0 && (
+                      <span className="important ta-right"><Trans i18nKey={content[step].description} /></span>
+                    )}
+                  </>
                 )}
               </div>
             ) : (
