@@ -203,58 +203,6 @@ const Missio = () => {
                   <p><Trans i18nKey="Missio.objectifMonde.p3" /></p>
                 </div>
                 <div id="objectif-column2">
-                  {/* <div className="major majorQ">
-                    <div
-                      className="zoomedImgContainer"
-                      id="imgMajorQ"
-                      onMouseEnter={() => { handleTransitionPortrait('majorQ', 'open'); }}
-                      onMouseLeave={() => { handleTransitionPortrait('majorQ', 'close'); }}
-                    >
-                      <div className="image-slide-container" id="containerQ">
-                        {!isMobile && <img id="quentinImage2" src={Quentin2Img} alt="major Q" />}
-                        <img id="quentinImage" src={QuentinImg} alt="major Q" />
-                      </div>
-                    </div>
-                    <div className="c-black imgDescription" id="descriptionMajorQ">
-                      <div>
-                        <span className="title imgDescriptionTitle d-block c-primary">
-                          <Trans i18nKey="Missio.majorQ.title" />
-                        </span>
-                        <span className="d-block imgDescriptionContent">
-                          <b><Trans i18nKey="Missio.majorQ.content.1" /></b>
-                        </span>
-                        <span className="d-block imgDescriptionContent">
-                          <Trans i18nKey="Missio.majorQ.content.2" />
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="major majorA">
-                    <div
-                      className="zoomedImgContainer"
-                      id="imgMajorA"
-                      onMouseEnter={() => { handleTransitionPortrait('majorA', 'open'); }}
-                      onMouseLeave={() => { handleTransitionPortrait('majorA', 'close'); }}
-                    >
-                      <div className="image-slide-container" id="containerA">
-                        <img id="adrienImage" src={AdrienImg} alt="major A" />
-                        {!isMobile && <img id="adrienImage2" src={Adrien2Img} alt="major A" />}
-                      </div>
-                    </div>
-                    <div className="c-black imgDescription" id="descriptionMajorA">
-                      <div>
-                        <span className="title imgDescriptionTitle d-block c-primary">
-                          <Trans i18nKey="Missio.majorA.title" />
-                        </span>
-                        <span className="d-block imgDescriptionContent">
-                          <b><Trans i18nKey="Missio.majorA.content.1" /></b>
-                        </span>
-                        <span className="d-block imgDescriptionContent">
-                          <Trans i18nKey="Missio.majorA.content.2" />
-                        </span>
-                      </div>
-                    </div>
-                  </div> */}
                   <div id="objectifImg-wrapper">
                     <img src={ObjectifImg} alt="drapeau" />
                     <span className="small-italic d-block w-100"><Trans i18nKey="Missio.objectifMonde.additional.1" /></span>
