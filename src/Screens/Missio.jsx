@@ -205,8 +205,8 @@ const Missio = () => {
                 <div id="objectif-column2">
                   <div id="objectifImg-wrapper">
                     <img src={ObjectifImg} alt="drapeau" />
-                    <span className="small-italic d-block w-100"><Trans i18nKey="Missio.objectifMonde.additional.1" /></span>
-                    <span className="small-italic d-block w-100"><Trans i18nKey="Missio.objectifMonde.additional.2" /></span>
+                    <span className="small-italic d-block w-100"><Trans i18nKey="Missio.objectifMonde.aditionnal.1" /></span>
+                    <span className="small-italic d-block w-100"><Trans i18nKey="Missio.objectifMonde.aditionnal.2" /></span>
                   </div>
                 </div>
               </div>
@@ -314,8 +314,8 @@ const Missio = () => {
                 </div>
                 <div>
                   <img src={PhotoEul} alt="groupe de l'EUL" />
-                  <span className="small-italic d-block w-100"><Trans i18nKey="Missio.ecole.additional.1" /></span>
-                  <span className="small-italic d-block w-100"><Trans i18nKey="Missio.ecole.additional.2" /></span>
+                  <span className="small-italic d-block w-100"><Trans i18nKey="Missio.ecole.aditionnal.1" /></span>
+                  <span className="small-italic d-block w-100"><Trans i18nKey="Missio.ecole.aditionnal.2" /></span>
                 </div>
               </div>
               <div className="content d-flex mt-64 flex-column">
