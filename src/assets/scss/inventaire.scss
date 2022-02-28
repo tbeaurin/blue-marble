@@ -22,6 +22,10 @@
             img {
                 width: 300px;
             }
+            span {
+                display: block;
+                width: 300px;
+            }
             .column2 {
                 p {
                     padding-left: 32px;
@@ -59,6 +63,10 @@
             img {
                 width: 379px;
             }
+            span {
+                display: block;
+                width: 379px;
+            }
             .column2 {
                 p {
                     padding-left: 64px;
@@ -75,6 +83,15 @@
 
 
 #analyse {
+    margin-bottom: 64px;
+    .separator {
+        width: 150px;
+        display: flex;
+        margin: 32px auto;
+        background-color: #fff;
+        height: 4px;
+        border-radius: 2px;
+    }
     #analyse1 {
         width: 50%;
         margin: auto;
@@ -94,8 +111,8 @@
         }
     }
     .right {
-        margin-top: 64px;
-        margin-bottom: 64px;
+        // margin-top: 64px;
+        // margin-bottom: 64px;
         display: flex;
         .column1 {
             width: 33.3vw;
@@ -103,9 +120,6 @@
             text-align: justify;
             p {
                 margin: 24px 0 0 0;
-            }
-            p:first-of-type {
-                margin-top: 64px;
             }
         }
         .column2 {
@@ -140,7 +154,7 @@
             font-size: 14px; 
         }
         #analyseImg-wrapper {
-            margin-top: 225px;
+            margin-top: 125px;
             width: 379px;
             img {
                 width: 100%;
@@ -148,9 +162,12 @@
         }
     }
     .left {
-        margin-top: 64px;
-        margin-bottom: 64px;
+        // margin-top: 64px;
+        // margin-bottom: 64px;
         display: flex;
+        span {
+            float: right;
+        }
         .column1 {
             width: 33.3vw;
             text-align: right;
@@ -160,9 +177,6 @@
             text-align: justify;
             p {
                 margin: 24px 0 0 0;
-            }
-            p:first-of-type {
-                margin-top: 64px;
             }
             padding-right: 33.3vw;
         }
@@ -196,7 +210,7 @@
         }
 
         #analyseImg-wrapper {
-            margin-top: 225px;
+            margin-top: 125px;
             img {
                 width: 379px;
             }

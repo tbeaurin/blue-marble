@@ -167,9 +167,12 @@ const Inventaire = () => {
           <div className="page-content">
             <p className="remerciement" id="remerciement">
               <span className="d-block remerciement-large"><Trans i18nKey="Coulisses.remerciement.title" /></span>
-              <span className="d-block remerciement-small"><Trans i18nKey="Coulisses.remerciement.text.1" /></span>
+              <span className="d-block remerciement-small remerciement-small1"><Trans i18nKey="Coulisses.remerciement.text.1" /></span>
               <span className="d-block remerciement-small"><Trans i18nKey="Coulisses.remerciement.text.2" /></span>
               <span className="d-block remerciement-small"><Trans i18nKey="Coulisses.remerciement.text.3" /></span>
+              <span className="d-block remerciement-small"><Trans i18nKey="Coulisses.remerciement.text.4" /></span>
+              <span className="d-block remerciement-small"><Trans i18nKey="Coulisses.remerciement.text.5" /></span>
+              <span className="d-block remerciement-small"><Trans i18nKey="Coulisses.remerciement.text.6" /></span>
             </p>
           </div>
         </div>
