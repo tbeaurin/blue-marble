@@ -167,6 +167,62 @@
     "Popup.zone1.description2": "Métabolisme<br /><br />Le fonctionnement de la ville passe par des flux, des processus de transformation de matières et d'énergie, qui conduisent de plus en plus de chercheurs et praticiens à mobiliser le concept de métabolisme. Moyen de comprendre et représenter les liens entre les sociétés et leur environnement, la métaphore renvoie de fait à l'idée du corps de la ville. Les villes ont-elles un corps ? Que peut nous apprendre l'étude du corps de la ville ? ",
     "Popup.zone1.description2.important": "Ecouter le podcast \"Les villes ont-elles un corps ?\" via le lien suivant :",
     "Popup.zone1.description2.link": "https://www.sondekla.com/user/event/11650",
+
+    "Popup.zone1.description4": "Quantification<br /><br />Les travaux se sont multipliés au cours des dernières années pour décrire l’influence nouvelle des investisseurs institutionnels dans la fabrique de la ville. Même si les acteurs historiques de la ville, comme les autorités publiques ou les promoteurs, offrent de solides résistances. Dans ce contexte, les évaluateurs immobiliers avancent leurs expertises. ",
+    "Popup.zone1.description4.important": "Ecouter l'émission avec Patrice Bardet, Grégory Grey-Johnson, Lucia Shimbo et Pierre Thérond",
+    "Popup.zone1.description4.link": "https://www.sondekla.com/user/event/9876",
+
+    "Popup.zone1.description10": "Mondes urbains souterrains<br /><br />Björn Wallsten, chercheur à l’université d’Uppsala (Suède), parle de son travail sur les infrastructures souterraines en milieu urbain. Peut-on les transformer en mines de ressources stratégiques dans le cadre d’une économie plus circulaire ? ",
+    "Popup.zone1.description10.important": "Lire l'interview de Björn Wallsten",
+    "Popup.zone1.description10.link": "https://medium.com/anthropocene2050/bj%C3%B6rn-wallsten-les-infrastructures-souterraines-ont-le-plus-souvent-%C3%A9t%C3%A9-install%C3%A9es-en-partant-5deec84b535b",
+
+    "Popup.zone1.description11": "Smart citizens ?<br /><br />Progressivement l'expression \"Ville Intelligente\" glisse vers celle de \"Ville apprenante\" apparemment plus soucieuse de placer les habitants au cœur des préoccupations urbaines. Derrière ce changement de vocabulaire se dessine l’idéal du « citoyen intelligent et connecté », un \"smart-citizen\" qu'il convient aussi d'interroger.",
+    "Popup.zone1.description11.important": "Lire les comptes rendus de la journée d'étude organisée par Lou Herrmann et Hervé Rivano - Ecole Urbaine de Lyon",
+    "Popup.zone1.description11.link": "http://www.atvisible.com/QuiSontLesSmartCitizens/",
+
+    "Popup.zone1.description12": "les voies du droit<br /><br /> Si au siècle dernier, les règles juridiques, fondamentalement anthropocentrées, ont souvent traduit une logique généralisée de prédation et de destruction, l’enjeu désormais pour le droit est d’intégrer la fin de ce modèle. L’instrument juridique n’est pas seulement construit par des instances dominées par le politique, il est aussi l’expression de choix sociétaux et citoyens, et doit être utilisé pour répondre aux défis de l’anthropocène. Afin de mettre en évidence les potentialités, il faut oser questionner certains postulats et s’engager dans une réflexion prospective, nourrie des apports d’autres disciplines et cultures juridiques. ",
+    "Popup.zone1.description12.important": "Regardez les cours publics de Isabelle Michallet",
+    "Popup.zone1.description12.link": "https://ecoleurbainedelyon.universite-lyon.fr/cours-public-2021-faire-face-a-l-anthropocene-les-voies-du-droit-par-isabelle-michallet-212620.kjsp",
+
+    "Popup.zone1.description14": "Trottinettes électriques<br /><br /> « Les trottinettes électriques, bonnes ou mauvaises pour le climat ? : pour faire des trottinettes électriques un mode de déplacement plus durable : améliorer leur conception et leur longévité, réduire les émissions liées à la gestion de flotte, favoriser les reports modaux depuis les modes plus émissifs » ",
+    "Popup.zone1.description14.important": "Lire l'article de The Conversation",
+    "Popup.zone1.description14.link": "https://theconversation.com/les-trottinettes-electriques-bonnes-ou-mauvaises-pour-le-climat-146035?utm_medium=email&utm_campaign=La%20lettre%20de%20The%20Conversation%20France%20du%2022%20septembre%202020%20-%201739416837&utm_content=La%20lettre%20de%20The%20Conversation%20France%20du%2022%20septembre%202020%20-%201739416837+CID_5c692924b5c20245dfd39ccf22757fbd&utm_source=campaign_monitor_fr&utm_term=Les%20trottinettes%20lectriques%20bonnes%20ou%20mauvaises%20pour%20le%20climat",
+  
+    "Popup.zone1.description15": "Urines et engrais<br /><br /> La production mondiale d’engrais utilise des énergies fossiles (2% de l’énergie mondiale) et recourt à l’exploitation de ressources limitées, comme la roche de phosphate. Des chercheurs et chercheuses ont trouvé un procédé permettant de déshydrater l’urine humaine pour ne récupérer que l’azote et le phosphore à la base de la fabrication d’engrais ",
+    "Popup.zone1.description15.important": "Lire l'article en anglais de The Conversation",
+    "Popup.zone1.description15.link": "https://theconversation.com/we-found-a-way-to-turn-urine-into-solid-fertiliser-it-could-make-farming-more-sustainable-148877?utm_medium=email&utm_campaign=Latest%20from%20The%20Conversation%20for%20November%209%202020%20-%201781017280&utm_content=Latest%20from%20The%20Conversation%20for%20November%209%202020%20-%201781017280+CID_9851284e1e9d7b403e1427ab1cb57a98&utm_source=campaign_monitor_africa&utm_term=We%20found%20a%20way%20to%20turn%20urine%20into%20solid%20fertiliser%20%20it%20could%20make%20farming%20more%20sustainable",
+
+    "Popup.zone1.description17": "Sols urbains<br /><br /> Artificialisation, imperméabilisation, pollution : les sols urbains, invisibilisés sous des couches de bitume et de béton, sont maltraités alors qu’ils « accueillent une forte biodiversité, produisent de la biomasse végétale (alimentaire ou non) et participent à la régulation du climat, des déchets, de l’eau ou encore des pollutions ». Le mépris dans lequel sont tenus les sols urbains s’étend également à la science : « 1 % seulement des études scientifiques sur les sols concernent les secteurs urbains ». Partons donc explorer les sols et sous-sols de nos villes, et apprenons à mieux les connaître pour faire face aux changements globaux.",
+    "Popup.zone1.description17.important": "Lire la veille thématique de Bérénice Gagne - Ecole Urbaine de Lyon",
+    "Popup.zone1.description17.link": "https://medium.com/anthropocene2050/veille-thematique-sur-les-sols-urbains-58be490843db",
+
+    "Popup.zone1.description18": "Les chants des oiseaux<br /><br /> Anthropause : à San Francisco pendant le confinement, la baisse du volume sonore des chants d’oiseaux et l’augmentation de leur qualité montrent l’ampleur des effets de la pollution sonore due aux activités humaines",
+    "Popup.zone1.description18.important": "Lire l'article en anglais du National Geographic",
+    "Popup.zone1.description18.link": "https://www.nationalgeographic.com/animals/article/pandemic-san-francisco-birds-song-improved?utm_source=Nature+Briefing&utm_campaign=08df647e03-briefing-dy-20200925&utm_medium=email&utm_term=0_c9dfd39373-08df647e03-44373629",
+
+    "Popup.zone1.description19": "Générations<br /><br /> Ok Boomer, une expression comme un coup de poing pour mettre KO le monde bâti pendant les Trente Glorieuses. Que disent les conflits entre générations de notre monde et quelle nouvelle solidarité intergénérationnelle et au-delà voulons-nous construire ?",
+    "Popup.zone1.description19.important": "Lire ou écouter la chronique de Bérénice Gagne - Ecole Urbaine de Lyon",
+    "Popup.zone1.description19.link": "https://medium.com/anthropocene2050/g%C3%A9n%C3%A9rations-206e795af4a1",
+
+    "Popup.zone1.description20": "Embouteillages<br /><br /> De plus en plus de municipalités utilisent les bouchons comme un moyen de promouvoir des circulations plus douces, explique le chercheur Nicolas Chiabaut dans ce nouvel épisode de « L’Abécédaire de la ville », à la lettre E, comme « embouteillages ».",
+    "Popup.zone1.description20.important": "Lire l'article de Nicolas Chiabaut pour «Le Monde» Cities et l'Ecole Urbaine de Lyon",
+    "Popup.zone1.description20.link": "https://www.lemonde.fr/smart-cities/article/2021/02/06/les-embouteillages-sont-devenus-une-arme-efficace-pour-lutter-contre-la-voiture-en-ville_6069029_4811534.html",
+
+    "Popup.zone1.description22": "Fleuves<br /><br /> Dans ce nouvel épisode de « L’Abécédaire de la ville », à la lettre F, comme « fleuve », l’archéologue Corinne Castel et l’architecte-urbaniste Bernd Gundermann rappellent, à l’occasion de la Journée mondiale de l’eau, que les villes doivent depuis toujours faire face aux défis posés par cette ressource.",
+    "Popup.zone1.description22.important": "Lire l'article de Corinne Castel et Bernd Gundermann pour «Le Monde» Cities et l'Ecole Urbaine de Lyon",
+    "Popup.zone1.description22.link": "https://www.lemonde.fr/smart-cities/article/2021/03/22/gestion-de-l-eau-les-experiences-des-premieres-civilisations-urbaines-sont-une-source-d-inspiration-pour-penser-la-ville-de-demain_6074010_4811534.html",
+
+    "Popup.zone1.description31": "Ordures<br /><br /> Plongeons dans la benne de nos déchets, ces spectres qui reflètent nos désirs, nos obsessions, nos peurs. Parlons de ce qui nous dégoûte, mais aussi de celles et ceux qui nous dégoûtent. Parlons de nous et de nos fantômes, des ordures.",
+    "Popup.zone1.description31.important": "Lire ou écouter la chronique de Bérénice Gagne - Ecole Urbaine de Lyon",
+    "Popup.zone1.description31.link": "https://medium.com/anthropocene2050/ordures-44d829130241",
+
+    "Popup.zone1.description33": "Migration climatique<br /><br /> \"Si on ne se tracasse que des gens qui vivent à l’intérieur de nos frontières nationales, on ne pourra jamais agir efficacement contre le changement climatique. Parce que l’action contre le changement climatique requiert une forme d’altruisme, requiert que nous considérions l’autre, celui qui se trouve au-delà de nos frontières, comme une partie de nous-mêmes\"",
+    "Popup.zone1.description33.important": "Lire l'entrevue avec François Gemenne de Radio Canada",
+    "Popup.zone1.description33.link": "https://ici.radio-canada.ca/recit-numerique/3137/cop26-climat-migration?s=09",
+
+    "Popup.zone1.description34": "Végétalisation<br /><br /> Verdissement des espaces urbains, extension des parcs, forêts urbaines, potagers et toitures végétalisées : qu’est-ce que la nature en ville et pour qui ? Comment aller au-delà d’une nature de façade ?",
+    "Popup.zone1.description34.important": "Ecouter l'émission avec Armelle Barrière, Arnaud Bellec, Amélie Deschamps, animée par Thomas Boutreux - Ecole Urbaine de Lyon",
+    "Popup.zone1.description34.link": "https://www.sondekla.com/user/event/10497",
    
     "Popup.zone1.description10": "Monde urbain souterrain<br /><br />Björn Wallsten, chercheur à l’université d’Uppsala (Suède), parle de son travail sur les infrastructures souterraines en milieu urbain. Peut-on les transformer en mines de ressources stratégiques dans le cadre d’une économie plus circulaire ? ",
     "Popup.zone1.description10.important": "Lire l'interview de Björn Wallsten via le lien suivant :",
