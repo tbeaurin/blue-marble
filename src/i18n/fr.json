@@ -159,7 +159,7 @@
     
     "Popup.open": "Ouvrir",
     "Popup.close": "Retour",
-    "Popup.zone1.description1": "Bienvenue dans l'Anthropocène<br /><br />Le terme Anthropocène s’impose et se diffuse de plus en plus tant auprès des scientifiques que du grand public. Dans un cas comme dans l’autre, il suscite de nombreux débats et discussions, ce qui est un indice de sa puissance. Celle-ci est due à ce qu’il recouvre : l’idée d’une bifurcation dans l’histoire de l’humanisation de la planète et une bifurcation qui menace possiblement l’habitabilité de la terre.",
+    "Popup.zone1.description1": "Bienvenue dans l'Anthropocène<br /><br />\"Le terme Anthropocène s’impose et se diffuse de plus en plus tant auprès des scientifiques que du grand public. Dans un cas comme dans l’autre, il suscite de nombreux débats et discussions, ce qui est un indice de sa puissance. Celle-ci est due à ce qu’il recouvre : l’idée d’une bifurcation dans l’histoire de l’humanisation de la planète et une bifurcation qui menace possiblement l’habitabilité de la terre.\"",
     "Popup.zone1.description1.important": "Ecouter les 6 épisodes \"Qu’est-ce que l’anthropocène ?\" de Michel Lussault - Directeur de l'Ecole Urbaine de Lyon",
     "Popup.zone1.description1.link": "https://medium.com/anthropocene2050/quest-ce-que-l-anthropoc%C3%A8ne-8da66c93ff22",
     "Popup.zone1.description1.plop": "Ecouter",
@@ -168,13 +168,21 @@
     "Popup.zone1.description2.important": "Ecouter le podcast \"Les villes ont-elles un corps ?\" via le lien suivant :",
     "Popup.zone1.description2.link": "https://www.sondekla.com/user/event/11650",
 
-    "Popup.zone1.description4": "Quantification<br /><br />Les travaux se sont multipliés au cours des dernières années pour décrire l’influence nouvelle des investisseurs institutionnels dans la fabrique de la ville. Même si les acteurs historiques de la ville, comme les autorités publiques ou les promoteurs, offrent de solides résistances. Dans ce contexte, les évaluateurs immobiliers avancent leurs expertises. ",
-    "Popup.zone1.description4.important": "Ecouter l'émission avec Patrice Bardet, Grégory Grey-Johnson, Lucia Shimbo et Pierre Thérond",
-    "Popup.zone1.description4.link": "https://www.sondekla.com/user/event/9876",
+    "Popup.zone1.description4": "Urbanocène ?<br /><br />\"Nous avons ici une hypothèse : l’entrée dans l’anthropocène est directement liée à la phase intense d’urbanisation de la planète qui a débuté après la seconde guerre mondiale. Ce postulat reprend celui dit de la « grande accélération » (Steffen), mais en se focalisant sur une part explicative souvent minorée par les études anthropocènes : le rôle effectif de l’urbanisation généralisée et des bouleversements géographiques, économiques, sociaux, culturels et politiques qui l’accompagnent. Il s’agira donc de cerner ce rôle et de l’examiner à toutes les échelles de temps et d’espace.\" ",
+    "Popup.zone1.description4.important": "Ecouter les 6 épisodes \"L’Anthropocène est-il un urbanocène ? Ou comment l’urbanisation généralisée a bouleversé le système planétaire ?\" de Michel Lussault - Directeur de l'Ecole Urbaine de Lyon",
+    "Popup.zone1.description4.link": "https://medium.com/anthropocene2050/lanthropoc%C3%A8ne-serait-il-un-urbanoc%C3%A8ne-a73d2e0d757",
 
-    "Popup.zone1.description11": "Smart citizens ?<br /><br />Progressivement l'expression \"Ville Intelligente\" glisse vers celle de \"Ville apprenante\" apparemment plus soucieuse de placer les habitants au cœur des préoccupations urbaines. Derrière ce changement de vocabulaire se dessine l’idéal du « citoyen intelligent et connecté », un \"smart-citizen\" qu'il convient aussi d'interroger.",
-    "Popup.zone1.description11.important": "Lire les comptes rendus de la journée d'étude organisée par Lou Herrmann et Hervé Rivano - Ecole Urbaine de Lyon",
+    "Popup.zone1.description10": "Monde urbain souterrain<br /><br />Björn Wallsten, chercheur à l’université d’Uppsala (Suède), parle de son travail sur les infrastructures souterraines en milieu urbain. Peut-on les transformer en mines de ressources stratégiques dans le cadre d’une économie plus circulaire ? ",
+    "Popup.zone1.description10.important": "Lire l'interview de Björn Wallsten via le lien suivant :",
+    "Popup.zone1.description10.link": "https://medium.com/anthropocene2050/bj%C3%B6rn-wallsten-les-infrastructures-souterraines-ont-le-plus-souvent-%C3%A9t%C3%A9-install%C3%A9es-en-partant-5deec84b535b",
+    
+    "Popup.zone1.description11": "Contrôle numérique<br /><br /> \"Les données et le CO2 sont en passe de devenir des enjeux essentiels des tensions entre des nations, dont la souveraineté est remise en cause. Les recommandations faites par le GIEC, à la demande de la COP21, pour maintenir l’augmentation des températures sous les 2C, montre l’ampleur de la transformation majeure et sans précédent qui s’annonce. Il s’agit d’une révolution anthropologique, remettant en cause dans un même mouvement la distinction entre nature et culture, et les relations entre humains et machines, naturel et artificiel.\"",
+    "Popup.zone1.description11.important": "Ecouter les 6 épisodes \"Anthropocène, ère du contrôle numérique\" de  Stéphane Grumbach",
     "Popup.zone1.description11.link": "http://www.atvisible.com/QuiSontLesSmartCitizens/",
+
+    "Popup.zone1.description12": "Dessiner le droit dans l’Anthropocène<br /><br /> Projet de recherche exploratoire porté par l’École urbaine de Lyon \"Dessiner le droit dans l’Anthropocène\" interroge, par le dessin, la façon dont le droit répond de manière originale et inédite aux multiples défis de l’Anthropocène. ",
+    "Popup.zone1.description12.important": "Lire l'article de Lou Herrmann via le lien suivant :",
+    "Popup.zone1.description12.link": "https://medium.com/anthropocene2050/dessiner-le-droit-dans-lanthropoc%C3%A8ne-47feb552d559",
 
     "Popup.zone1.description14": "Trottinettes électriques<br /><br /> « Les trottinettes électriques, bonnes ou mauvaises pour le climat ? : pour faire des trottinettes électriques un mode de déplacement plus durable : améliorer leur conception et leur longévité, réduire les émissions liées à la gestion de flotte, favoriser les reports modaux depuis les modes plus émissifs » ",
     "Popup.zone1.description14.important": "Lire l'article de The Conversation",
@@ -208,6 +216,10 @@
     "Popup.zone1.description31.important": "Lire ou écouter la chronique de Bérénice Gagne - Ecole Urbaine de Lyon",
     "Popup.zone1.description31.link": "https://medium.com/anthropocene2050/ordures-44d829130241",
 
+    "Popup.zone1.description32": "Résilience<br /><br /> \"Que nous apprennent les sciences de la vie ? S’il existe bien des mécanismes biologiques d’une efficacité redoutable, des progrès récents mettent surtout en avant le rôle fondamental des erreurs, des hétérogénéités, des lenteurs dans la construction et la résilience des organismes vivants. Notre vraie nature serait-elle dès lors sous-optimale ? En quoi une sous-optimalité d’inspiration biologique peut-elle constituer un contre-modèle au credo de la performance et du contrôle dans l’anthropocène ?\"",
+    "Popup.zone1.description32.important": "Ecouter les 6 épisodes \"La résilience du vivant, ou comment construire sur ses faiblesses pour co-exister dans l’Anthropocène \" de Olivier Hamant",
+    "Popup.zone1.description32.link": "https://medium.com/anthropocene2050/ordures-44d829130241",
+
     "Popup.zone1.description33": "Migration climatique<br /><br /> \"Si on ne se tracasse que des gens qui vivent à l’intérieur de nos frontières nationales, on ne pourra jamais agir efficacement contre le changement climatique. Parce que l’action contre le changement climatique requiert une forme d’altruisme, requiert que nous considérions l’autre, celui qui se trouve au-delà de nos frontières, comme une partie de nous-mêmes\"",
     "Popup.zone1.description33.important": "Lire l'entrevue avec François Gemenne de Radio Canada",
     "Popup.zone1.description33.link": "https://ici.radio-canada.ca/recit-numerique/3137/cop26-climat-migration?s=09",
@@ -216,13 +228,10 @@
     "Popup.zone1.description34.important": "Ecouter l'émission avec Armelle Barrière, Arnaud Bellec, Amélie Deschamps, animée par Thomas Boutreux - Ecole Urbaine de Lyon",
     "Popup.zone1.description34.link": "https://www.sondekla.com/user/event/10497",
    
-    "Popup.zone1.description10": "Monde urbain souterrain<br /><br />Björn Wallsten, chercheur à l’université d’Uppsala (Suède), parle de son travail sur les infrastructures souterraines en milieu urbain. Peut-on les transformer en mines de ressources stratégiques dans le cadre d’une économie plus circulaire ? ",
-    "Popup.zone1.description10.important": "Lire l'interview de Björn Wallsten via le lien suivant :",
-    "Popup.zone1.description10.link": "https://medium.com/anthropocene2050/bj%C3%B6rn-wallsten-les-infrastructures-souterraines-ont-le-plus-souvent-%C3%A9t%C3%A9-install%C3%A9es-en-partant-5deec84b535b",
-
-    "Popup.zone1.description12": "Dessiner le droit dans l’Anthropocène<br /><br /> Projet de recherche exploratoire porté par l’École urbaine de Lyon \"Dessiner le droit dans l’Anthropocène\" interroge, par le dessin, la façon dont le droit répond de manière originale et inédite aux multiples défis de l’Anthropocène. ",
-    "Popup.zone1.description12.important": "Lire l'article de Lou Herrmann via le lien suivant :",
-    "Popup.zone1.description12.link": "https://medium.com/anthropocene2050/dessiner-le-droit-dans-lanthropoc%C3%A8ne-47feb552d559",
+    "Popup.zone3.description1": "La quatrième voie<br /><br /> \"Nous savons désormais que la biosphère est à la fois la condition et le produit de toutes les formes de vie qui la constituent. C’est pourquoi ni l’appropriation ordolibérale du globe, ni le gouvernement technoscientifique de la planète, ni le projet cosmopolitique d’édification du monde ne suffiront pour répondre aux défis de l’Anthropocène. Nous proposons, dans ce cours, d’explorer concrètement la possibilité d’une « quatrième voie », celle des politiques de la Terre.\"",
+    "Popup.zone3.description1.important": "Ecouter les 6 épisodes \" La quatrième voie : les politiques de la Terre face à l’Anthropocène \" de Patrick Degeorges",
+    "Popup.zone3.description1.link": "https://medium.com/anthropocene2050/la-quatri%C3%A8me-voie-les-politiques-de-la-terre-face-%C3%A0-lanthropoc%C3%A8ne-ab40d80fa0b",
+  
 
     "Inventaire.citation.1": "\"- Le Monde dans lequel nous évoluions était à nos pieds.",
     "Inventaire.citation.2": "- Il suffisait de se baisser et de ramasser\"",
