@@ -21,12 +21,14 @@
     "Menu.zones.6": "Zone 5",
 
     "Menu.inventaire.1": "Inventaire",
-    "Menu.inventaire.2": "Studio",
+    "Menu.inventaire.2": "Analyse",
     "Menu.inventaire.3": "Terrain",
 
     "Menu.coulisses.1": "Les coulisses",
     "Menu.coulisses.2": "Vidéo",
     "Menu.coulisses.3": "Remerciements",
+
+    "Menu.mentions": "Mentions légales", 
 
     "404.404": "404",
     "404.text": "Oops, la page que vous avez demandé n'existe pas",
@@ -47,12 +49,12 @@
     "Missio.title": "La mission",
     "Zones.constelation": "Areis",
     "Zones.title": "Les zones",
-    "Inventaire.constelation": "Inventarium",
+    "Inventaire.constelation": "Analyses",
     "Inventaire.title": "L'inventaire",
-    "Coulisses.constelation": "Scaena",
+    "Coulisses.constelation": "Post Scaena",
     "Coulisses.title": "Les coulisses",
     
-    "Missio.citation": "\"Il était impossible de voir les étoiles en ville. Or quelle meilleure expérience, depuis le sol, pour se rappeler la petitesse et la fragilité de cette planète ?\"",
+    "Missio.citation": "\"Il était impossible de voir les étoiles en ville. Or, quelle meilleure expérience, depuis le sol, pour se rappeler la petitesse et la fragilité de la Terre ?\"",
     "Missio.citation.author.1": "Major A",
     "Missio.citation.author.2": "A propos de la zone 1",
     "Missio.citation.author.3": "Extrait de son interview pour A2022 Magazine",
@@ -64,15 +66,17 @@
     "Missio.majorA.content.2": "Missionné à la photographie des paysages et des activités anthropocèniques",
 
     "Missio.objectifMonde.title": "Objectif Monde",
-    "Missio.objectifMonde.p1": "Durant l'année 2021, L’École Urbaine de Lyon a missionné deux spationautes à la collecte - sur notre planète Terre - d'images, de matières et d'objets nécessaires à l’étude de l’ anthropocène.",
-    "Missio.objectifMonde.p2": "5 zones étaient à explorer, sur une période de 5 mois, pour assurer la plus grande couverture possible d'environnements, d'aménagements et d'activités humaines. Plus de 500 photographies sont aujourd'hui archivées et racontent ces sorties extra-véhiculaires qui ont eu lieux en ville, en périphérie, en campagne, en montagne et enfin sur le littoral.",
-    "Missio.objectifMonde.p3": "Nous avons également maintenant à notre disposition XX matières et objets inventoriés permettant une compréhension plus fine de l'anthropocène et des enjeux que cette période soulève concernant l'avenir de l'humanité sur Terre.",
+    "Missio.objectifMonde.p1": "Le 7 septembre 2022, le célèbre cliché de la NASA <strong> \" The Blue Marble \"</strong>, pris par l’équipage d’Apollo 17, fêtera son jubilé. <br /> Cet anniversaire est l’occasion pour l’<strong>École Urbaine de Lyon</strong>, qui a fait de cette image son étendard, de valoriser son travail d’enquête scientifique via la question suivante : quid de cette planète un demi-siècle après avoir été révélée dans toute son unité, sa beauté, sa fragilité ?",
+    "Missio.objectifMonde.p2": "Pour présenter des pistes de réponses sous un regard original, le photographe <strong>Adrien PINON</strong> a proposé de transformer l’École Urbaine de Lyon en un véritable centre de recherches et d’explorations spatiales avec le <strong>\" Programme Blue Marble \"</strong>. Cette approche originale a une motivation : rappeler l’importance capitale de rallier des efforts scientifiques et financiers d’envergures – à l’image d’un programme spatial – sur l’analyse des dynamiques actuellement à l’œuvre, remettant en cause l’habitabilité future de la Terre.",
+    "Missio.objectifMonde.p3": "Ainsi, d’avril à septembre 2021, l’École Urbaine de Lyon a missionné deux spationautes à la collecte dans notre Monde – sur la planète Terre – d’images, de matières et d’objets nécessaires à l’observation de l’Anthropocène. Vous découvrirez ici les <strong>210 photographies</strong> prises durant les sorties extra-véhiculaires dans les 5 grandes zones d’études du programme (ville, périphérie, campagne, montagne, littoral) ainsi que l’inventaire photographique des <strong>30 objets et matières</strong> ramenés, racontant des découvertes, des rencontres et des récoltes aussi bien scientifiques que sensibles.",
+    "Missio.objectifMonde.aditionnal.1": "Photo Zone 5",
+    "Missio.objectifMonde.aditionnal.2": "Le drapeau du \"Programme Blue Marble \" sur une plage e la mer Méditerranée",
 
     "Missio.anthropocene.title": "an-thro-po-cene",
     "Missio.anthropocene.definition": "Ce que l’on propose de nommer « Anthropocène », c’est ce moment historique qui s’ouvre après 1945 avec l’enclenchement de la phase de l’urbanisation généralisée de la planète lors duquel il devient incontestable que les activités humaines ont des impacts de plus en plus forts sur les systèmes biophysiques. On observe, partout, ces bouleversements tout à la fois globaux et locaux. A tel point que l’habitabilité de la terre pour les humains et les non humains est mise en question ",
     "Missio.anthropocene.definition.small": "Michel Lussault, géographe, professeur à l’ENS de Lyon, directeur de l’Ecole urbaine de Lyon.",
     "Missio.anthropocene.aditionnal.title": "Magazine de l'anthropocène",
-    "Missio.anthropocene.aditionnal.text": "Alors que nous interrogeons de plus en plus sur l'habitabilité future de la terre, sur les conditions justes et éthiques de mise en œuvre des stratégies de réorientations écologiques de nos cohabitations, il est crucial de faire connaître les réalités anthropocènes, d'analyser les dynamiques à l’œuvre, notamment celles liées à l'urbanisation et de mettre en discussion ce qui peut guider notre action collective. <br />C e magazine rassemble les textes de nombreux auteurs issus de domaines variés, scientifiques, litéraires et artistiques. Leurs contributions permettent d'appréhender la notion d'Anthropocène selon des points de vue complémentaires et d'accéder à une compréhension fine des enjeux.",
+    "Missio.anthropocene.aditionnal.text": "Alors que nous interrogeons de plus en plus sur l'habitabilité future de la terre, sur les conditions justes et éthiques de mise en œuvre des stratégies de réorientations écologiques de nos cohabitations, il est crucial de faire connaître les réalités anthropocènes, d'analyser les dynamiques à l’œuvre, notamment celles liées à l'urbanisation et de mettre en discussion ce qui peut guider notre action collective. <br />Ce magazine rassemble les textes de nombreux auteurs issus de domaines variés, scientifiques, litéraires et artistiques. Leurs contributions permettent d'appréhender la notion d'Anthropocène selon des points de vue complémentaires et d'accéder à une compréhension fine des enjeux.",
     "Missio.anthropocene.aditionnal.author": "Collection \"A partir de l'anthropocène\"<br />Coédition École urbaine de Lyon et Éditions deux-cent-cinq",
     "Missio.anthropocene.aditionnal.A2020.text": "A°2020",
     "Missio.anthropocene.aditionnal.A2020.link": "https://www.editions205.fr/collections/anthropocene/products/a-2020",
@@ -89,6 +93,8 @@
     "Missio.ecole.texte.3": "Aux défis mondiaux de l’urbanisation et de l’entrée dans l’anthropocène correspondent, en effet, à la fois de nouveaux champs de recherche et de formation, de nouvelles professions et compétences, mais aussi une mutation profonde de la pensée, des représentations, des pratiques e des métiers de la ville.",
     "Missio.ecole.texte.4": "L’École Urbaine de Lyon entend ainsi accompagner la transition sociale, écologique et économique dans laquelle sont engagées les sociétés et les territoires à l’échelle planétaire. Il s’agit de contribuer à l’élaboration d’un nouveau mode collectif d’appréhension des problématiques urbaines et environnementales, et de repenser les rapports que peuvent entretenir universités, laboratoires de recherche, entreprises, collectivités territoriales, administrations publiques, associations et citoyens dans un contexte urbain en perpétuelle mutation.",
     "Missio.ecole.texte.5": "Le projet s’inscrit au croisement des stratégies des établissements d’enseignement supérieur et des organismes nationaux de recherche, et des dynamiques de structuration à l’oeuvre sur le site LYON / SAINT-ÉTIENNE, en phase avec le projet stratégique de l’Université de Lyon et de la logique IDEX.",
+    "Missio.ecole.aditionnal.1": "L'équipe de l'Ecole urbaine de Lyon à Hotel71, novembre 2021",
+    "Missio.ecole.aditionnal.2": "Photo : Mélania Avanzato",
     "Missio.ecole.subtitle.1": "Nos grandes thématiques de travail :",
     "Missio.ecole.subtitle.2": "Une ambition en six axes principaux :",
     "Missio.ecole.list.1.1": "Changement global du système planétaire et ses expressions locales",
@@ -130,7 +136,7 @@
     "Missio.footer.2.2": "Université de lyon",
     "Missio.footer.text": "Ce travail a bénéificié de l'aide de l'Etat gérée par l'Agence Nationale de la Recherche au titre du programme d'Investissement d'avenir portant la référence ANR-17-CONV-0004",
 
-    "Zones.citation": "\"En contemplant le glacier il m'est apparu évident qu'un de nos devoirs, durant cette mission, était aussi de photographier ce qui est beau, ce qui disparaîtra\"",
+    "Zones.citation": "\"En contemplant le glacier de la Meije, il m'est apparu évident qu'un de nos devoirs - durant cette mission - était d'immortaliser ce qui est beau, ce qui disparaîtra\"",
     "Zones.citation.author.1": "Major Q",
     "Zones.citation.author.2": "Extrait de son interview pour A2022 Magazine",
 
@@ -153,22 +159,13 @@
     
     "Popup.open": "Ouvrir",
     "Popup.close": "Retour",
-
-    "Popup.studio.description5": "Pierre issu d'un glacier <br /><br />Le glacier islandais Okjökull, déclaré mort en 2014 après 700 ans d'existence, a depuis 2019 un mémorial à son nom dans l'ouest de l'île. Il s'agit du premier glacier à disparaître en raison du réchauffement climatique. ",
-    "Popup.studio.description5.important": "Lire l'article de France 24",
-    "Popup.studio.description5.link": "https://www.france24.com/fr/20190819-islande-okjoekull-plaque-memorial-glacier-disparu-rechauffement-climatique",
-
-    "Popup.studio.description10": "Sable <br /><br />La ruée vers le sable : Une histoire environnementale du littoral de Los Angeles au XXe siècle",
-    "Popup.studio.description10.important": "Ecouter l'émission avec Elsa Devienne, animée par Valérie Disdier - Ecole Urbaine de Lyon",
-    "Popup.studio.description10.link": "https://www.sondekla.com/user/event/11931",
-
-
-    "Popup.zone1.description1": "Anthropocène ? <br /><br />Le terme Anthropocène s’impose et se diffuse de plus en plus tant auprès des scientifiques que du grand public. Dans un cas comme dans l’autre, il suscite de nombreux débats et discussions, ce qui est un indice de sa puissance. Celle-ci est due à ce qu’il recouvre : l’idée d’une bifurcation dans l’histoire de l’humanisation de la planète et une bifurcation qui menace possiblement l’habitabilité de la terre.",
-    "Popup.zone1.description1.important": "Ecouter l'épisode 1 du cours public de Michel Lussault - Directeur de l'Ecole urbaine de Lyon",
+    "Popup.zone1.description1": "Bienvenue dans l'Anthropocène<br /><br />Le terme Anthropocène s’impose et se diffuse de plus en plus tant auprès des scientifiques que du grand public. Dans un cas comme dans l’autre, il suscite de nombreux débats et discussions, ce qui est un indice de sa puissance. Celle-ci est due à ce qu’il recouvre : l’idée d’une bifurcation dans l’histoire de l’humanisation de la planète et une bifurcation qui menace possiblement l’habitabilité de la terre.",
+    "Popup.zone1.description1.important": "Ecouter le podcast \"Qu’est-ce que l’anthropocène ? Episode 1 : Leçon inaugurale\" de Michel Lussault via le lien suivant :",
     "Popup.zone1.description1.link": "https://www.sondekla.com/user/event/9491",
+    "Popup.zone1.description1.plop": "Ecouter",
 
     "Popup.zone1.description2": "Métabolisme<br /><br />Le fonctionnement de la ville passe par des flux, des processus de transformation de matières et d'énergie, qui conduisent de plus en plus de chercheurs et praticiens à mobiliser le concept de métabolisme. Moyen de comprendre et représenter les liens entre les sociétés et leur environnement, la métaphore renvoie de fait à l'idée du corps de la ville. Les villes ont-elles un corps ? Que peut nous apprendre l'étude du corps de la ville ? ",
-    "Popup.zone1.description2.important": "Ecouter l'émission avec Pierre Desvaux et Romain Garcier, animée par Laëtitia Mongeard - Ecole Urbaine de Lyon  ",
+    "Popup.zone1.description2.important": "Ecouter le podcast \"Les villes ont-elles un corps ?\" via le lien suivant :",
     "Popup.zone1.description2.link": "https://www.sondekla.com/user/event/11650",
 
     "Popup.zone1.description4": "Quantification<br /><br />Les travaux se sont multipliés au cours des dernières années pour décrire l’influence nouvelle des investisseurs institutionnels dans la fabrique de la ville. Même si les acteurs historiques de la ville, comme les autorités publiques ou les promoteurs, offrent de solides résistances. Dans ce contexte, les évaluateurs immobiliers avancent leurs expertises. ",
@@ -227,84 +224,63 @@
     "Popup.zone1.description34.important": "Ecouter l'émission avec Armelle Barrière, Arnaud Bellec, Amélie Deschamps, animée par Thomas Boutreux - Ecole Urbaine de Lyon",
     "Popup.zone1.description34.link": "https://www.sondekla.com/user/event/10497",
    
-    "Popup.zone1.description36": "Batteries électriques<br /><br /> Ce qui se cache dans nos voitures et vélos électriques: dans l’Arizona (États-Unis), l’extraction de lithium (composant des batteries électriques) accapare les terres et menace les pratiques rituelles (donc la vie) des communautés autochtones",
-    "Popup.zone1.description36.important": "Lire l'article en anglais de Energy News",
-    "Popup.zone1.description36.link": "https://energynews.us/2021/06/10/mining-for-lithium-at-a-cost-to-indigenous-religions/",
+    "Popup.zone1.description10": "Monde urbain souterrain<br /><br />Björn Wallsten, chercheur à l’université d’Uppsala (Suède), parle de son travail sur les infrastructures souterraines en milieu urbain. Peut-on les transformer en mines de ressources stratégiques dans le cadre d’une économie plus circulaire ? ",
+    "Popup.zone1.description10.important": "Lire l'interview de Björn Wallsten via le lien suivant :",
+    "Popup.zone1.description10.link": "https://medium.com/anthropocene2050/bj%C3%B6rn-wallsten-les-infrastructures-souterraines-ont-le-plus-souvent-%C3%A9t%C3%A9-install%C3%A9es-en-partant-5deec84b535b",
 
-    "Popup.zone1.description40": "Sports<br /><br /> La culture sportive est une combinaison de pratiques, de comportements, de systèmes de valeurs et de rapport au corps. Et il existe autant de cultures sportives que de sports. Les villes se sont emparées du sport : organisation d’évènements sportifs, dispositifs d’insertion et d’intégration par le sport, soutien aux clubs, grands stades, prise en compte des logiques sportives dans les projets de rénovation urbaine… Comment intègrent-elles la diversité des cultures sportives ?",
-    "Popup.zone1.description40.important": "Ecouter l'émission avec Antoine Haincourt, Jean-Michel Roux, animée par Jérémy Cheval - Ecole Urbaine de Lyon",
-    "Popup.zone1.description40.link": "https://www.sondekla.com/user/event/11944",
+    "Popup.zone1.description12": "Dessiner le droit dans l’Anthropocène<br /><br /> Projet de recherche exploratoire porté par l’École urbaine de Lyon \"Dessiner le droit dans l’Anthropocène\" interroge, par le dessin, la façon dont le droit répond de manière originale et inédite aux multiples défis de l’Anthropocène. ",
+    "Popup.zone1.description12.important": "Lire l'article de Lou Herrmann via le lien suivant :",
+    "Popup.zone1.description12.link": "https://medium.com/anthropocene2050/dessiner-le-droit-dans-lanthropoc%C3%A8ne-47feb552d559",
 
-    "Popup.zone1.description41": "Pandémie<br /><br /> Dans cette série de chroniques vidéos mises en ligne entre le 21 mars et le 11 mai 2020, Michel Lussault, directeur de l’École urbaine de Lyon, propose une analyse de la situation liée à la pandémie de COVID-19 en suggérant d’en faire un événement anthropocène total.",
-    "Popup.zone1.description41.important": "Regarder les vidéos de Michel Lussault - Directeur de l'Ecole Urbaine de Lyon",
-    "Popup.zone1.description41.link": "https://medium.com/anthropocene2050/chroniques-g%C3%A9o-virales-e144c57db628",
-
-    "Popup.zone1.description43": "Datacenters<br /><br /> \"La visioconférence, le streaming, le télétravail, l’e-commerce, le jeu en ligne, et bien d’autres déclinaisons du numérique aussi bien professionnelles que ludiques sont en cette période de confinement largement consommées par les Français – encore plus qu’à l’accoutumée.\"",
-    "Popup.zone1.description43.important": "Lire l'article de Rue 89 Lyon et écoutez l'émission avec Jean-Vincent Bayarri, Cécile Diguet, animée par Lou Herrmann - Ecole Urbaine de Lyon",
-    "Popup.zone1.description43.link": "https://energynews.us/2021/06/10/mining-for-lithium-at-a-cost-to-indigenous-religions/",
-
-    "Popup.zone1.description44": "Villes et géologie<br /><br /> Mark Williams est Professeur de Paléobiologie à l’Université de Leceister et membre Groupe de travail sur l’Anthropocène de la Commission internationale de stratigraphie (ICS). Au cours de cette courte interview, il propose quelques pistes de réflexion sur la manière dont les villes peuvent être envisagées dans la perspective d’une approche géologique de l’Anthropocène.",
-    "Popup.zone1.description44.important": "Lire l'interview de Mark Williams par Lucas Tiphine - Ecole Urbaine de Lyon",
-    "Popup.zone1.description44.link": "https://medium.com/anthropocene2050/mark-williams-les-villes-laisseront-un-t%C3%A9moignage-g%C3%A9ologique-de-leur-impact-pendant-des-734d7e4c95ef",
-
-    "Popup.zone1.description49": "Animaux domestiques<br /><br /> Comment la place - et le rôle - des animaux dans la ville ont-ils évolué au cours des deux derniers siècles, et quel impact ces changements ont-ils eu sur le tissu urbain, et surtout sur la relation que les citadins entretiennent aujourd'hui avec les animaux ? Lisa Jean Moore examine Animal City, d'Andrew A. Robichaud, qui aborde ces questions d'un point de vue américain.",
-    "Popup.zone1.description49.important": "Lire l'article en anglais du Metropolitics",
-    "Popup.zone1.description49.link": "https://metropolitics.org/The-Ancestors-of-Pandemic-Pets-and-Vector-Animals.html",
-
-    "Popup.zone2.description18": "Lotissements<br /><br /> Fabriquer la ville avec les lotissements : une qualification possible de la production ordinaire des espaces urbains contemporains ? ",
-    "Popup.zone2.description18.important": "Lire la thèse de Lou Herrmann - Ecole Urbaine de Lyon",
-    "Popup.zone2.description18.link": "https://tel.archives-ouvertes.fr/tel-01665105",
-
-    "Popup.zone2.description42": "Pollution des eaux<br /><br /> Comment améliorer la connaissance des risques environnementaux liés à la pollution des eaux usées en milieu urbain ? Éléments d’analyse à partir du projet Éco-Risks. ",
-    "Popup.zone2.description42.important": "Lire l'article de Philippe Polomé, Yves Perrodin et Antoine Gosset - Ecole Urbaine de Lyon",
-    "Popup.zone2.description42.link": "https://medium.com/anthropocene2050/comment-am%C3%A9liorer-la-connaissance-des-risques-environnementaux-li%C3%A9s-%C3%A0-la-pollution-des-eaux-us%C3%A9es-e8078e156888",
-
-    "Popup.zone2.description44": "Qualité de l'air<br /><br /> Le professeur Francis Pope mène des projets de recherche actifs dans les domaines de la pollution atmosphérique, du changement climatique, de la chimie fondamentale des aérosols et de la résilience des villes. La pollution atmosphérique est la plus grande menace pour la santé au Royaume-Uni.",
-    "Popup.zone2.description44.important": "Ecouter l'émission en anglais avec Francis Pope, animée par Rulan Verma - Ecole Urbaine de Lyon",
-    "Popup.zone2.description44.link": "https://www.sondekla.com/user/event/12110",
-
-    "Popup.zone2.description50": "Les enfants<br /><br /> La relation entre l’enfant et la ville suscite un intérêt grandissant des praticiens et des chercheurs de diverses disciplines. Et si l’enfant était considérée comme un acteur dynamique et conduisait à explorer la ville au travers de son regard ? Quelle serait l’autonomie des enfants du point de vue de la géographie urbaine ?",
-    "Popup.zone2.description50.important": "Ecouter l'émission avec Stéphanie Cagni et Clément Rivière, animée par Lou Herrmann - Ecole Urbaine de Lyon",
-    "Popup.zone2.description50.link": "https://www.sondekla.com/user/event/11423",
-
-    "Popup.zone3.description2": "Résilience alimentaire<br /><br /> Changement climatique, effondrement de la biodiversité, dégradation et artificialisation des sols, épuisement des ressources énergétiques et minières, instabilités économiques et politiques : la situation actuelle est alarmante à bien des égards. Il y a ainsi urgence de repenser l’organisation des systèmes alimentaires et de construire de nouveaux modèles moins vulnérables et donc plus résilients pour faire face à ces crises. ",
-    "Popup.zone3.description2.important": "Découvrir l'outil CRATer de Benjamin Cuillier et Arthur Grimonpont - Ecole Urbaine de Lyon",
-    "Popup.zone3.description2.link": "https://crater.resiliencealimentaire.org/",
-
-    "Popup.zone3.description3": "Néolithique<br /><br /> \"12 000 ans, l’odyssée de l’espèce. Embarquez pour un voyage dans le temps à la découverte de LA Grande Bifurcation de l’espèce humaine, j’ai nommé : le Néolithique !\"",
-    "Popup.zone3.description3.important": "Lire ou écouter la chronique de Bérénice Gagne - Ecole Urbaine de Lyon",
-    "Popup.zone3.description3.link": "https://medium.com/anthropocene2050/n%C3%A9olithique-f73335fa98de",
-
-    "Popup.zone3.description11": "Blé<br /><br /> Sofia travaille sur les blés vêtus (engrain, amidonnier et grand épeautre) et en quoi ils peuvent contribuer à la robustesse des agrosystèmes et à la qualité de l’alimentation sur le territoire de Lyon. C’est un sujet qui s’ancre dans un contexte de diminution inquiétante de la biodiversité cultivée, de diminution de la robustesse des variétés qui dominent nos systèmes agricoles et d’augmentation des problèmes de santé en lien avec l’alimentation. ",
-    "Popup.zone3.description11.important": "Suivre le travail de thèse de Sofia Correa - Ecole Urbaine de Lyon",
-    "Popup.zone3.description11.link": "https://ecoleurbainedelyon.universite-lyon.fr/trombinoscope-doctorants/sofia-correa--226788.kjsp?RH=ecoleurbainedelyon",
-
-    "Popup.zone3.description40": "La mort<br /><br /> Le processus de deuil dépend de la réaction collective de la société, qui organise le rite funéraire pour cadrer les émotions liées à la perte. Qu’en est-il lorsque le contexte restreint le dernier moment partagé, la cérémonie avec la famille ? Quelle demeure à imaginer pour nos corps à l’heure d’un monde plus soutenable ? ",
-    "Popup.zone3.description40.important": "Ecouter l'émission avec Martin Julier-Costes et Laurence Loutre-Barbier, animée par Jérémy Cheval - Ecole Urbaine de Lyon",
-    "Popup.zone3.description40.link": "https://www.sondekla.com/user/event/11199",
-
-    "Popup.zone4.description1": "Les montagnes<br /><br /> Les zones montagneuses, et parmi elles les Alpes, se réchauffent presque deux fois plus rapidement que la moyenne planétaire. Une hausse qui approche 2°C depuis 1900, dont les conséquences sur les paysages et les activités humaines sont de plus en plus visibles. ",
-    "Popup.zone4.description1.important": "Ecouter l'émission avec Etienne Maury et Jean Krug, animée par Valérie Disdier - Ecole Urbaine de Lyon",
-    "Popup.zone4.description1.link": "https://www.sondekla.com/user/event/12523",
-
-    "Popup.zone4.description17": "L'espace<br /><br /> Nous allons parler des enjeux spatiaux à travers le tourisme spatial, tir de missiles sur des satellites, la lune, mars comme horizon ! On oublie la terre pour s'envoyer en l'air ! ",
-    "Popup.zone4.description17.important": "Ecouter l'émission avec Arnaud Saint Martin, animée Hugo Chaila, Florian Fompérie et Emma Novel - Ecole Urbaine de Lyon",
-    "Popup.zone4.description17.link": "https://www.sondekla.com/user/event/12523",
-
-
-    "Inventaire.citation.1" :"\"- Dans chacune des zones visitées, pour comprendre l'Anthropocène, il nous suffisait de regarder par terre.",
-    "Inventaire.citation.2": "- Nous n'avions véritablement qu'à nous baisser et ramasser ce que nous trouvions !\"",
+    "Inventaire.citation.1": "\"- Le Monde dans lequel nous évoluions était à nos pieds.",
+    "Inventaire.citation.2": "- Il suffisait de se baisser et de ramasser\"",
     "Inventaire.citation.author.1": "Major A et Major Q",
     "Inventaire.citation.author.2": "Extrait de leur interview pour A2022 Magazine",
 
-    "Inventaire.studio.subtitle": "Inventaire",
-    "Inventaire.studio.title": "Studio",
+    "Inventaire.studio.subtitle": "Objets et Matières",
+    "Inventaire.studio.title": "Inventaire",
+
+    "Inventaire.analyse.title": "Analyse",
+    "Inventaire.analyse.p1": "Sur invitation du photographe, <strong>Alfonso PINTO</strong>,  chercheur en géographie et études visuelles auprès de l'Ecole Urbaine de Lyon, a joué le jeu de se mettre dans la peau d'un chercheur du \"Programme Blue Marble\". Il nous propose ici un texte d'analyse sur l'exploration spatiale effectuée par les deux spationautes et plus particulièrement sur les surprises et questionnements soulevés par les images et les objets que ces derniers ont pu ramener à la fin de leur mission. <br />Découvrez, en 5min de lecture, la compréhension de l'Anthropocène <strong>par un scientifique venu d'ailleurs.</strong>",
+    "Inventaire.analyse.aditionnal.1": "\" The Blue Marble \" ©NASA ",
+    "Inventaire.analyse.2.citation": "\" Notre appartenance au monde des images est plus fort, plus constitutif de notre être que notre appartenance au monde des idées \"",
+    "Inventaire.analyse.2.aditionnal": "Gastion Bachelard - Philosophe et épistémologue<br />(Terrien de l'anthropocène)",
+    "Inventaire.analyse.2.p1": "Quand nous avons vu cette bille bleue, tâchée de blanc, resplendissant au milieu du noir éternel de l’univers, nous n’avons pas eu de doutes : il fallait l’explorer. Mais avant d’y mettre les pieds, avant d’y débarquer, de la voir de près, de la photographier, il fallait comprendre, il fallait étudier. Il fallait se préparer. ",
+    "Inventaire.analyse.2.p2": "Cette planète bleue regorgent de vie, mais, parmi les milliards d’organismes qui l’habitaient, une espèce en particulier attirent notre attention. Ces bipèdes que nous appelons « terriens » semblent en effet se différencier de toutes les autres formes de vie. Au fur et à mesure, ils ont développé des grandes capacités en termes de communication, mais surtout ils ont réussi à transformer leur environnement pour mieux y vivre. Ces êtres, qui se nomment plus couramment « humains », sont parvenus à se détacher de la nature qui les a créés grâce au développement d’une intelligence particulièrement accrue qui leur a donné une conscience. ",
+    "Inventaire.analyse.2.p3": "Les humains, à travers leur conscience, ont séparé leur histoire – leur parcours en tant qu’espèce – de celle de la planète dans laquelle ils ont toujours vécu. Et comme ils ont l’étrange habitude de donner un nom à tout, à chaque moment de l’histoire planétaire ils ont fait correspondre une appellation qui décrivait l’état des éléments qui composaient cette merveilleuse bille bleue : les sols, les roches, les eaux et même les airs. Tout a un nom. Et alors, il avait existé un temps qu’ils nommaient Jurassique ou encore Pléistocène ou Holocène… Le moment dans lequel nous avons découvert cette planète est appelé « Anthropocène ». Ce fut une surprise. ",
+    "Inventaire.analyse.2.p4": "Selon nos spécialistes de communication humaine, « Anthropos » est une racine linguistique que les terriens emploient régulièrement pour s’auto-définir en tant qu’espèce biologique. Nous sommes arrivés alors à la conclusion que ce moment pourrait marquer d’une manière ou d’une autre un retour en arrière, une harmonie retrouvée entre cette espèce « autonome » et la planète bleue qui les a générés et hébergés. La curiosité était forte. L’envie de saisir ce parcours nous a poussé immédiatement à débarquer avec nos combinaisons et avec nos appareils capables d’enregistrer les moments-clé de notre exploration et de le transformer en images.",
+    "Inventaire.analyse.2.aditionnal.1": "Photo Zone 4",
+    "Inventaire.analyse.2.aditionnal.2": "Rencontre avec des \"humains\" en plein pratique de \"randonnée\" sur le glacier de la Meije",
+    "Inventaire.analyse.3.p1": "Tout comme les humains, nous possédons cette fascination pour les images, pour leur capacité à afficher avec obstination et efficacité ce qui n’est pas devant nos yeux. Et effectivement, les paroles ne sont pas suffisantes pour comprendre l’inévitable déception que les pratiques humaines provoquent en nous.",
+    "Inventaire.analyse.3.p2": "remièrement, nous remarquons que les humains ont pris l’habitude de se rassembler en des groupes toujours plus grands. Ils sont convaincus qu’en agissant ensemble leur vie serait meilleure, plus facile, plus agréable. Ils appellent ce phénomène « société ». En réalité, ils ne sont pas les seuls à pratiquer cette forme d’entraide. Beaucoup d’espèces, des plus petites aux plus grandes, font ainsi. Mais les humains ont donné à cette démarche un caractère spatiale très fort. Ils ne se limitent pas à vivre ensemble. Ils transforment sans cesse la surface de la planète en transformant les matériaux que cette dernière leur offre. Ils ont construit des gigantesques zones dans lesquelles ils s’affolent de vivre les uns à côté des autres, parfois par des millions. Ces zones ne ressemblent en rien aux images que nous avions de la planète.",
+    "Inventaire.analyse.3.aditionnal.1": "Photo Zone 1",
+    "Inventaire.analyse.3.aditionnal.2": "Ici une \"ville\". Plusieurs villes accolées et fonctionnant ensemble forme une \"Métropole\". Plus de 1,4 million d'humains vivent dans la métropole partiellement visitée, nommée \"Lyon\". ",
+    "Inventaire.analyse.4.p1": "Tout est fait par et pour les humains. C’est comme si la planète avait disparu en laissant des petites traces telles que des plantes ou des arbres. Dans leur obsession pour les noms, ils ont nommé ces aires « villes ». Et il y en a partout. Certaines d’entre elles sont tellement étalées que nous n’avons pas réussi à les visiter en entier. Dès que c’est possible, ils se rassemblent dans des espaces très petits, tellement lointains de l’originaire surface originelle que l’on se croirait sur une autre planète. Et pour un bon moment nous avons pensé de ne pas réussir à trouver une zone que les humains n’ont pas encore transformé. ",
+    "Inventaire.analyse.4.p2": "Un autre phénomène a attiré toute notre attention. Ils semblent être victimes d’une véritable obsession pour les objets. Leur capacité de transformer les matériaux qu’ils repèrent sur la planète pour en faire des objets, ou bien encore pour produire de l’énergie, est incroyable. Grâce à une sorte de crème noire qu’ils appellent « pétrole », les humains produisent des milliards et de milliards d’objets. Ils parviennent à se chauffer, à créer toute sorte de matériel, à faire rouler des engins et même à les faire voler. Idem avec les roches. Ils arrivent à en extraire de substances dures qu’ils appellent (toujours cette pratique malsaine de donner des noms), « métaux » avec lesquels ils font bien évidemment… des objets… de toute forme, aux usages multiples et parfois inexplicables. ",
+    "Inventaire.analyse.4.p3": "Cette obsession pour les objets possède en revanche un côté qui reste pour nous mystérieux. Parmi les étranges habitudes des humains que nous avons cherché à reproduire à travers les images, il y en a une en particulier que nous ne parvenons pas à comprendre. Les humains ont l’étrange habitude de disperser partout leurs objets. Parfois ces derniers gisent en piteux état, comme si quelqu’un les avait abandonnés sans une véritable raison en les laissant se dégrader, dans les endroits les plus incroyables. Si l’on pense à tous les efforts faits pour les produire, aux matériaux soustraits à la planète, aux énergies dépensées pour les produire, les transporter et pour les distribuer… Bref, il s’agit d’une pratique certainement étrange. ",
+    "Inventaire.analyse.4.aditionnal.1": "Photo Inventaire",
+    "Inventaire.analyse.4.aditionnal.2": "Ici une \"Carte Bleue\". Cet objet permet de faire des échanges directs (pour obtenir d'autres objets ou bien de la nourriture par exemple). ",
+    "Inventaire.analyse.5.p1": "Les experts auxquels nous avons confié les images qui témoignent de cette pratique demeurent toujours dans l’impasse. Les hypothèses se multiplient sans qu’aucune ne parvienne à faire l’unanimité. Certains voient dans ce phénomène un parallélisme avec une pratique très répandue chez d’autres espèces biologiques. Beaucoup d’organismes nommés mammifères ont l’habitude de diffuser leur propre urine dans le territoire qui les entoure. C’est une pratique qui semblent répondre à plusieurs exigences : marquer une possession, communiquer, signaler leur présence. ",
+    "Inventaire.analyse.5.p2": "Selon cette hypothèse, les humains, pour marquer leur capacité de transformer les matériaux de la planète, aurait substitué au cours de leur évolution leur urine avec leurs objets. Cette théorie, bien que fascinante, se heurte en revanche au fait que ces créatures humaines possèdent des systèmes de communication complexes, efficaces, très structurés qui, du moins en théorie, devraient avoir rendu inutile ce genre des pratiques. ",
+    "Inventaire.analyse.5.p3": "Quoi qu’il en soit, dans notre recherche d’un endroit que les humains n’auraient pas encore transformé nous nous sommes toujours trouvé face à la présence de ces objets. Dans les fameuses « villes », comme dans les terrains aménagés pour produire de la nourriture… Dans ces énormes réservoirs d’eau appelés « mers », jusqu’au sommet des roches dures qui atteignent les cieux… Toujours et partout des objets… des plus grands aux plus petits… Cette obsession fétichiste et profondément spatialisée probablement continuera à hanter nos spécialistes. Notamment en raison d’un inquiétant fait qui se rajoute. ",
+    "Inventaire.analyse.5.p4": "Même quand on ne les voit pas, les humains et leurs objets sont toujours là. Dans les endroits les plus éloignées de leur présence, dans les lieux qui, du moins à l’apparence, ne sembleraient pas avoir été transformés, nous avons trouvé des traces de cette transformations humaine. ",
+    "Inventaire.analyse.5.aditionnal.1": "Photo Zone 4",
+    "Inventaire.analyse.5.aditionnal.2": "\"Station météorologique\".  Installation humaine mesurant automatiquement et en continu la température, la pression atmosphérique, la direction et la vitesse du vent, la quantité de pluie et le rayonnement ",
+    "Inventaire.analyse.6.p1": "Partout et toujours, minuscules mais toujours là, les traces de ces êtres se trouvent même là où ils ne vont pas physiquement. Les sommets de montagnes, les abîmes recouvert d’eau salée, et même sur le petit satellite qui gravite autour de leur planète et qu’ils appellent « Lune »… Partout des substances, des objets, des artefacts qui ont effacé la nature originelle de cette planète à la forme de bille",
+    "Inventaire.analyse.6.p2": "Et alors nous avons compris. Nous avons compris le sens du mot « Anthropocène » et toute la désillusion qui l’accompagne. Ce n’est pas l’âge du retour aux sources, l’âge de la réconciliation entre une planète et l’une des espèces qui l’habite. L’Anthropocène ne marque pas une nouvelle harmonie, mais tout simplement la substitution complète. La nature ne s’est pas limitée à donner naissance à une entité qui s’est séparée. La nature a créé une forme de vie capable de la remplacer, de produire des transformations encore plus radicales. Les humains agissent comme une nouvelle nature qui régit et  transforme tout, mais surtout qui efface l’histoire d’une planète et de ses créations sous un tas gigantesques d’objets et substances, de villes, de structures énormes, mais aussi et surtout de particules invisibles qui lentement humanisent tout et tous. ",
+    "Inventaire.analyse.6.p3": "Nous avons failli l’oublier… les humains aiment se définir homini sapiens sapiens, qui veut dire plus ou moins « êtres conscients ». La question qui nous tracassera encore et encore concerne alors justement l’objet de cette conscience : eux ? Leur planète ? Les deux ? ",
+    "Inventaire.analyse.6.p4": "Nous ne pouvons que rester en attente… pour photographier et vous témoigner de ce parcours qui a de l’incroyable et dont le sens nous échappe et probablement nous échappera encore et encore dans les temps à venir. ",
+    "Inventaire.analyse.6.aditionnal.1": "Photo Zone 5",
+    "Inventaire.analyse.6.aditionnal.2": "Une \"Mer\". Ici vue sur la mer nommée \"Méditerranée\". L'eau des mers et océans donne la couleur bleue dominante de la planète Terre.",
 
     "Coulisses.citation.1": "160 lieux | 2 320 kms | 72 pellicules",
     "Coulisses.citation.2": "Altitude la plus élevée : 3200m | Température la plus élevée : 34°C",
 
-    "Coulisses.remerciement.title": "Je souhaite profondément remercier :",
-    "Coulisses.remerciement.text.1": "L'École Urbaine de Lyon et toute sa merveilleuse équipe pour m'avoir fait confiance et laissé carte blanche pour ce projet qui me tenait à cœur",
-    "Coulisses.remerciement.text.2": "L'équipe qui m'a permis de concrétiser cette aventure du début à la fin, j'ai nommé le duo de choc The D's (Frankie et Quentin) et le génial développeur Web Tristan Beaurin",
-    "Coulisses.remerciement.text.3": "Ma chérie, ma famille et mes amis pour leurs soutien inconditionnel, depuis toujours."
+    "Coulisses.remerciement.title": "Merci",
+    "Coulisses.remerciement.text.1": "À toute l'équipe de l'École Urbaine de Lyon pour leur confiance et leur aide",
+    "Coulisses.remerciement.text.2": "Au duo de réalisateur The D's pour avoir enfilé le costume et réalisé le documentaire",
+    "Coulisses.remerciement.text.3": "Au développeur Web Tristan Beaurin pour ce site internet",
+    "Coulisses.remerciement.text.4": "Au labo photo Gris Souris pour le développement des pellicules",
+    "Coulisses.remerciement.text.5": "À Parallel Life Studio pour le costume",
+    "Coulisses.remerciement.text.6": "À ma famille et mes amis pour leur soutien"
 }

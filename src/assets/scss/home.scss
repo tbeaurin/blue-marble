@@ -16,8 +16,9 @@
         left: 41vw;
     }
     #coulissesName {
-        top: 66vh;
-        left: 54vw;
+        top: 61vh;
+        left: 52vw;
+        min-width: 275px;
     }
     .background-constelation-title {
         font-size: 48px;
@@ -128,10 +129,10 @@ h1 {
             position: absolute;
             z-index: -1; 
             transition: all linear .2s;
-            margin-top: 28px !important;
+            // margin-top: 28px !important;
             width: calc(100% + 8px);
             left: -4px;
-            // top: 28px;
+            top: 28px !important;
           }
           display: inline;
           position: relative;
@@ -140,8 +141,8 @@ h1 {
         font-size: 24px;
         &:before {
             height: 6px;
-            margin-top: 27px !important;
-            // top: 21px;
+            // margin-top: 27px !important;
+            top: 21px !important;
         }
     }
   }
@@ -251,13 +252,13 @@ a {
         font-weight: 600;
         margin-bottom: 16px;
         margin-top: 0;
-        .small {
-            font-size: 20px;
-            &:before { margin-top: 25px !important; }
-        }
-        span {
-            &:before { margin-top: 24px !important; }
-        }
+        // .small {
+        //     font-size: 20px;
+        //     &:before { margin-top: 25px !important; }
+        // }
+        // span {
+        //     &:before { margin-top: 24px !important; }
+        // }
     }
     .menuHome {
         padding-top: 12px;
@@ -270,6 +271,12 @@ a {
                 }
             }
         }
+    }
+    #missioName {
+        left: 25vw !important;
+    }
+    #coulissesName {
+        left: 48vw !important;
     }
 }
 

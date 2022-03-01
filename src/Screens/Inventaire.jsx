@@ -7,6 +7,12 @@ import { useDebouncedCallback } from 'use-debounce';
 import 'reactjs-popup/dist/index.css';
 
 import inventaireImg from '../assets/img/mobile/inventaire_interne.png';
+import inventaireContentImg from '../assets/img/inventaire.png';
+import BlueMarbleImg from '../assets/img/blue-marble.png';
+import zone4Img from '../assets/img/zone4.png';
+import zone1Img from '../assets/img/zone1.png';
+import inventaire5 from '../assets/img/inventaire5.png';
+import inventaire6 from '../assets/img/inventaire6.png';
 
 import CustomLink from '../Components/CustomLink';
 import Zone from '../Components/Zone';
@@ -32,7 +38,7 @@ const Inventaire = () => {
   for (let i = 1; i <= 30; i += 1) {
     studio.push(
       {
-        image: imagesStudio[i - 1], description: <Trans i18nKey={`Popup.studio.description${i}`} />, important: <Trans i18nKey={`Popup.studio.description${i}.important`} />, link: `Popup.studio.description${i}.link`,
+        image: imagesStudio[i - 1], description: `Popup.studio.description${i}`, important: `Popup.studio.description${i}.important`, link: `Popup.studio.description${i}.link`,
       },
     );
   }
@@ -144,13 +150,22 @@ const Inventaire = () => {
     <nav id="menuZones" className="menu-page">
       <ul>
         {!isMobile && (
-          <li className="menuItem" id="studioAnchor" onClick={(e) => handleClick(e, 'studio')}>
-            <CustomLink
-              href="#studio"
-              tag="NavLink"
-              content={<Trans i18nKey="Menu.inventaire.2" />}
-            />
-          </li>
+          <>
+            <li className="menuItem" id="studioAnchor" onClick={(e) => handleClick(e, 'studio')}>
+              <CustomLink
+                href="#studio"
+                tag="NavLink"
+                content={<Trans i18nKey="Menu.inventaire.1" />}
+              />
+            </li>
+            <li className="menuItem" id="analyseAnchor" onClick={(e) => handleClick(e, 'analyse')}>
+              <CustomLink
+                href="#analyse"
+                tag="NavLink"
+                content={<Trans i18nKey="Menu.inventaire.2" />}
+              />
+            </li>
+          </>
         )}
         <li className="menuItem">
           <CustomLink
@@ -192,7 +207,7 @@ const Inventaire = () => {
         )}
       </div>
       <div id="content" onScroll={(e) => handleScroll(e)}>
-        <div id="inventaireCitation" className="page h-100">
+        <div id="inventaire" className="page h-100">
           <div className="page-content">
             <p className="citation">
               <span className="d-block"><Trans i18nKey="Inventaire.citation.1" /></span>
@@ -204,7 +219,7 @@ const Inventaire = () => {
             </p>
           </div>
         </div>
-        <div className="page h-100" id="studio">
+        <div className="page h-100" id="analyse">
           <Zone
             id="studio"
             parent="Inventaire"
@@ -214,6 +229,101 @@ const Inventaire = () => {
             openModal={openModal}
             position={0}
           />
+        </div>
+        <div id="analyse">
+          <div id="analyse1" className={`page ${!isMobile ? 'h-120' : ''}`}>
+            <div className="page-content">
+              <div id="analyse-column1" className={`${isMobile ? 'h-100vh' : ''}`}>
+                <h3>
+                  <Trans i18nKey="Inventaire.analyse.title" />
+                </h3>
+                <p><Trans i18nKey="Inventaire.analyse.p1" /></p>
+              </div>
+              <div id="analyse-column2">
+                <div id="analyseImg-wrapper">
+                  <img src={BlueMarbleImg} alt="blue marble" />
+                  <span className="small-italic d-block w-100"><Trans i18nKey="Inventaire.analyse.aditionnal.1" /></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="right">
+            <div className="column1">
+              <div className="citation-blue-wrapper">
+                <span className="citation-blue"><Trans i18nKey="Inventaire.analyse.2.citation" /></span>
+                <span className="citation-blue-little"><Trans i18nKey="Inventaire.analyse.2.aditionnal" /></span>
+              </div>
+              <p><Trans i18nKey="Inventaire.analyse.2.p1" /></p>
+              <p><Trans i18nKey="Inventaire.analyse.2.p2" /></p>
+              <p><Trans i18nKey="Inventaire.analyse.2.p3" /></p>
+              <p><Trans i18nKey="Inventaire.analyse.2.p4" /></p>
+            </div>
+            <div className="column2">
+              <div id="analyseImg-wrapper">
+                <img src={zone4Img} alt="zone 4" />
+                <span className="small d-block w-100"><Trans i18nKey="Inventaire.analyse.2.aditionnal.1" /></span>
+                <span className="small-italic d-block w-100"><Trans i18nKey="Inventaire.analyse.2.aditionnal.2" /></span>
+              </div>
+            </div>
+          </div>
+          <div className="separator" />
+          <div className="left">
+            <div className="column1">
+              <div id="analyseImg-wrapper">
+                <img src={zone1Img} alt="zone 1" />
+                <span className="small d-block w-100"><Trans i18nKey="Inventaire.analyse.3.aditionnal.1" /></span>
+                <span className="small-italic d-block w-100"><Trans i18nKey="Inventaire.analyse.3.aditionnal.2" /></span>
+              </div>
+            </div>
+            <div className="column2">
+              <p><Trans i18nKey="Inventaire.analyse.3.p1" /></p>
+              <p><Trans i18nKey="Inventaire.analyse.3.p2" /></p>
+            </div>
+          </div>
+          <div className="right">
+            <div className="column1">
+              <p><Trans i18nKey="Inventaire.analyse.4.p1" /></p>
+              <p><Trans i18nKey="Inventaire.analyse.4.p2" /></p>
+              <p><Trans i18nKey="Inventaire.analyse.4.p3" /></p>
+            </div>
+            <div className="column2">
+              <div id="analyseImg-wrapper">
+                <img src={inventaireContentImg} alt="inventaire" />
+                <span className="small d-block w-100"><Trans i18nKey="Inventaire.analyse.4.aditionnal.1" /></span>
+                <span className="small-italic d-block w-100"><Trans i18nKey="Inventaire.analyse.4.aditionnal.2" /></span>
+              </div>
+            </div>
+          </div>
+          <div className="left">
+            <div className="column1">
+              <div id="analyseImg-wrapper">
+                <img src={inventaire5} alt="zone 5" />
+                <span className="small d-block w-100"><Trans i18nKey="Inventaire.analyse.5.aditionnal.1" /></span>
+                <span className="small-italic d-block w-100"><Trans i18nKey="Inventaire.analyse.5.aditionnal.2" /></span>
+              </div>
+            </div>
+            <div className="column2">
+              <p><Trans i18nKey="Inventaire.analyse.5.p1" /></p>
+              <p><Trans i18nKey="Inventaire.analyse.5.p2" /></p>
+              <p><Trans i18nKey="Inventaire.analyse.5.p3" /></p>
+              <p><Trans i18nKey="Inventaire.analyse.5.p4" /></p>
+            </div>
+          </div>
+          <div className="right">
+            <div className="column1">
+              <p><Trans i18nKey="Inventaire.analyse.6.p1" /></p>
+              <p><Trans i18nKey="Inventaire.analyse.6.p2" /></p>
+              <p><Trans i18nKey="Inventaire.analyse.6.p3" /></p>
+              <p><Trans i18nKey="Inventaire.analyse.6.p4" /></p>
+            </div>
+            <div className="column2">
+              <div id="analyseImg-wrapper">
+                <img src={inventaire6} alt="zone4" />
+                <span className="small d-block w-100"><Trans i18nKey="Inventaire.analyse.6.aditionnal.1" /></span>
+                <span className="small-italic d-block w-100"><Trans i18nKey="Inventaire.analyse.6.aditionnal.2" /></span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

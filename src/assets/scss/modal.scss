@@ -36,8 +36,11 @@
                     margin-top: 35% !important;
                 }
                 .popup-subtitle {
-                    margin-left: 13% !important;
+                    margin-left: 25.2% !important;
                 }
+            }
+            .popup-description {
+                padding-right: 0 !important;
             }
         }
     }
@@ -137,12 +140,13 @@
 #popupMain {
     color: #000;
     overflow-y: auto;
+    overflow-x: hidden;
     font-family: "Montserrat";
     .popup-title {
         margin: auto;
         &.odd {
             .popup-subtitle {
-                margin-left: 12.5%;
+                margin-left: 24.3%;
             }
             h2 {
                 text-align: center;
@@ -161,7 +165,6 @@
         line-height: 154px;
         text-transform: uppercase;
         text-align: left;
-        width: 100%;
         left: 0;
         position: absolute;
         margin: -7% 0 0 15%;
@@ -173,7 +176,7 @@
     .popup-subtitle {
         position: absolute;
         color: #3a5caa;
-        margin-left: 15%;
+        margin-left: 5.6%;
         line-height: 28px;
         margin-top: -7.6%;
         span {
@@ -190,7 +193,7 @@
     }
     .popup-description {
         font-size: 14px;
-        margin-left: 15vw;
+        margin-left: 30vw;
         padding-right: 120px;
         p {
             margin-bottom: 24px;

@@ -47,6 +47,12 @@
             transform: translate3d(0px, 0px, 0px);
         }
     }
+    #objectifMonde {
+        #objectifImg-wrapper {
+            margin-top: 225px;
+            width: 300px;
+        }
+    }
 }
 
 // BIG SCREEN
@@ -102,6 +108,9 @@
     }
     #anthropocene-definition {
         width: 350px;
+        padding-inline: 128px !important;
+        padding-top: 96px !important;
+        font-size: 20px !important;
     }
 }
 
@@ -202,19 +211,36 @@
                     text-align: right;
                 }
                 #objectif-column1 {
-                    width: calc(50% + 50px);
-                }
-                #objectifMonde-content {
-                width: calc(50% - 50px);
-                    padding-left: 32px;
+                    width: 40.3vw;
+                    padding-left: 25.3vw;
+                    text-align: justify;
                     p {
-                        margin: 24px 32px;
-                        max-width: 450px;
+                        margin: 24px 0 0 0;
+                        padding-right: 128px;
                     }
                     p:first-of-type {
                         margin-top: 64px;
                     }
+                    h3 {
+                        margin-left: -32px;
+                    }
                 }
+                #objectif-column2 {
+                    width: 33.3vw;
+                }
+            }
+        }
+    }
+    #objectifMonde {
+        #objectifImg-wrapper {
+            margin-top: 250px;
+            width: 350px;
+            img { width: 100%; }
+            .small-italic {
+                font-size: 14px;
+                font-style: italic;
+                font-weight: initial;
+                text-align: right;
             }
         }
     }
@@ -323,12 +349,13 @@
         }
         .page-content {
             width: 50% !important;
+            text-align: justify;
             .content {
                 > div {
                     width: 100% !important;
                     margin: 16px 0;
                     p {
-                        margin: 32px 0;
+                        margin: 0 0 32px 0;
                     }
                 }
             }
@@ -340,6 +367,14 @@
             }
             img {
                 height: auto;
+                width: 100%;
+                margin-bottom: 8px;
+            }
+            .small-italic {
+                text-align: right;
+                font-size: 14px;
+                font-style: italic;
+                font-weight: initial;
             }
         }
         .mt--100 {
