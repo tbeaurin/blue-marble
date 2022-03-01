@@ -160,8 +160,8 @@
     "Popup.open": "Ouvrir",
     "Popup.close": "Retour",
     "Popup.zone1.description1": "Bienvenue dans l'Anthropocène<br /><br />Le terme Anthropocène s’impose et se diffuse de plus en plus tant auprès des scientifiques que du grand public. Dans un cas comme dans l’autre, il suscite de nombreux débats et discussions, ce qui est un indice de sa puissance. Celle-ci est due à ce qu’il recouvre : l’idée d’une bifurcation dans l’histoire de l’humanisation de la planète et une bifurcation qui menace possiblement l’habitabilité de la terre.",
-    "Popup.zone1.description1.important": "Ecouter le podcast \"Qu’est-ce que l’anthropocène ? Episode 1 : Leçon inaugurale\" de Michel Lussault via le lien suivant :",
-    "Popup.zone1.description1.link": "https://www.sondekla.com/user/event/9491",
+    "Popup.zone1.description1.important": "Ecouter les 6 épisodes \"Qu’est-ce que l’anthropocène ?\" de Michel Lussault - Directeur de l'Ecole Urbaine de Lyon",
+    "Popup.zone1.description1.link": "https://medium.com/anthropocene2050/quest-ce-que-l-anthropoc%C3%A8ne-8da66c93ff22",
     "Popup.zone1.description1.plop": "Ecouter",
 
     "Popup.zone1.description2": "Métabolisme<br /><br />Le fonctionnement de la ville passe par des flux, des processus de transformation de matières et d'énergie, qui conduisent de plus en plus de chercheurs et praticiens à mobiliser le concept de métabolisme. Moyen de comprendre et représenter les liens entre les sociétés et leur environnement, la métaphore renvoie de fait à l'idée du corps de la ville. Les villes ont-elles un corps ? Que peut nous apprendre l'étude du corps de la ville ? ",
@@ -172,17 +172,9 @@
     "Popup.zone1.description4.important": "Ecouter l'émission avec Patrice Bardet, Grégory Grey-Johnson, Lucia Shimbo et Pierre Thérond",
     "Popup.zone1.description4.link": "https://www.sondekla.com/user/event/9876",
 
-    "Popup.zone1.description10": "Mondes urbains souterrains<br /><br />Björn Wallsten, chercheur à l’université d’Uppsala (Suède), parle de son travail sur les infrastructures souterraines en milieu urbain. Peut-on les transformer en mines de ressources stratégiques dans le cadre d’une économie plus circulaire ? ",
-    "Popup.zone1.description10.important": "Lire l'interview de Björn Wallsten",
-    "Popup.zone1.description10.link": "https://medium.com/anthropocene2050/bj%C3%B6rn-wallsten-les-infrastructures-souterraines-ont-le-plus-souvent-%C3%A9t%C3%A9-install%C3%A9es-en-partant-5deec84b535b",
-
     "Popup.zone1.description11": "Smart citizens ?<br /><br />Progressivement l'expression \"Ville Intelligente\" glisse vers celle de \"Ville apprenante\" apparemment plus soucieuse de placer les habitants au cœur des préoccupations urbaines. Derrière ce changement de vocabulaire se dessine l’idéal du « citoyen intelligent et connecté », un \"smart-citizen\" qu'il convient aussi d'interroger.",
     "Popup.zone1.description11.important": "Lire les comptes rendus de la journée d'étude organisée par Lou Herrmann et Hervé Rivano - Ecole Urbaine de Lyon",
     "Popup.zone1.description11.link": "http://www.atvisible.com/QuiSontLesSmartCitizens/",
-
-    "Popup.zone1.description12": "les voies du droit<br /><br /> Si au siècle dernier, les règles juridiques, fondamentalement anthropocentrées, ont souvent traduit une logique généralisée de prédation et de destruction, l’enjeu désormais pour le droit est d’intégrer la fin de ce modèle. L’instrument juridique n’est pas seulement construit par des instances dominées par le politique, il est aussi l’expression de choix sociétaux et citoyens, et doit être utilisé pour répondre aux défis de l’anthropocène. Afin de mettre en évidence les potentialités, il faut oser questionner certains postulats et s’engager dans une réflexion prospective, nourrie des apports d’autres disciplines et cultures juridiques. ",
-    "Popup.zone1.description12.important": "Regardez les cours publics de Isabelle Michallet",
-    "Popup.zone1.description12.link": "https://ecoleurbainedelyon.universite-lyon.fr/cours-public-2021-faire-face-a-l-anthropocene-les-voies-du-droit-par-isabelle-michallet-212620.kjsp",
 
     "Popup.zone1.description14": "Trottinettes électriques<br /><br /> « Les trottinettes électriques, bonnes ou mauvaises pour le climat ? : pour faire des trottinettes électriques un mode de déplacement plus durable : améliorer leur conception et leur longévité, réduire les émissions liées à la gestion de flotte, favoriser les reports modaux depuis les modes plus émissifs » ",
     "Popup.zone1.description14.important": "Lire l'article de The Conversation",
@@ -277,7 +269,7 @@
     "Coulisses.citation.2": "Altitude la plus élevée : 3200m | Température la plus élevée : 34°C",
 
     "Coulisses.remerciement.title": "Merci",
-    "Coulisses.remerciement.text.1": "À toute l'équipe de l'École Urbaine de Lyon pour leur confiance et leur aide",
+    "Coulisses.remerciement.text.1": "À toute l'équipe de l'École Urbaine de Lyon pour sa confiance et son aide",
     "Coulisses.remerciement.text.2": "Au duo de réalisateur The D's pour avoir enfilé le costume et réalisé le documentaire",
     "Coulisses.remerciement.text.3": "Au développeur Web Tristan Beaurin pour ce site internet",
     "Coulisses.remerciement.text.4": "Au labo photo Gris Souris pour le développement des pellicules",
