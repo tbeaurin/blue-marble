@@ -240,6 +240,10 @@
     "Popup.zone1.description39.important": "Regarder les séances \"Histoire des représentations des espaces-mondes urbains. Formes contemporain d'appareil de capture\" de Kader Mokaddem",
     "Popup.zone1.description39.link": "https://ecoleurbainedelyon.universite-lyon.fr/cours-public-2022-histoire-des-representations-des-espaces-mondes-urbains-formes-contemporaines-d-appareil-de-capture-imaginaire-contemporain-et-recit--256493.kjsp?RH=1510909846029",
    
+    "Popup.zone1.description41": "Chronique Géovirale <br /><br /> Dans cette série de chroniques vidéos mises en ligne entre le 21 mars et le 11 mai 2020, Michel Lussault, directeur de l’École urbaine de Lyon, propose une analyse de la situation liée à la pandémie de COVID-19 en suggérant d’en faire un événement anthropocène total. ",
+    "Popup.zone1.description41.important": "Regarder les séances \"Chronique Géovirale\" de Michel Lussault - Directeur de l'Ecole Urbaine de Lyon",
+    "Popup.zone1.description41.link": "https://medium.com/anthropocene2050/chroniques-g%C3%A9o-virales-e144c57db628",
+   
     "Popup.zone1.description45": "Clôtures <br /><br /> Un tour dans l’enclos pour comprendre les enjeux des clôtures : ces infrastructures terriblement anthropocènes qui garantissent des relations de bon voisinage entre les humains et la faune sauvage, les prédateurs et le bétail ou encore les herbivores et les cultures. Les clôtures matérialisent la question du partage de l’espace, de la cohabitation, entre les espèces mais aussi entre humains lorsqu’elles se font frontières. ",
     "Popup.zone1.description45.important": "Lire ou écouter la chronique \"Clôtures\" de Bérénice Gagne",
     "Popup.zone1.description45.link": "https://medium.com/anthropocene2050/cl%C3%B4tures-5351aad1f05b",
@@ -248,7 +252,11 @@
     "Popup.zone1.description46.important": "Regarder le cours public \"Quelle place pour la biodiversité dans l'anthropocène ?\" de Bernard Kaufmann ",
     "Popup.zone1.description46.link": "https://ecoleanthropocene.universite-lyon.fr/quelle-place-pour-la-biodiversite-dans-l-anthropocene--247583.kjsp?RH=1633680335198",
    
-    "Popup.zone2.description12": "Désastres et catastrophes<br /><br /> La modernité industrielle a de facto conduit l’humanité à se confronter à de nouveaux risques. À cela s’accompagnent des modifications profondes dans les rapports que les sociétés occidentales entretiennent avec le domaine des désastres et des catastrophes. Le divorce entre humanité et nature est un passage fondamental pour comprendre le monde dans lequel nous vivons.",
+    "Popup.zone1.description48": "Réensauvagement <br /><br /> e sauvage, le wild, vous connaissez ! Mais connaissez-vous le réensauvagement, le rewilding ? Ce mouvement qui consiste à recréer des espaces sauvages pour lutter contre l’effondrement de la biodiversité. Et savez-vous que cette entreprise louable bannit toute activité humaine des territoires réensauvagés, à l’exception de l’écotourisme ? Hors d’Europe, il peut même conduire à expulser de leurs terres les communautés qui y vivent. Sommes-nous condamné·es à un tel divorce entre l’humain et le sauvage ou allons-nous réapprendre à cohabiter ?",
+    "Popup.zone1.description48.important": "Lire ou écouter la chronique \"Réensauvagement ?\" de Bérénice Gagne ",
+    "Popup.zone1.description48.link": "https://medium.com/anthropocene2050/r%C3%A9ensauvagement-a1934eae1411",
+  
+       "Popup.zone2.description12": "Désastres et catastrophes<br /><br /> La modernité industrielle a de facto conduit l’humanité à se confronter à de nouveaux risques. À cela s’accompagnent des modifications profondes dans les rapports que les sociétés occidentales entretiennent avec le domaine des désastres et des catastrophes. Le divorce entre humanité et nature est un passage fondamental pour comprendre le monde dans lequel nous vivons.",
     "Popup.zone2.description12.important": "Ecouter les séances de cours public \"Anthropocène âge du désastre ? Petite histoire des catastrophes technologiques et industrielles\" de Alfonso Pinto",
     "Popup.zone2.description12.link": "https://ecoleanthropocene.universite-lyon.fr/anthropocene-age-du-desastre-petite-histoire-des-catastrophes-technologiques-et-industrielles-249651.kjsp?RH=1633680335198",
    
@@ -276,6 +284,10 @@
     "Popup.zone3.description15.important": "Regarder les séances du cours public \" Ruptures à l'ère de l'anthropocène : la personnification de la nature\" de Philippe Billet",
     "Popup.zone3.description15.link": "https://ecoleanthropocene.universite-lyon.fr/ruptures-a-l-ere-de-l-anthropocene-la-personnification-de-la-nature-249657.kjsp?RH=1633680335198",
      
+    "Popup.zone3.description22": "Compensation<br /><br /> \"De quoi la compensation écologique est-elle le nom ? Reforestation, conservation d’espaces sauvages, production d’énergies décarbonées : que révèle la compensation carbone de nos modes de vie et de notre mal-être ?\"",
+    "Popup.zone3.description22.important": "Lire ou écouter la chronique \" Compensation\" de Bérénice Gagne",
+    "Popup.zone3.description22.link": "https://medium.com/anthropocene2050/compensation-b89b86b5726c",
+     
     "Popup.zone3.description23": "L'eau<br /><br /> \"L’actualité de l’eau sous toutes les coutures : un aperçu des enjeux aux multiples facettes que représente l’eau, cet élément essentiel à l’habitabilité de la Terre telle que nous la connaissons. En ville ou dans les champs, propre ou polluée, insuffisante ou débordante, dotée d’une personnalité juridique ou enfouie sous le béton, source de vie ou porteuse de dangereux pathogènes, bien commun ou source de profit, l’eau c’est la vie!\"",
     "Popup.zone3.description23.important": "Lire la veille thématique sur l'Eau de Bérénice Gagne",
     "Popup.zone3.description23.link": "https://medium.com/anthropocene2050/veille-thematique-sur-leau-2f3c604fb7bb",
@@ -300,6 +312,10 @@
     "Popup.zone4.description5.important": "Regarder les séances du cours public \" Esthétiques du Care pour l'Anthropocène\" de María Grace Salamanca ",
     "Popup.zone4.description5.link": "https://ecoleanthropocene.universite-lyon.fr/esthetiques-du-care-pour-l-anthropocene-247546.kjsp?RH=1633680335198",
  
+    "Popup.zone4.description24": "Boire ou conduire<br /><br /> \" L’eau, élément essentiel à la vie, qui vient à manquer pour près de la moitié de la population mondiale, est mise en concurrence avec notre avidité pour le pétrole.\"",
+    "Popup.zone4.description24.important": "Lire ou écouter la chronique  \" Boire ou conduire\" de Bérénice Gagne ",
+    "Popup.zone4.description24.link": "https://medium.com/anthropocene2050/boire-ou-conduire-f7ea6ea455c2",
+ 
     "Popup.zone4.description25": "Information<br /><br /> \" Le paradoxe de la contemporanéité de la maîtrise de l'information et de la perte de contrôle sur le réel, notre environnement, n'est probablement qu'apparent. Ce sont les deux faces d'un même phénomène. Les technologies de l'information ont évolué, au cours de l'histoire, avec la croissance de la complexité des sociétés. La révolution industrielle a fait émerger des processus et des systèmes complexes, comme un réseau ferroviaire par exemple, qui n'ont pu être maîtrisés que grâce au développement concomitant de technologies de l'information comme le télégraphe. L'évolution du climat contraint l'humanité à s'adapter, en contrôlant ses interactions avec l'écosystème de la planète, ce qui induit une croissance majeure de la complexité.\"",
     "Popup.zone4.description25.important": "Regarder les 6 séances du cours public \" Maîtrise de l'Information et Vicissitudes du Tangible \" de Stéphane Grumbach",
     "Popup.zone4.description25.link": "https://ecoleurbainedelyon.universite-lyon.fr/cours-public-2021-maitrise-de-l-information-et-vicissitudes-du-tangible-par-stephane-grumbach--212649.kjsp?RH=1513167387572",
@@ -311,16 +327,43 @@
     "Popup.zone4.description35": "Planétologie<br /><br /> \" Surtout depuis la « Grande Accélération » du milieu du XXe siècle, les activités humaines engendrent des impacts comparables ou supérieurs aux phénomènes naturels, interrogeant le statut de l'Humanité comme force géologique. C'est un paradoxe car, par delà leur difficile appréhension par un sujet humain, ces phénomènes ont connu, sur les 4,5 milliards d'années d'histoire de la Terre, des variations de nature, d'amplitude et de vitesse engendrant des modifications de l'environnement terrestre jamais connues par l'humanité. Bien avant l'évolution de l'espèce humaine, la vie, dès les premières cellules apparues dans les océans et bien plus tard avec la conquête des terres émergées, en a été un acteur majeur. Nous commencerons ainsi par voir comment le temps long géologique éclaire en partie les impacts passés et à venir de l'humanité sur la planète.\"",
     "Popup.zone4.description35.important": "Regarder les séances du cours public \" Anthropocène et habitabilité à travers le prisme de la planétologie. Dans le temps et l'espace, une terre inhabitable, un ailleurs qui el serait ?\" de Patrick Thollot",
     "Popup.zone4.description35.link": "https://ecoleurbainedelyon.universite-lyon.fr/cours-public-2022-anthropocene-et-habitabilite-a-travers-le-prisme-de-la-planetologie-dans-le-temps-et-l-espace-une-terre-inhabitable-un-ailleurs-qui-le-serait--256459.kjsp?RH=ecoleurbainedelyon",
- 
+  
+    "Popup.zone5.description12": " 3ème Guerre mondial et Changement climatique<br /><br /> \"Les experts ont un bilan négatif pour prédire le futur. Et ce même lorsqu’il s’agit de penseurs bien informés des tendances de leur époque et de connaisseurs des meilleures théories du changement social et politique. Je vais m’intéresser particulièrement à C. Wright Mills, qui a écrit The Causes of World War Three [Les causes de la troisième guerre mondiale] en 1960.\"",
+    "Popup.zone5.description12.important": "Lire l'article \" Prédire la Troisième Guerre Mondiale, Prédire le changement climatique. \"  de Randall Collins (Professeur émérite de sociologie à University of Pensylvania, @sociologicaleye)",
+    "Popup.zone5.description12.link": "https://medium.com/anthropocene2050/pre%CC%81dire-la-troisie%CC%80me-guerre-mondiale-pre%CC%81dire-le-changement-climatique-4940a65bcedc",
+  
     "Popup.zone5.description18": " L’élan urbain chinois<br /><br /> \"L’augmentation des espaces urbains chinois participe activement à l’anthropocène et joue un rôle indéniable dans la grande accélération. Le développement de la Chine est indissociable de son processus d’urbanisation qui a vécu un élan considérable depuis les années 80. L’explosion démographique s’adosse à l’expansion des mégapoles (tedachengshi 特大城市) et des villes (chengshi 城市). Les villes nouvelles se multiplient. Les infrastructures de transports ne cessent de croître. Les constructions et les destructions sont d’une intensité historique. Si bien que l’effet des activités humaines est particulièrement visible dans ces villes qui ont changé plus vite que leurs occupants.\"",
     "Popup.zone5.description18.important": "Regarder les 5 séances du cours public \" L’élan urbain chinois et l’Anthropocène \" de Jérémy Cheval",
     "Popup.zone5.description18.link": "https://ecoleurbainedelyon.universite-lyon.fr/cours-public-2021-l-elan-urbain-chinois-et-l-anthropocene-par-jeremy-cheval-212680.kjsp?RH=1513167387572",
+  
+    "Popup.zone5.description19": "Effondrement<br /><br /> \"L’effondrement, la collapsologie : des notions qui connaissent une carrière fulgurante ces dernières années. De quoi parle-t-on au juste ? L’effondrement de quel monde ou de quel mode de vie ? Si « le pire n’est pas certain », il a pourtant déjà été vécu par certain·es : dans la cale d’un bateau d’esclavagistes ou dans un wagon en direction d’un camp de la mort par exemple. Et si on prêtait attention à celles et ceux qui ont déjà vu leur monde s’effondrer et qui y ont survécu ?\"",
+    "Popup.zone5.description19.important": "Lire ou écouter la chronique  \" Effondrement \" de Bérénice Gagne",
+    "Popup.zone5.description19.link": "https://medium.com/anthropocene2050/effondrement-1643a7dbaf87",
   
     "Popup.zone5.description33": " Prospective terroriale #2<br /><br /> \"Notre point de départ : l’expérience prospective, en situation, dans les territoires. Notre posture : quitter le chemin balisé de la prospective territoriale et de son discours, de ses stries, pour l’aborder comme un espace lisse où nous tenterons de distinguer ce qui relève du rythme, de la ligne, de l’agencement, de la machine. Par rythme, on entendra en première intention la relation à l’ordre et à l’incertitude ; par ligne, la méthode au sens étymologique de trajectoire suivie ; par agencement, les entités et leur mobilisation ; par machine, ce qui relève de la production réalisée.\"",
     "Popup.zone5.description33.important": "Regarder les 5 séances du cours public \" Quelle prospective pour édifier les territoires du monde urbain anthropocène ?  \" de Stéphane Cordobès",
     "Popup.zone5.description33.link": "https://ecoleurbainedelyon.universite-lyon.fr/cours-public-2021-quelle-prospective-pour-edifier-les-territoires-du-monde-urbain-anthropocene-par-stephane-cordobes--212641.kjsp?RH=1513167387572",
   
-
+    "Popup.zone5.description35": " Hyperobjets<br /><br /> \"Ce concept a vite été considéré comme intéressant pour aborder les questions anthropocènes qui renvoient de facto à des phénomènes qui ne sont pas aisément saisissables avec les grilles analytiques et les schémas explicatifs classiques. Morton postule d’ailleurs le caractère décisif de la reconnaissance de l’existence de l’anthropocène et du changement consécutif de la position de l’être humain qui n’est plus face à un monde et une nature dont il serait maître et possesseur grâce à des capacités d’objectivation (de construction d’objets isolables). Il est désormais immergé dans un bain relationnel avec des réalités qui ne sont pas arraisonnables.\"",
+    "Popup.zone5.description35.important": "Lire l'analyse critique de Michel Lussault sur la proposition théorique faite par le philosophe Timothy Morton",
+    "Popup.zone5.description35.link": "https://medium.com/anthropocene2050/a-propos-des-hyperobjets-de-timothy-morton-311cecec8386",
+  
+    "Popup.studio.description11": " Terre de chantier en ville<br /><br /> \"Les villes laisseront un témoignage géologique de leur impact qui persistera pendant des millions d’années\"",
+    "Popup.studio.description11.important": "Lire l'interview de Mark Williams, Professeur de Paléobiologie à l’Université de Leceister",
+    "Popup.studio.description11.link": "https://medium.com/anthropocene2050/mark-williams-les-villes-laisseront-un-t%C3%A9moignage-g%C3%A9ologique-de-leur-impact-pendant-des-734d7e4c95ef",
+  
+    "Popup.studio.description18": " Téléphone portable<br /><br /> \"La crise sanitaire, parce que l’information joue un rôle si important pour la protection des personnes et de la société, pose de manière pressante la question du rôle du numérique. La diversité des approches montre que différents choix sont a priori possibles. Une analyse plus précise met néanmoins en évidence que les solutions numériques pour la pandémie actuelle s’inscrivent dans la stratégie numérique des nations.\"",
+    "Popup.studio.description18.important": "Lire l'article \" Le numérique face à la pandémie. Diversité des approches dans le monde  \" de Stéphane Grumbach et Caroline Zanin",
+    "Popup.studio.description18.link": "https://medium.com/anthropocene2050/le-num%C3%A9rique-face-%C3%A0-la-pand%C3%A9mie-diversit%C3%A9-des-approches-dans-le-monde-3e88944eb36b",
+  
+    "Popup.studio.description23": "Ordinateur <br /><br /> \"Quel est notre niveau de dépendance aux technologies ? Les technologies numériques, technologies des « macro systèmes techniques » (énergie, transport ferré, routier, logement…) évoluent-elles dans les mêmes proportions ? Face aux défis actuels, les attitudes de gestion et de transformation sont-elles à valoriser ?\"",
+    "Popup.studio.description23.important": "Ecouter le podcast \" LES MERCREDIS DE L'ANTHROPOCÈNE : ANTHROPOCÈNE ET TECHNOLOGIE(S) \" avec Alexandre Monnin et Ernesto Oroza",
+    "Popup.studio.description23.link": "https://www.sondekla.com/user/event/10653",
+  
+    "Popup.studio.description26": " QR Code<br /><br /> \"Évanescente et pourtant omniprésente, l’intelligence artificielle s’immisce dans les espaces urbains, promettant des villes écologiques où la sécurité rivalise avec le bien-être, mais aussi dans les processus politiques, dans les vies professionnelles et jusque dans nos vies personnelles\"",
+    "Popup.studio.description26.important": "Lire ou écouter la chronique  \" Algorithmes  \" de Bérénice gagne",
+    "Popup.studio.description26.link": "https://medium.com/anthropocene2050/algorithmes-7a60a0c67aea",
+  
     "Inventaire.citation.1": "\"- Le Monde dans lequel nous évoluions était à nos pieds.",
     "Inventaire.citation.2": "- Il suffisait de se baisser et de ramasser\"",
     "Inventaire.citation.author.1": "Major A et Major Q",
