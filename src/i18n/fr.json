@@ -178,7 +178,7 @@
     
     "Popup.zone1.description11": "Contrôle numérique<br /><br /> \"Les données et le CO2 sont en passe de devenir des enjeux essentiels des tensions entre des nations, dont la souveraineté est remise en cause. Les recommandations faites par le GIEC, à la demande de la COP21, pour maintenir l’augmentation des températures sous les 2C, montre l’ampleur de la transformation majeure et sans précédent qui s’annonce. Il s’agit d’une révolution anthropologique, remettant en cause dans un même mouvement la distinction entre nature et culture, et les relations entre humains et machines, naturel et artificiel.\"",
     "Popup.zone1.description11.important": "Ecouter les 6 séances du cours public \"Anthropocène, ère du contrôle numérique\" de  Stéphane Grumbach",
-    "Popup.zone1.description11.link": "http://www.atvisible.com/QuiSontLesSmartCitizens/",
+    "Popup.zone1.description11.link": "https://ecoleurbainedelyon.universite-lyon.fr/site-francais/podcasts-du-cours-public-anthropocene-ere-du-controle-numerique--136780.kjsp",
 
     "Popup.zone1.description12": "Les voies du droit<br /><br /> L’instrument juridique n’est pas seulement construit par des instances dominées par le politique, il est aussi l’expression de choix sociétaux et citoyens et doit être utilisé pour répondre aux défis de l’anthropocène. Afin de mettre en évidence les potentialités, il faut oser questionner certains postulats et s’engager dans une réflexion prospective, nourrie des apports d’autres disciplines et cultures juridiques. ",
     "Popup.zone1.description12.important": "Regarder les 6 séances du cours public \"Faire face à l’anthropocène : les voies du droit\" de Isabelle Michallet",
@@ -188,17 +188,9 @@
     "Popup.zone1.description14.important": "Ecouter le podcast \"MOBILE À L’HEURE DE L’ANTHROPOCÈNE\" avec Mireille Apel-Muller, Clément Dillenseger et Sebastien Roques",
     "Popup.zone1.description14.link": "https://www.sondekla.com/user/event/9802",
   
-    "Popup.zone1.description15": "Urines et engrais<br /><br /> La production mondiale d’engrais utilise des énergies fossiles (2% de l’énergie mondiale) et recourt à l’exploitation de ressources limitées, comme la roche de phosphate. Des chercheurs et chercheuses ont trouvé un procédé permettant de déshydrater l’urine humaine pour ne récupérer que l’azote et le phosphore à la base de la fabrication d’engrais ",
-    "Popup.zone1.description15.important": "Lire l'article en anglais de The Conversation",
-    "Popup.zone1.description15.link": "https://theconversation.com/we-found-a-way-to-turn-urine-into-solid-fertiliser-it-could-make-farming-more-sustainable-148877?utm_medium=email&utm_campaign=Latest%20from%20The%20Conversation%20for%20November%209%202020%20-%201781017280&utm_content=Latest%20from%20The%20Conversation%20for%20November%209%202020%20-%201781017280+CID_9851284e1e9d7b403e1427ab1cb57a98&utm_source=campaign_monitor_africa&utm_term=We%20found%20a%20way%20to%20turn%20urine%20into%20solid%20fertiliser%20%20it%20could%20make%20farming%20more%20sustainable",
-
     "Popup.zone1.description17": "Sols urbains<br /><br /> Artificialisation, imperméabilisation, pollution : les sols urbains, invisibilisés sous des couches de bitume et de béton, sont maltraités alors qu’ils « accueillent une forte biodiversité, produisent de la biomasse végétale (alimentaire ou non) et participent à la régulation du climat, des déchets, de l’eau ou encore des pollutions ». Le mépris dans lequel sont tenus les sols urbains s’étend également à la science : « 1 % seulement des études scientifiques sur les sols concernent les secteurs urbains ». Partons donc explorer les sols et sous-sols de nos villes, et apprenons à mieux les connaître pour faire face aux changements globaux.",
     "Popup.zone1.description17.important": "Lire la veille thématique de Bérénice Gagne - Ecole Urbaine de Lyon",
     "Popup.zone1.description17.link": "https://medium.com/anthropocene2050/veille-thematique-sur-les-sols-urbains-58be490843db",
-
-    "Popup.zone1.description18": "Les chants des oiseaux<br /><br /> Anthropause : à San Francisco pendant le confinement, la baisse du volume sonore des chants d’oiseaux et l’augmentation de leur qualité montrent l’ampleur des effets de la pollution sonore due aux activités humaines",
-    "Popup.zone1.description18.important": "Lire l'article en anglais du National Geographic",
-    "Popup.zone1.description18.link": "https://www.nationalgeographic.com/animals/article/pandemic-san-francisco-birds-song-improved?utm_source=Nature+Briefing&utm_campaign=08df647e03-briefing-dy-20200925&utm_medium=email&utm_term=0_c9dfd39373-08df647e03-44373629",
 
     "Popup.zone1.description19": "Générations<br /><br /> Ok Boomer, une expression comme un coup de poing pour mettre KO le monde bâti pendant les Trente Glorieuses. Que disent les conflits entre générations de notre monde et quelle nouvelle solidarité intergénérationnelle et au-delà voulons-nous construire ?",
     "Popup.zone1.description19.important": "Lire ou écouter la chronique de Bérénice Gagne - Ecole Urbaine de Lyon",
@@ -228,9 +220,9 @@
     "Popup.zone1.description32.important": "Ecouter les 6 séances du cours public \"La résilience du vivant, ou comment construire sur ses faiblesses pour co-exister dans l’Anthropocène \" de Olivier Hamant",
     "Popup.zone1.description32.link": "https://medium.com/anthropocene2050/ordures-44d829130241",
 
-    "Popup.zone1.description33": "Migration climatique<br /><br /> \"Si on ne se tracasse que des gens qui vivent à l’intérieur de nos frontières nationales, on ne pourra jamais agir efficacement contre le changement climatique. Parce que l’action contre le changement climatique requiert une forme d’altruisme, requiert que nous considérions l’autre, celui qui se trouve au-delà de nos frontières, comme une partie de nous-mêmes\"",
-    "Popup.zone1.description33.important": "Lire l'entrevue avec François Gemenne de Radio Canada",
-    "Popup.zone1.description33.link": "https://ici.radio-canada.ca/recit-numerique/3137/cop26-climat-migration?s=09",
+    "Popup.zone1.description33": "Hospitalité<br /><br /> \"Comment la ville reçoit-elle les nouveaux habitants et les passants, les expulsés et les réfugiés, les touristes de toutes classes, les solitaires et les groupes, les jeunes et les vieux ? Des gestes aux espaces, quelles sont les formes et les pratiques de l'hospitalité ?\"",
+    "Popup.zone1.description33.important": "Ecouter le podcast \"La ville, territoire d'hospitalité ?\" avec Chantal Deckmyn, Sébastien Thiéry et Valérie Disdier ",
+    "Popup.zone1.description33.link": "https://www.sondekla.com/user/event/11852",
 
     "Popup.zone1.description34": "Végétalisation<br /><br /> Verdissement des espaces urbains, extension des parcs, forêts urbaines, potagers et toitures végétalisées : qu’est-ce que la nature en ville et pour qui ? Comment aller au-delà d’une nature de façade ?",
     "Popup.zone1.description34.important": "Lire ou écouter la chronique \"Végétalisation\" de Bérénice Gagne",
@@ -240,9 +232,17 @@
     "Popup.zone1.description39.important": "Ecouter le podcast \"L'espace au cinéma\" avec Alfonso Pinto, André Gardies, Bertrand Pleven",
     "Popup.zone1.description39.link": "https://www.sondekla.com/user/event/10083",
    
+    "Popup.zone1.description40": "Ville et sport <br /><br /> La culture sportive est une combinaison de pratiques, de comportements, de systèmes de valeurs et de rapport au corps. Et il existe autant de cultures sportives que de sports. Les villes se sont emparées du sport : organisation d’évènements sportifs, dispositifs d’insertion et d’intégration par le sport, soutien aux clubs, grands stades, prise en compte des logiques sportives dans les projets de rénovation urbaine… Comment intègrent-elles la diversité des cultures sportives ? ",
+    "Popup.zone1.description40.important": "Ecouter le podcast \"Questionner les liens entre ville et sport \" avec Antoine Haincourt, Jean-Michel Roux et Jérémy Cheval",
+    "Popup.zone1.description40.link": "https://www.sondekla.com/user/event/11944",
+       
     "Popup.zone1.description41": "Chronique Géovirale <br /><br /> Dans cette série de chroniques vidéos mises en ligne entre le 21 mars et le 11 mai 2020, Michel Lussault, directeur de l’École urbaine de Lyon, propose une analyse de la situation liée à la pandémie de COVID-19 en suggérant d’en faire un événement anthropocène total. ",
     "Popup.zone1.description41.important": "Regarder les séances \"Chronique Géovirale\" de Michel Lussault - Directeur de l'Ecole Urbaine de Lyon",
     "Popup.zone1.description41.link": "https://medium.com/anthropocene2050/chroniques-g%C3%A9o-virales-e144c57db628",
+   
+    "Popup.zone1.description43": "Infrastructures numériques <br /><br /> La ville intelligente repose sur des infrastructures numériques importantes, et notamment sur le développement des data centers. Comment se déploient ces infrastructures sur le territoire ? Quels enjeux sont soulevés par leur intégration spatiale? Contraintes ou opportunités pour une fabrique écologique de la ville ? Les acteurs du numériques sont-ils les nouveaux protoganistes du projet urbain ?",
+    "Popup.zone1.description43.important": "Ecouter le podcast \"Matérialité de la ville intelligente - Intégration spatiale des infrastructures numériques\" avec Jean-Vincent BAYARRI, Cécile DIGUET et Lou HERRMANN",
+    "Popup.zone1.description43.link": "https://medium.com/anthropocene2050/chroniques-g%C3%A9o-virales-e144c57db628",
    
     "Popup.zone1.description45": "Clôtures <br /><br /> Un tour dans l’enclos pour comprendre les enjeux des clôtures : ces infrastructures terriblement anthropocènes qui garantissent des relations de bon voisinage entre les humains et la faune sauvage, les prédateurs et le bétail ou encore les herbivores et les cultures. Les clôtures matérialisent la question du partage de l’espace, de la cohabitation, entre les espèces mais aussi entre humains lorsqu’elles se font frontières. ",
     "Popup.zone1.description45.important": "Lire ou écouter la chronique \"Clôtures\" de Bérénice Gagne",
@@ -256,9 +256,33 @@
     "Popup.zone1.description48.important": "Lire ou écouter la chronique \"Réensauvagement ?\" de Bérénice Gagne ",
     "Popup.zone1.description48.link": "https://medium.com/anthropocene2050/r%C3%A9ensauvagement-a1934eae1411",
   
+    "Popup.zone1.description50": " Une terre habitable<br /><br />",
+    "Popup.zone1.description50.important": "Regarder la table ronde \" Qu'est-ce qu'une terre habitable ? \" avec Michel Lussault, Muriel Gandelin, Isabelle Daniel et Axelle Grégoire ",
+    "Popup.zone1.description50.link": "https://ecoleurbainedelyon.universite-lyon.fr/cours-public-2021-l-elan-urbain-chinois-et-l-anthropocene-par-jeremy-cheval-212680.kjsp?RH=1513167387572",
+  
     "Popup.zone2.description12": "Désastres et catastrophes<br /><br /> La modernité industrielle a de facto conduit l’humanité à se confronter à de nouveaux risques. À cela s’accompagnent des modifications profondes dans les rapports que les sociétés occidentales entretiennent avec le domaine des désastres et des catastrophes. Le divorce entre humanité et nature est un passage fondamental pour comprendre le monde dans lequel nous vivons.",
     "Popup.zone2.description12.important": "Ecouter les séances de cours public \"Anthropocène âge du désastre ? Petite histoire des catastrophes technologiques et industrielles\" de Alfonso Pinto",
     "Popup.zone2.description12.link": "https://ecoleanthropocene.universite-lyon.fr/anthropocene-age-du-desastre-petite-histoire-des-catastrophes-technologiques-et-industrielles-249651.kjsp?RH=1633680335198",
+   
+    "Popup.zone2.description13": "Santé<br /><br /> La pandémie liée au coronavirus SARS-COV-2 soulève de nombreuses questions tant sur son passage de la faune sauvage à l’humain, sa dissémination à l’échelle planétaire que sur ses impacts sanitaires, économiques, politiques et sociaux. A travers les témoignages croisés d’un·e médecin réanimateur, d’un·e vétérinaire et d’un·e épidémiologiste en 1ère ligne de la gestion de cette crise sanitaire et les éclairages d’un·e épidémiologiste spécialiste de la faune sauvage, d’un modélisateur ou une modélisatrice de l’écologie des maladies infectieuses et zoonotiques et d’un·e spécialiste de l'histoire et de la sociologie des politiques de santé, cet atelier donnera à voir combien la pandémie Covid-19 est une zoonose anthropocène nécessitant une approche globale de la santé.",
+    "Popup.zone2.description13.important": "Ecouter le podcast \"Pour une approche globale de la santé à l’ère de l’Anthropocène : retour d’expériences de la crise sanitaire Covid-19\" enregistré lors d'un atelier proposé par VetAgro Sup",
+    "Popup.zone2.description13.link": "https://www.sondekla.com/user/event/11061",
+   
+    "Popup.zone2.description18": "Valeur des territoires<br /><br /> Depuis le 24 avril 2019 l’administration fiscale met à disposition les données dont elle dispose sur les transactions foncières et immobilières réalisées en France (fichier « DVF »). Cette entrée dans l’Open Data vient bousculer le secteur de l’information immobilière basé jusqu’alors sur des données payantes ou réservées à certains acteurs seulement. La justification gouvernementale de cette ouverture est d’apporter de la transparence sur des marchés structurants pour les territoires et les ménages. A demi-mot, les acteurs politiques s’alignent ici sur une idée forte de la théorie économique standard consistant à penser que plus d’informations apporte plus de transparence et produit à terme un effet vertueux sur les prix. Une telle séquence logique se retrouve-t-elle dans les faits un an et demi après l’arrivée de l’Open Data ?",
+    "Popup.zone2.description18.important": "Ecouter le podcast \"Permanence ou ouverture des données de la valeur des territoires ?\" avec Alexandre Coulondre, Bernard Vorms et Fabrice Bardet",
+    "Popup.zone2.description18.link": "https://www.sondekla.com/user/event/11066",
+   
+    "Popup.zone2.description30": "Déchets<br /><br />Nous vivons sur un monde de déchets. Nos activités produisent sans cesse des quantités considérables de déchets de tout type, visibles et invisibles, organiques ou inertes. Ils font partie de nos habitats et nous ne pouvons plus fuir la réalité de leur prolifération. La question des déchets est sans doute une des plus importantes de toutes celles que nous pose l’entrée dans l’anthropocène. Comment réduire leur croissance, alors que la population croît toujours, comment traiter ceux qui sont déposés ou en suspension dans les eaux, peut-on en faire des ressources véritables, peut-on arrêter de créer des inégalités par la gestion par les pays riches de leurs déchets via l’exportation dans des zones plus pauvres ? Observer la vie et la circulation des déchets c’est donc observer l’habitation humaine de la planète.",
+    "Popup.zone2.description30.important": "Ecouter la table ronde \"Regards sur nos déchets\" avec Sylvain Bourmeau, Jorge Caterbetti, Jérémy Cheval, Myra Hird, et Baptiste Monsaingeon",
+    "Popup.zone2.description30.link": "https://www.sondekla.com/user/event/10432",
+   
+    "Popup.zone2.description37": "Interroger le territoire<br /><br />Partout sur la planète, à quelques rares exceptions, les espaces et les paysages sont anthropisés, transformés, dessinés par les actions humaines. Interroger le territoire en regardant toutes ses composantes, en intégrant toutes ses traces, en assumant ses potentiels et ses risques, ses interrelations avec tous les vivants, convoque-t-il de nouveaux outils exploratoires, d’enquête, de nouvelles compétences ? ",
+    "Popup.zone2.description37.important": "Ecouter le podcast \"Interroger le territoire pour le projeter\" avec Bertrand Vignal, Alexis Stremsdoerfer et Lou Herrmann",
+    "Popup.zone2.description37.link": "https://www.sondekla.com/user/event/12528",
+   
+    "Popup.zone2.description42": "Post-capitalisme<br /><br />  L’entrée dans l’Anthropocène met en évidence les limites des modèles économiques qui ont ces dernières décennies justifié et accompagné le développement des systèmes productifs mondialisés, la croissance des échanges financiers et l’exploitation systématique et intensive des ressources naturelles. Pour certains, il importe de sortir du capitalisme, pour d’autres il s’agirait plutôt d’inventer ses nouvelles formes, conciliables avec les exigences environnementales.",
+    "Popup.zone2.description42.important": "Ecouter le podcast \"Faut-il attendre un post-capitalisme réparateur ?\" avec Mathieu Couttenier, Isabelle Delannoy, Denis Lafay et Pierre Veltz",
+    "Popup.zone2.description42.link": "https://www.sondekla.com/user/event/10430",
    
     "Popup.zone2.description45": "Poésie<br /><br /> La poésie, qu'elle soit archaïque ou contemporaine, qu’on le veuille ou non, établit une relation plus ou moins forte avec l’écologie et la Nature (Phusis). Mais quelles sont les inter-relations entre poésie et écologie? Comment faire entre l’urgence de l’action et la lenteur du poème? Quel rôle, le poète, peut-il jouer dans l’anthropocène? En quoi un poème est-il une action? ",
     "Popup.zone2.description45.important": "Ecouter le podcast \"LA POÉSIE COMME ACTION DE L'ÉCOLOGIE\" avec Jérémy Cheval, Jean-Claude Pinson et Pierre Vinclair",
@@ -289,7 +313,7 @@
     "Popup.zone3.description4.link": "https://www.sondekla.com/user/event/10092",
   
     "Popup.zone3.description6": "Contamination<br /><br />",
-    "Popup.zone3.description6.important": "Ecouter le podcast \"Vivre agvec le risque de la contamination \" avec Marie Augendre, Chiharu Chujo, Tetsuji Imanaka, Kurumi Sugita et Lucas Tiphine",
+    "Popup.zone3.description6.important": "Ecouter le podcast \"Vivre avec le risque de la contamination \" avec Marie Augendre, Chiharu Chujo, Tetsuji Imanaka, Kurumi Sugita et Lucas Tiphine",
     "Popup.zone3.description6.link": "https://www.sondekla.com/user/event/9799",
   
     "Popup.zone3.description7": "Campagne d'aujourd'hui<br /><br /> \"La campagne, la ruralité, le rural ont rarement été autant invoqués et discutés que ces deux dernières années. La crise des gilets jaunes a questionné la mobilité en milieu rural et la précarité, ainsi que le recul des services. Celle de la Covid en a fait un espace attractif où il fait bon vivre en temps de confinement. Deux images souvent opposées ont alors été évoquées : celle d’un espace marginalisé par la « métropolisation », voire d’un espace de relégation, et celle d’un espace attractif qu’illustre l’expression « désir de campagne » que l’on a souvent retrouvé sous la plume des journalistes au cours de ces derniers mois. Toutefois plusieurs indicateurs montrent que la « ruralité » change d’image et n’est plus cet espace dont il faut compenser les handicaps, mais un espace d’innovations où les alternatives prospèrent, un espace qui participe des transitions.\"",
@@ -340,6 +364,10 @@
     "Popup.zone4.description5.important": "Regarder les séances du cours public \" Esthétiques du Care pour l'Anthropocène\" de María Grace Salamanca ",
     "Popup.zone4.description5.link": "https://ecoleanthropocene.universite-lyon.fr/esthetiques-du-care-pour-l-anthropocene-247546.kjsp?RH=1633680335198",
    
+    "Popup.zone4.description10": "L'architecture des montagnes<br /><br /> \" Habiter en altitude, se fondre avec les sols, vivre en montagne, construire avec les éléments ? Que nous enseigne l’architecture des montagnes avec l’anthropocène ?\"",
+    "Popup.zone4.description10.important": "Ecouter le podcast \" L'architecture des montagnes\" avec Jérémy Cheval et Valérie Disdier ",
+    "Popup.zone4.description10.link": "https://www.sondekla.com/user/event/12544",
+   
     "Popup.zone4.description17": "Les milliardaires et l'espace<br /><br /> \" Depuis Blue Marble, l’image de notre planète Terre totalement éclairée prise en 1972, qui n’a pas rêvé d'aller dans l’espace pour faire cette expérience hors norme ? Depuis 2015, une loi autorise les citoyens américains à s'approprier des ressources sur les planètes et astéroïdes du système solaire, et l'espace regorge de métaux rares indispensables à notre société numérique.\"",
     "Popup.zone4.description17.important": "Ecouter le podcast \" Les milliardaires et l'espace : tourisme de golden boy ou prémisses du nouveau colonialisme ?\" avec Valérie Disdier, Gilles Rabin et Arnaud Saint-Martin ",
     "Popup.zone4.description17.link": "https://www.sondekla.com/user/event/12308",
@@ -372,10 +400,6 @@
     "Popup.zone5.description12.important": "Lire l'article \" Prédire la Troisième Guerre Mondiale, Prédire le changement climatique. \"  de Randall Collins (Professeur émérite de sociologie à University of Pensylvania, @sociologicaleye)",
     "Popup.zone5.description12.link": "https://medium.com/anthropocene2050/pre%CC%81dire-la-troisie%CC%80me-guerre-mondiale-pre%CC%81dire-le-changement-climatique-4940a65bcedc",
   
-    "Popup.zone5.description17": " Une terre habitable<br /><br />",
-    "Popup.zone5.description17.important": "Regarder la table ronde \" QU'EST-CE QU'UNE TERRE HABITABLE ? \" avec Michel Lussault, Muriel Gandelin, Isabelle Daniel et Axelle Grégoire ",
-    "Popup.zone5.description17.link": "https://ecoleurbainedelyon.universite-lyon.fr/cours-public-2021-l-elan-urbain-chinois-et-l-anthropocene-par-jeremy-cheval-212680.kjsp?RH=1513167387572",
-  
     "Popup.zone5.description18": " L’élan urbain chinois<br /><br /> \"L’augmentation des espaces urbains chinois participe activement à l’anthropocène et joue un rôle indéniable dans la grande accélération. Le développement de la Chine est indissociable de son processus d’urbanisation qui a vécu un élan considérable depuis les années 80. L’explosion démographique s’adosse à l’expansion des mégapoles (tedachengshi 特大城市) et des villes (chengshi 城市). Les villes nouvelles se multiplient. Les infrastructures de transports ne cessent de croître. Les constructions et les destructions sont d’une intensité historique. Si bien que l’effet des activités humaines est particulièrement visible dans ces villes qui ont changé plus vite que leurs occupants.\"",
     "Popup.zone5.description18.important": "Regarder les 5 séances du cours public \" L’élan urbain chinois et l’Anthropocène \" de Jérémy Cheval",
     "Popup.zone5.description18.link": "https://ecoleanthropocene.universite-lyon.fr/qu-est-ce-qu-une-terre-habitable--250044.kjsp?RH=1633681281396",
@@ -396,9 +420,17 @@
     "Popup.zone5.description35.important": "Lire l'analyse critique de Michel Lussault sur la proposition théorique faite par le philosophe Timothy Morton",
     "Popup.zone5.description35.link": "https://medium.com/anthropocene2050/a-propos-des-hyperobjets-de-timothy-morton-311cecec8386",
   
+    "Popup.studio.description10": "Sable<br /><br /> \"Chercheuse à Northumbria University, ancienne maîtresse de conférence en histoire et civilisation américaine à l’université Paris X – Nanterre. Elsa Devienne a été maîtresse de conférence en histoire et civilisation américaine à l’université Paris X – Nanterre. Actuellement, elle est chercheuse à Northumbria University (Newcastle). Spécialiste des villes et des questions environnementales aux Etats-Unis. Valérie Disdier la reçoit pour sa dernière parution : La ruée vers le sable : Une histoire environnementale du littoral de Los Angeles au XXe siècle Editions de la Sorbonne, 2020\"",
+    "Popup.studio.description10.important": "Ecouter le podcast \" La ruée vers le sable\" avec Elsa Devienne et Valérie Disdier",
+    "Popup.studio.description10.link": "https://www.sondekla.com/user/event/11931",
+  
     "Popup.studio.description11": " Terre de chantier en ville<br /><br /> \"Les villes laisseront un témoignage géologique de leur impact qui persistera pendant des millions d’années\"",
-    "Popup.studio.description11.important": "Lire l'interview de Mark Williams, Professeur de Paléobiologie à l’Université de Leceister",
+    "Popup.studio.description11.important": "Lire l'interview de Mark Williams par Lucas Tiphine",
     "Popup.studio.description11.link": "https://medium.com/anthropocene2050/mark-williams-les-villes-laisseront-un-t%C3%A9moignage-g%C3%A9ologique-de-leur-impact-pendant-des-734d7e4c95ef",
+  
+    "Popup.studio.description13": " Béton<br /><br /> \"Depuis son industrialisation au XIXe siècle, le béton s’est imposé comme le premier matériau au monde. Il reste un symbole de la course à la modernité, en Afrique de l’Ouest notamment, au détriment de l’environnement, explique la géographe Armelle Choplin dans ce nouvel épisode de « L’Abécédaire de la ville »\"",
+    "Popup.studio.description13.important": "Lire l'article de Armelle Choplin",
+    "Popup.studio.description13.link": "https://www.lemonde.fr/smart-cities/article/2021/01/14/dans-les-bidonvilles-le-parpaing-de-beton-lingot-du-pauvre-materialise-le-droit-a-la-ville_6066272_4811534.html",
   
     "Popup.studio.description18": " Téléphone portable<br /><br /> \"La crise sanitaire, parce que l’information joue un rôle si important pour la protection des personnes et de la société, pose de manière pressante la question du rôle du numérique. La diversité des approches montre que différents choix sont a priori possibles. Une analyse plus précise met néanmoins en évidence que les solutions numériques pour la pandémie actuelle s’inscrivent dans la stratégie numérique des nations.\"",
     "Popup.studio.description18.important": "Lire l'article \" Le numérique face à la pandémie. Diversité des approches dans le monde  \" de Stéphane Grumbach et Caroline Zanin",
@@ -411,6 +443,10 @@
     "Popup.studio.description26": " QR Code<br /><br /> \"Évanescente et pourtant omniprésente, l’intelligence artificielle s’immisce dans les espaces urbains, promettant des villes écologiques où la sécurité rivalise avec le bien-être, mais aussi dans les processus politiques, dans les vies professionnelles et jusque dans nos vies personnelles\"",
     "Popup.studio.description26.important": "Lire ou écouter la chronique  \" Algorithmes  \" de Bérénice gagne",
     "Popup.studio.description26.link": "https://medium.com/anthropocene2050/algorithmes-7a60a0c67aea",
+
+    "Popup.studio.description27": "Sucre<br /><br /> \"Les doctorants de l'École urbaine vous invitent dans leur cuisine pour réaliser des recettes à base de saveurs et de savoirs. Aujourd'hui découvrez l'histoire du sucre.\"",
+    "Popup.studio.description27.important": "Regarder l'émission \"L'Anthropocène dans ma cuisine\" avec Mélissa Manglou et Alexandra Pech",
+    "Popup.studio.description27.link": "https://www.youtube.com/watch?v=S9po2o6ghJ4&list=PL3q4hlXuGY4Tz-68xoIBPKeIfaPBQp4LU&index=5",
   
     "Inventaire.citation.1": "\"- Le Monde dans lequel nous évoluions était à nos pieds.",
     "Inventaire.citation.2": "- Il suffisait de se baisser et de ramasser\"",
