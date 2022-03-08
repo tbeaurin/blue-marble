@@ -16,6 +16,7 @@ const Zone = ({
   openModal,
   position,
   doubleLineTitle = false,
+  isInventary = false,
 }) => (
   <div className="page-content zone">
     <div>
@@ -58,6 +59,7 @@ const Zone = ({
           subtitle2={<Trans i18nKey={`${parent}.${id}.title`} />}
           position={position}
           handleOpenModal={() => { handleOpenModal(position, direction); }}
+          isInventary={isInventary}
         />
       </Popup>
     </div>

@@ -261,7 +261,6 @@ const Zones = () => {
             </p>
             <p className="citation-content">
               <span className="author"><Trans i18nKey="Zones.citation.author.1" /></span>
-              <span className="source"><Trans i18nKey="Zones.citation.author.2" /></span>
             </p>
           </div>
         </div>

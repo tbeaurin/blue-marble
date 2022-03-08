@@ -36,11 +36,16 @@
                     margin-top: 35% !important;
                 }
                 .popup-subtitle {
-                    margin-left: 25.2% !important;
+                    margin-left: 38.2% !important;
                 }
             }
             .popup-description {
                 padding-right: 0 !important;
+            }
+            .popup-subtitle {
+                &.isInventary {
+                    margin-left: -8.4% !important;
+                }
             }
         }
     }
@@ -145,16 +150,19 @@
     .popup-title {
         margin: auto;
         &.odd {
+            width: 23%;
+            margin: auto 0 !important;
             .popup-subtitle {
-                margin-left: 24.3%;
+                margin-left: 37.3%;
             }
             h2 {
                 text-align: center;
-                margin-left: 2%;
+                // margin-left: 2%;
             }
             .popup-description {
+                padding-top: 60px;
                 margin-left: 0;
-                width: 38%;
+                width: 100%;
                 margin-top: 15%;
             }
         }
@@ -167,7 +175,7 @@
         text-align: left;
         left: 0;
         position: absolute;
-        margin: -7% 0 0 15%;
+        margin: -7% 0 0 18%;
         opacity: .25;
         span {
             display: block;
@@ -179,6 +187,9 @@
         margin-left: 5.6%;
         line-height: 28px;
         margin-top: -7.6%;
+        &.isInventary {
+            margin-left: -3.4% !important;
+        }
         span {
             display: block;
         }
@@ -199,6 +210,8 @@
             margin-bottom: 24px;
         }
         span, a {
+            text-align: justify;
+            color:  #626567  !important;
             display: block;
             margin-bottom: 8px;
         }
