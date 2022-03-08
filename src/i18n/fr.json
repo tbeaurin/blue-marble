@@ -245,12 +245,16 @@
     "Popup.zone1.description40.link": "https://www.sondekla.com/user/event/11944",
        
     "Popup.zone1.description41": "",
-    "Popup.zone1.description41.important": "Regarder la série  \"Chronique Géovirale\" de Michel Lussault",
-    "Popup.zone1.description41.link": "https://medium.com/anthropocene2050/chroniques-g%C3%A9o-virales-e144c57db628",
+    "Popup.zone1.description41.important": "Ecouter le podcast \"Quand l'épidémie arrive en ville\" avec, Valérie Disdier, Michel Lussault et Stéphane Frioux",
+    "Popup.zone1.description41.link": "https://www.sondekla.com/user/event/10889",
    
     "Popup.zone1.description43": "",
     "Popup.zone1.description43.important": "Ecouter le podcast \"Matérialité de la ville intelligente - Intégration spatiale des infrastructures numériques\" avec Jean-Vincent BAYARRI, Cécile DIGUET et Lou HERRMANN",
     "Popup.zone1.description43.link": "https://medium.com/anthropocene2050/chroniques-g%C3%A9o-virales-e144c57db628",
+   
+    "Popup.zone1.description44": "",
+    "Popup.zone1.description44.important": "Lire le texte \"L’érosion de l’obscurité nocturne en ville\" de Lou Herrmann et écouter le podcast avec Lou HERRMANN, Samuel Challéat,  Grégoire Damon et Valérie Disdier",
+    "Popup.zone1.description44.link": "https://www.rue89lyon.fr/2021/03/16/podcast-rencontre-autour-de-lerosion-de-lobscurite-nocturne-en-ville/",
    
     "Popup.zone1.description45": "",
     "Popup.zone1.description45.important": "Lire ou écouter la chronique \"Clôtures\" de Bérénice Gagne",
@@ -264,6 +268,10 @@
     "Popup.zone1.description48.important": "Lire ou écouter la chronique \"Réensauvagement ?\" de Bérénice Gagne ",
     "Popup.zone1.description48.link": "https://medium.com/anthropocene2050/r%C3%A9ensauvagement-a1934eae1411",
   
+    "Popup.zone1.description49": "",
+    "Popup.zone1.description49.important": "Ecouter le podcast \"Ville et architecture pour les humains et les non humains\" avec Bernard Kaufmann, Pascal Rollet et Valérie Disdier",
+    "Popup.zone1.description49.link": "https://www.sondekla.com/user/event/11201",
+
     "Popup.zone1.description50": "",
     "Popup.zone1.description50.important": "Regarder la table ronde \" Qu'est-ce qu'une terre habitable ? \" avec Michel Lussault, Muriel Gandelin, Isabelle Daniel et Axelle Grégoire ",
     "Popup.zone1.description50.link": "https://www.youtube.com/watch?v=VEEujvGvlg8",
@@ -279,6 +287,10 @@
     "Popup.zone2.description6": "",
     "Popup.zone2.description6.important": "Ecouter le podcast \"La fabrique de l’(in)attention à l’heure de l’anthropocène : à quoi (ne) prête-t-on (pas) attention ?\" avec Yves Citton, François De Gasperi, Florian Fompérie et Emma Novel",
     "Popup.zone2.description6.link": "https://ecoleanthropocene.universite-lyon.fr/anthropocene-age-du-desastre-petite-histoire-des-catastrophes-technologiques-et-industrielles-249651.kjsp?RH=1633680335198",
+   
+    "Popup.zone2.description9": "",
+    "Popup.zone2.description9.important": "Ecouter le podcast \"Catastrophe(s) et anthropocène\" avec Michel Lussault, Thierry Paquot et Alfonso Pinto",
+    "Popup.zone2.description9.link": "https://www.sondekla.com/user/event/10645",
    
     "Popup.zone2.description12": "",
     "Popup.zone2.description12.important": "Regarder le cours public \"Anthropocène âge du désastre ? Petite histoire des catastrophes technologiques et industrielles\" de Alfonso Pinto",
@@ -308,6 +320,10 @@
     "Popup.zone2.description30.important": "Lire ou écouter la chronique \"Ordures\" de Bérénice Gagne",
     "Popup.zone2.description30.link": "https://medium.com/anthropocene2050/ordures-44d829130241",
    
+    "Popup.zone2.description33": "",
+    "Popup.zone2.description33.important": "Ecouter le podcast \"La marche comme outil d'analyse du territoire\" avec Vianney Delourme, Nicolas Tixier et Jérémy Cheval",
+    "Popup.zone2.description33.link": "https://www.sondekla.com/pro/event/10643",
+
     "Popup.zone2.description37": "",
     "Popup.zone2.description37.important": "Ecouter le podcast \"Interroger le territoire pour le projeter\" avec Bertrand Vignal, Alexis Stremsdoerfer et Lou Herrmann",
     "Popup.zone2.description37.link": "https://www.sondekla.com/user/event/12528",
@@ -393,12 +409,16 @@
     "Popup.zone3.description40.link": "https://medium.com/anthropocene2050/la-mort-e14b6831d034",
  
     "Popup.zone4.description3": "",
-    "Popup.zone4.description3.important": "Ecouter le podcast \" La sur-fragilité des territoires de montagne\" avec Etienne Maury, Jean Krug et Valérie Disdier ",
-    "Popup.zone4.description3.link": "https://www.sondekla.com/user/event/12523",
-   
+    "Popup.zone4.description3.important": "Ecouter le podcast \" Perception sensorielle de la biodiversité\" avec Thomas Boutreux, Marylise Cottet et Anne-Sophie Tribot ",
+    "Popup.zone4.description3.link": "https://www.sondekla.com/user/event/10647",
+    
     "Popup.zone4.description5": "",
     "Popup.zone4.description5.important": "Regarder le cours public \" Esthétiques du Care pour l'Anthropocène\" de María Grace Salamanca ",
     "Popup.zone4.description5.link": "https://ecoleanthropocene.universite-lyon.fr/esthetiques-du-care-pour-l-anthropocene-247546.kjsp?RH=1633680335198",
+   
+    "Popup.zone4.description9": "",
+    "Popup.zone4.description9.important": "Ecouter le podcast \" Imaginaires de l'anthropocène\" avec Valérie Disdier, Sarah DULAC et Simone FEHLINGER ",
+    "Popup.zone4.description9.link": "https://www.sondekla.com/user/event/10646",
    
     "Popup.zone4.description10": "",
     "Popup.zone4.description10.important": "Ecouter le podcast \" L'architecture des montagnes\" avec Jérémy Cheval et Valérie Disdier ",
@@ -408,6 +428,10 @@
     "Popup.zone4.description17.important": "Ecouter le podcast \" Les milliardaires et l'espace : tourisme de golden boy ou prémisses du nouveau colonialisme ?\" avec Valérie Disdier, Gilles Rabin et Arnaud Saint-Martin ",
     "Popup.zone4.description17.link": "https://www.sondekla.com/user/event/12308",
  
+    "Popup.zone4.description21": "",
+    "Popup.zone4.description21.important": "Ecouter le podcast \" La sur-fragilité des territoires de montagne\" avec Etienne Maury, Jean Krug et Valérie Disdier ",
+    "Popup.zone4.description21.link": "https://www.sondekla.com/user/event/12523",
+
     "Popup.zone4.description24": "",
     "Popup.zone4.description24.important": "Lire ou écouter la chronique  \" Boire ou conduire\" de Bérénice Gagne ",
     "Popup.zone4.description24.link": "https://medium.com/anthropocene2050/boire-ou-conduire-f7ea6ea455c2",
@@ -459,7 +483,12 @@
     "Popup.zone5.description12": "",
     "Popup.zone5.description12.important": "Regarder le cours public \" Guerre et crise: l'irrationalité de la rationalité \" de Olivier Hamant",
     "Popup.zone5.description12.link": "https://www.youtube.com/watch?v=Stxe1eC9xqA",
+
+    "Popup.zone5.description13": "",
+    "Popup.zone5.description13.important": "Regarder le cours public \"La lumière à l'heure de l'anthropocène \" avec David Amans, Anna-Eva Berge et Lou HERRMANN",
+    "Popup.zone5.description13.link": "https://www.sondekla.com/user/event/10099",
   
+
     "Popup.zone5.description18": "",
     "Popup.zone5.description18.important": "Regarder le cours public \" L’élan urbain chinois et l’Anthropocène \" de Jérémy Cheval",
     "Popup.zone5.description18.link": "https://ecoleurbainedelyon.universite-lyon.fr/videos-l-elan-urbain-chinois-et-l-anthropocene-cours-public-par-jeremy-cheval-213963.kjsp",
@@ -471,6 +500,14 @@
     "Popup.zone5.description21": "",
     "Popup.zone5.description21.important": "Ecouter le podcast  \" Expérience esthétique et imaginaire de l'anthropocène \" avec Elise Domenach, Matteo Meschiari et Alfonso Pinto",
     "Popup.zone5.description21.link": "https://www.sondekla.com/user/event/10098",
+
+    "Popup.zone5.description24": "",
+    "Popup.zone5.description24.important": "Ecouter le podcast  \" Révolution comptable, pour une entreprise écologique et sociale  \" avec Fabrice Bardet et Jacques Richard",
+    "Popup.zone5.description24.link": "https://www.sondekla.com/user/event/11314",
+
+    "Popup.zone5.description29": "",
+    "Popup.zone5.description29.important": "Ecouter le podcast \" Usages de l'eau et perspective anthropocène\" avec Jean-Philippe Pierron, Adrian Torres Astaburuaga et Jérémy Cheval",
+    "Popup.zone5.description29.link": "https://www.sondekla.com/user/event/10685",
 
     "Popup.zone5.description33": " ",
     "Popup.zone5.description33.important": "Regarder le du cours public \" Quelle prospective pour édifier les territoires du monde urbain anthropocène ?  \" de Stéphane Cordobès",
@@ -484,6 +521,10 @@
     "Popup.zone5.description35.important": "Lire l'analyse critique de Michel Lussault sur la proposition théorique des \"Hyperobjets\" faite par le philosophe Timothy Morton",
     "Popup.zone5.description35.link": "https://medium.com/anthropocene2050/a-propos-des-hyperobjets-de-timothy-morton-311cecec8386",
   
+    "Popup.studio.description1": "Sang contaminé",
+    "Popup.studio.description1.important": "Regarder la série  \"Chronique Géovirale\" de Michel Lussault",
+    "Popup.studio1.description1.link": "https://medium.com/anthropocene2050/chroniques-g%C3%A9o-virales-e144c57db628",
+
     "Popup.studio.description10": "Sable",
     "Popup.studio.description10.important": "Ecouter le podcast \" La ruée vers le sable\" avec Elsa Devienne et Valérie Disdier",
     "Popup.studio.description10.link": "https://www.sondekla.com/user/event/11931",
