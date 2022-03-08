@@ -160,16 +160,16 @@
     "Popup.open": "Ouvrir",
     "Popup.close": "Retour",
     "Popup.zone1.description1": "",
-    "Popup.zone1.description1.important": "Ecouter les 6 séances du cours public \"Qu’est-ce que l’anthropocène ?\" de Michel Lussault - Directeur de l'Ecole Urbaine de Lyon",
+    "Popup.zone1.description1.important": "Ecouter le cours public \"Qu’est-ce que l’anthropocène ?\" de Michel Lussault - Directeur de l'Ecole Urbaine de Lyon",
     "Popup.zone1.description1.link": "https://ecoleurbainedelyon.universite-lyon.fr/cours-public-qu-est-ce-que-l-anthropocene--78768.kjsp?RH=1510909846029",
     "Popup.zone1.description1.plop": "Ecouter",
     
-    "Popup.zone1.description2": "Espaces-mondes urbains #1<br /><br />\"L’imaginaire urbain est structuré, construit, architecturé. Nous conservons toujours cette ligne directrice : comprendre comment nos représentations de la ville sont construction d’une manière d’être et d’occuper le monde. Cette ligne directrice n’engage pas simplement l’interprétation des systèmes de représentation des villes-monde, elle engage un travail sur leurs modes de production : imagénéisation, idéologisation, etc.\"",
-    "Popup.zone1.description2.important": "Regarder les 6 séances du cours public \"Histoire des représentations des espaces-mondes urbains / Appareil de capture du sensible\" de Kader Mokaddem",
+    "Popup.zone1.description2": "",
+    "Popup.zone1.description2.important": "Regarder le cours public \"Histoire des représentations des espaces-mondes urbains / Appareil de capture du sensible\" de Kader Mokaddem",
     "Popup.zone1.description2.link": "https://ecoleurbainedelyon.universite-lyon.fr/cours-public-2021-histoire-des-representations-des-espaces-mondes-urbains-par-kader-mokaddem--212654.kjsp?RH=1513167387572",
 
-    "Popup.zone1.description4": "Urbanocène ?<br /><br />\"Nous avons ici une hypothèse : l’entrée dans l’anthropocène est directement liée à la phase intense d’urbanisation de la planète qui a débuté après la seconde guerre mondiale. Ce postulat reprend celui dit de la « grande accélération » (Steffen), mais en se focalisant sur une part explicative souvent minorée par les études anthropocènes : le rôle effectif de l’urbanisation généralisée et des bouleversements géographiques, économiques, sociaux, culturels et politiques qui l’accompagnent. Il s’agira donc de cerner ce rôle et de l’examiner à toutes les échelles de temps et d’espace.\" ",
-    "Popup.zone1.description4.important": "Ecouter les 6 séances du cours public \"L’Anthropocène est-il un urbanocène ? Ou comment l’urbanisation généralisée a bouleversé le système planétaire ?\" de Michel Lussault - Directeur de l'Ecole Urbaine de Lyon",
+    "Popup.zone1.description4": " ",
+    "Popup.zone1.description4.important": "Ecouter le cours public \"L’Anthropocène est-il un urbanocène ? Ou comment l’urbanisation généralisée a bouleversé le système planétaire ?\" de Michel Lussault - Directeur de l'Ecole Urbaine de Lyon",
     "Popup.zone1.description4.link": "https://medium.com/anthropocene2050/lanthropoc%C3%A8ne-serait-il-un-urbanoc%C3%A8ne-a73d2e0d757",
 
     "Popup.zone1.description10": "Monde urbain souterrain<br /><br />Björn Wallsten, chercheur à l’université d’Uppsala (Suède), parle de son travail sur les infrastructures souterraines en milieu urbain. Peut-on les transformer en mines de ressources stratégiques dans le cadre d’une économie plus circulaire ? ",
@@ -185,7 +185,7 @@
     "Popup.zone1.description12.link": "https://ecoleurbainedelyon.universite-lyon.fr/faire-face-a-l-anthropocene-les-voies-du-droit-cours-public-par-isabelle-michallet-213898.kjsp",
 
     "Popup.zone1.description14": "",
-    "Popup.zone1.description14.important": "Ecouter le podcast \"MOBILE À L’HEURE DE L’ANTHROPOCÈNE\" avec Mireille Apel-Muller, Clément Dillenseger et Sebastien Roques",
+    "Popup.zone1.description14.important": "Ecouter le podcast \"Mobile à l'heure de l'anthropocène\" avec Mireille Apel-Muller, Clément Dillenseger et Sebastien Roques",
     "Popup.zone1.description14.link": "https://www.sondekla.com/user/event/9802",
   
     "Popup.zone1.description17": "Sols urbains<br /><br /> Artificialisation, imperméabilisation, pollution : les sols urbains, invisibilisés sous des couches de bitume et de béton, sont maltraités alors qu’ils « accueillent une forte biodiversité, produisent de la biomasse végétale (alimentaire ou non) et participent à la régulation du climat, des déchets, de l’eau ou encore des pollutions ». Le mépris dans lequel sont tenus les sols urbains s’étend également à la science : « 1 % seulement des études scientifiques sur les sols concernent les secteurs urbains ». Partons donc explorer les sols et sous-sols de nos villes, et apprenons à mieux les connaître pour faire face aux changements globaux.",
