@@ -186,8 +186,6 @@ const Missio = () => {
               </p>
               <p className="citation-content">
                 <span className="author"><Trans i18nKey="Missio.citation.author.1" /></span>
-                <span className="explication"><Trans i18nKey="Missio.citation.author.2" /></span>
-                <span className="source"><Trans i18nKey="Missio.citation.author.3" /></span>
               </p>
             </div>
           </div>

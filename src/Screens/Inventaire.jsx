@@ -219,7 +219,7 @@ const Inventaire = () => {
             </p>
           </div>
         </div>
-        <div className="page h-100" id="analyse">
+        <div className="page h-100" id="studio">
           <Zone
             id="studio"
             parent="Inventaire"
@@ -228,22 +228,19 @@ const Inventaire = () => {
             direction="right"
             openModal={openModal}
             position={0}
+            isInventary
           />
         </div>
         <div id="analyse">
-          <div id="analyse1" className={`page ${!isMobile ? 'h-120' : ''}`}>
-            <div className="page-content">
-              <div id="analyse-column1" className={`${isMobile ? 'h-100vh' : ''}`}>
-                <h3>
-                  <Trans i18nKey="Inventaire.analyse.title" />
-                </h3>
-                <p><Trans i18nKey="Inventaire.analyse.p1" /></p>
-              </div>
-              <div id="analyse-column2">
-                <div id="analyseImg-wrapper">
-                  <img src={BlueMarbleImg} alt="blue marble" />
-                  <span className="small-italic d-block w-100"><Trans i18nKey="Inventaire.analyse.aditionnal.1" /></span>
-                </div>
+          <div className="right">
+            <div className="column1">
+              <h3>
+                <Trans i18nKey="Inventaire.analyse.title" />
+              </h3>
+              <p><Trans i18nKey="Inventaire.analyse.p1" /></p>
+              <div id="blue-marble">
+                <img src={BlueMarbleImg} alt="blue marble" />
+                <span className="small-italic d-block w-100"><Trans i18nKey="Inventaire.analyse.aditionnal.1" /></span>
               </div>
             </div>
           </div>
