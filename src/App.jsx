@@ -239,7 +239,7 @@ const App = () => {
                     <p><span className="small"><Trans i18nKey="Title.1" /></span></p>
                     <span><Trans i18nKey="Title.2" /></span>
                   </h1>
-                  <h2 className="maintenance-h2">A découvrir le 18 février ..</h2>
+                  <h2 className="maintenance-h2">A découvrir bientôt ..</h2>
                 </div>
               </main>
             </>
