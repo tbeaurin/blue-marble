@@ -160,8 +160,8 @@
     "Popup.open": "Ouvrir",
     "Popup.close": "Retour",
     "Popup.zone1.description1": "",
-    "Popup.zone1.description1.important": "Ecouter le cours public \"Qu’est-ce que l’anthropocène ?\" de Michel Lussault",
-    "Popup.zone1.description1.link": "https://ecoleurbainedelyon.universite-lyon.fr/cours-public-qu-est-ce-que-l-anthropocene--78768.kjsp?RH=1510909846029",
+    "Popup.zone1.description1.important": "Ecouter le cours public \"Qu’est-ce que l’anthropocène ? Leçon inaugurale\" de Michel Lussault",
+    "Popup.zone1.description1.link": "https://www.sondekla.com/pro/event/9491",
     "Popup.zone1.description1.plop": "Ecouter",
     
     "Popup.zone1.description2": "",
@@ -169,8 +169,8 @@
     "Popup.zone1.description2.link": "https://ecoleurbainedelyon.universite-lyon.fr/cours-public-2021-histoire-des-representations-des-espaces-mondes-urbains-par-kader-mokaddem--212654.kjsp?RH=1513167387572",
 
     "Popup.zone1.description4": " ",
-    "Popup.zone1.description4.important": "Ecouter le cours public \"L’Anthropocène est-il un urbanocène ? Ou comment l’urbanisation généralisée a bouleversé le système planétaire ?\" de Michel Lussault",
-    "Popup.zone1.description4.link": "https://medium.com/anthropocene2050/lanthropoc%C3%A8ne-serait-il-un-urbanoc%C3%A8ne-a73d2e0d757",
+    "Popup.zone1.description4.important": "Ecouter le séminaire \"L’essor des évaluations financières dans la fabrique des villes\" avec Lucia Shimbo, Pierre Thérond, Grégory Grey-Johnson et Fabrice Bardet",
+    "Popup.zone1.description4.link": "https://ecoleurbainedelyon.universite-lyon.fr/seminaire-quantification-metropoles-et-anthropocene-6eme-seance-78994.kjsp?RH=1510909846029",
 
     "Popup.zone1.description10": "",
     "Popup.zone1.description10.important": "Lire l'interview de Björn Wallsten sur les infrastructures souterraines",
@@ -181,8 +181,8 @@
     "Popup.zone1.description11.link": "https://ecoleurbainedelyon.universite-lyon.fr/site-francais/podcasts-du-cours-public-anthropocene-ere-du-controle-numerique--136780.kjsp",
 
     "Popup.zone1.description12": "",
-    "Popup.zone1.description12.important": "Regarder le cours public \"Faire face à l’anthropocène : les voies du droit\" de Isabelle Michallet",
-    "Popup.zone1.description12.link": "https://ecoleurbainedelyon.universite-lyon.fr/faire-face-a-l-anthropocene-les-voies-du-droit-cours-public-par-isabelle-michallet-213898.kjsp",
+    "Popup.zone1.description12.important": "Lire l'article \"Dessiner le droit dans l’Anthropocène\" de Lou Herrmann",
+    "Popup.zone1.description12.link": "https://medium.com/anthropocene2050/dessiner-le-droit-dans-lanthropoc%C3%A8ne-47feb552d559",
 
     "Popup.zone1.description13": "",
     "Popup.zone1.description13.important": "Ecouter le cours public \"La démocratie au temps du capitalocène - De lère de taire à l'âge de faire\" de Guillaume Faburel",
@@ -191,6 +191,10 @@
     "Popup.zone1.description14": "",
     "Popup.zone1.description14.important": "Ecouter le podcast \"Mobile à l'heure de l'anthropocène\" avec Mireille Apel-Muller, Clément Dillenseger et Sebastien Roques",
     "Popup.zone1.description14.link": "https://www.sondekla.com/user/event/9802",
+
+    "Popup.zone1.description16": "",
+    "Popup.zone1.description16.important": "Ecouter le podcast \"Faut-il attendre un post-capitalisme réparateur ?\" avec Mathieu Couttenier, Isabelle Delannoy, Denis Lafay et Pierre Veltz",
+    "Popup.zone1.description16.link": "https://www.sondekla.com/user/event/10430",
   
     "Popup.zone1.description17": "",
     "Popup.zone1.description17.important": "Lire la veille thématique sur les sols urbains de Bérénice Gagne",
@@ -208,14 +212,18 @@
     "Popup.zone1.description22.important": "Lire l'article \"Fleuves\" de Corinne Castel et Bernd Gundermann",
     "Popup.zone1.description22.link": "https://www.lemonde.fr/smart-cities/article/2021/03/22/gestion-de-l-eau-les-experiences-des-premieres-civilisations-urbaines-sont-une-source-d-inspiration-pour-penser-la-ville-de-demain_6074010_4811534.html",
 
+    "Popup.zone1.description24": "",
+    "Popup.zone1.description24.important": "Lire l'article \"Logistiques urbaines\" de  Adrien Béziat",
+    "Popup.zone1.description24.link": "https://www.lemonde.fr/economie/article/2020/11/05/les-villes-doivent-reconnaitre-a-la-logistique-son-statut-d-activite-vitale_6058634_3234.html",
+
     "Popup.zone1.description26": "",
-    "Popup.zone1.description26.important": "Ecouter le cours public \"Villes, bâtiments et énergie : des approches physiques systémiques aux enjeux contemporains\" de Lucie Merlier",
-    "Popup.zone1.description26.link": "https://www.sondekla.com/user/event/11650",
-    
-    "Popup.zone1.description27": "",
-    "Popup.zone1.description27.important": "Regarder le cours public \"L'air : Une matière première de l'urbain ?\" de Michel Lussault",
-    "Popup.zone1.description27.link": "https://ecoleurbainedelyon.universite-lyon.fr/cours-public-2022-l-air-une-matiere-premiere-de-l-urbain--256512.kjsp?RH=ecoleurbainedelyon",
+    "Popup.zone1.description26.important": "Regarder le cours public \"Histoire des représentations des espaces-mondes urbains. Formes contemporain d'appareil de capture\" de Kader Mokaddem",
+    "Popup.zone1.description26.link": "https://ecoleurbainedelyon.universite-lyon.fr/cours-public-2022-histoire-des-representations-des-espaces-mondes-urbains-formes-contemporaines-d-appareil-de-capture-imaginaire-contemporain-et-recit--256493.kjsp?RH=1510909846029",
    
+    "Popup.zone1.description27": "",
+    "Popup.zone1.description27.important": "Ecouter le cours public \"Villes, bâtiments et énergie : des approches physiques systémiques aux enjeux contemporains\" de Lucie Merlier",
+    "Popup.zone1.description27.link": "https://www.sondekla.com/user/event/11650",
+    
     "Popup.zone1.description28": "",
     "Popup.zone1.description28.important": "Ecouter le podcast \"Formes urbaines et bactéries\" avec Rayan Bouchali, Benoît Cournoyer et Laurent Moulin",
     "Popup.zone1.description28.link": "https://www.sondekla.com/user/event/10096",
@@ -236,6 +244,18 @@
     "Popup.zone1.description34.important": "Lire ou écouter la chronique \"Végétalisation\" de Bérénice Gagne",
     "Popup.zone1.description34.link": "https://medium.com/anthropocene2050/v%C3%A9g%C3%A9talisation-f9d3184243e6",
    
+    "Popup.zone1.description35": "",
+    "Popup.zone1.description35.important": "Lire l'article \"G comme Glanage\" de Flaminia Paddeu et Fabien Roussel",
+    "Popup.zone1.description35.link": "https://medium.com/anthropocene2050/v%C3%A9g%C3%A9talisation-f9d3184243e6",
+
+    "Popup.zone1.description36": "",
+    "Popup.zone1.description36.important": "Lire l'article \"V comme Vélo\" de Matthieu Adam ",
+    "Popup.zone1.description36.link": "https://www.lemonde.fr/smart-cities/article/2021/02/27/certaines-politiques-de-promotion-du-velo-ont-renforce-une-conception-inegalitaire-de-l-acces-a-l-espace-public_6071386_4811534.html",
+
+    "Popup.zone1.description38": "",
+    "Popup.zone1.description38.important": "Ecouter le podcast \"Réparer. Arts et architectures à l'heure de l'Anthropocène\" avec Norbert Hillaire, Paul Landauer et Paul Landauer",
+    "Popup.zone1.description38.link": "https://www.sondekla.com/user/event/11886",
+
     "Popup.zone1.description39": "",
     "Popup.zone1.description39.important": "Ecouter le podcast \"L'espace au cinéma\" avec Alfonso Pinto, André Gardies, Bertrand Pleven",
     "Popup.zone1.description39.link": "https://www.sondekla.com/user/event/10083",
@@ -275,10 +295,10 @@
     "Popup.zone1.description50": "",
     "Popup.zone1.description50.important": "Regarder la table ronde \" Qu'est-ce qu'une terre habitable ? \" avec Michel Lussault, Muriel Gandelin, Isabelle Daniel et Axelle Grégoire ",
     "Popup.zone1.description50.link": "https://www.youtube.com/watch?v=VEEujvGvlg8",
-  
+   
     "Popup.zone2.description1": "",
-    "Popup.zone2.description1.important": "Regarder le cours public \"Quelle est la valeur des anti-héros ?\" de Olivier Hamant",
-    "Popup.zone2.description1.link": "https://www.youtube.com/watch?v=WXZ9Eys3Mqg&list=PL3q4hlXuGY4RMebptNG_JYoplN14PYeE0&index=14",
+    "Popup.zone2.description1.important": "Ecouter le cours public \" Qu'est-ce que l'anthropocène ? La grande accélération \" de Michel Lussault",
+    "Popup.zone2.description1.link": "https://www.sondekla.com/pro/event/9614",
     
     "Popup.zone2.description2": "",
     "Popup.zone2.description2.important": "Ecouter le podcast \"Au-delà de la ville\" avec Eric Charmes, Valérie Disdier et Théo Mouzard",
@@ -291,26 +311,34 @@
     "Popup.zone2.description9": "",
     "Popup.zone2.description9.important": "Ecouter le podcast \"Catastrophe(s) et anthropocène\" avec Michel Lussault, Thierry Paquot et Alfonso Pinto",
     "Popup.zone2.description9.link": "https://www.sondekla.com/user/event/10645",
+
+    "Popup.zone2.descriptio10": "",
+    "Popup.zone2.description10.important": "Ecouter le podcast \"Revenu de base en débat \" avec Antoine Dulin, Baptiste Mylondo et Fabrice Bardet",
+    "Popup.zone2.description10.link": "https://www.sondekla.com/user/event/11836",
+
+    "Popup.zone2.descriptio11": "",
+    "Popup.zone2.description11.important": "Ecouter le podcast \"Sur les traces de nos déchets \" avec Yann Brunet, Rémy Gourdon et Lucas Tiphine",
+    "Popup.zone2.description11.link": "https://www.sondekla.com/user/event/12116",
    
     "Popup.zone2.description12": "",
     "Popup.zone2.description12.important": "Regarder le cours public \"Anthropocène âge du désastre ? Petite histoire des catastrophes technologiques et industrielles\" de Alfonso Pinto",
     "Popup.zone2.description12.link": "https://www.youtube.com/watch?v=Gmz2W-LoNLc",
       
     "Popup.zone2.description13": "",
-    "Popup.zone2.description13.important": "Ecouter le podcast \"Pour une approche globale de la santé à l’ère de l’Anthropocène : retour d’expériences de la crise sanitaire Covid-19\" enregistré lors d'un atelier proposé par VetAgro Sup",
-    "Popup.zone2.description13.link": "https://www.sondekla.com/user/event/11061",
+    "Popup.zone2.description13.important": "Ecouter le podcast \"Approche collective et communautaire du soin\" avec Benjamin Cohadon, Donia Sahtel, Maria Grace Salamanca Gonzales et Bérénice gagne",
+    "Popup.zone2.description13.link": "https://www.sondekla.com/user/event/12136",
    
     "Popup.zone2.description18": "",
     "Popup.zone2.description18.important": "Ecouter le podcast \"Permanence ou ouverture des données de la valeur des territoires ?\" avec Alexandre Coulondre, Bernard Vorms et Fabrice Bardet",
     "Popup.zone2.description18.link": "https://www.sondekla.com/user/event/11066",
 
+    "Popup.zone2.description20": "",
+    "Popup.zone2.description20.important": "Regarder le cours publics \"Imposer l'égalité des sexes\" de Isabelle Michallet",
+    "Popup.zone2.description20.link": "https://www.youtube.com/watch?v=xduGyZUubZM",
+
     "Popup.zone2.description22": "",
     "Popup.zone2.description22.important": "Ecouter le podcast \"Temps géologique et temps historique\" avec Pierre Cornu, Pierre Thomas et Valérie Disdier",
     "Popup.zone2.description22.link": "https://www.sondekla.com/user/event/10101",
-
-    "Popup.zone2.description19": "",
-    "Popup.zone2.description19.important": "Regarder le cours public \" La 3ème voie du vivant\" de Olivier Hamant",
-    "Popup.zone2.description19.link": "https://www.youtube.com/watch?v=3H0AJiCKjgM",
    
     "Popup.zone2.description28": "",
     "Popup.zone2.description28.important": "Regarder le cours public \"Peut-on se réapproprier la santé dans l’Anthropocène ?\" de Olivier Hamant",
@@ -320,17 +348,29 @@
     "Popup.zone2.description30.important": "Lire ou écouter la chronique \"Ordures\" de Bérénice Gagne",
     "Popup.zone2.description30.link": "https://medium.com/anthropocene2050/ordures-44d829130241",
    
+    "Popup.zone2.description32": "",
+    "Popup.zone2.description32.important": "Regarder le cours public \"Quelle est la valeur des anti-héros ?\" de Olivier Hamant",
+    "Popup.zone2.description32.link": "https://www.youtube.com/watch?v=WXZ9Eys3Mqg&list=PL3q4hlXuGY4RMebptNG_JYoplN14PYeE0&index=14",
+
     "Popup.zone2.description33": "",
     "Popup.zone2.description33.important": "Ecouter le podcast \"La marche comme outil d'analyse du territoire\" avec Vianney Delourme, Nicolas Tixier et Jérémy Cheval",
     "Popup.zone2.description33.link": "https://www.sondekla.com/pro/event/10643",
 
+    "Popup.zone2.description36": " ",
+    "Popup.zone2.description36.important": "Ecouter le cours public \"L’Anthropocène est-il un urbanocène ? Ou comment l’urbanisation généralisée a bouleversé le système planétaire ?\" de Michel Lussault",
+    "Popup.zone2.description36.link": "https://medium.com/anthropocene2050/lanthropoc%C3%A8ne-serait-il-un-urbanoc%C3%A8ne-a73d2e0d757",
+
     "Popup.zone2.description37": "",
     "Popup.zone2.description37.important": "Ecouter le podcast \"Interroger le territoire pour le projeter\" avec Bertrand Vignal, Alexis Stremsdoerfer et Lou Herrmann",
     "Popup.zone2.description37.link": "https://www.sondekla.com/user/event/12528",
+
+    "Popup.zone2.description38": "",
+    "Popup.zone2.description38.important": "Regarder le cours public \"Incarner les générations futures\" de Isabelle Michallet",
+    "Popup.zone2.description38.link": "https://www.youtube.com/watch?v=PmfSGEGusEg",
    
     "Popup.zone2.description42": "",
-    "Popup.zone2.description42.important": "Ecouter le podcast \"Faut-il attendre un post-capitalisme réparateur ?\" avec Mathieu Couttenier, Isabelle Delannoy, Denis Lafay et Pierre Veltz",
-    "Popup.zone2.description42.link": "https://www.sondekla.com/user/event/10430",
+    "Popup.zone2.description42.important": "Regarder le cours public \"Criminaliser les destructions\" de Isabelle Michallet",
+    "Popup.zone2.description42.link": "https://www.youtube.com/watch?v=-sL9liP0MRU",
    
     "Popup.zone2.description45": "",
     "Popup.zone2.description45.important": "Ecouter le podcast \"La poésie comme action de l'écologie\" avec Jérémy Cheval, Jean-Claude Pinson et Pierre Vinclair",
@@ -339,10 +379,14 @@
     "Popup.zone2.description47": "",
     "Popup.zone2.description47.important": "Ecouter le podcast \"La rivière en anthropocène\" avec Alice Prost, Adrian Torres Astaburuaga et Cyrille Vallet",
     "Popup.zone2.description47.link": "https://www.sondekla.com/user/event/12309",
+
+    "Popup.zone2.description50": "",
+    "Popup.zone2.description50.important": "Ecouter le podcast \"L'enfant et la ville\" avec Stéphanie Cagni, Clément Rivière et Lou Herrmann",
+    "Popup.zone2.description50.link": "https://www.sondekla.com/user/event/11423",
     
     "Popup.zone3.description1": "",
-    "Popup.zone3.description1.important": "Ecouter le cours public \" La quatrième voie : les politiques de la Terre face à l’Anthropocène \" de Patrick Degeorges",
-    "Popup.zone3.description1.link": "https://medium.com/anthropocene2050/la-quatri%C3%A8me-voie-les-politiques-de-la-terre-face-%C3%A0-lanthropoc%C3%A8ne-ab40d80fa0b",
+    "Popup.zone3.description1.important": "Ecouter le cours public \"Qu'est-ce que l'anthropocène ? Pourquoi faudrait-il admettre la nouveauté de l’anthropocène \" de Michel Lussault",
+    "Popup.zone3.description1.link": "https://www.sondekla.com/user/event/9630",
   
     "Popup.zone3.description2": "",
     "Popup.zone3.description2.important": "Ecouter le cours public \" La prospective territoriale moderne peut-elle contribuer à édifier les territoires du monde anthropocène ? \" de Stéphane Cordobès",
@@ -368,6 +412,10 @@
     "Popup.zone3.description9.important": "Ecouter le podcast \" La résilience alimentaire des territoires \" avec Aurore Dupont et Arthur Grimonpont",
     "Popup.zone3.description9.link": "https://www.sondekla.com/user/event/10650",
 
+    "Popup.zone3.description10": "",
+    "Popup.zone3.description10.important": "Ecouter le podcast \"Pour une biodiversité cultivée\" avec Alain Alexanian, Stéphane Crozat et Valérie Disdier",
+    "Popup.zone3.description10.link": "https://www.sondekla.com/user/event/10093", 
+
     "Popup.zone3.description11": "",
     "Popup.zone3.description11.important": "Ecouter le podcast \"  A-t-on vraiment eu raison d’inventer l’agriculture ?\" avec Jean-Paul Demoule et Michel Lussault",
     "Popup.zone3.description11.link": "https://www.sondekla.com/user/event/10429",
@@ -377,12 +425,12 @@
     "Popup.zone3.description12.link": "https://ecoleurbainedelyon.universite-lyon.fr/cours-public-2022-sciences-et-machines-une-genealogie-conceptuelle-de-la-grande-acceleration-256442.kjsp?RH=ecoleurbainedelyon",
   
     "Popup.zone3.description15": "",
-    "Popup.zone3.description15.important": "Regarder le cours public \" Ruptures à l'ère de l'anthropocène : la personnification de la nature\" de Philippe Billet",
-    "Popup.zone3.description15.link": "https://ecoleanthropocene.universite-lyon.fr/ruptures-a-l-ere-de-l-anthropocene-la-personnification-de-la-nature-249657.kjsp?RH=1633680335198",
+    "Popup.zone3.description15.important": "Lire les textes \" Animaux et anthropocène\" de Estelle Loukiadis, Sébastien Gardon et Jérôme Michalon",
+    "Popup.zone3.description15.link": "https://ecoleurbainedelyon.universite-lyon.fr/notions-anthropocenes-a-la-une-animaux-et-anthropocene--90463.kjsp",
      
     "Popup.zone3.description21": "",
-    "Popup.zone3.description21.important": "Ecouter le podcast \"Pour une biodiversité cutivée\" avec Alain Alexanian, Stéphane Crozat et Valérie Disdier",
-    "Popup.zone3.description21.link": "https://www.sondekla.com/user/event/10093", 
+    "Popup.zone3.description21.important": "Regarder l'interview \"Penser l'anthropocène\" avec Thomas Boutreux",
+    "Popup.zone3.description21.link": "https://www.youtube.com/watch?v=zhPC6XwbHn8&list=PL3q4hlXuGY4Q-FHbRC-wW_4z5bboCRM1D&index=22", 
     
     "Popup.zone3.description22": "",
     "Popup.zone3.description22.important": "Lire ou écouter la chronique \" Compensation\" de Bérénice Gagne",
@@ -391,11 +439,19 @@
     "Popup.zone3.description23": "",
     "Popup.zone3.description23.important": "Lire la veille thématique sur l'eau de Bérénice Gagne",
     "Popup.zone3.description23.link": "https://medium.com/anthropocene2050/veille-thematique-sur-leau-2f3c604fb7bb",
+
+    "Popup.zone3.description26": "",
+    "Popup.zone3.description26.important": "Regarder le cours public \" La 3ème voie du vivant\" de Olivier Hamant",
+    "Popup.zone3.description26.link": "https://www.youtube.com/watch?v=3H0AJiCKjgM",
      
     "Popup.zone3.description29": "",
     "Popup.zone3.description29.important": "Ecouter le podcast \"Réinvestir les lieux des espaces peu métropolisés \" avec Raphaël Besson, Antoine Daval et Valérie Disdier",
     "Popup.zone3.description29.link": "https://www.sondekla.com/user/event/12522",
     
+    "Popup.zone3.description30": "",
+    "Popup.zone3.description30.important": "Regarder le cours public \"Ruptures à l'ère de l'anthropocène : la personnification de la nature \" de Philippe Billet",
+    "Popup.zone3.description30.link": "https://www.youtube.com/watch?v=yD780dJ4vZU",
+
     "Popup.zone3.description33": "",
     "Popup.zone3.description33.important": "Regarder le cours public \" Désir de campagne : de nouvelles façons de vivre et de travailler en milieu rural\" de Claire Delfosse",
     "Popup.zone3.description33.link": "https://ecoleanthropocene.universite-lyon.fr/desir-de-campagne-de-nouvelles-facons-de-vivre-et-de-travailler-en-milieu-rural-249944.kjsp?RH=1633680335198",
@@ -408,6 +464,10 @@
     "Popup.zone3.description40.important": "Lire ou écouter la chronique \" La mort \" de Bérénice Gagne",
     "Popup.zone3.description40.link": "https://medium.com/anthropocene2050/la-mort-e14b6831d034",
  
+    "Popup.zone4.description1": "",
+    "Popup.zone4.description1.important": "Ecouter le cours public \" Qu'est-ce que l'anthropocène ? La pensée du système: Mode d'emploi\" de Michel Lussault",
+    "Popup.zone4.description1.link": "https://www.sondekla.com/user/event/9637",
+
     "Popup.zone4.description3": "",
     "Popup.zone4.description3.important": "Ecouter le podcast \" Perception sensorielle de la biodiversité\" avec Thomas Boutreux, Marylise Cottet et Anne-Sophie Tribot ",
     "Popup.zone4.description3.link": "https://www.sondekla.com/user/event/10647",
@@ -423,10 +483,18 @@
     "Popup.zone4.description10": "",
     "Popup.zone4.description10.important": "Ecouter le podcast \" L'architecture des montagnes\" avec Jérémy Cheval et Valérie Disdier ",
     "Popup.zone4.description10.link": "https://www.sondekla.com/user/event/12544",
+
+    "Popup.zone4.description15": "",
+    "Popup.zone4.description15.important": "Regarder le cours public \"Cesser de piller la biodiversité\" de Isabelle Michallet ",
+    "Popup.zone4.description15.link": "https://www.youtube.com/watch?v=y7WORVT_evI",
    
     "Popup.zone4.description17": "",
     "Popup.zone4.description17.important": "Ecouter le podcast \" Les milliardaires et l'espace : tourisme de golden boy ou prémisses du nouveau colonialisme ?\" avec Valérie Disdier, Gilles Rabin et Arnaud Saint-Martin ",
     "Popup.zone4.description17.link": "https://www.sondekla.com/user/event/12308",
+
+    "Popup.zone4.description19": "",
+    "Popup.zone4.description19.important": "Regarder le cours public \"Respecter le droit en environnement \" De Isabelle Michallet",
+    "Popup.zone4.description19.link": "https://www.youtube.com/watch?v=-4-j_Czc0V4",
  
     "Popup.zone4.description21": "",
     "Popup.zone4.description21.important": "Ecouter le podcast \" La sur-fragilité des territoires de montagne\" avec Etienne Maury, Jean Krug et Valérie Disdier ",
@@ -439,6 +507,10 @@
     "Popup.zone4.description25": "",
     "Popup.zone4.description25.important": "Regarder le cours public \" Maîtrise de l'Information et Vicissitudes du Tangible \" de Stéphane Grumbach",
     "Popup.zone4.description25.link": "https://ecoleurbainedelyon.universite-lyon.fr/cours-public-2021-maitrise-de-l-information-et-vicissitudes-du-tangible-par-stephane-grumbach--212649.kjsp?RH=1513167387572",
+ 
+    "Popup.zone4.description27": "",
+    "Popup.zone4.description27.important": "Regarder le cours public \" Personnifier la nature \" de Isabelle Michallet",
+    "Popup.zone4.description27.link": "https://www.youtube.com/watch?v=3DQQSdf3dKY",
  
     "Popup.zone4.description31": "",
     "Popup.zone4.description31.important": "Ecouter le podcast \"Explorer l'espace pour mieux habiter la Terre ?  \" avec Walter Guyot, Patrick Thollot et Michel Lussault",
@@ -453,12 +525,20 @@
     "Popup.zone4.description35.link": "https://ecoleurbainedelyon.universite-lyon.fr/cours-public-2022-anthropocene-et-habitabilite-a-travers-le-prisme-de-la-planetologie-dans-le-temps-et-l-espace-une-terre-inhabitable-un-ailleurs-qui-le-serait--256459.kjsp?RH=ecoleurbainedelyon",
   
     "Popup.zone5.description1": "",
-    "Popup.zone5.description1.important": "Regarder le cours public \" La décolonisation des savoirs universitaires à l'heure de l'anthropocène : origines, tensions et espoirs\"  de Karine Vanthuyne",
-    "Popup.zone5.description1.link": "https://ecoleurbainedelyon.universite-lyon.fr/cours-public-2022-la-decolonisation-des-savoirs-universitaires-a-l-heure-de-l-anthropocene-origines-tensions-et-espoirs-256490.kjsp?RH=ecoleurbainedelyonc",
+    "Popup.zone5.description1.important": "Ecouter le cours public \" QU'est-ce que l'anthropocène ? Quelle trajectoire pour le système Planète/Terre/Monde ? \" de Michel Lussault",
+    "Popup.zone5.description1.link": "https://medium.com/anthropocene2050/la-quatri%C3%A8me-voie-les-politiques-de-la-terre-face-%C3%A0-lanthropoc%C3%A8ne-ab40d80fa0b",
+  
+    "Popup.zone5.description3": "",
+    "Popup.zone5.description3.important": "Ecouter le cours public \" La quatrième voie : les politiques de la Terre face à l’Anthropocène \" de Patrick Degeorges",
+    "Popup.zone5.description3.link": "https://www.sondekla.com/user/event/9810",
   
     "Popup.zone5.description5": "",
     "Popup.zone5.description5.important": "Ecouter le podcast \" Que nous disent les mégafeux de notre société ?\" avec Valérie Disdier, Charles-Étienne DUPONT et Joëlle ZASK",
     "Popup.zone5.description5.link": "https://www.sondekla.com/user/event/10641",
+
+    "Popup.zone5.description6": "",
+    "Popup.zone5.description6.important": "Ecouter le podcast \" Le réchauffement climatique : caractéristiques, perspectives et possibilités d'adaptation\" avec Hervé Le Treut et Michel Lussault",
+    "Popup.zone5.description6.link": "https://www.sondekla.com/user/event/9471",
   
     "Popup.zone5.description7": "",
     "Popup.zone5.description7.important": "Ecouter le podcast \"Comprendre et éviter les menaces environnementales\" avec Bruno Charles, Natacha Gondran et Chuan Wang",
@@ -487,8 +567,15 @@
     "Popup.zone5.description13": "",
     "Popup.zone5.description13.important": "Regarder le cours public \"La lumière à l'heure de l'anthropocène \" avec David Amans, Anna-Eva Berge et Lou HERRMANN",
     "Popup.zone5.description13.link": "https://www.sondekla.com/user/event/10099",
-  
 
+    "Popup.zone5.description15": "",
+    "Popup.zone5.description15.important": "Regarder le cours public \"Pourquoi les plantes sont-elles vertes ? \" de  Olivier Hamant",
+    "Popup.zone5.description15.link": "https://www.youtube.com/watch?v=JabP5wfqaLk&list=PL3q4hlXuGY4RMebptNG_JYoplN14PYeE0&index=9",
+
+    "Popup.zone5.description16": "",
+    "Popup.zone5.description16.important": "Ecouter le podcast \"Récits dans/de l’Anthropocène \" avec Nicola Delon, Catherine Larrère etValérie Disdier",
+    "Popup.zone5.description16.link": "https://www.sondekla.com/user/event/11980",
+  
     "Popup.zone5.description18": "",
     "Popup.zone5.description18.important": "Regarder le cours public \" L’élan urbain chinois et l’Anthropocène \" de Jérémy Cheval",
     "Popup.zone5.description18.link": "https://ecoleurbainedelyon.universite-lyon.fr/videos-l-elan-urbain-chinois-et-l-anthropocene-cours-public-par-jeremy-cheval-213963.kjsp",
@@ -497,9 +584,17 @@
     "Popup.zone5.description19.important": "Lire ou écouter la chronique  \" Effondrement \" de Bérénice Gagne",
     "Popup.zone5.description19.link": "https://medium.com/anthropocene2050/effondrement-1643a7dbaf87",
   
+    "Popup.zone5.description20": "",
+    "Popup.zone5.description20.important": "Lire l'article  \" Pour une anthropologie politique de l’énergie \" de  Nathalie Ortar",
+    "Popup.zone5.description20.link": "https://medium.com/anthropocene2050/pour-une-anthropologie-politique-de-l%C3%A9nergie-185a84ef2fe7",
+
     "Popup.zone5.description21": "",
     "Popup.zone5.description21.important": "Ecouter le podcast  \" Expérience esthétique et imaginaire de l'anthropocène \" avec Elise Domenach, Matteo Meschiari et Alfonso Pinto",
     "Popup.zone5.description21.link": "https://www.sondekla.com/user/event/10098",
+
+    "Popup.zone5.description23": "",
+    "Popup.zone5.description23.important": "Regarder le cours public \" La décolonisation des savoirs universitaires à l'heure de l'anthropocène : origines, tensions et espoirs\"  de Karine Vanthuyne",
+    "Popup.zone5.description23.link": "https://ecoleurbainedelyon.universite-lyon.fr/cours-public-2022-la-decolonisation-des-savoirs-universitaires-a-l-heure-de-l-anthropocene-origines-tensions-et-espoirs-256490.kjsp?RH=ecoleurbainedelyonc",
 
     "Popup.zone5.description24": "",
     "Popup.zone5.description24.important": "Ecouter le podcast  \" Révolution comptable, pour une entreprise écologique et sociale  \" avec Fabrice Bardet et Jacques Richard",
@@ -514,9 +609,9 @@
     "Popup.zone5.description33.link": "https://ecoleurbainedelyon.universite-lyon.fr/cours-public-2021-quelle-prospective-pour-edifier-les-territoires-du-monde-urbain-anthropocene-par-stephane-cordobes--212641.kjsp?RH=1513167387572",
     
     "Popup.zone5.description34": "",
-    "Popup.zone5.description34.important": "Regarder le cours public \"Histoire des représentations des espaces-mondes urbains. Formes contemporain d'appareil de capture\" de Kader Mokaddem",
-    "Popup.zone5.description34.link": "https://ecoleurbainedelyon.universite-lyon.fr/cours-public-2022-histoire-des-representations-des-espaces-mondes-urbains-formes-contemporaines-d-appareil-de-capture-imaginaire-contemporain-et-recit--256493.kjsp?RH=1510909846029",
-   
+    "Popup.zone5.description34.important": "Lire l'article \"Densité\" de Shlomo Angel",
+    "Popup.zone5.description34.link": "https://www.lemonde.fr/smart-cities/article/2021/05/24/shlomo-angel-la-densification-urbaine-offre-un-potentiel-limite-pour-reduire-les-emissions-de-gaz-a-effet-de-serre_6081259_4811534.html",
+      
     "Popup.zone5.description35": "",
     "Popup.zone5.description35.important": "Lire l'analyse critique de Michel Lussault sur la proposition théorique des \"Hyperobjets\" faite par le philosophe Timothy Morton",
     "Popup.zone5.description35.link": "https://medium.com/anthropocene2050/a-propos-des-hyperobjets-de-timothy-morton-311cecec8386",
@@ -524,6 +619,18 @@
     "Popup.studio.description1": "Sang contaminé",
     "Popup.studio.description1.important": "Regarder la série  \"Chronique Géovirale\" de Michel Lussault",
     "Popup.studio1.description1.link": "https://medium.com/anthropocene2050/chroniques-g%C3%A9o-virales-e144c57db628",
+
+    "Popup.studio.description7": "Cigarette brûlée - Mégot",
+    "Popup.studio.description7.important": "Regarder l'interview \"Penser l'Anthropocène \" avec Alfonso Pinto",
+    "Popup.studio1.description7.link": "https://www.youtube.com/watch?v=FS4LN5ScPYA&list=PL3q4hlXuGY4Q-FHbRC-wW_4z5bboCRM1D&index=8",
+
+    "Popup.studio.description8": "Clef USB",
+    "Popup.studio.description8.important": "Ecouter le podcast \"Numérique : pérennité programmée\" avec Stéphane Cassé, Victor Estienney et Hervé Rivano",
+    "Popup.studio1.description8.link": "https://www.sondekla.com/user/event/12047",
+
+    "Popup.studio.description9": "Eau extraite du fleuve Rhône",
+    "Popup.studio.description9.important": "Regarder l'interview \"Penser l'Anthropocène \" avec Adrian Torres - Astaburuaga",
+    "Popup.studio.description9.link": "https://www.youtube.com/watch?v=VfwFoYbRrds&list=PL3q4hlXuGY4Q-FHbRC-wW_4z5bboCRM1D&index=23",
 
     "Popup.studio.description10": "Sable",
     "Popup.studio.description10.important": "Ecouter le podcast \" La ruée vers le sable\" avec Elsa Devienne et Valérie Disdier",
@@ -533,7 +640,7 @@
     "Popup.studio.description11.important": "Lire l'interview de Mark Williams par Lucas Tiphine",
     "Popup.studio.description11.link": "https://medium.com/anthropocene2050/mark-williams-les-villes-laisseront-un-t%C3%A9moignage-g%C3%A9ologique-de-leur-impact-pendant-des-734d7e4c95ef",
   
-    "Popup.studio.description13": " Béton",
+    "Popup.studio.description13": " Morceau de béton",
     "Popup.studio.description13.important": "Lire l'article de Armelle Choplin",
     "Popup.studio.description13.link": "https://www.lemonde.fr/smart-cities/article/2021/01/14/dans-les-bidonvilles-le-parpaing-de-beton-lingot-du-pauvre-materialise-le-droit-a-la-ville_6066272_4811534.html",
   
@@ -541,7 +648,15 @@
     "Popup.studio.description18.important": "Lire l'article \" Le numérique face à la pandémie. Diversité des approches dans le monde  \" de Stéphane Grumbach et Caroline Zanin",
     "Popup.studio.description18.link": "https://medium.com/anthropocene2050/le-num%C3%A9rique-face-%C3%A0-la-pand%C3%A9mie-diversit%C3%A9-des-approches-dans-le-monde-3e88944eb36b",
   
-    "Popup.studio.description23": "Ordinateur ",
+    "Popup.studio.description19": " Canette usagée",
+    "Popup.studio.description19.important": "Regarder l'interview \"Penser l'Anthropocène \" avec Pierre Veltz",
+    "Popup.studio.description19.link": "https://www.youtube.com/watch?v=kFfsJU8q4J8&list=PL3q4hlXuGY4Q-FHbRC-wW_4z5bboCRM1D&index=16",
+  
+    "Popup.studio.description22": "Viande rouge",
+    "Popup.studio.description22.important": "Ecouter le podcast \"Vivre avec les animaux et les manger\" avec Dalya Daoud, Stanislas Kraland et Sébastien Mouret",
+    "Popup.studio.description22.link": "https://www.sondekla.com/user/event/9504",
+  
+    "Popup.studio.description23": "Ordinateur",
     "Popup.studio.description23.important": "Ecouter le podcast \"Anthropocène et technologie(s)\" avec Alexandre Monnin et Ernesto Oroza",
     "Popup.studio.description23.link": "https://www.sondekla.com/user/event/10653",
   
