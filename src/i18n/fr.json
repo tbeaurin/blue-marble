@@ -66,11 +66,11 @@
     "Missio.majorA.content.2": "Missionné à la photographie des paysages et des activités anthropocèniques",
 
     "Missio.objectifMonde.title": "Objectif Monde",
-    "Missio.objectifMonde.p1": "Le 7 septembre 2022, le célèbre cliché de la NASA <strong> \" The Blue Marble \"</strong>, pris par l’équipage d’Apollo 17, fêtera son jubilé. <br /> Cet anniversaire est l’occasion pour l’<strong>École Urbaine de Lyon</strong>, qui a fait de cette image son étendard, de valoriser son travail d’enquête scientifique via la question suivante : quid de cette planète un demi-siècle après avoir été révélée dans toute son unité, sa beauté, sa fragilité ?",
+    "Missio.objectifMonde.p1": "Le 7 décembre 2022, le célèbre cliché de la NASA <strong> \" The Blue Marble \"</strong>, pris par l’équipage d’Apollo 17, fêtera son jubilé. <br /> Cet anniversaire est l’occasion pour l’<strong>École Urbaine de Lyon</strong>, qui a fait de cette image son étendard, de valoriser son travail d’enquête scientifique via la question suivante : quid de cette planète un demi-siècle après avoir été révélée dans toute son unité, sa beauté, sa fragilité ?",
     "Missio.objectifMonde.p2": "Pour présenter des pistes de réponses sous un regard original, le photographe <strong>Adrien PINON</strong> a proposé de transformer l’École Urbaine de Lyon en un véritable centre de recherches et d’explorations spatiales avec le <strong>\" Programme Blue Marble \"</strong>. Cette approche originale a une motivation : rappeler l’importance capitale de rallier des efforts scientifiques et financiers d’envergures – à l’image d’un programme spatial – sur l’analyse des dynamiques actuellement à l’œuvre, remettant en cause l’habitabilité future de la Terre.",
-    "Missio.objectifMonde.p3": "Ainsi, d’avril à septembre 2021, l’École Urbaine de Lyon a missionné deux spationautes à la collecte dans notre Monde – sur la planète Terre – d’images, de matières et d’objets nécessaires à l’observation de l’Anthropocène. Vous découvrirez ici les <strong>210 photographies</strong> prises durant les sorties extra-véhiculaires dans les 5 grandes zones d’études du programme (ville, périphérie, campagne, montagne, littoral) ainsi que l’inventaire photographique des <strong>30 objets et matières</strong> ramenés, racontant des découvertes, des rencontres et des récoltes aussi bien scientifiques que sensibles.",
+    "Missio.objectifMonde.p3": "Ainsi, d’avril à septembre 2021, l’École Urbaine de Lyon a missionné deux spationautes à la collecte dans notre Monde – sur la planète Terre – d’images, de matières et d’objets nécessaires à l’observation de l’Anthropocène. Vous découvrirez sur ce site internet les <strong>210 photographies</strong> prises durant les sorties extra-véhiculaires dans les 5 grandes zones d’études du programme (ville, périphérie, campagne, montagne, littoral) ainsi que l’inventaire photographique des <strong>30 objets et matières</strong> ramenés, racontant des découvertes, des rencontres et des récoltes aussi bien scientifiques que sensibles.",
     "Missio.objectifMonde.aditionnal.1": "Photo Zone 5",
-    "Missio.objectifMonde.aditionnal.2": "Le drapeau du \"Programme Blue Marble \" sur une plage e la mer Méditerranée",
+    "Missio.objectifMonde.aditionnal.2": "Le drapeau du \"Programme Blue Marble \" sur une plage de la mer Méditerranée",
 
     "Missio.anthropocene.title": "an-thro-po-cene",
     "Missio.anthropocene.definition": "Ce que l’on propose de nommer « Anthropocène », c’est ce moment historique qui s’ouvre après 1945 avec l’enclenchement de la phase de l’urbanisation généralisée de la planète lors duquel il devient incontestable que les activités humaines ont des impacts de plus en plus forts sur les systèmes biophysiques. On observe, partout, ces bouleversements tout à la fois globaux et locaux. A tel point que l’habitabilité de la terre pour les humains et les non humains est mise en question ",
@@ -171,6 +171,10 @@
     "Popup.zone1.description4": " ",
     "Popup.zone1.description4.important": "Ecouter le séminaire \"L’essor des évaluations financières dans la fabrique des villes\" avec Lucia Shimbo, Pierre Thérond, Grégory Grey-Johnson et Fabrice Bardet",
     "Popup.zone1.description4.link": "https://ecoleurbainedelyon.universite-lyon.fr/seminaire-quantification-metropoles-et-anthropocene-6eme-seance-78994.kjsp?RH=1510909846029",
+
+    "Popup.zone1.description7": " ",
+    "Popup.zone1.description7.important": "Regarder le cours public \"L'air : une matière première de l'urbain ? \" de Michel Lussault",
+    "Popup.zone1.description7.link": "https://www.youtube.com/watch?v=o5ww2HHvbGw",
 
     "Popup.zone1.description10": "",
     "Popup.zone1.description10.important": "Lire l'interview de Björn Wallsten sur les infrastructures souterraines",
@@ -604,6 +608,10 @@
     "Popup.zone5.description29.important": "Ecouter le podcast \" Usages de l'eau et perspective anthropocène\" avec Jean-Philippe Pierron, Adrian Torres Astaburuaga et Jérémy Cheval",
     "Popup.zone5.description29.link": "https://www.sondekla.com/user/event/10685",
 
+    "Popup.zone5.description31": " ",
+    "Popup.zone5.description31.important": "Ecouter le podcast \" Quel humour pour l’anthropocène ? Peut-on rire de tout à l'heure de l'Anthropocène : éco anxiété et humour face à la grande catastrophe \" avec Arnaud Demanche, Emma Novel, Florian Fompérie et François De Gasperi",
+    "Popup.zone5.description31.link": "https://www.sondekla.com/user/event/12764",
+    
     "Popup.zone5.description33": " ",
     "Popup.zone5.description33.important": "Regarder le du cours public \" Quelle prospective pour édifier les territoires du monde urbain anthropocène ?  \" de Stéphane Cordobès",
     "Popup.zone5.description33.link": "https://ecoleurbainedelyon.universite-lyon.fr/cours-public-2021-quelle-prospective-pour-edifier-les-territoires-du-monde-urbain-anthropocene-par-stephane-cordobes--212641.kjsp?RH=1513167387572",
@@ -697,8 +705,8 @@
     "Popup.studio1.description20.link": "",
 
     "Popup.studio.description21": "Avocats plastifiés",
-    "Popup.studio.description21.important": "",
-    "Popup.studio1.description21.link": "",
+    "Popup.studio.description21.important": "Regarder la conférence \"Plastique, itinéraire d'un déchet \" de Michel Lussault",
+    "Popup.studio1.description21.link": "https://www.youtube.com/watch?v=1MnzEFQzxk4",
 
     "Popup.studio.description22": "Viande rouge",
     "Popup.studio.description22.important": "Ecouter le podcast \"Vivre avec les animaux et les manger\" avec Dalya Daoud, Stanislas Kraland et Sébastien Mouret",
@@ -735,8 +743,7 @@
     "Popup.studio.description30": "Appareil photo jetable",
     "Popup.studio.description30.important": "",
     "Popup.studio1.description30.link": "",
-
-
+ 
     "Inventaire.citation.1": "\"- Pour comprendre le Monde dans lequel nous évoluions il suffisait de regarder nos pieds.",
     "Inventaire.citation.2": "- Nous n'avions qu'à nous baisser et ramasser\"",
     "Inventaire.citation.author.1": "Major A et Major Q",
