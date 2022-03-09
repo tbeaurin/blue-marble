@@ -304,6 +304,7 @@ const PopupCarousel = ({
                 </>
               ) : (
                 <div className="popup-description">
+                  <p className="ta-justify"><Trans i18nKey={content[step].description} /></p>
                   {content[step].link && t(content[step].link, '').length > 0 ? (
                     <CustomLink
                       href={t(content[step].link)}
@@ -333,6 +334,7 @@ const PopupCarousel = ({
             )}
             {isEven(position) ? (
               <div className="popup-description">
+                <p className="ta-justify"><Trans i18nKey={content[step].description} /></p>
                 {content[step].link && t(content[step].link, '').length > 0 ? (
                   <CustomLink
                     href={t(content[step].link)}
