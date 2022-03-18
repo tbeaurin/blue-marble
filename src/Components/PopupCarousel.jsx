@@ -304,7 +304,8 @@ const PopupCarousel = ({
                 </>
               ) : (
                 <div className="popup-description">
-                  <p className="ta-justify"><Trans i18nKey={content[step].description} /></p>
+                  {content[step].description && t(content[step].description, '').length > 0
+                  && <p className="ta-justify"><Trans i18nKey={content[step].description} /></p>}
                   {content[step].link && t(content[step].link, '').length > 0 ? (
                     <CustomLink
                       href={t(content[step].link)}
