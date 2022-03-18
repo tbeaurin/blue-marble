@@ -264,6 +264,7 @@
                 }
             }
             #anthropocene {
+                padding: 0 40px;
                 .page-content {
                     margin-top: 32px !important;
                 }
@@ -271,13 +272,21 @@
                     font-size: 42px;
                 }
                 #anthropocene-definition {
-                    padding: 64px 60px !important;
-                    padding-inline: 60px !important;
+                    padding: 64px 0 0 0 !important;
                     font-size: 16px !important;
                     font-weight: inherit;
                 }
                 #anthropocene-aditionnal {
-                    display: none;
+                    padding: 32px 0 0 0 !important;
+                    .d-flex {
+                        align-items: center;
+                    }
+                    .anthropocene-link {
+                        margin-top: 16px;
+                    }
+                }
+                .d-flex {
+                    flex-direction: column;
                 }
                 .d-flex > div {
                     width: 100% !important;
@@ -438,6 +447,9 @@
             font-weight: bold;
             font-family: "Montserrat";
             margin: 12px 0;
+        }
+        .popup-title {
+            display: none;
         }
     }
     #carousel {

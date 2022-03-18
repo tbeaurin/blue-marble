@@ -163,6 +163,13 @@ const Inventaire = () => {
             </p>
           </div>
         </div>
+        <div id="coulissesVideo" className="page h-100">
+          <div className="page-content">
+            <div className="video" id="video">
+              <iframe title="vimeo-player" src="https://player.vimeo.com/video/689681637?h=89e9474fe5" frameBorder="0" allowFullScreen />
+            </div>
+          </div>
+        </div>
         <div id="coulissesRemerciement" className="page h-100">
           <div className="page-content">
             <p className="remerciement" id="remerciement">
