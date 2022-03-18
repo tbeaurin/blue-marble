@@ -44,7 +44,7 @@ const Zones = () => {
     );
     zone2.push(
       {
-        image: imagesZone2[i - 1], description: `Popup.zone2.description${i}`, important: `Popup.zone2.description${i}.important`, link: `Popup.zone1.description${i}.link`,
+        image: imagesZone2[i - 1], description: `Popup.zone2.description${i}`, important: `Popup.zone2.description${i}.important`, link: `Popup.zone2.description${i}.link`,
       },
     );
   }

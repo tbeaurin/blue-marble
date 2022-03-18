@@ -317,7 +317,9 @@ const PopupCarousel = ({
                   ) : (
                     <>
                       {content[step].important && t(content[step].important, '').length > 0 && (
-                        <span className="important ta-justify"><Trans i18nKey={content[step].important} /></span>
+                        <span className="important ta-justify">
+                          <Trans i18nKey={content[step].important} />
+                        </span>
                       )}
                     </>
                   )}
