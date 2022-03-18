@@ -292,7 +292,7 @@ const PopupCarousel = ({
       )}
       <div id="popupMain">
         <div className="d-flex flex-row h-100">
-          {!isMobile && (
+          {!isMobile ? (
             <div className={`popup-title ${!isEven(position) && 'odd'}`}>
               {isEven(position) ? (
                 <>
@@ -304,7 +304,8 @@ const PopupCarousel = ({
                 </>
               ) : (
                 <div className="popup-description">
-                  <p className="ta-justify"><Trans i18nKey={content[step].description} /></p>
+                  {content[step].description && t(content[step].description, '').length > 0
+                  && <p className="ta-justify"><Trans i18nKey={content[step].description} /></p>}
                   {content[step].link && t(content[step].link, '').length > 0 ? (
                     <CustomLink
                       href={t(content[step].link)}
@@ -316,11 +317,35 @@ const PopupCarousel = ({
                   ) : (
                     <>
                       {content[step].important && t(content[step].important, '').length > 0 && (
-                        <span className="important ta-justify"><Trans i18nKey={content[step].important} /></span>
+                        <span className="important ta-justify">
+                          <Trans i18nKey={content[step].important} />
+                        </span>
                       )}
                     </>
                   )}
                 </div>
+              )}
+            </div>
+          ) : (
+            <div className="popup-description">
+              {content[step].description && t(content[step].description, '').length > 0
+              && <p className="ta-justify"><Trans i18nKey={content[step].description} /></p>}
+              {content[step].link && t(content[step].link, '').length > 0 ? (
+                <CustomLink
+                  href={t(content[step].link)}
+                  tag="Link"
+                  target="_blank"
+                  className="primary ta-justify"
+                  content={t(content[step].important)}
+                />
+              ) : (
+                <>
+                  {content[step].important && t(content[step].important, '').length > 0 && (
+                    <span className="important ta-justify">
+                      <Trans i18nKey={content[step].important} />
+                    </span>
+                  )}
+                </>
               )}
             </div>
           )}
@@ -332,9 +357,10 @@ const PopupCarousel = ({
                 onClick={() => { handleOpenModal(); }}
               />
             )}
-            {isEven(position) ? (
+            {isEven(position) && !isMobile ? (
               <div className="popup-description">
-                <p className="ta-justify"><Trans i18nKey={content[step].description} /></p>
+                {content[step].description && t(content[step].description, '').length > 0
+                && <p className="ta-justify"><Trans i18nKey={content[step].description} /></p>}
                 {content[step].link && t(content[step].link, '').length > 0 ? (
                   <CustomLink
                     href={t(content[step].link)}
