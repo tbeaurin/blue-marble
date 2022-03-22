@@ -215,6 +215,8 @@
         font-size: 14px;
         margin-left: 30vw;
         padding-right: 120px;
+        position: relative;
+        z-index: 20;
         p {
             margin-bottom: 24px;
         }
