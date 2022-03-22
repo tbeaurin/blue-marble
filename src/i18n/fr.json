@@ -3,7 +3,7 @@
     "Title.2": "Blue Marble",
 
     "Menu.coulisses" : "Les Coulisses",
-    "Menu.inventaire" : "L'Inventaire",
+    "Menu.inventaire" : "Analyses",
     "Menu.mission" : "La Mission",
     "Menu.zones" : "Les Zones",
 
@@ -50,7 +50,7 @@
     "Zones.constelation": "Areis",
     "Zones.title": "Les zones",
     "Inventaire.constelation": "Analyses",
-    "Inventaire.title": "L'inventaire",
+    "Inventaire.title": "Analyses",
     "Coulisses.constelation": "Post Scaena",
     "Coulisses.title": "Les coulisses",
     
@@ -134,9 +134,9 @@
     "Missio.footer.2.1.1": "école urbaine de lyon",
     "Missio.footer.2.1.2": "Université de lyon",
     "Missio.footer.2.2": "Université de lyon",
-    "Missio.footer.text": "Ce travail a bénéificié de l'aide de l'Etat gérée par l'Agence Nationale de la Recherche au titre du programme d'Investissement d'avenir portant la référence ANR-17-CONV-0004",
+    "Missio.footer.text": "Ce travail a bénéficié de l'aide de l'Etat gérée par l'Agence Nationale de la Recherche au titre du programme d'Investissement d'avenir portant la référence ANR-17-CONV-0004",
 
-    "Zones.citation": "\"En contemplant le glacier de la Meije, il m'est apparu évident qu'un de nos devoirs - durant cette mission - était d'immortaliser ce qui est beau, ce qui disparaîtra\"",
+    "Zones.citation": "\"En contemplant le glacier il m'est apparu évident qu'un de nos devoirs - durant cette mission - était aussi d'immortaliser ce qui est beau, ce qui disparaîtra\"",
     "Zones.citation.author.1": "Major Q",
     "Zones.citation.author.2": "",
 
@@ -173,7 +173,7 @@
     "Popup.zone1.description4.link": "https://www.sondekla.com/user/event/9876",
 
     "Popup.zone1.description5": " ",
-    "Popup.zone1.description5.important": "Ecouter le podcast \"Quelle adaptation des villes et des territoires aux nouvelles mobilités?\" avec Pierre Bagliotto,Hugo Chaila, Florian Fompérie et Emma Novel",
+    "Popup.zone1.description5.important": "Ecouter le podcast \"Quelle adaptation des villes et des territoires aux nouvelles mobilités?\" avec Pierre Bagliotto, Hugo Chaila, Florian Fompérie et Emma Novel",
     "Popup.zone1.description5.link": "https://www.sondekla.com/user/event/12557",
 
     "Popup.zone1.description7": " ",
