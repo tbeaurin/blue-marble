@@ -3,7 +3,7 @@
     "Title.2": "Blue Marble",
 
     "Menu.coulisses" : "Les Coulisses",
-    "Menu.inventaire" : "L'Inventaire",
+    "Menu.inventaire" : "Analyses",
     "Menu.mission" : "La Mission",
     "Menu.zones" : "Les Zones",
 
@@ -50,7 +50,7 @@
     "Zones.constelation": "Areis",
     "Zones.title": "Les zones",
     "Inventaire.constelation": "Analyses",
-    "Inventaire.title": "L'inventaire",
+    "Inventaire.title": "Analyses",
     "Coulisses.constelation": "Post Scaena",
     "Coulisses.title": "Les coulisses",
     
