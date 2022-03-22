@@ -628,28 +628,28 @@
     "Popup.zone5.description35.important": "Lire l'analyse critique de Michel Lussault sur la proposition théorique des \"Hyperobjets\" faite par le philosophe Timothy Morton",
     "Popup.zone5.description35.link": "https://medium.com/anthropocene2050/a-propos-des-hyperobjets-de-timothy-morton-311cecec8386",
   
-    "Popup.studio.description1": "Pétrole",
-    "Popup.studio.description1.important": "",
+    "Popup.studio.description1": "",
+    "Popup.studio.description1.important": "Pétrole",
     "Popup.studio1.description1.link": "",
 
     "Popup.studio.description2": "Sang contaminé",
     "Popup.studio.description2.important": "Regarder la série  \"Chronique Géovirale\" de Michel Lussault",
     "Popup.studio1.description2.link": "https://medium.com/anthropocene2050/chroniques-g%C3%A9o-virales-e144c57db628",
 
-    "Popup.studio.description3": "Huile de palme",
-    "Popup.studio.description3.important": "",
+    "Popup.studio.description3": "",
+    "Popup.studio.description3.important": "Huile de palme",
     "Popup.studio1.description3.link": "",
 
-    "Popup.studio.description4": "Badge",
-    "Popup.studio.description4.important": "",
+    "Popup.studio.description4": "",
+    "Popup.studio.description4.important": "Badge",
     "Popup.studio1.description4.link": "",
 
-    "Popup.studio.description5": "Pierre d'un glacier",
-    "Popup.studio.description5.important": "",
+    "Popup.studio.description5": "",
+    "Popup.studio.description5.important": "Pierre d'un glacier",
     "Popup.studio1.description5.link": "",
 
-    "Popup.studio.description6": "Capsule",
-    "Popup.studio.description6.important": "",
+    "Popup.studio.description6": "",
+    "Popup.studio.description6.important": "Capsule",
     "Popup.studio1.description6.link": "",
 
     "Popup.studio.description7": "Cigarette brûlée - Mégot",
@@ -672,28 +672,28 @@
     "Popup.studio.description11.important": "Lire l'interview de Mark Williams par Lucas Tiphine",
     "Popup.studio.description11.link": "https://medium.com/anthropocene2050/mark-williams-les-villes-laisseront-un-t%C3%A9moignage-g%C3%A9ologique-de-leur-impact-pendant-des-734d7e4c95ef",
   
-    "Popup.studio.description12": "Terre de campagne",
-    "Popup.studio.description12.important": "",
+    "Popup.studio.description12": "",
+    "Popup.studio.description12.important": "Terre de campagne",
     "Popup.studio1.description12.link": "",
 
     "Popup.studio.description13": "Morceau de béton",
     "Popup.studio.description13.important": "Lire l'article de Armelle Choplin",
     "Popup.studio.description13.link": "https://www.lemonde.fr/smart-cities/article/2021/01/14/dans-les-bidonvilles-le-parpaing-de-beton-lingot-du-pauvre-materialise-le-droit-a-la-ville_6066272_4811534.html",
   
-    "Popup.studio.description14": "Goudron",
-    "Popup.studio.description14.important": "",
+    "Popup.studio.description14": "",
+    "Popup.studio.description14.important": "Goudron",
     "Popup.studio1.description14.link": "",
 
-    "Popup.studio.description15": "Carte bancaire",
-    "Popup.studio.description15.important": "",
+    "Popup.studio.description15": "",
+    "Popup.studio.description15.important": "Carte bancaire",
     "Popup.studio1.description15.link": "",
 
     "Popup.studio.description16": "Passeport",
     "Popup.studio.description16.important": "Ecouter le podcast \" La ville étouffé par le tourisme mondialisé ?\"",
     "Popup.studio1.description16.link": "https://www.sondekla.com/user/event/10657",
 
-    "Popup.studio.description17": "Batterie",
-    "Popup.studio.description17.important": "",
+    "Popup.studio.description17": "",
+    "Popup.studio.description17.important": "Batterie",
     "Popup.studio1.description17.link": "",
 
     "Popup.studio.description18": "Téléphone portable",
@@ -704,8 +704,8 @@
     "Popup.studio.description19.important": "Regarder l'interview \"Penser l'Anthropocène \" avec Pierre Veltz",
     "Popup.studio.description19.link": "https://www.youtube.com/watch?v=kFfsJU8q4J8&list=PL3q4hlXuGY4Q-FHbRC-wW_4z5bboCRM1D&index=16",
   
-    "Popup.studio.description20": "Manette de console",
-    "Popup.studio.description20.important": "",
+    "Popup.studio.description20": "",
+    "Popup.studio.description20.important": "Manette de console",
     "Popup.studio1.description20.link": "",
 
     "Popup.studio.description21": "Avocats plastifiés",
@@ -720,12 +720,12 @@
     "Popup.studio.description23.important": "Ecouter le podcast \"Anthropocène et technologie(s)\" avec Alexandre Monnin et Ernesto Oroza",
     "Popup.studio.description23.link": "https://www.sondekla.com/user/event/10653",
   
-    "Popup.studio.description24": "Jeans",
-    "Popup.studio.description24.important": "",
+    "Popup.studio.description24": "",
+    "Popup.studio.description24.important": "Jeans",
     "Popup.studio1.description24.link": "",
 
-    "Popup.studio.description25": "Carton",
-    "Popup.studio.description25.important": "",
+    "Popup.studio.description25": "",
+    "Popup.studio.description25.important": "Carton",
     "Popup.studio1.description25.link": "",
 
     "Popup.studio.description26": "QR Code ",
@@ -736,16 +736,16 @@
     "Popup.studio.description27.important": "Regarder l'émission \"L'Anthropocène dans ma cuisine\" avec Mélissa Manglou et Alexandra Pech",
     "Popup.studio.description27.link": "https://www.youtube.com/watch?v=S9po2o6ghJ4&list=PL3q4hlXuGY4Tz-68xoIBPKeIfaPBQp4LU&index=5",
   
-    "Popup.studio.description28": "Farine",
-    "Popup.studio.description28.important": "",
+    "Popup.studio.description28": "",
+    "Popup.studio.description28.important": "Farine",
     "Popup.studio1.description28.link": "",
 
-    "Popup.studio.description29": "Tabouret",
-    "Popup.studio.description29.important": "",
+    "Popup.studio.description29": "",
+    "Popup.studio.description29.important": "Tabouret",
     "Popup.studio1.description29.link": "",
 
-    "Popup.studio.description30": "Appareil photo jetable",
-    "Popup.studio.description30.important": "",
+    "Popup.studio.description30": "",
+    "Popup.studio.description30.important": "Appareil photo jetable",
     "Popup.studio1.description30.link": "",
  
     "Inventaire.citation.1": "\"- Pour comprendre le Monde dans lequel nous évoluions il suffisait de regarder nos pieds.",
