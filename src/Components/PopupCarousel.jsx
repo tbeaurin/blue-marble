@@ -362,17 +362,19 @@ const PopupCarousel = ({
                 {content[step].description && t(content[step].description, '').length > 0
                 && <p className="ta-justify"><Trans i18nKey={content[step].description} /></p>}
                 {content[step].link && t(content[step].link, '').length > 0 ? (
-                  <CustomLink
-                    href={t(content[step].link)}
-                    tag="Link"
-                    target="_blank"
-                    className="primary ta-justify"
-                    content={t(content[step].important)}
-                  />
+                  <>
+                    <CustomLink
+                      href={t(content[step].link)}
+                      tag="Link"
+                      target="_blank"
+                      className="primary ta-justify"
+                      content={t(content[step].important)}
+                    />
+                  </>
                 ) : (
                   <>
                     {content[step].important && t(content[step].important, '').length > 0 && (
-                      <span className="important ta-justify"><Trans i18nKey={content[step].description} /></span>
+                      <span className="important ta-justify"><Trans i18nKey={content[step].important} /></span>
                     )}
                   </>
                 )}
